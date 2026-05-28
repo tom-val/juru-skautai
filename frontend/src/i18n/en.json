@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "about": "About",
+    "ageGroups": "Age groups",
+    "faq": "FAQ",
+    "support": "Support",
+    "contact": "Contact",
+    "cta": "Contact us"
+  },
+  "hero": {
+    "title": "Dievui, Tėvynei, Artimui, Jūrai!",
+    "lead": "Can't picture yourself without evenings by the lake with the best company of friends, want to glide across the water powered by the wind, and feel better afloat than on land? Join us now!",
+    "ctaPrimary": "CONTACT US! →",
+    "ctaSecondary": "Who we are",
+    "motto": "Kablys visam gyvenimui!",
+    "mottoLabel": "Our motto"
+  },
+  "about": {
+    "eyebrow": "Who we are",
+    "title": "Not a club — a way of life",
+    "text": "Sea Scouts are part of the Lithuanian Scouting movement, built on the moral, civic and value-based principles set out by founder Robert Baden-Powell. Scouting isn't just a hobby club or summer camps — it's a way of life that raises a strong, responsible, patriotic and caring person.",
+    "points": [
+      "The maritime idea — getting to know the basics of seamanship as a science and an art",
+      "The scout method — all-round development of young people",
+      "Meetings, water and hiking trips, camps and sailing"
+    ]
+  },
+  "why": {
+    "eyebrow": "Join",
+    "title": "Why join us?",
+    "cards": [
+      {
+        "icon": "🎯",
+        "title": "Plenty of activities",
+        "text": "From sailing and camping in nature to song contests — get involved based on your own interests."
+      },
+      {
+        "icon": "🤝",
+        "title": "New friends",
+        "text": "Meet like-minded people from other cities and even other parts of the world — united by adventure."
+      },
+      {
+        "icon": "🧠",
+        "title": "Knowledge & skills",
+        "text": "Make a compass, build a shelter, handle watercraft — you won't just learn it, you'll try it yourself!"
+      }
+    ]
+  },
+  "groups": {
+    "eyebrow": "Age groups",
+    "title": "A place for everyone — from cub to leader",
+    "more": "Read more",
+    "less": "Show less",
+    "items": [
+      {
+        "image": "/assets/grp-bebrai.jpg",
+        "age": "6–10 yrs",
+        "name": "Junior Sea Scouts",
+        "teaser": "Their main learning tool is play. Stepping into the role of \"beavers\", exploring rivers and nature, the children experience adventures and learn about themselves and the world. They salute with two fingers — for God and Homeland.",
+        "full": "For junior sea scouts the main learning tool is play and the world they create in their imagination. Stepping into the role of \"beavers\" (as they are called), exploring rivers and nature, they have many adventures and learn to know themselves and their surroundings. The programme runs in large groups where the leader is an unquestioned authority, handing out small tasks so the children learn responsibility. Juniors salute with two fingers — for God and Homeland. They are too young to promise to care for their neighbour, but love for the Homeland is nurtured from an early age — singing the anthem and marking national holidays. Every day juniors are encouraged to do one good deed, reminded by the knot on their neckerchief."
+      },
+      {
+        "image": "/assets/grp-skautai.jpg",
+        "age": "11–14 yrs",
+        "name": "Sea Scouts",
+        "teaser": "They work in small teams — \"boats\" of 5–9 children. Every member has duties and responsibility for the shared work. Strong focus on the maritime programme and water activities. They salute with three fingers — for God, Homeland and neighbour.",
+        "full": "Sea scouts work in smaller teams — \"boats\" of 5–9 children. Every member is important and has their own duties. The leader still plays a key role, but the children are encouraged to join in planning meetings and running activities for their peers. This age is crucial — the transition into adolescence and the search for values begins, so activities aim to develop and strengthen them physically and spiritually, fostering tolerance for one another. A strong focus is placed on the maritime part of the programme, helping them grasp the idea of Lithuania as a maritime nation and try all kinds of water activities. They salute with three fingers — for God, Homeland and neighbour."
+      },
+      {
+        "image": "/assets/grp-patyre.jpg",
+        "age": "15–17 yrs",
+        "name": "Senior Sea Scouts",
+        "teaser": "Independence best describes this group. They organise activities themselves, help leaders and take part in running events and camps. A strong water programme, sailing, paddling, expeditions and character-building challenges.",
+        "full": "This age group is a big help to the older members — they often help leaders run activities for the younger ones and take an active part in organising events and camps. Independence best describes senior sea scouts: they organise everything themselves, taking on ever greater responsibility and trying themselves in various roles. Working in \"boats\" is especially important, with the leader stepping back into an observing, accompanying role. They set themselves bigger and bigger challenges — tasks demanding physical endurance, expeditions, an especially strong water programme, sailing and paddling. These challenges feed self-discovery and character building."
+      },
+      {
+        "image": "/assets/grp-vyr.jpg",
+        "age": "17–29 yrs",
+        "name": "Rover Scouts",
+        "teaser": "Rover scouting, wrapped in a bit of mystery, intrigues everyone. Its heart is individual, intrinsically motivated work on oneself — challenging yourself while embracing the core values needed in life. The programme is open only to its participants.",
+        "full": "Rover scouting, wrapped in mystery, intrigues everyone — both junior and senior sea scouts. It's the time when a young person prepares to leave the safe environment, while their value system is not yet fully formed. At its heart is individual, intrinsically motivated work on oneself, with elements of play, challenging yourself while embracing the core values needed in life. The rover programme is secret and open only to its participants."
+      },
+      {
+        "image": "/assets/grp-vadovai.jpg",
+        "age": "18+ yrs",
+        "name": "Volunteers & leaders",
+        "teaser": "Scouting welcomes not only children but also parents and all adults aged 18+. They are our greatest help — both with the children and with practical matters, especially on the water where the risk is higher. A friendly environment lets everyone find their place.",
+        "full": "Scouting welcomes not only children but also parents and all adults aged 18+. They are our greatest help — both with the children and with practical matters: the kitchen, equipment, harbour upkeep and transporting boats. The help of experienced adults is especially important on the water, where the risk is much higher than usual work with children. A supportive, friendly environment lets everyone try themselves in different areas and find the place that suits them best in scouting."
+      }
+    ]
+  },
+  "join": {
+    "title": "Ready for adventure?",
+    "text": "Find the nearest city where sea scouts sail and get in touch — your first meeting is waiting!",
+    "contact": "Get in touch",
+    "faq": "FAQ"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "From what age can children start scouting?",
+        "a": "Children can start scouting from the age of 6."
+      },
+      {
+        "q": "What is the annual membership fee?",
+        "a": "The membership fee is €12 for everyone under 29 (and older members who hold a role). With 2 family members it's €11, 3 members €8, 4 or more €6 per person. Members over 29 not holding a leading role pay €30."
+      },
+      {
+        "q": "How do I find a scout group and join?",
+        "a": "Browse the map in the contacts section showing active sea scout \"boats\". Click a flag to find contact details and reach out."
+      },
+      {
+        "q": "How does scouting benefit a child?",
+        "a": "For children, scouting is a school of independence. They spend their time meaningfully and develop social and other competencies, with broad opportunities to act, grow and travel."
+      },
+      {
+        "q": "I'm over 18 — can I volunteer?",
+        "a": "Yes! If you're over 18 you can join and volunteer — there's no upper age limit. All kinds of skills are useful: cooking, first aid, crafts or working with numbers."
+      },
+      {
+        "q": "Can I take part if my child is a sea scout?",
+        "a": "Absolutely! Many parents get involved in scouting and enjoy their free time with the children. Reach out to your child's group leader — they'll be happy to help."
+      }
+    ]
+  },
+  "parama": {
+    "eyebrow": "Support",
+    "title": "Give 1.2% of your income tax to the sea scouts",
+    "subtitle": "We plan to use the support to buy sailing and water-safety equipment. It costs you nothing.",
+    "stepsTitle": "How to give 1.2% via EDS",
+    "steps": [
+      "Log in to your online banking or directly via the EDS website.",
+      "Choose e-declaration — you'll be taken to the Electronic Declaration System (EDS).",
+      "Select the \"Fill in on the portal\" option.",
+      "From the list choose form FR0512 (request to transfer up to 1.2% of income tax).",
+      "Fill it in and submit. In field E5 you can allocate support for 3 years at once."
+    ],
+    "reqTitle": "Donation details",
+    "req": [
+      { "label": "Name", "value": "LS Jūrų skautai" },
+      { "label": "Address", "value": "Trakų g. 18, LT-44236 Kaunas" },
+      { "label": "Account (SEB)", "value": "LT617044060007470328" },
+      { "label": "Bank code", "value": "70440" },
+      { "label": "Company code", "value": "302492514" },
+      { "label": "SWIFT / BIC", "value": "CBVILT2X" }
+    ],
+    "reqNote": "When transferring, note that it is support for SEA SCOUT ACTIVITIES.",
+    "waysTitle": "Other ways to support",
+    "ways": [
+      "Equipment & gear",
+      "Maritime gear",
+      "Boat storage",
+      "Training",
+      "Event prizes",
+      "Non-perishable food"
+    ],
+    "waysNote": "Want to help with gear or services? Get in touch at juru@skautai.lt."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Got questions? Get in touch!",
+    "subtitle": "Find the nearest city where sea scouts sail and we'll arrange your first visit.",
+    "visitLabel": "Visit",
+    "writeLabel": "Write",
+    "callLabel": "Call",
+    "followLabel": "Follow",
+    "address": "Trakų g. 18, Kaunas",
+    "email": "juru@skautai.lt",
+    "phone": "+370 655 93336",
+    "social": "Facebook · Instagram · YouTube",
+    "tuntsTitle": "Our units",
+    "tuntsSubtitle": "Find the nearest unit and get in touch with its leader.",
+    "tunts": [
+      { "name": "Klaipėdoje – Liudviko Stulpino laivas", "leader": "Giedrė Stončienė", "email": "klaipedos@skautai.lt" },
+      { "name": "Marijampolėje – Šešupės tuntas", "leader": "Leader Vita Zurzaitė", "email": "vitazur@gmail.com" },
+      { "name": "Kaune – Nemuno tuntas", "leader": "Leader Motiejus Vaitkaitis", "email": "vaitkaitis.motiejus@gmail.com" },
+      { "name": "Kaune – Kauno marių tuntas", "leader": "Leader Tomas Jurkuvėnas", "email": "tomaskjslc@gmail.com" },
+      { "name": "Vilniuje – Vidgauto tuntas", "leader": "Leader Lukrecija Maldeikytė", "email": "vidgautas@gmail.com" },
+      { "name": "Ukmergėje – Šventosios tuntas", "leader": "Leader Jonas Dragūnas", "email": "jonas.dragunas@gmail.com" }
+    ]
+  },
+  "footer": {
+    "tagline": "Lithuanian Sea Scouts in Kaunas. An anchor for life!",
+    "scoutsTitle": "For sea scouts",
+    "scouts": ["The founder", "History", "Attributes", "Centennial song"],
+    "leadersTitle": "For leaders",
+    "linksTitle": "Useful links",
+    "rights": "All rights reserved"
+  }
+}

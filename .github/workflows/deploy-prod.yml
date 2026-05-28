@@ -1,0 +1,90 @@
+name: Deploy Prod
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  infra:
+    name: Infrastructure
+    runs-on: ubuntu-latest
+    environment: Prod
+    defaults:
+      run:
+        working-directory: infra/environments/prod
+    outputs:
+      s3_frontend_bucket: ${{ steps.outputs.outputs.s3_frontend_bucket }}
+      cloudfront_distribution_id: ${{ steps.outputs.outputs.cloudfront_distribution_id }}
+      cloudfront_domain_name: ${{ steps.outputs.outputs.cloudfront_domain_name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.5.7"
+          terraform_wrapper: false
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: eu-central-1
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Apply
+        run: terraform apply -auto-approve -input=false
+        env:
+          TF_VAR_acm_certificate_arn: ${{ secrets.ACM_CERTIFICATE_ARN }}
+
+      - name: Export outputs
+        id: outputs
+        run: |
+          echo "s3_frontend_bucket=$(terraform output -raw s3_frontend_bucket)" >> "$GITHUB_OUTPUT"
+          echo "cloudfront_distribution_id=$(terraform output -raw cloudfront_distribution_id)" >> "$GITHUB_OUTPUT"
+          echo "cloudfront_domain_name=$(terraform output -raw cloudfront_domain_name)" >> "$GITHUB_OUTPUT"
+
+  frontend:
+    name: Deploy Frontend
+    needs: infra
+    runs-on: ubuntu-latest
+    environment: Prod
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: eu-central-1
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Sync to S3
+        run: aws s3 sync dist/ s3://${{ needs.infra.outputs.s3_frontend_bucket }} --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ needs.infra.outputs.cloudfront_distribution_id }} \
+            --paths "/*"

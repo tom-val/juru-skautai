@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "about": "Apie mus",
+    "ageGroups": "Amžiaus grupės",
+    "faq": "DUK",
+    "support": "Parama",
+    "contact": "Kontaktai",
+    "cta": "Susisiek"
+  },
+  "hero": {
+    "title": "Dievui, Tėvynei, Artimui, Jūrai!",
+    "lead": "Negali įsivaizduoti savęs be vakarų prie ežero su geriausia draugų kompanija, nori skrieti ežerą vėjo pagalba, o vandenyje jautiesi geriau nei sausumoje? Junkis prie mūsų jau dabar!",
+    "ctaPrimary": "SUSISIEK! →",
+    "ctaSecondary": "Kas mes esame",
+    "motto": "Kablys visam gyvenimui!",
+    "mottoLabel": "Mūsų šūkis"
+  },
+  "about": {
+    "eyebrow": "Kas mes esame",
+    "title": "Ne būrelis, o gyvenimo būdas",
+    "text": "Jūrų skautai – Lietuvos skautijos dalis, pagrįsta moraliniais, pilietiniais ir vertybiniais principais, iškeltais skautų įkūrėjo Robert Baden-Powell. Skautai – tai ne tik laisvalaikio būrelis ar vasaros stovyklos, tai gyvenimo būdas, auginantis stiprią, atsakingą, patriotišką ir mylinčią asmenybę.",
+    "points": [
+      "Jūrinė idėja – pažintis su jūreivystės mokslo ir meno pagrindais",
+      "Skautiškas metodas – visapusiškas jaunimo ugdymas",
+      "Sueigos, vandens ir pėsčiųjų žygiai, stovyklos, buriavimas"
+    ]
+  },
+  "why": {
+    "eyebrow": "Prisijunk",
+    "title": "Kodėl vertėtų prisijungti?",
+    "cards": [
+      {
+        "icon": "🎯",
+        "title": "Gausybė veiklų",
+        "text": "Nuo buriavimo ir stovyklavimo gamtoje iki dainų konkursų – įsitrauk pagal savo pomėgius."
+      },
+      {
+        "icon": "🤝",
+        "title": "Nauji draugai",
+        "text": "Sutiksi bendraminčių iš kitų miestų ar net kitų pasaulio kraštų – žmonių, kuriuos vienija nuotykiai."
+      },
+      {
+        "icon": "🧠",
+        "title": "Žinios ir įgūdžiai",
+        "text": "Pasidaryti kompasą, pastatyti lapinę, valdyti plaukimo priemones – ne tik sužinosi, bet ir išbandysi pats!"
+      }
+    ]
+  },
+  "groups": {
+    "eyebrow": "Amžiaus grupės",
+    "title": "Vieta kiekvienam – nuo bebriuko iki vadovo",
+    "more": "Plačiau",
+    "less": "Suskleisti",
+    "items": [
+      {
+        "image": "/assets/grp-bebrai.jpg",
+        "age": "6–10 m.",
+        "name": "Jaunesnieji jūrų skautai",
+        "teaser": "Pagrindinis mokymosi instrumentas – žaidimai. Įsijausdami į „bebriukų“ vaidmenį, tyrinėdami upes ir gamtą, vaikai patiria nuotykius ir mokosi pažinti save bei aplinką. Saliutuoja dviem pirštais – Dievui ir Tėvynei.",
+        "full": "Jaunesniesiems jūrų skautams pagrindinis mokymosi instrumentas yra žaidimai ir jų vaizduotėje sukurtas pasaulis. Įsijausdami į bebriukų vaidmenį (taip jie yra vadinami), tyrinėdami upes ir gamtą, patiria daug nuotykių ir mokosi pažinti save bei aplinką. Programa vyksta didelėse grupėse, kur vadovas yra besąlygiškas autoritetas. Jis paskirsto vaikams nedidelius darbelius, taip vaikai mokosi atsakomybės. Jaunesnieji skautai saliutuoja dviem pirštukais – Dievui ir Tėvynei. Jie per maži prisižadėti rūpintis artimu, tačiau nuo pat mažų dienų ugdoma meilė Tėvynei – giedamas himnas, minimos valstybinės šventės. Kiekvieną dieną jaunesnieji jūrų skautai skatinami padaryti po vieną gerąjį darbelį, tai jiems primena mazgelis ant kaklaraiščio."
+      },
+      {
+        "image": "/assets/grp-skautai.jpg",
+        "age": "11–14 m.",
+        "name": "Jūrų skautai",
+        "teaser": "Dirba mažomis grupelėmis – valtimis (5–9 vaikai). Kiekvienas narys turi pareigas ir atsakomybę už bendrą veiklą. Didelis dėmesys jūrinei programai ir vandens užsiėmimams. Saliutuoja trimis pirštais – Dievui, Tėvynei, artimui.",
+        "full": "Jūrų skautai dirba mažesnėmis grupelėmis – valtimis, kurias sudaro 5–9 vaikai. Kiekvienas valties narys yra labai svarbus ir turi savo pareigas. Vadovas vis dar užima svarbų vaidmenį, tačiau vaikai skatinami įsitraukti į sueigų planavimą ir užsiėmimų pravedimą bendraamžiams. Šis amžiaus tarpsnis labai svarbus – prasideda perėjimas į paauglystę ir vertybių paieškos, todėl veikla skirta tobulėti ir stiprinti save ne tik fiziškai, bet ir dvasiškai. Užsiėmimuose didelis dėmesys skiriamas jūrinei programos daliai, padedant geriau suvokti Lietuvos kaip jūrinės valstybės idėją ir susipažinti su įvairiausiais vandens užsiėmimais. Skautai saliutuoja trimis pirštais – Dievui, Tėvynei, artimui."
+      },
+      {
+        "image": "/assets/grp-patyre.jpg",
+        "age": "15–17 m.",
+        "name": "Patyrę jūrų skautai",
+        "teaser": "Savarankiškumas geriausiai apibūdina šią grupę. Patys organizuoja veiklą, padeda vadovams, įsitraukia į renginių ir stovyklų organizavimą. Stipri vandens programa, buriavimas, irklavimas, žygiai ir charakterį grūdinantys iššūkiai.",
+        "full": "Ši amžiaus grupė – didelė pagalba vyresniesiems: dažnai padeda vadovams vesti užsiėmimus mažesniesiems, aktyviai įsitraukia į renginių ir stovyklų organizavimą. Savarankiškumas geriausiai apibūdina patyrusius jūrų skautus – visą veiksmą jie organizuoja patys, prisiimdami vis didesnes atsakomybes, ir gali išbandyti save įvairiose pareigose. Ypatingai svarbus darbas valtimis, kai vadovas lieka stebėtojo, lydinčio asmens pozicijoje. Keliami vis didesni iššūkiai sau – fizinės ištvermės užduotys, žygiai, ypač stipri vandens programa, buriavimas, irklavimas. Iššūkiai prisideda prie savęs ieškojimo ir charakterio formavimo."
+      },
+      {
+        "image": "/assets/grp-vyr.jpg",
+        "age": "17–29 m.",
+        "name": "Vyr. skautai – gintarės ir budžiai",
+        "teaser": "Paslaptimis apipintas vyr. skautavimas domina kiekvieną. Ypatingą vietą užima individualus, vidine motyvacija pagrįstas darbas su savimi, keliantis iššūkius ir apimantis esmines gyvenimo vertybes. Programa prieinama tik jos dalyviams.",
+        "full": "Paslaptimis apipintas vyr. skautavimas domina kiekvieną – tiek jaunesnįjį, tiek patyrusį jūrų skautą. Tai laikas, kai jaunas žmogus ruošiasi išeiti iš saugios aplinkos, o vertybių sistema dar nėra galutinai susiformavusi. Vyr. skautavime ypatingą vietą užima individualus, vidine motyvacija pagrįstas darbas su savimi, turintis žaidimo elementų, keliantis iššūkius pačiam sau, bet kartu apimantis esmines gyvenime reikalingas vertybes. Vyr. skautų programa yra slapta ir prieinama tik jos dalyviams."
+      },
+      {
+        "image": "/assets/grp-vadovai.jpg",
+        "age": "18+ m.",
+        "name": "Savanoriai ir vadovai",
+        "teaser": "Skautuose laukiami ne tik vaikai, bet ir tėveliai bei visi suaugusieji nuo 18 m. Tai didžiausia pagalba dirbant su vaikais ir ūkio reikalais – ypač vandenyje, kur rizika didesnė. Draugiška aplinka leidžia kiekvienam rasti tinkamą vietą.",
+        "full": "Skautuose laukiami ne tik vaikai, bet ir tėveliai bei visi suaugusieji nuo 18 m. Tai mūsų didžiausia pagalba tiek dirbant su vaikais, tiek su ūkio reikalais – virtuve, inventoriumi, uosto priežiūra, laivų transportavimu. Ypatingai svarbi patyrusių žmonių pagalba vandenyje, kur rizika žymiai didesnė nei įprastai dirbant su vaikais. Palaikanti ir draugiška aplinka leidžia kiekvienam išbandyti save įvairiose srityse ir rasti jam labiausiai tinkančią vietą skautiškoje veikloje."
+      }
+    ]
+  },
+  "join": {
+    "title": "Pasiruošęs nuotykiui?",
+    "text": "Susirask artimiausią miestą, kurio vandenyse skautauja jūriai, ir susisiek – pirmas susitikimas tavęs laukia!",
+    "contact": "Susisiek",
+    "faq": "DUK"
+  },
+  "faq": {
+    "eyebrow": "DUK",
+    "title": "Dažniausiai užduodami klausimai",
+    "items": [
+      {
+        "q": "Nuo kokio amžiaus vaikai gali pradėti skautauti?",
+        "a": "Skautauti vaikai gali pradėti nuo 6 metų."
+      },
+      {
+        "q": "Koks yra metinis narystės mokestis?",
+        "a": "LS nario mokestis – 12 € visiems iki 29 m. (ir vyresniems, jei užima pareigas). Šeimoje 2 nariai – 11 €, 3 nariai – 8 €, 4 ir daugiau – 6 € asmeniui. Vyresni nei 29 m. neužimantys vadovaujančių pareigų moka 30 €."
+      },
+      {
+        "q": "Kaip rasti skautų grupę ir prisijungti?",
+        "a": "Pasižvalgyk po žemėlapį kontaktų skiltyje, rodantį veikiančias jūrų skautų valtis. Paspaudęs vėliavėlę rasi kontaktinę informaciją ir gali susisiekti."
+      },
+      {
+        "q": "Kokia skautavimo nauda vaikui?",
+        "a": "Vaikams skautavimas – savarankiškumo mokykla. Jie prasmingai leidžia laiką ir vysto socialines bei kitas kompetencijas. Atsiveria plačios galimybės veikti, tobulėti ir keliauti."
+      },
+      {
+        "q": "Man jau daugiau nei 18 – ar galiu savanoriauti?",
+        "a": "Taip! Jeigu tau daugiau nei 18 metų, gali prisijungti ir savanoriauti – amžiaus limito savanorystei nėra. Praverčia įvairiausi įgūdžiai: maisto gaminimas, pirmoji pagalba, rankdarbiai ar darbas su skaičiais."
+      },
+      {
+        "q": "Ar galiu prisidėti, jei mano vaikas yra jūrų skautas?",
+        "a": "Tikrai taip! Nemažai tėvelių įsitraukia į skautišką veiklą ir smagiai leidžia laisvalaikį. Kreipkis į savo vaiko būrelio vadovą – jis būtinai pagelbės."
+      }
+    ]
+  },
+  "parama": {
+    "eyebrow": "Parama",
+    "title": "Skirk 1,2 % pajamų mokesčio jūrų skautams",
+    "subtitle": "Gautą paramą ketiname naudoti buriavimo ir vandens saugumo inventoriui įsigyti. Tau tai nieko nekainuoja.",
+    "stepsTitle": "Kaip skirti 1,2 % per EDS",
+    "steps": [
+      "Prisijunk prie elektroninės bankininkystės arba tiesiogiai per EDS svetainę.",
+      "Pasirink e-deklaravimą – būsi nukreiptas į Elektroninio deklaravimo sistemą (EDS).",
+      "Pasirink formą „Pildyti portale“.",
+      "Iš sąrašo pasirink FR0512 formą (prašymas pervesti iki 1,2 % GPM).",
+      "Užpildyk ir pateik. Laukelyje E5 gali iš karto skirti paramą už 3 metus."
+    ],
+    "reqTitle": "Rekvizitai paramai",
+    "req": [
+      { "label": "Pavadinimas", "value": "LS Jūrų skautai" },
+      { "label": "Adresas", "value": "Trakų g. 18, LT-44236 Kaunas" },
+      { "label": "Sąskaita (SEB)", "value": "LT617044060007470328" },
+      { "label": "Banko kodas", "value": "70440" },
+      { "label": "Įmonės kodas", "value": "302492514" },
+      { "label": "SWIFT / BIC", "value": "CBVILT2X" }
+    ],
+    "reqNote": "Pervesdami nurodykite, kad tai parama JŪRŲ SKAUTŲ VEIKLAI.",
+    "waysTitle": "Kiti paramos būdai",
+    "ways": [
+      "Inventorius ir priemonės",
+      "Jūrinis inventorius",
+      "Patalpos laivams",
+      "Mokymai",
+      "Prizai renginiams",
+      "Negendantys maisto produktai"
+    ],
+    "waysNote": "Nori paremti inventoriumi ar paslaugomis? Susisiek el. paštu juru@skautai.lt."
+  },
+  "contact": {
+    "eyebrow": "Kontaktai",
+    "title": "Turi klausimų? Susisiek!",
+    "subtitle": "Susirask artimiausią miestą, kurio vandenyse skautauja jūriai, ir sutarsim dėl pirmojo vizito.",
+    "visitLabel": "Atvyk",
+    "writeLabel": "Parašyk",
+    "callLabel": "Paskambink",
+    "followLabel": "Sek mus",
+    "address": "Trakų g. 18, Kaunas",
+    "email": "juru@skautai.lt",
+    "phone": "+370 655 93336",
+    "social": "Facebook · Instagram · YouTube",
+    "tuntsTitle": "Mūsų tuntai",
+    "tuntsSubtitle": "Susirask artimiausią tuntą ir susisiek su jo vadovu.",
+    "tunts": [
+      { "name": "Klaipėdoje – Liudviko Stulpino laivas", "leader": "Giedrė Stončienė", "email": "klaipedos@skautai.lt" },
+      { "name": "Marijampolėje – Šešupės tuntas", "leader": "Tuntininkė Vita Zurzaitė", "email": "vitazur@gmail.com" },
+      { "name": "Kaune – Nemuno tuntas", "leader": "Tuntininkas Motiejus Vaitkaitis", "email": "vaitkaitis.motiejus@gmail.com" },
+      { "name": "Kaune – Kauno marių tuntas", "leader": "Tuntininkas Tomas Jurkuvėnas", "email": "tomaskjslc@gmail.com" },
+      { "name": "Vilniuje – Vidgauto tuntas", "leader": "Tuntininkė Lukrecija Maldeikytė", "email": "vidgautas@gmail.com" },
+      { "name": "Ukmergėje – Šventosios tuntas", "leader": "Tuntininkas Jonas Dragūnas", "email": "jonas.dragunas@gmail.com" }
+    ]
+  },
+  "footer": {
+    "tagline": "Lietuvos jūrų skautai Kaune. Kablys visam gyvenimui!",
+    "scoutsTitle": "Jūrų skautams",
+    "scouts": ["Skautų įkūrėjas", "Istorija", "Atributika", "Šimtmečio daina"],
+    "leadersTitle": "Vadovams",
+    "linksTitle": "Naudingos nuorodos",
+    "rights": "Visos teisės saugomos"
+  }
+}
