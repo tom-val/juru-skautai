@@ -24,7 +24,6 @@ export default function Hero() {
             <img src="/assets/emblem-removebg.png" alt="" />
             <div>
               <div style={{ fontWeight: 900 }}>{t("hero.motto")}</div>
-              <div style={{ fontSize: ".85rem", color: "#43586c" }}>{t("hero.mottoLabel")}</div>
             </div>
           </div>
         </div>

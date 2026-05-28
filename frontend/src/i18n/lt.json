@@ -12,8 +12,7 @@
     "lead": "Negali įsivaizduoti savęs be vakarų prie ežero su geriausia draugų kompanija, nori skrieti ežerą vėjo pagalba, o vandenyje jautiesi geriau nei sausumoje? Junkis prie mūsų jau dabar!",
     "ctaPrimary": "SUSISIEK! →",
     "ctaSecondary": "Kas mes esame",
-    "motto": "Kablys visam gyvenimui!",
-    "mottoLabel": "Mūsų šūkis"
+    "motto": "Kablys visam gyvenimui!"
   },
   "about": {
     "eyebrow": "Kas mes esame",
@@ -42,7 +41,7 @@
       {
         "icon": "🧠",
         "title": "Žinios ir įgūdžiai",
-        "text": "Pasidaryti kompasą, pastatyti lapinę, valdyti plaukimo priemones – ne tik sužinosi, bet ir išbandysi pats!"
+        "text": "Orientuotis su kompasu, pastatyti lapinę, valdyti plaukimo priemones – ne tik sužinosi, bet ir išbandysi pats!"
       }
     ]
   },
@@ -91,7 +90,7 @@
   },
   "join": {
     "title": "Pasiruošęs nuotykiui?",
-    "text": "Susirask artimiausią miestą, kurio vandenyse skautauja jūriai, ir susisiek – pirmas susitikimas tavęs laukia!",
+    "text": "Susirask artimiausią miestą, kurio vandenyse skautauja jūriai, ir susisiek – pirmas susitikimas laukia tavęs!",
     "contact": "Susisiek",
     "faq": "DUK"
   },

@@ -12,8 +12,7 @@
     "lead": "Can't picture yourself without evenings by the lake with the best company of friends, want to glide across the water powered by the wind, and feel better afloat than on land? Join us now!",
     "ctaPrimary": "CONTACT US! →",
     "ctaSecondary": "Who we are",
-    "motto": "Kablys visam gyvenimui!",
-    "mottoLabel": "Our motto"
+    "motto": "Kablys visam gyvenimui!"
   },
   "about": {
     "eyebrow": "Who we are",
@@ -42,7 +41,7 @@
       {
         "icon": "🧠",
         "title": "Knowledge & skills",
-        "text": "Make a compass, build a shelter, handle watercraft — you won't just learn it, you'll try it yourself!"
+        "text": "Use a compass, build a shelter, handle watercraft — you won't just learn it, you'll try it yourself!"
       }
     ]
   },
