@@ -47,7 +47,7 @@ export default function Attributes() {
         </div>
       </div>
 
-      <div className="faq-list" style={{ marginTop: 32 }}>
+      <div className="faq-list" style={{ margin: "32px 0 0", maxWidth: 820 }}>
         {qa.map((item, i) => (
           <details key={i} open={i === 0}>
             <summary>{item.q}</summary>

@@ -26,9 +26,7 @@ export default function Header() {
           <Link to="/#faq">{t("nav.faq")}</Link>
           <Link to="/#parama">{t("nav.support")}</Link>
           <Link to="/#kontaktai">{t("nav.contact")}</Link>
-        </nav>
-        <div className="nav-actions">
-          <div className="lang">
+          <div className="lang lang-in-menu" onClick={(e) => e.stopPropagation()}>
             <button className={lang === "lt" ? "active" : ""} onClick={() => setLang("lt")}>
               LT
             </button>
@@ -36,7 +34,17 @@ export default function Header() {
               EN
             </button>
           </div>
-          <Link to="/#kontaktai" className="btn btn-sun" style={{ padding: "10px 20px" }}>
+        </nav>
+        <div className="nav-actions">
+          <div className="lang lang-desktop">
+            <button className={lang === "lt" ? "active" : ""} onClick={() => setLang("lt")}>
+              LT
+            </button>
+            <button className={lang === "en" ? "active" : ""} onClick={() => setLang("en")}>
+              EN
+            </button>
+          </div>
+          <Link to="/#kontaktai" className="btn btn-sun header-cta" style={{ padding: "10px 20px" }}>
             {t("nav.cta")}
           </Link>
           <button className="burger" onClick={() => setMenuOpen((o) => !o)} aria-label="Menu">

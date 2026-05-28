@@ -48,7 +48,17 @@ export default function Contact() {
               <div className="ic">💬</div>
               <div>
                 <div className="t">{t("contact.followLabel")}</div>
-                <div className="v">{t("contact.social")}</div>
+                <div className="v social-links">
+                  <a href="https://www.facebook.com/LSjuruskautai/" target="_blank" rel="noreferrer">
+                    Facebook
+                  </a>
+                  <a href="https://www.instagram.com/juruskautai/" target="_blank" rel="noreferrer">
+                    Instagram
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=f8gGEO3YIvM" target="_blank" rel="noreferrer">
+                    YouTube
+                  </a>
+                </div>
               </div>
             </div>
           </div>
