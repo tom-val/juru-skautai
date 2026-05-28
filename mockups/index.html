@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jūrų Skautai — Kablys visam gyvenimui!</title>
+<style>
+  :root {
+    --azure: #0ea5e9; --azure-deep: #0284c7; --teal: #14b8a6; --sun: #facc15;
+    --navy: #0c2a4d; --navy-soft: #15406b; --ink: #0f2236;
+    --paper: #fff; --mist: #f1f8fe; --mist-2: #e6f4fd;
+    --radius: 20px; --shadow: 0 18px 40px -18px rgba(12,42,77,.35);
+    --shadow-sm: 0 8px 22px -12px rgba(12,42,77,.4); --maxw: 1180px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  h1,h2,h3 { line-height: 1.12; color: var(--navy); font-weight: 800; letter-spacing: -0.02em; }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+  a { color: inherit; text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 1rem; padding: 14px 26px; border-radius: 999px; cursor: pointer; border: 0; transition: transform .15s ease; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-sun { background: var(--sun); color: var(--navy); box-shadow: var(--shadow-sm); }
+  .btn-ghost { background: rgba(255,255,255,.14); color: #fff; border: 2px solid rgba(255,255,255,.5); }
+  .btn-outline { background: transparent; color: var(--azure-deep); border: 2px solid var(--azure); }
+
+  header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--mist-2); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; color: var(--navy); font-size: 1.1rem; }
+  .brand img { width: 46px; height: 46px; object-fit: contain; }
+  .nav-links { display: flex; gap: 24px; align-items: center; }
+  .nav-links a { font-weight: 600; font-size: .95rem; color: var(--navy-soft); position: relative; }
+  .nav-links a::after { content: ""; position: absolute; left: 0; bottom: -6px; height: 3px; width: 0; background: var(--sun); border-radius: 3px; transition: width .2s ease; }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-actions { display: flex; align-items: center; gap: 14px; }
+  .lang { display: inline-flex; border: 2px solid var(--mist-2); border-radius: 999px; overflow: hidden; font-weight: 700; font-size: .8rem; }
+  .lang button { border: 0; background: transparent; padding: 6px 12px; cursor: pointer; color: var(--navy-soft); }
+  .lang button.active { background: var(--azure); color: #fff; }
+  .burger { display: none; background: none; border: 0; cursor: pointer; font-size: 1.6rem; color: var(--navy); }
+
+  .hero { position: relative; color: #fff; overflow: hidden;
+    background: linear-gradient(160deg, rgba(12,42,77,.92), rgba(13,93,143,.86) 55%, rgba(14,165,233,.82)), url("assets/hero.jpg") center/cover; }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr .85fr; gap: 40px; align-items: center; padding: 80px 0 120px; }
+  .hero h1 { color: #fff; font-size: clamp(2.3rem, 4.6vw, 3.7rem); margin: 0 0 18px; }
+  .hero h1 .hl { color: var(--sun); }
+  .hero p.lead { font-size: 1.18rem; max-width: 560px; color: rgba(255,255,255,.94); }
+  .hero-cta { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .hero-art { position: relative; aspect-ratio: 4/5; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); border: 6px solid rgba(255,255,255,.14);
+    background: linear-gradient(180deg, rgba(12,42,77,0) 45%, rgba(12,42,77,.55)), url("assets/photo3.jpg") center/cover; }
+  .hero-art .float { position: absolute; left: 18px; bottom: 18px; right: 18px; background: rgba(255,255,255,.95); color: var(--navy); border-radius: 16px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; box-shadow: var(--shadow-sm); }
+  .hero-art .float img { width: 44px; height: 44px; object-fit: contain; }
+  .wave { display: block; width: 100%; height: 70px; margin-top: -1px; }
+
+  section { padding: 84px 0; }
+  .eyebrow { color: var(--azure-deep); font-weight: 800; letter-spacing: .12em; text-transform: uppercase; font-size: .82rem; }
+  .section-head { max-width: 680px; margin-bottom: 48px; }
+  .section-head h2 { font-size: clamp(1.9rem, 3.5vw, 2.7rem); margin: 12px 0 14px; }
+  .section-head p { font-size: 1.1rem; color: #43586c; }
+  .center { text-align: center; margin-left: auto; margin-right: auto; }
+
+  /* About split */
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+  .photo-card { aspect-ratio: 4/3; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); }
+  .photo-card img { width: 100%; height: 100%; object-fit: cover; }
+  .check-list { list-style: none; display: grid; gap: 14px; margin-top: 22px; }
+  .check-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 1.05rem; }
+  .check-list .ic { flex: 0 0 28px; width: 28px; height: 28px; border-radius: 8px; background: var(--mist-2); color: var(--azure-deep); display: grid; place-items: center; font-weight: 900; }
+
+  /* Why join */
+  .why { background: var(--mist); }
+  .why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+  .why-card { background: #fff; border-radius: var(--radius); padding: 32px 28px; box-shadow: var(--shadow-sm); }
+  .why-card .ic { font-size: 2.4rem; }
+  .why-card h3 { margin: 14px 0 8px; font-size: 1.3rem; }
+  .why-card p { color: #43586c; }
+
+  /* Age groups */
+  .groups { display: grid; gap: 22px; }
+  .group { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--mist-2); background: #fff; transition: box-shadow .2s ease; }
+  .group[open] { box-shadow: var(--shadow); }
+  .group > summary { list-style: none; cursor: pointer; display: block; }
+  .group > summary::-webkit-details-marker { display: none; }
+  .group > summary::after { content: none; }
+  .group .banner { position: relative; height: 150px; overflow: hidden; }
+  .group .banner img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+  .group > summary:hover .banner img { transform: scale(1.05); }
+  .group .banner .ov { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12,42,77,.8), rgba(12,42,77,.2)); display: flex; flex-direction: column; justify-content: center; padding: 0 32px; }
+  .group .age { color: var(--sun); font-weight: 800; font-size: .85rem; letter-spacing: .08em; }
+  .group .banner h3 { color: #fff; font-size: 1.5rem; font-weight: 600; }
+  .group .more { position: absolute; right: 24px; bottom: 16px; display: inline-flex; align-items: center; gap: 7px; background: rgba(255,255,255,.94); color: var(--navy); font-weight: 700; font-size: .82rem; padding: 8px 15px; border-radius: 999px; box-shadow: var(--shadow-sm); }
+  .group .more::after { content: "▾"; transition: transform .2s ease; }
+  .group[open] .more::after { transform: rotate(180deg); }
+  .group .more .open-lbl { display: none; }
+  .group[open] .more .shut-lbl { display: none; }
+  .group[open] .more .open-lbl { display: inline; }
+  .group .teaser { padding: 20px 32px; color: #43586c; font-weight: 400; text-align: left; }
+  .group[open] .teaser { display: none; }
+  .group .desc { padding: 4px 32px 24px; color: #43586c; font-weight: 400; text-align: left; }
+
+  /* FAQ */
+  .faq { background: var(--mist); }
+  .faq-list { display: grid; gap: 14px; max-width: 860px; margin: 0 auto; }
+  details { background: #fff; border-radius: 14px; box-shadow: var(--shadow-sm); border: 1px solid var(--mist-2); overflow: hidden; }
+  summary { list-style: none; cursor: pointer; padding: 20px 24px; font-weight: 700; color: var(--navy); display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-size: 1.5rem; color: var(--azure); font-weight: 400; transition: transform .2s ease; }
+  details[open] summary::after { transform: rotate(45deg); }
+  details .ans { padding: 0 24px 22px; color: #43586c; }
+
+  /* Join band */
+  .join { color: #fff; border-radius: 32px; padding: 64px; text-align: center; position: relative; overflow: hidden;
+    background: radial-gradient(700px 300px at 50% -20%, rgba(250,204,21,.3), transparent), linear-gradient(135deg, var(--teal), var(--azure-deep)); box-shadow: var(--shadow); }
+  .join h2 { color: #fff; font-size: clamp(2rem,4vw,2.9rem); }
+  .join p { font-size: 1.15rem; max-width: 600px; margin: 14px auto 30px; color: rgba(255,255,255,.95); }
+
+  /* Parama */
+  .steps { counter-reset: s; list-style: none; display: grid; gap: 14px; }
+  .steps li { counter-increment: s; display: flex; gap: 14px; align-items: flex-start; }
+  .steps li::before { content: counter(s); flex: 0 0 32px; width: 32px; height: 32px; border-radius: 10px; background: var(--azure); color: #fff; font-weight: 800; display: grid; place-items: center; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chips span { background: var(--mist); border: 1px solid var(--mist-2); border-radius: 999px; padding: 8px 16px; font-size: .9rem; font-weight: 600; color: var(--navy-soft); }
+  .ans .req-row { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--mist-2); font-size: .95rem; }
+  .ans .req-row:last-of-type { border-bottom: 0; }
+  .ans .req-row span:first-child { color: #7089a0; }
+  .ans .req-row span:last-child { font-weight: 700; text-align: right; color: var(--navy); }
+  .ans .note { margin-top: 14px; font-size: .9rem; color: #7089a0; }
+
+  /* Contact */
+  .contact { background: var(--navy); color: #fff; }
+  .contact h2 { color: #fff; }
+  .contact .section-head p { color: rgba(255,255,255,.8); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+  .info-row { display: flex; gap: 16px; align-items: center; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+  .info-row .ic { width: 46px; height: 46px; border-radius: 12px; background: rgba(255,255,255,.1); display: grid; place-items: center; font-size: 1.4rem; flex: 0 0 46px; }
+  .info-row .t { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: rgba(255,255,255,.6); }
+  .info-row .v { font-weight: 700; font-size: 1.05rem; }
+  .map { border-radius: var(--radius); overflow: hidden; min-height: 340px; }
+  .map iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .tunts-head { margin: 64px 0 26px; }
+  .tunts-head h3 { color: #fff; font-size: clamp(1.5rem, 2.6vw, 2rem); }
+  .tunts-head p { color: rgba(255,255,255,.75); margin-top: 6px; }
+  .tunts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .tunt-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius); padding: 24px; transition: background .2s ease, transform .15s ease; }
+  .tunt-card:hover { background: rgba(255,255,255,.1); transform: translateY(-3px); }
+  .tunt-card h4 { color: #fff; font-size: 1.15rem; margin-bottom: 12px; }
+  .tunt-card .who { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,.82); font-size: .95rem; }
+  .tunt-card a { display: inline-flex; align-items: center; gap: 8px; color: var(--sun); font-weight: 600; font-size: .95rem; margin-top: 8px; }
+  .tunt-card a:hover { text-decoration: underline; }
+
+  footer { background: #08182c; color: rgba(255,255,255,.72); padding: 56px 0 30px; }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 36px; }
+  footer h4 { color: #fff; margin-bottom: 14px; font-size: 1rem; }
+  footer a { display: block; padding: 5px 0; color: rgba(255,255,255,.72); }
+  footer a:hover { color: var(--sun); }
+  .foot-brand { display: flex; align-items: center; gap: 12px; }
+  .foot-brand img { width: 48px; height: 48px; object-fit: contain; }
+  .socials { display: flex; gap: 12px; margin-top: 16px; }
+  .socials a { width: 42px; height: 42px; border-radius: 12px; background: rgba(255,255,255,.08); display: grid; place-items: center; font-size: 1.1rem; }
+  .socials a:hover { background: var(--azure); color: #fff; }
+  .foot-bottom { border-top: 1px solid rgba(255,255,255,.1); margin-top: 40px; padding-top: 22px; font-size: .85rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+  @media (max-width: 900px) {
+    .hero-grid, .split, .contact-grid, .parama-grid { grid-template-columns: 1fr; }
+    .hero-art { display: none; }
+    .why-grid { grid-template-columns: 1fr; }
+    .tunts { grid-template-columns: 1fr 1fr; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+    .burger { display: block; }
+    .join { padding: 44px 26px; }
+    .group .banner .ov { padding: 0 20px; }
+    .group .desc { padding: 20px; }
+  }
+
+  [data-en] { display: none; }
+  html[lang="en"] [data-lt] { display: none; }
+  html[lang="en"] [data-en] { display: inline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="assets/emblem-removebg.png" alt="Jūrų skautai"><span>Jūrų&nbsp;Skautai</span></a>
+    <nav class="nav-links">
+      <a href="#apie"><span data-lt>Apie mus</span><span data-en>About</span></a>
+      <a href="#grupes"><span data-lt>Amžiaus grupės</span><span data-en>Age groups</span></a>
+      <a href="#faq">DUK</a>
+      <a href="#parama"><span data-lt>Parama</span><span data-en>Support</span></a>
+      <a href="#kontaktai"><span data-lt>Kontaktai</span><span data-en>Contact</span></a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang">
+        <button id="lt" class="active" onclick="setLang('lt')">LT</button>
+        <button id="en" onclick="setLang('en')">EN</button>
+      </div>
+      <a href="#kontaktai" class="btn btn-sun" style="padding:10px 20px;"><span data-lt>Susisiek</span><span data-en>Contact us</span></a>
+      <button class="burger">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <h1><span class="hl">Dievui, Tėvynei,<br>Artimui, Jūrai!</span></h1>
+      <p class="lead">
+        <span data-lt>Negali įsivaizduoti savęs be vakarų prie ežero su geriausia draugų kompanija, nori skrieti ežerą vėjo pagalba, o vandenyje jautiesi geriau nei sausumoje? Junkis prie mūsų jau dabar!</span>
+        <span data-en>Can't picture yourself without evenings by the lake with the best company of friends, want to glide across the water powered by the wind, and feel better afloat than on land? Join us now!</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#kontaktai" class="btn btn-sun"><span data-lt>SUSISIEK! →</span><span data-en>CONTACT US! →</span></a>
+        <a href="#apie" class="btn btn-ghost"><span data-lt>Kas mes esame</span><span data-en>Who we are</span></a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="float">
+        <img src="assets/emblem-removebg.png" alt="">
+        <div>
+          <div style="font-weight:900;">Kablys visam gyvenimui!</div>
+          <div style="font-size:.85rem;color:#43586c;"><span data-lt>Mūsų šūkis</span><span data-en>Our motto</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="#ffffff" d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z"/></svg>
+</div>
+
+<!-- ABOUT -->
+<section id="apie">
+  <div class="wrap split">
+    <div class="photo-card"><img src="assets/photo2.jpg" alt=""></div>
+    <div>
+      <span class="eyebrow"><span data-lt>Kas mes esame</span><span data-en>Who we are</span></span>
+      <h2 style="font-size:clamp(1.9rem,3.5vw,2.6rem);margin:12px 0 14px;"><span data-lt>Ne būrelis, o gyvenimo būdas</span><span data-en>Not a club — a way of life</span></h2>
+      <p style="color:#43586c;font-size:1.08rem;">
+        <span data-lt>Jūrų skautai – Lietuvos skautijos dalis, pagrįsta moraliniais, pilietiniais ir vertybiniais principais, iškeltais skautų įkūrėjo Robert Baden-Powell. Skautai – tai ne tik laisvalaikio būrelis ar vasaros stovyklos, tai gyvenimo būdas, auginantis stiprią, atsakingą, patriotišką ir mylinčią asmenybę.</span>
+        <span data-en>Sea Scouts are part of the Lithuanian Scouting movement, built on the moral, civic and value-based principles set out by founder Robert Baden-Powell. Scouting isn't just a hobby club or summer camps — it's a way of life that raises a strong, responsible, patriotic and caring person.</span>
+      </p>
+      <ul class="check-list">
+        <li><span class="ic">⚓</span><span><span data-lt>Jūrinė idėja – pažintis su jūreivystės mokslo ir meno pagrindais</span><span data-en>The maritime idea — getting to know the basics of seamanship as a science and an art</span></span></li>
+        <li><span class="ic">🧭</span><span><span data-lt>Skautiškas metodas – visapusiškas jaunimo ugdymas</span><span data-en>The scout method — all-round development of young people</span></span></li>
+        <li><span class="ic">⛺</span><span><span data-lt>Sueigos, vandens ir pėsčiųjų žygiai, stovyklos, buriavimas</span><span data-en>Meetings, water and hiking trips, camps and sailing</span></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WHY JOIN -->
+<section class="why" id="prisijunk">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow"><span data-lt>Prisijunk</span><span data-en>Join</span></span>
+      <h2><span data-lt>Kodėl vertėtų prisijungti?</span><span data-en>Why join us?</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ic">🎯</div>
+        <h3><span data-lt>Gausybė veiklų</span><span data-en>Plenty of activities</span></h3>
+        <p><span data-lt>Nuo buriavimo ir stovyklavimo gamtoje iki dainų konkursų – įsitrauk pagal savo pomėgius.</span><span data-en>From sailing and camping in nature to song contests — get involved based on your own interests.</span></p>
+      </div>
+      <div class="why-card">
+        <div class="ic">🤝</div>
+        <h3><span data-lt>Nauji draugai</span><span data-en>New friends</span></h3>
+        <p><span data-lt>Sutiksi bendraminčių iš kitų miestų ar net kitų pasaulio kraštų – žmonių, kuriuos vienija nuotykiai.</span><span data-en>Meet like-minded people from other cities and even other parts of the world — united by adventure.</span></p>
+      </div>
+      <div class="why-card">
+        <div class="ic">🧠</div>
+        <h3><span data-lt>Žinios ir įgūdžiai</span><span data-en>Knowledge & skills</span></h3>
+        <p><span data-lt>Pasidaryti kompasą, pastatyti lapinę, valdyti plaukimo priemones – ne tik sužinosi, bet ir išbandysi pats!</span><span data-en>Make a compass, build a shelter, handle watercraft — you won't just learn it, you'll try it yourself!</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGE GROUPS -->
+<section id="grupes">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow"><span data-lt>Amžiaus grupės</span><span data-en>Age groups</span></span>
+      <h2><span data-lt>Vieta kiekvienam – nuo bebriuko iki vadovo</span><span data-en>A place for everyone — from cub to leader</span></h2>
+    </div>
+    <div class="groups">
+      <details class="group">
+        <summary>
+          <div class="banner"><img src="assets/grp-bebrai.jpg" alt=""><div class="ov"><span class="age">6–10 m.</span><h3><span data-lt>Jaunesnieji jūrų skautai</span><span data-en>Junior Sea Scouts</span></h3></div>
+            <span class="more"><span class="shut-lbl"><span data-lt>Plačiau</span><span data-en>Read more</span></span><span class="open-lbl"><span data-lt>Suskleisti</span><span data-en>Show less</span></span></span></div>
+          <div class="teaser"><span data-lt>Pagrindinis mokymosi instrumentas – žaidimai. Įsijausdami į „bebriukų“ vaidmenį, tyrinėdami upes ir gamtą, vaikai patiria nuotykius ir mokosi pažinti save bei aplinką. Saliutuoja dviem pirštais – Dievui ir Tėvynei.</span><span data-en>Their main learning tool is play. Stepping into the role of "beavers", exploring rivers and nature, the children experience adventures and learn about themselves and the world. They salute with two fingers — for God and Homeland.</span></div>
+        </summary>
+        <div class="desc"><span data-lt>Jaunesniesiems jūrų skautams pagrindinis mokymosi instrumentas yra žaidimai ir jų vaizduotėje sukurtas pasaulis. Įsijausdami į bebriukų vaidmenį (taip jie yra vadinami), tyrinėdami upes ir gamtą, patiria daug nuotykių ir mokosi pažinti save bei aplinką. Programa vyksta didelėse grupėse, kur vadovas yra besąlygiškas autoritetas. Jis paskirsto vaikams nedidelius darbelius, taip vaikai mokosi atsakomybės. Jaunesnieji skautai saliutuoja dviem pirštukais – Dievui ir Tėvynei. Jie per maži prisižadėti rūpintis artimu, tačiau nuo pat mažų dienų ugdoma meilė Tėvynei – giedamas himnas, minimos valstybinės šventės. Kiekvieną dieną jaunesnieji jūrų skautai skatinami padaryti po vieną gerąjį darbelį, tai jiems primena mazgelis ant kaklaraiščio.</span><span data-en>For junior sea scouts the main learning tool is play and the world they create in their imagination. Stepping into the role of "beavers" (as they are called), exploring rivers and nature, they have many adventures and learn to know themselves and their surroundings. The programme runs in large groups where the leader is an unquestioned authority, handing out small tasks so the children learn responsibility. Juniors salute with two fingers — for God and Homeland. They are too young to promise to care for their neighbour, but love for the Homeland is nurtured from an early age — singing the anthem and marking national holidays. Every day juniors are encouraged to do one good deed, reminded by the knot on their neckerchief.</span></div>
+      </details>
+      <details class="group">
+        <summary>
+          <div class="banner"><img src="assets/grp-skautai.jpg" alt=""><div class="ov"><span class="age">11–14 m.</span><h3><span data-lt>Jūrų skautai</span><span data-en>Sea Scouts</span></h3></div>
+            <span class="more"><span class="shut-lbl"><span data-lt>Plačiau</span><span data-en>Read more</span></span><span class="open-lbl"><span data-lt>Suskleisti</span><span data-en>Show less</span></span></span></div>
+          <div class="teaser"><span data-lt>Dirba mažomis grupelėmis – valtimis (5–9 vaikai). Kiekvienas narys turi pareigas ir atsakomybę už bendrą veiklą. Didelis dėmesys jūrinei programai ir vandens užsiėmimams. Saliutuoja trimis pirštais – Dievui, Tėvynei, artimui.</span><span data-en>They work in small teams — "boats" of 5–9 children. Every member has duties and responsibility for the shared work. Strong focus on the maritime programme and water activities. They salute with three fingers — for God, Homeland and neighbour.</span></div>
+        </summary>
+        <div class="desc"><span data-lt>Jūrų skautai dirba mažesnėmis grupelėmis – valtimis, kurias sudaro 5–9 vaikai. Kiekvienas valties narys yra labai svarbus ir turi savo pareigas. Vadovas vis dar užima svarbų vaidmenį, tačiau vaikai skatinami įsitraukti į sueigų planavimą ir užsiėmimų pravedimą bendraamžiams. Šis amžiaus tarpsnis labai svarbus – prasideda perėjimas į paauglystę ir vertybių paieškos, todėl veikla skirta tobulėti ir stiprinti save ne tik fiziškai, bet ir dvasiškai. Užsiėmimuose didelis dėmesys skiriamas jūrinei programos daliai, padedant geriau suvokti Lietuvos kaip jūrinės valstybės idėją ir susipažinti su įvairiausiais vandens užsiėmimais. Skautai saliutuoja trimis pirštais – Dievui, Tėvynei, artimui.</span><span data-en>Sea scouts work in smaller teams — "boats" of 5–9 children. Every member is important and has their own duties. The leader still plays a key role, but the children are encouraged to join in planning meetings and running activities for their peers. This age is crucial — the transition into adolescence and the search for values begins, so activities aim to develop and strengthen them physically and spiritually, fostering tolerance for one another. A strong focus is placed on the maritime part of the programme, helping them grasp the idea of Lithuania as a maritime nation and try all kinds of water activities. They salute with three fingers — for God, Homeland and neighbour.</span></div>
+      </details>
+      <details class="group">
+        <summary>
+          <div class="banner"><img src="assets/grp-patyre.jpg" alt=""><div class="ov"><span class="age">15–17 m.</span><h3><span data-lt>Patyrę jūrų skautai</span><span data-en>Senior Sea Scouts</span></h3></div>
+            <span class="more"><span class="shut-lbl"><span data-lt>Plačiau</span><span data-en>Read more</span></span><span class="open-lbl"><span data-lt>Suskleisti</span><span data-en>Show less</span></span></span></div>
+          <div class="teaser"><span data-lt>Savarankiškumas geriausiai apibūdina šią grupę. Patys organizuoja veiklą, padeda vadovams, įsitraukia į renginių ir stovyklų organizavimą. Stipri vandens programa, buriavimas, irklavimas, žygiai ir charakterį grūdinantys iššūkiai.</span><span data-en>Independence best describes this group. They organise activities themselves, help leaders and take part in running events and camps. A strong water programme, sailing, paddling, expeditions and character-building challenges.</span></div>
+        </summary>
+        <div class="desc"><span data-lt>Ši amžiaus grupė – didelė pagalba vyresniesiems: dažnai padeda vadovams vesti užsiėmimus mažesniesiems, aktyviai įsitraukia į renginių ir stovyklų organizavimą. Savarankiškumas geriausiai apibūdina patyrusius jūrų skautus – visą veiksmą jie organizuoja patys, prisiimdami vis didesnes atsakomybes, ir gali išbandyti save įvairiose pareigose. Ypatingai svarbus darbas valtimis, kai vadovas lieka stebėtojo, lydinčio asmens pozicijoje. Keliami vis didesni iššūkiai sau – fizinės ištvermės užduotys, žygiai, ypač stipri vandens programa, buriavimas, irklavimas. Iššūkiai prisideda prie savęs ieškojimo ir charakterio formavimo.</span><span data-en>This age group is a big help to the older members — they often help leaders run activities for the younger ones and take an active part in organising events and camps. Independence best describes senior sea scouts: they organise everything themselves, taking on ever greater responsibility and trying themselves in various roles. Working in "boats" is especially important, with the leader stepping back into an observing, accompanying role. They set themselves bigger and bigger challenges — tasks demanding physical endurance, expeditions, an especially strong water programme, sailing and paddling. These challenges feed self-discovery and character building.</span></div>
+      </details>
+      <details class="group">
+        <summary>
+          <div class="banner"><img src="assets/grp-vyr.jpg" alt=""><div class="ov"><span class="age">17–29 m.</span><h3><span data-lt>Vyr. skautai – gintarės ir budžiai</span><span data-en>Rover Scouts</span></h3></div>
+            <span class="more"><span class="shut-lbl"><span data-lt>Plačiau</span><span data-en>Read more</span></span><span class="open-lbl"><span data-lt>Suskleisti</span><span data-en>Show less</span></span></span></div>
+          <div class="teaser"><span data-lt>Paslaptimis apipintas vyr. skautavimas domina kiekvieną. Ypatingą vietą užima individualus, vidine motyvacija pagrįstas darbas su savimi, keliantis iššūkius ir apimantis esmines gyvenimo vertybes. Programa prieinama tik jos dalyviams.</span><span data-en>Rover scouting, wrapped in a bit of mystery, intrigues everyone. Its heart is individual, intrinsically motivated work on oneself — challenging yourself while embracing the core values needed in life. The programme is open only to its participants.</span></div>
+        </summary>
+        <div class="desc"><span data-lt>Paslaptimis apipintas vyr. skautavimas domina kiekvieną – tiek jaunesnįjį, tiek patyrusį jūrų skautą. Tai laikas, kai jaunas žmogus ruošiasi išeiti iš saugios aplinkos, o vertybių sistema dar nėra galutinai susiformavusi. Vyr. skautavime ypatingą vietą užima individualus, vidine motyvacija pagrįstas darbas su savimi, turintis žaidimo elementų, keliantis iššūkius pačiam sau, bet kartu apimantis esmines gyvenime reikalingas vertybes. Vyr. skautų programa yra slapta ir prieinama tik jos dalyviams.</span><span data-en>Rover scouting, wrapped in mystery, intrigues everyone — both junior and senior sea scouts. It's the time when a young person prepares to leave the safe environment, while their value system is not yet fully formed. At its heart is individual, intrinsically motivated work on oneself, with elements of play, challenging yourself while embracing the core values needed in life. The rover programme is secret and open only to its participants.</span></div>
+      </details>
+      <details class="group">
+        <summary>
+          <div class="banner"><img src="assets/grp-vadovai.jpg" alt=""><div class="ov"><span class="age">18+ m.</span><h3><span data-lt>Savanoriai ir vadovai</span><span data-en>Volunteers & leaders</span></h3></div>
+            <span class="more"><span class="shut-lbl"><span data-lt>Plačiau</span><span data-en>Read more</span></span><span class="open-lbl"><span data-lt>Suskleisti</span><span data-en>Show less</span></span></span></div>
+          <div class="teaser"><span data-lt>Skautuose laukiami ne tik vaikai, bet ir tėveliai bei visi suaugusieji nuo 18 m. Tai didžiausia pagalba dirbant su vaikais ir ūkio reikalais – ypač vandenyje, kur rizika didesnė. Draugiška aplinka leidžia kiekvienam rasti tinkamą vietą.</span><span data-en>Scouting welcomes not only children but also parents and all adults aged 18+. They are our greatest help — both with the children and with practical matters, especially on the water where the risk is higher. A friendly environment lets everyone find their place.</span></div>
+        </summary>
+        <div class="desc"><span data-lt>Skautuose laukiami ne tik vaikai, bet ir tėveliai bei visi suaugusieji nuo 18 m. Tai mūsų didžiausia pagalba tiek dirbant su vaikais, tiek su ūkio reikalais – virtuve, inventoriumi, uosto priežiūra, laivų transportavimu. Ypatingai svarbi patyrusių žmonių pagalba vandenyje, kur rizika žymiai didesnė nei įprastai dirbant su vaikais. Palaikanti ir draugiška aplinka leidžia kiekvienam išbandyti save įvairiose srityse ir rasti jam labiausiai tinkančią vietą skautiškoje veikloje.</span><span data-en>Scouting welcomes not only children but also parents and all adults aged 18+. They are our greatest help — both with the children and with practical matters: the kitchen, equipment, harbour upkeep and transporting boats. The help of experienced adults is especially important on the water, where the risk is much higher than usual work with children. A supportive, friendly environment lets everyone try themselves in different areas and find the place that suits them best in scouting.</span></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN BAND -->
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="join">
+      <h2><span data-lt>Pasiruošęs nuotykiui?</span><span data-en>Ready for adventure?</span></h2>
+      <p><span data-lt>Susirask artimiausią miestą, kurio vandenyse skautauja jūriai, ir susisiek – pirmas susitikimas tavęs laukia!</span><span data-en>Find the nearest city where sea scouts sail and get in touch — your first meeting is waiting!</span></p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="#kontaktai" class="btn btn-sun"><span data-lt>Susisiek</span><span data-en>Get in touch</span></a>
+        <a href="#faq" class="btn btn-ghost">DUK</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">DUK</span>
+      <h2><span data-lt>Dažniausiai užduodami klausimai</span><span data-en>Frequently asked questions</span></h2>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary><span data-lt>Nuo kokio amžiaus vaikai gali pradėti skautauti?</span><span data-en>From what age can children start scouting?</span></summary>
+        <div class="ans"><span data-lt>Skautauti vaikai gali pradėti nuo 6 metų.</span><span data-en>Children can start scouting from the age of 6.</span></div>
+      </details>
+      <details>
+        <summary><span data-lt>Koks yra metinis narystės mokestis?</span><span data-en>What is the annual membership fee?</span></summary>
+        <div class="ans"><span data-lt>LS nario mokestis – 12 € visiems iki 29 m. (ir vyresniems, jei užima pareigas). Šeimoje 2 nariai – 11 €, 3 nariai – 8 €, 4 ir daugiau – 6 € asmeniui. Vyresni nei 29 m. neužimantys vadovaujančių pareigų moka 30 €.</span><span data-en>The membership fee is €12 for everyone under 29 (and older members who hold a role). With 2 family members it's €11, 3 members €8, 4 or more €6 per person. Members over 29 not holding a leading role pay €30.</span></div>
+      </details>
+      <details>
+        <summary><span data-lt>Kaip rasti skautų grupę ir prisijungti?</span><span data-en>How do I find a scout group and join?</span></summary>
+        <div class="ans"><span data-lt>Pasižvalgyk po žemėlapį kontaktų skiltyje, rodantį veikiančias jūrų skautų valtis. Paspaudęs vėliavėlę rasi kontaktinę informaciją ir gali susisiekti.</span><span data-en>Browse the map in the contacts section showing active sea scout "boats". Click a flag to find contact details and reach out.</span></div>
+      </details>
+      <details>
+        <summary><span data-lt>Kokia skautavimo nauda vaikui?</span><span data-en>How does scouting benefit a child?</span></summary>
+        <div class="ans"><span data-lt>Vaikams skautavimas – savarankiškumo mokykla. Jie prasmingai leidžia laiką ir vysto socialines bei kitas kompetencijas. Atsiveria plačios galimybės veikti, tobulėti ir keliauti.</span><span data-en>For children, scouting is a school of independence. They spend their time meaningfully and develop social and other competencies, with broad opportunities to act, grow and travel.</span></div>
+      </details>
+      <details>
+        <summary><span data-lt>Man jau daugiau nei 18 – ar galiu savanoriauti?</span><span data-en>I'm over 18 — can I volunteer?</span></summary>
+        <div class="ans"><span data-lt>Taip! Jeigu tau daugiau nei 18 metų, gali prisijungti ir savanoriauti – amžiaus limito savanorystei nėra. Praverčia įvairiausi įgūdžiai: maisto gaminimas, pirmoji pagalba, rankdarbiai ar darbas su skaičiais.</span><span data-en>Yes! If you're over 18 you can join and volunteer — there's no upper age limit. All kinds of skills are useful: cooking, first aid, crafts or working with numbers.</span></div>
+      </details>
+      <details>
+        <summary><span data-lt>Ar galiu prisidėti, jei mano vaikas yra jūrų skautas?</span><span data-en>Can I take part if my child is a sea scout?</span></summary>
+        <div class="ans"><span data-lt>Tikrai taip! Nemažai tėvelių įsitraukia į skautišką veiklą ir smagiai leidžia laisvalaikį. Kreipkis į savo vaiko būrelio vadovą – jis būtinai pagelbės.</span><span data-en>Absolutely! Many parents get involved in scouting and enjoy their free time with the children. Reach out to your child's group leader — they'll be happy to help.</span></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- PARAMA -->
+<section id="parama">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow"><span data-lt>Parama</span><span data-en>Support</span></span>
+      <h2><span data-lt>Skirk 1,2 % pajamų mokesčio jūrų skautams</span><span data-en>Give 1.2% of your income tax to the sea scouts</span></h2>
+      <p><span data-lt>Gautą paramą ketiname naudoti buriavimo ir vandens saugumo inventoriui įsigyti. Tau tai nieko nekainuoja.</span><span data-en>We plan to use the support to buy sailing and water-safety equipment. It costs you nothing.</span></p>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary><span data-lt>Kaip skirti 1,2 % per EDS</span><span data-en>How to give 1.2% via EDS</span></summary>
+        <div class="ans">
+          <ol class="steps">
+            <li><span data-lt>Prisijunk prie elektroninės bankininkystės arba tiesiogiai per EDS svetainę.</span><span data-en>Log in to your online banking or directly via the EDS website.</span></li>
+            <li><span data-lt>Pasirink e-deklaravimą – būsi nukreiptas į Elektroninio deklaravimo sistemą (EDS).</span><span data-en>Choose e-declaration — you'll be taken to the Electronic Declaration System (EDS).</span></li>
+            <li><span data-lt>Pasirink formą „Pildyti portale“.</span><span data-en>Select the "Fill in on the portal" option.</span></li>
+            <li><span data-lt>Iš sąrašo pasirink FR0512 formą (prašymas pervesti iki 1,2 % GPM).</span><span data-en>From the list choose form FR0512 (request to transfer up to 1.2% of income tax).</span></li>
+            <li><span data-lt>Užpildyk ir pateik. Laukelyje E5 gali iš karto skirti paramą už 3 metus.</span><span data-en>Fill it in and submit. In field E5 you can allocate support for 3 years at once.</span></li>
+          </ol>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lt>Rekvizitai paramai</span><span data-en>Donation details</span></summary>
+        <div class="ans">
+          <div class="req-row"><span><span data-lt>Pavadinimas</span><span data-en>Name</span></span><span>LS Jūrų skautai</span></div>
+          <div class="req-row"><span><span data-lt>Adresas</span><span data-en>Address</span></span><span>Trakų g. 18, LT-44236 Kaunas</span></div>
+          <div class="req-row"><span><span data-lt>Sąskaita (SEB)</span><span data-en>Account (SEB)</span></span><span>LT617044060007470328</span></div>
+          <div class="req-row"><span><span data-lt>Banko kodas</span><span data-en>Bank code</span></span><span>70440</span></div>
+          <div class="req-row"><span><span data-lt>Įmonės kodas</span><span data-en>Company code</span></span><span>302492514</span></div>
+          <div class="req-row"><span>SWIFT / BIC</span><span>CBVILT2X</span></div>
+          <p class="note"><span data-lt>Pervesdami nurodykite, kad tai parama JŪRŲ SKAUTŲ VEIKLAI.</span><span data-en>When transferring, note that it is support for SEA SCOUT ACTIVITIES.</span></p>
+        </div>
+      </details>
+      <details>
+        <summary><span data-lt>Kiti paramos būdai</span><span data-en>Other ways to support</span></summary>
+        <div class="ans">
+          <div class="chips">
+            <span><span data-lt>Inventorius ir priemonės</span><span data-en>Equipment & gear</span></span>
+            <span><span data-lt>Jūrinis inventorius</span><span data-en>Maritime gear</span></span>
+            <span><span data-lt>Patalpos laivams</span><span data-en>Boat storage</span></span>
+            <span><span data-lt>Mokymai</span><span data-en>Training</span></span>
+            <span><span data-lt>Prizai renginiams</span><span data-en>Event prizes</span></span>
+            <span><span data-lt>Negendantys maisto produktai</span><span data-en>Non-perishable food</span></span>
+          </div>
+          <p class="note"><span data-lt>Nori paremti inventoriumi ar paslaugomis? Susisiek el. paštu juru@skautai.lt.</span><span data-en>Want to help with gear or services? Get in touch at juru@skautai.lt.</span></p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="kontaktai">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--sun);"><span data-lt>Kontaktai</span><span data-en>Contact</span></span>
+      <h2><span data-lt>Turi klausimų? Susisiek!</span><span data-en>Got questions? Get in touch!</span></h2>
+      <p><span data-lt>Susirask artimiausią miestą, kurio vandenyse skautauja jūriai, ir sutarsim dėl pirmojo vizito.</span><span data-en>Find the nearest city where sea scouts sail and we'll arrange your first visit.</span></p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="info-row"><div class="ic">📍</div><div><div class="t"><span data-lt>Atvyk</span><span data-en>Visit</span></div><div class="v">Trakų g. 18, Kaunas</div></div></div>
+        <div class="info-row"><div class="ic">✉️</div><div><div class="t"><span data-lt>Parašyk</span><span data-en>Write</span></div><div class="v">juru@skautai.lt</div></div></div>
+        <div class="info-row"><div class="ic">📞</div><div><div class="t"><span data-lt>Paskambink</span><span data-en>Call</span></div><div class="v">+370 655 93336</div></div></div>
+        <div class="info-row" style="border:0;"><div class="ic">💬</div><div><div class="t"><span data-lt>Sek mus</span><span data-en>Follow</span></div><div class="v">Facebook · Instagram · YouTube</div></div></div>
+      </div>
+      <div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=Trak%C5%B3%20g.%2018%2C%20Kaunas&output=embed"></iframe></div>
+    </div>
+
+    <div class="tunts-head">
+      <h3><span data-lt>Mūsų tuntai</span><span data-en>Our units</span></h3>
+      <p><span data-lt>Susirask artimiausią tuntą ir susisiek su jo vadovu.</span><span data-en>Find the nearest unit and get in touch with its leader.</span></p>
+    </div>
+    <div class="tunts">
+      <div class="tunt-card">
+        <h4>Klaipėdoje – Liudviko Stulpino laivas</h4>
+        <div class="who">👤 Giedrė Stončienė</div>
+        <a href="mailto:klaipedos@skautai.lt">✉️ klaipedos@skautai.lt</a>
+      </div>
+      <div class="tunt-card">
+        <h4>Marijampolėje – Šešupės tuntas</h4>
+        <div class="who">👤 <span data-lt>Tuntininkė Vita Zurzaitė</span><span data-en>Leader Vita Zurzaitė</span></div>
+        <a href="mailto:vitazur@gmail.com">✉️ vitazur@gmail.com</a>
+      </div>
+      <div class="tunt-card">
+        <h4>Kaune – Nemuno tuntas</h4>
+        <div class="who">👤 <span data-lt>Tuntininkas Motiejus Vaitkaitis</span><span data-en>Leader Motiejus Vaitkaitis</span></div>
+        <a href="mailto:vaitkaitis.motiejus@gmail.com">✉️ vaitkaitis.motiejus@gmail.com</a>
+      </div>
+      <div class="tunt-card">
+        <h4>Kaune – Kauno marių tuntas</h4>
+        <div class="who">👤 <span data-lt>Tuntininkas Tomas Jurkuvėnas</span><span data-en>Leader Tomas Jurkuvėnas</span></div>
+        <a href="mailto:tomaskjslc@gmail.com">✉️ tomaskjslc@gmail.com</a>
+      </div>
+      <div class="tunt-card">
+        <h4>Vilniuje – Vidgauto tuntas</h4>
+        <div class="who">👤 <span data-lt>Tuntininkė Lukrecija Maldeikytė</span><span data-en>Leader Lukrecija Maldeikytė</span></div>
+        <a href="mailto:vidgautas@gmail.com">✉️ vidgautas@gmail.com</a>
+      </div>
+      <div class="tunt-card">
+        <h4>Ukmergėje – Šventosios tuntas</h4>
+        <div class="who">👤 <span data-lt>Tuntininkas Jonas Dragūnas</span><span data-en>Leader Jonas Dragūnas</span></div>
+        <a href="mailto:jonas.dragunas@gmail.com">✉️ jonas.dragunas@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="foot-brand" href="#top" style="color:#fff;"><span style="font-weight:900;font-size:1.2rem;">Jūrų Skautai</span></a>
+        <p style="margin-top:14px;max-width:280px;"><span data-lt>Lietuvos jūrų skautai Kaune. Kablys visam gyvenimui!</span><span data-en>Lithuanian Sea Scouts in Kaunas. An anchor for life!</span></p>
+        <div class="socials"><a href="#" title="Facebook">f</a><a href="#" title="Instagram">◎</a><a href="#" title="YouTube">▶</a></div>
+      </div>
+      <div>
+        <h4><span data-lt>Jūrų skautams</span><span data-en>For sea scouts</span></h4>
+        <a href="#"><span data-lt>Skautų įkūrėjas</span><span data-en>The founder</span></a>
+        <a href="#"><span data-lt>Istorija</span><span data-en>History</span></a>
+        <a href="#"><span data-lt>Atributika</span><span data-en>Attributes</span></a>
+        <a href="#"><span data-lt>Šimtmečio daina</span><span data-en>Centennial song</span></a>
+      </div>
+      <div>
+        <h4><span data-lt>Vadovams</span><span data-en>For leaders</span></h4>
+        <a href="#"><span data-lt>Biblioteka</span><span data-en>Library</span></a>
+        <a href="#parama"><span data-lt>Parama</span><span data-en>Support</span></a>
+        <a href="#faq">DUK</a>
+        <a href="#kontaktai"><span data-lt>Kontaktai</span><span data-en>Contact</span></a>
+      </div>
+      <div>
+        <h4><span data-lt>Naudingos nuorodos</span><span data-en>Useful links</span></h4>
+        <a href="https://skautai.lt">Skautai.lt</a>
+        <a href="#"><span data-lt>Skautiška parduotuvė</span><span data-en>Scout shop</span></a>
+        <a href="#"><span data-lt>Skautų slėnis</span><span data-en>Scout valley</span></a>
+        <a href="https://www.scout.org">WOSM</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 LS Jūrų skautai · <span data-lt>Visos teisės saugomos</span><span data-en>All rights reserved</span></span>
+      <span>Dievui · Tėvynei · Artimui · Jūrai!</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.getElementById('lt').classList.toggle('active', lang === 'lt');
+    document.getElementById('en').classList.toggle('active', lang === 'en');
+  }
+</script>
+</body>
+</html>
