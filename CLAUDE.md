@@ -62,6 +62,10 @@ cd infra/environments/prod && terraform init && terraform plan
 ## Deployment
 
 Push to `main` triggers `.github/workflows/deploy-prod.yml`. Requires repo secrets:
-`AWS_ROLE_ARN` (OIDC role) and, optionally, `ACM_CERTIFICATE_ARN`. The Terraform S3
-backend bucket (`juru-skautai-terraform-state`) and lock table
-(`juru-skautai-terraform-locks`) must exist before the first apply.
+`AWS_ROLE_ARN` (OIDC role) and, optionally, `ACM_CERTIFICATE_ARN`.
+
+One-time bootstrap: run `infra/bootstrap.sh` (e.g. in AWS CloudShell) to create the
+Terraform state bucket (`juru-skautai-terraform-state`), lock table
+(`juru-skautai-terraform-locks`), the GitHub OIDC provider, and the deploy IAM role. The
+script is idempotent and prints the `AWS_ROLE_ARN` to set as a repo secret. See README
+"Initial setup" for the full walkthrough.

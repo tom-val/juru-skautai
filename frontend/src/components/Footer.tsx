@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+const scoutRoutes = ["/skautu-ikurejas", "/istorija", "/atributika", "/daina"];
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -8,18 +11,18 @@ export default function Footer() {
       <div className="wrap">
         <div className="foot-grid">
           <div>
-            <a className="foot-brand" href="#top" style={{ color: "#fff" }}>
+            <Link className="foot-brand" to="/" style={{ color: "#fff" }}>
               <span style={{ fontWeight: 900, fontSize: "1.2rem" }}>Jūrų Skautai</span>
-            </a>
+            </Link>
             <p style={{ marginTop: 14, maxWidth: 280 }}>{t("footer.tagline")}</p>
             <div className="socials">
-              <a href="https://www.facebook.com/LSjuruskautai" title="Facebook">
+              <a href="https://www.facebook.com/LSjuruskautai/" title="Facebook" target="_blank" rel="noreferrer">
                 f
               </a>
-              <a href="#" title="Instagram">
+              <a href="https://www.instagram.com/juruskautai/" title="Instagram" target="_blank" rel="noreferrer">
                 ◎
               </a>
-              <a href="#" title="YouTube">
+              <a href="https://www.youtube.com/watch?v=f8gGEO3YIvM" title="YouTube" target="_blank" rel="noreferrer">
                 ▶
               </a>
             </div>
@@ -27,21 +30,34 @@ export default function Footer() {
           <div>
             <h4>{t("footer.scoutsTitle")}</h4>
             {scouts.map((label, i) => (
-              <a href="#" key={i}>
+              <Link to={scoutRoutes[i]} key={i}>
                 {label}
-              </a>
+              </Link>
             ))}
           </div>
           <div>
             <h4>{t("footer.leadersTitle")}</h4>
-            <a href="#parama">{t("nav.support")}</a>
-            <a href="#faq">{t("nav.faq")}</a>
-            <a href="#kontaktai">{t("nav.contact")}</a>
+            <a href={t("pages.library.url")} target="_blank" rel="noreferrer">
+              {t("footer.library")}
+            </a>
+            <Link to="/#parama">{t("nav.support")}</Link>
+            <Link to="/#faq">{t("nav.faq")}</Link>
+            <Link to="/#kontaktai">{t("nav.contact")}</Link>
           </div>
           <div>
             <h4>{t("footer.linksTitle")}</h4>
-            <a href="https://skautai.lt">Skautai.lt</a>
-            <a href="https://www.scout.org">WOSM</a>
+            <a href="https://skautai.lt" target="_blank" rel="noreferrer">
+              Skautai.lt
+            </a>
+            <a href="https://parduotuve.skautai.lt/" target="_blank" rel="noreferrer">
+              Skautiška parduotuvė
+            </a>
+            <a href="https://skautaineskautams.lt/" target="_blank" rel="noreferrer">
+              Skautai neskautams
+            </a>
+            <a href="https://www.scout.org" target="_blank" rel="noreferrer">
+              WOSM
+            </a>
           </div>
         </div>
         <div className="foot-bottom">

@@ -1,0 +1,151 @@
+{
+  "common": {
+    "home": "Home",
+    "backHome": "← Back home"
+  },
+  "founder": {
+    "title": "The founder of scouting",
+    "subtitle": "Robert Stephenson Smyth Baden-Powell",
+    "intro": "The founder of the worldwide scout movement, whose ideas still guide scouts across the globe today.",
+    "photoCaption": "B-P meets the Cub Scouts at the 1st International Jamboree at Olympia, 1920.",
+    "portraitCaption": "Lord Robert Baden-Powell (1857–1941)",
+    "timeline": [
+      { "year": "1857", "text": "On 22 February, Robert Stephenson Smyth Baden-Powell, founder of world scouting, was born. His father, H. G. Baden-Powell, was a professor at Oxford University and a member of the Royal Society, author of many works on philosophy and theology." },
+      { "year": "1869", "text": "He began learning seamanship aboard the ship \"Conway\". He never parted from the ship, even on holidays — sailing the sea with his brothers. He quickly learned to handle a boat, camp, cook and carry out orders, gaining the experience of a naturalist and scout." },
+      { "year": "1871", "text": "He passed the entrance exams to Charterhouse School." },
+      { "year": "1873", "text": "Charterhouse moved to Godalming. In the dense woods nearby Robert learned to stalk, track, observe birds and animals, pitch a tent and use a hatchet." },
+      { "year": "1876", "text": "He joined the British Army and went to fight in India." },
+      { "year": "1883", "text": "He was appointed regimental adjutant." },
+      { "year": "1899", "text": "During the siege of Mafeking he became known for organising volunteer boys — cadets — who carried out signalling duties with courage and responsibility. This was the beginning of the idea of scouting." },
+      { "year": "1900", "text": "Queen Victoria granted him the rank of Major-General." },
+      { "year": "1901", "text": "He was awarded the title of Lord." },
+      { "year": "1907", "text": "He held the first scout camp on Brownsea Island — the date considered the official beginning of scouting." },
+      { "year": "1908", "text": "He published the book \"Scouting for Boys\"." },
+      { "year": "1910", "text": "He retired from the army and devoted himself to scouting." },
+      { "year": "1912", "text": "He set off on a journey around the world to study scouting in different countries. On the trip he met Olave St. Clair Soames, whom he married on returning to England." },
+      { "year": "1933", "text": "On 17 August, Baden-Powell and Olave, patroness of the Girl Guides, arrived in Palanga with their family and 650 English scout and guide leaders." },
+      { "year": "1938", "text": "In failing health he travelled to Africa (Kenya)." },
+      { "year": "1941", "text": "He died on 8 January and is buried in Africa." }
+    ]
+  },
+  "history": {
+    "title": "History",
+    "intro": [
+      "Scouts (from English \"scout\") form a voluntary, non-formal educational organisation for children and young people.",
+      "Following the ideas of founder Robert Baden-Powell (1857–1941), scouts aim to raise their members as honest, noble-spirited, strong-charactered, healthy, conscientious people and useful citizens.",
+      "Worldwide, the scout movement has more than 28 million scouts of all ages from 216 countries and regions. Across its whole history, over 580 million people have belonged to it."
+    ],
+    "mottoTitle": "Mottos",
+    "mottos": [
+      "Scout motto — \"For God, Homeland and neighbour\"",
+      "Sea Scout motto — \"For God, Homeland, the Sea and neighbour\"",
+      "Scout sub-motto — \"Be prepared\""
+    ],
+    "flagMainTitle": "The Sea Scout flag",
+    "flagMain": [
+      { "image": "/assets/flag-main-2.jpg", "label": "Sea Scout flag" },
+      { "image": "/assets/flag-main-1.jpg", "label": "Sea Scout flag (reverse)" }
+    ],
+    "timelineTitle": "History of the Lithuanian Sea Scouts",
+    "bookCaption": "\"Scouting for Boys\", 1908.",
+    "flagsTitle": "Historic sea scout flags",
+    "flags": [
+      { "image": "/assets/flag-zarasai.jpg", "label": "Zarasai company flag (LJSS)" },
+      { "image": "/assets/flag-panevezys.jpg", "label": "Panevėžys unit flag (LJSS)" },
+      { "image": "/assets/flag-kaunas.jpg", "label": "Kaunas Vaidotas unit flag (LJSS)" }
+    ],
+    "periods": [
+      {
+        "range": "1899–1902",
+        "paragraphs": [
+          "In Africa, during the Boer War, Great Britain fought the Orange Free State and the Transvaal. At one point the Boers besieged the small town of Mafeking, whose garrison was led by Colonel Robert Baden-Powell. He gathered a company of volunteers from the town's boys, giving them various tasks: carrying letters and orders, bringing ammunition and food, transporting the wounded, scouting and drawing maps. The siege lasted half a year."
+        ]
+      },
+      {
+        "range": "1907–1910",
+        "paragraphs": [
+          "Back in England, now a general, Baden-Powell set out to occupy children with useful and interesting activity. In 1907 he held the first scout camp with twenty boys, and described his system of youth education — scouting — in the 1908 book \"Scouting for Boys\".",
+          "Girls soon took an interest too — guide groups began forming in 1909–1910. From England the movement spread to the colonies and other countries. After the First World War the military element was dropped from scouting."
+        ]
+      },
+      {
+        "range": "1918",
+        "paragraphs": [
+          "The first scout unit in Lithuania was established. The pioneer of scouting in Lithuania was Petras Jurgėla-Jurgelevičius."
+        ]
+      },
+      {
+        "range": "1922",
+        "paragraphs": [
+          "The Lithuanian Scout Association (LSA), uniting all Lithuanian scouts, and the Lithuanian Sea Scout Union were founded.",
+          "The Lithuanian Sea Scout Union was established in Kaunas on 12 March 1922, after the first patrol was organised at the \"Aušra\" gymnasium, and on 19 April the first troop was formed from the \"Otters\" and \"Beavers\" patrols. The troop was sponsored by the Lithuanian Yacht Club in Kaunas."
+        ]
+      },
+      {
+        "range": "1923–1989",
+        "paragraphs": [
+          "In 1923 a Guides division was established. In 1924 the association was registered with WOSM; that same year saw the historic sea scout voyage from Kaunas to Klaipėda.",
+          "In 1925 the association became the Lithuanian Scout Brotherhood. The sea scouts operated as a separate organisation (led by Petras Jurgėla), rejoining the Lithuanian Scout Union in 1927.",
+          "In 1929 Povilas Dagys and Mykolas Frankas founded the first sea scout unit in Biržai. In 1930 the organisation was named the Lithuanian Scout Union.",
+          "In 1933 Lord Robert Baden-Powell visited the Lithuanian scouts. In 1935 a parade featured 115 sea scout kayaks. By 1936 the inland-water routes covered by sea scouts totalled 10,000 kilometres.",
+          "After the Soviet occupation on 15 June 1940 the organisation's activity was halted and continued in exile. In 1988 the scouting movement was reborn — sea scouts first formed in Kaunas and Klaipėda. The restoration congress took place on 29 April 1989."
+        ]
+      },
+      {
+        "range": "1991–2001",
+        "paragraphs": [
+          "In 1991 the \"Žemaitija Scout Organisation\" was founded. In 1995 the former LSS split into two organisations — the Lithuanian Scout Union (LSS) and Lithuanian Scouting (LS).",
+          "On 25 July 1997 Lithuanian Scouting became a member of the World Organization of the Scout Movement (WOSM). In 2001 Lithuanian Sea Scouting was founded."
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "title": "Attributes",
+    "intro": "The scout uniform is worn by every child or adult who scouts for any length of time. A tidy uniform is a great honour for a scout!",
+    "uniformTitle": "What does a tidy uniform look like?",
+    "uniformText": "For a tidy uniform you need to know where to sew the emblems, pin the badges and embroider your name. The diagram marks the place of every badge.",
+    "neckerchiefTitle": "Neckerchiefs by age group",
+    "neckerchiefs": [
+      { "image": "/assets/uniform-bebrai.png", "label": "6–10 yrs — light blue" },
+      { "image": "/assets/uniform-skautai.png", "label": "10–14 yrs — blue with 3 stripes" },
+      { "image": "/assets/uniform-patyre.png", "label": "14–18 yrs — black with 3 stripes" }
+    ],
+    "emblemTitle": "The Sea Scout emblem",
+    "emblem": "The emblem is made of several parts, each with its own meaning. The rue symbolises the sisterhood, and the fleur-de-lis inside it the brotherhood. The three petals of the fleur-de-lis stand for the motto \"For God, Homeland and neighbour\" and are joined together — the unity of scouting. The Columns of Gediminas are a symbol of Lithuania, and the anchor is a reminder not to forget safety at sea.",
+    "qa": [
+      {
+        "q": "What do the neckerchiefs scouts wear mean?",
+        "a": "Neckerchiefs mark a scout's age group. Scouts aged 6–10 wear a light blue neckerchief, 10–14 a blue one with three stripes, and 14–18 a black one with three white stripes."
+      },
+      {
+        "q": "What do the three stripes on sea scout neckerchiefs mean?",
+        "a": "Captain Nelson sewed a white stripe onto his neckerchief after each battle won. Having won three battles, he left three white stripes — the origin of the sea scout neckerchief."
+      },
+      {
+        "q": "I don't have a neckerchief. How do I get one?",
+        "a": "The neckerchief is received on taking the scout promise, usually given during the first year of scouting."
+      },
+      {
+        "q": "Where can I get the uniform, badges and emblems?",
+        "a": "The uniform and all its attributes can be bought from the scout shop."
+      },
+      {
+        "q": "Still have questions?",
+        "a": "Feel free to ask the brothers and sisters at an event, or write to juru@skautai.lt."
+      }
+    ],
+    "shopLabel": "Scout shop",
+    "shopUrl": "https://parduotuve.skautai.lt/"
+  },
+  "song": {
+    "title": "Centennial song",
+    "hymnTitle": "Sea Scouts' 100th anniversary anthem",
+    "songName": "\"100 jūrmylių\" (100 Nautical Miles)",
+    "videoUrl": "https://www.youtube.com/embed/SzbpKEcM6zQ",
+    "lyrics": "Ryto rasoj plaunam kojas\nSaulei nugarą atkloję\nLietų pavertę savo draugu\nDėkojam rate už tai, ką turiu.\n\nMazgų voratinkliai siūbuoja\nLaumių žirgai nendres bučiuoja\nKaip baltos žuvėdros savo sparnus\nKeliam bures į vandenis plačius.\n\nPriedainis:\nO jau....\nVakarėjant renkamės prie laužų, ų, ų,\nDieną jūra iki kelių,\nO naktį ant žemės guliu, u, u\nIr sapnuoju, kad buriuoju\nAš irkluoju, prakaituoju.\nSese, broli, jūsų pakanka, kad jaustis gyvu!\n\nNemunu laivas aplenkia buojas.\nKarta iš kartos šimtą mylių kartoja\nTeleportuotis išties negali\nMes vėl su banga, o krantas toli.\n\nDievui, Tėvynei, Artimui, Jūrai\nŽemė mėlynai alsuoja\nKrantai išlydės ir pakvies į namus.\nGero vėjo ir leidžiamės į vandenis plačius...\n\nPriedainis. x2"
+  },
+  "library": {
+    "url": "https://drive.google.com/drive/folders/1mNeiy2-NT_TWEhPlR9neIJ4ZQDqT4EeW?usp=sharing"
+  }
+}

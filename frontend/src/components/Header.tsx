@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function Header() {
@@ -15,16 +16,16 @@ export default function Header() {
   return (
     <header>
       <div className="wrap nav">
-        <a className="brand" href="#top">
+        <Link className="brand" to="/">
           <img src="/assets/emblem-removebg.png" alt="Jūrų skautai" />
           <span>Jūrų&nbsp;Skautai</span>
-        </a>
+        </Link>
         <nav className={`nav-links${menuOpen ? " open" : ""}`} onClick={() => setMenuOpen(false)}>
-          <a href="#apie">{t("nav.about")}</a>
-          <a href="#grupes">{t("nav.ageGroups")}</a>
-          <a href="#faq">{t("nav.faq")}</a>
-          <a href="#parama">{t("nav.support")}</a>
-          <a href="#kontaktai">{t("nav.contact")}</a>
+          <Link to="/#apie">{t("nav.about")}</Link>
+          <Link to="/#grupes">{t("nav.ageGroups")}</Link>
+          <Link to="/#faq">{t("nav.faq")}</Link>
+          <Link to="/#parama">{t("nav.support")}</Link>
+          <Link to="/#kontaktai">{t("nav.contact")}</Link>
         </nav>
         <div className="nav-actions">
           <div className="lang">
@@ -35,9 +36,9 @@ export default function Header() {
               EN
             </button>
           </div>
-          <a href="#kontaktai" className="btn btn-sun" style={{ padding: "10px 20px" }}>
+          <Link to="/#kontaktai" className="btn btn-sun" style={{ padding: "10px 20px" }}>
             {t("nav.cta")}
-          </a>
+          </Link>
           <button className="burger" onClick={() => setMenuOpen((o) => !o)} aria-label="Menu">
             ☰
           </button>

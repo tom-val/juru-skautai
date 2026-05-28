@@ -22,10 +22,57 @@ npm run build    # outputs to frontend/dist/
 npm run preview  # preview the production build locally
 ```
 
+## Initial setup (one-time)
+
+Run these steps once per AWS account, before the first deploy.
+
+### 1. Bootstrap AWS resources
+
+[`infra/bootstrap.sh`](infra/bootstrap.sh) creates everything the Terraform backend and
+CI/CD need: the state S3 bucket, the DynamoDB lock table, the GitHub Actions OIDC provider,
+and the IAM role GitHub Actions assumes to deploy. It is idempotent — safe to re-run.
+
+The easiest way is **AWS CloudShell** (it already has the AWS CLI and admin credentials):
+
+1. Open the [AWS Console](https://console.aws.amazon.com/), pick region **eu-central-1**,
+   and launch **CloudShell** (the terminal icon in the top bar).
+2. Upload the script (CloudShell **Actions → Upload file**) or paste its contents, then run:
+
+   ```bash
+   bash bootstrap.sh
+   ```
+
+3. Copy the `AWS_ROLE_ARN` it prints at the end.
+
+It creates:
+
+| Resource | Name |
+| --- | --- |
+| State bucket (versioned, encrypted, private) | `juru-skautai-terraform-state` |
+| Lock table | `juru-skautai-terraform-locks` |
+| OIDC provider | `token.actions.githubusercontent.com` |
+| Deploy role | `juru-skautai-github-actions` |
+
+### 2. Add the GitHub secret
+
+In the repo: **Settings → Secrets and variables → Actions → New repository secret**
+
+- `AWS_ROLE_ARN` — the role ARN printed by the script
+- `ACM_CERTIFICATE_ARN` *(optional)* — only when adding the custom domain (see below)
+
+The workflow uses a `Prod` environment, so also create it under
+**Settings → Environments → New environment → `Prod`**.
+
+### 3. First deploy
+
+Push to `main` — `.github/workflows/deploy-prod.yml` runs Terraform apply → `npm run build`
+→ `aws s3 sync` → CloudFront invalidation. The site comes up on the
+`*.cloudfront.net` URL shown in the Terraform output `cloudfront_domain_name`.
+
 ## Infrastructure
 
 Terraform provisions a private S3 bucket and a CloudFront distribution (OAC) in
-`eu-central-1`.
+`eu-central-1`. To run it locally instead of via CI (requires the bootstrap above):
 
 ```bash
 cd infra/environments/prod
@@ -34,22 +81,19 @@ terraform plan
 terraform apply
 ```
 
-One-time bootstrap (before the first apply): create the state bucket
-`juru-skautai-terraform-state` and the DynamoDB lock table
-`juru-skautai-terraform-locks`.
+## Custom domain (juruskautai.lt)
 
-The site serves on the default `*.cloudfront.net` URL. To use `juruskautai.lt`, create an
-ACM certificate in **us-east-1** and pass its ARN:
+The site serves on the default `*.cloudfront.net` URL until a domain is wired up. To use
+`juruskautai.lt`, create an ACM certificate in **us-east-1** (CloudFront only accepts certs
+from that region), then either set the `ACM_CERTIFICATE_ARN` GitHub secret or pass it
+directly:
 
 ```bash
 terraform apply -var="acm_certificate_arn=arn:aws:acm:us-east-1:...:certificate/..."
 ```
 
-## Deployment
-
-Pushes to `main` run `.github/workflows/deploy-prod.yml`: Terraform apply → `npm run build`
-→ `aws s3 sync` → CloudFront invalidation. Configure repo secrets `AWS_ROLE_ARN` and
-(optionally) `ACM_CERTIFICATE_ARN`.
+This enables the `juruskautai.lt` / `www.juruskautai.lt` aliases. Point the domain's DNS at
+the CloudFront distribution afterwards.
 
 ## Repository layout
 

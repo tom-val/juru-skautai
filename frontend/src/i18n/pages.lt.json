@@ -1,0 +1,151 @@
+{
+  "common": {
+    "home": "Pagrindinis",
+    "backHome": "← Į pradžią"
+  },
+  "founder": {
+    "title": "Skautų įkūrėjas",
+    "subtitle": "Robertas Stephensonas Smythas Baden-Powell’is",
+    "intro": "Pasaulio skautų judėjimo įkūrėjas, kurio idėjomis ir šiandien vadovaujasi skautai visame pasaulyje.",
+    "photoCaption": "B-P su vilkiukais pirmajame tarptautiniame Jamboree Olimpijoje, 1920 m.",
+    "portraitCaption": "Lordas Robertas Baden-Powell’is (1857–1941)",
+    "timeline": [
+      { "year": "1857", "text": "Vasario 22 d. gimė pasaulio skautų įkūrėjas Robertas Stephensonas Smythas Baden-Powell’is. Jo tėvas H. G. Baden-Powell’is buvo Oksfordo universiteto profesorius, Karališkosios mokslų akademijos narys, parašęs nemažai filosofijos ir teologijos veikalų." },
+      { "year": "1869", "text": "Pradėjo mokytis jūrininkystės „Conway“ laive. Su laivu nesiskirdavo net šventadieniais – plaukiodavo jūra su broliais. Čia greitai išmoko valdyti laivą, stovyklauti, virti ir greitai vykdyti vyresniųjų įsakymus, įgijo gamtininko ir žvalgo patyrimą." },
+      { "year": "1871", "text": "Išlaikė egzaminus į Charterhouse mokyklą." },
+      { "year": "1873", "text": "Charterhouse mokykla perkelta į Godalmingą. Netoliese esančiame tankiame miške Robertas išmoko sėlinti, sekti pėdsakus, stebėti paukščių ir žvėrių gyvenimą, pasistatyti palapinę, naudotis kirvuku." },
+      { "year": "1876", "text": "Įstojo į britų kariuomenę ir išvyko kariauti į Indiją." },
+      { "year": "1883", "text": "Paskirtas pulko adjutantu." },
+      { "year": "1899", "text": "Mafekingo apsuptyje pagarsėjo suorganizavęs savanorius berniukus – kadetus, kurie atliko ryšininkų pareigas ir pasižymėjo drąsa bei atsakingumu. Tai buvo skautybės idėjos pradžia." },
+      { "year": "1900", "text": "Karalienė Viktorija jam suteikė generolo-majoro laipsnį." },
+      { "year": "1901", "text": "Apdovanotas lordo titulu." },
+      { "year": "1907", "text": "Surengė pirmąją skautų stovyklą Brownsea saloje. Ši data laikoma oficialia skautybės pradžia." },
+      { "year": "1908", "text": "Išleido knygą „Skautybė berniukams“ (Scouting for Boys)." },
+      { "year": "1910", "text": "Pasitraukė iš kariuomenės ir atsidėjo skautybei." },
+      { "year": "1912", "text": "Išvyko į kelionę aplink pasaulį studijuoti skautybės įvairiose šalyse. Kelionėje sutiko Olave St. Clair Soames, kurią vedė grįžęs į Angliją." },
+      { "year": "1933", "text": "Rugpjūčio 17 d. Baden-Powell’is ir skaučių globėja Olave su šeima bei 650 anglų skautų vadų ir vadovių atvyko į Palangą." },
+      { "year": "1938", "text": "Jau silpnos sveikatos išvyko į Afriką (Keniją)." },
+      { "year": "1941", "text": "Sausio 8 d. mirė. Palaidotas Afrikoje." }
+    ]
+  },
+  "history": {
+    "title": "Istorija",
+    "intro": [
+      "Skautai (angl. scout – „žvalgas“) – visuomeninė savanoriška vaikų ir jaunimo neformalaus ugdymo organizacija.",
+      "Vadovaudamiesi pradininko Roberto Baden-Powellio (1857–1941) idėjomis, skautai siekia ugdyti savo narius dorais, kilnios dvasios, tvirto būdo, sveikais, sąmoningais žmonėmis ir naudingais piliečiais.",
+      "Pasaulyje skautų judėjimui priklauso daugiau nei 28 milijonai įvairaus amžiaus skautų iš 216 šalių bei regionų. Per visą skautijos istoriją judėjimui priklausė per 580 milijonų skautų."
+    ],
+    "mottoTitle": "Šūkiai",
+    "mottos": [
+      "Skautų šūkis – „Dievui, Tėvynei, artimui“",
+      "Jūrų skautų šūkis – „Dievui, Tėvynei, Jūrai ir artimui“",
+      "Skautų pošūkis – „Budėk“"
+    ],
+    "flagMainTitle": "Jūrų skautų vėliava",
+    "flagMain": [
+      { "image": "/assets/flag-main-2.jpg", "label": "Jūrų skautų vėliava" },
+      { "image": "/assets/flag-main-1.jpg", "label": "Jūrų skautų vėliava (reversas)" }
+    ],
+    "timelineTitle": "Lietuvos jūrų skautų istorija",
+    "bookCaption": "„Skautybė berniukams“ (Scouting for Boys), 1908 m.",
+    "flagsTitle": "Istorinės jūrų skautų vėliavos",
+    "flags": [
+      { "image": "/assets/flag-zarasai.jpg", "label": "LJSS Zarasų kuopos vėliava" },
+      { "image": "/assets/flag-panevezys.jpg", "label": "LJSS Panevėžio tunto vėliava" },
+      { "image": "/assets/flag-kaunas.jpg", "label": "LJSS Kauno Vaidoto tunto vėliava" }
+    ],
+    "periods": [
+      {
+        "range": "1899–1902",
+        "paragraphs": [
+          "Afrikoje, Būrų kare, Didžioji Britanija kariavo su Oranžija ir Transvaliu. Vienu metu būrai apgulė nedidelį Mafekingo miestą, kurio įgulai vadovavo pulkininkas Robertas Baden-Powell’is. Jis surinko savanorių kuopą iš miesto berniukų, kuriems pavedė įvairias užduotis: išnešioti laiškus ir įsakymus, atnešti šovinių bei maisto, gabenti sužeistuosius, eiti į žvalgybą, piešti žemėlapius. Apgultis truko pusę metų."
+        ]
+      },
+      {
+        "range": "1907–1910",
+        "paragraphs": [
+          "Grįžęs į Angliją, jau generolu tapęs Baden-Powell’is sumanė užimti vaikus naudinga ir įdomia veikla. 1907 m. surengė pirmąją skautų stovyklą, kurioje dalyvavo dvidešimt berniukų. Savo jaunimo auklėjimo sistemą – skautybę – aprašė 1908 m. knygoje „Skautybė berniukams“.",
+          "Judėjimu greitai susidomėjo ir mergaitės – 1909–1910 m. ėmė kurtis skaučių grupės. Iš Anglijos judėjimas išplito į kolonijas ir kitas valstybes. Po Pirmojo pasaulinio karo atsisakyta karinio elemento skautavime."
+        ]
+      },
+      {
+        "range": "1918",
+        "paragraphs": [
+          "Įsteigtas pirmasis skautiškas vienetas Lietuvoje. Skautavimo pradininkas Lietuvoje buvo Petras Jurgėla-Jurgelevičius."
+        ]
+      },
+      {
+        "range": "1922",
+        "paragraphs": [
+          "Įkurta visus Lietuvos skautus apjungianti Lietuvos skautų asociacija (LSA) ir Lietuvos jūrų skautų sąjunga.",
+          "Lietuvos jūrų skautų sąjunga įsteigta Kaune 1922 m. kovo 12 d. „Aušros“ gimnazijoje suorganizavus pirmąją skiltį, o balandžio 19 d. iš „Ūdrų“ ir „Bebrų“ skilčių – pirmąją draugovę. Draugovę globojo Kaune įsteigtas Lietuvos jachtklubas."
+        ]
+      },
+      {
+        "range": "1923–1989",
+        "paragraphs": [
+          "1923 m. įsteigiamas Skaučių skyrius. 1924 m. Lietuvos skautų asociacija įregistruojama WOSM; tais pačiais metais – istorinė jūrų skautų kelionė iš Kauno į Klaipėdą.",
+          "1925 m. asociacija tampa Lietuvos skautų brolija. Jūrų skautai veikė kaip atskira organizacija (vadovaujama Petro Jurgėlos), 1927 m. vėl susilieję su Lietuvos skautų sąjunga.",
+          "1929 m. pirmąjį jūrų skautų vienetą Biržuose įkūrė Povilas Dagys ir Mykolas Frankas. 1930 m. organizacija pavadinama Lietuvos skautų sąjunga.",
+          "1933 m. Lietuvos skautus aplankė lordas Robertas Baden-Powell’is. 1935 m. parade dalyvavo 115 jūrų skautų baidarių. 1936 m. jūrų skautų nuplaukti vidaus vandenų keliai sudarė 10 tūkstančių kilometrų.",
+          "1940 m. birželio 15 d. Lietuvą okupavus Sovietų Sąjungai, organizacijos veikla nutraukiama ir tęsiama išeivijoje. 1988 m. atgimė skautizmo judėjimas – jūrų skautai pirmiausia ėmė formuotis Kaune ir Klaipėdoje. 1989 m. balandžio 29 d. įvyko Atkuriamasis suvažiavimas."
+        ]
+      },
+      {
+        "range": "1991–2001",
+        "paragraphs": [
+          "1991 m. įkurta „Žemaitijos skautų organizacija“. 1995 m. iš buvusios LSS atsirado dvi organizacijos – Lietuvos skautų sąjunga (LSS) ir Lietuvos skautija (LS).",
+          "1997 m. liepos 25 d. Lietuvos skautija tapo Pasaulinės skautų judėjimo organizacijos (WOSM) nare. 2001 m. įkurta Lietuvos jūrų skautija."
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "title": "Atributika",
+    "intro": "Skautiška uniforma – drabužis, kuriuo puošiasi kiekvienas ilgiau skautaujantis vaikas ar suaugęs. Tvarkinga uniforma – didelė garbė skautui!",
+    "uniformTitle": "Kaip atrodo tvarkinga uniforma?",
+    "uniformText": "Kad uniforma būtų tvarkinga, reikia žinoti, kur prisisiūti emblemas, prisegti ženkliukus ir išsiuvinėti savo vardą. Schemoje pažymėta kiekvieno ženklo vieta.",
+    "neckerchiefTitle": "Kaklaraiščiai pagal amžiaus grupę",
+    "neckerchiefs": [
+      { "image": "/assets/uniform-bebrai.png", "label": "6–10 m. – žydras" },
+      { "image": "/assets/uniform-skautai.png", "label": "10–14 m. – mėlynas su 3 juostelėmis" },
+      { "image": "/assets/uniform-patyre.png", "label": "14–18 m. – juodas su 3 juostelėmis" }
+    ],
+    "emblemTitle": "Jūrų skautų ženklas",
+    "emblem": "Ženklas susideda iš kelių dalių, kiekviena turinti savo reikšmę. Rūtelė simbolizuoja seseriją, o lelijėlė viduje – broliją. Trys lelijėlės lapai simbolizuoja šūkį „Dievui, Tėvynei, artimui“ ir yra sujungti – tai skautijos vienybė. Gediminaičių stulpai – Lietuvos simbolis, o inkaras kviečia nepamiršti saugumo jūroje.",
+    "qa": [
+      {
+        "q": "Ką reiškia kaklaraiščiai, su kuriais vaikšto skautai?",
+        "a": "Kaklaraiščiai žymi skauto amžiaus grupę. 6–10 m. skautai nešioja žydrą kaklaraištį, 10–14 m. – mėlyną su trimis juostelėmis, 14–18 m. – juodą su trimis baltomis juostelėmis."
+      },
+      {
+        "q": "Ką reiškia trys juostelės ant jūrų skautų kaklaraiščių?",
+        "a": "Kapitonas Nelsonas po kiekvieno laimėto mūšio ant kaklaskarės užsiūdavo baltą juostelę. Laimėjęs tris mūšius, paliko tris baltas juosteles – tai jūrų skautų kaklaraiščių ištakos."
+      },
+      {
+        "q": "Neturiu kaklaraiščio. Kaip jį gauti?",
+        "a": "Kaklaraištis gaunamas duodant įžodį. Pirmasis įžodis įprastai duodamas per pirmuosius skautavimo metus."
+      },
+      {
+        "q": "Iš kur gauti uniformą, ženkliukus ir emblemas?",
+        "a": "Uniformą ir visą atributiką galima įsigyti skautiškoje parduotuvėje."
+      },
+      {
+        "q": "Dar turi klausimų?",
+        "a": "Per renginį drąsiai klausk brolių ir sesių arba parašyk el. paštu juru@skautai.lt."
+      }
+    ],
+    "shopLabel": "Skautiška parduotuvė",
+    "shopUrl": "https://parduotuve.skautai.lt/"
+  },
+  "song": {
+    "title": "Šimtmečio daina",
+    "hymnTitle": "Jūrų skautų 100-mečio himnas",
+    "songName": "„100 jūrmylių“",
+    "videoUrl": "https://www.youtube.com/embed/SzbpKEcM6zQ",
+    "lyrics": "Ryto rasoj plaunam kojas\nSaulei nugarą atkloję\nLietų pavertę savo draugu\nDėkojam rate už tai, ką turiu.\n\nMazgų voratinkliai siūbuoja\nLaumių žirgai nendres bučiuoja\nKaip baltos žuvėdros savo sparnus\nKeliam bures į vandenis plačius.\n\nPriedainis:\nO jau....\nVakarėjant renkamės prie laužų, ų, ų,\nDieną jūra iki kelių,\nO naktį ant žemės guliu, u, u\nIr sapnuoju, kad buriuoju\nAš irkluoju, prakaituoju.\nSese, broli, jūsų pakanka, kad jaustis gyvu!\n\nNemunu laivas aplenkia buojas.\nKarta iš kartos šimtą mylių kartoja\nTeleportuotis išties negali\nMes vėl su banga, o krantas toli.\n\nDievui, Tėvynei, Artimui, Jūrai\nŽemė mėlynai alsuoja\nKrantai išlydės ir pakvies į namus.\nGero vėjo ir leidžiamės į vandenis plačius...\n\nPriedainis. x2"
+  },
+  "library": {
+    "url": "https://drive.google.com/drive/folders/1mNeiy2-NT_TWEhPlR9neIJ4ZQDqT4EeW?usp=sharing"
+  }
+}

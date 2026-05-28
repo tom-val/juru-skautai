@@ -182,10 +182,11 @@
     ]
   },
   "footer": {
-    "tagline": "Lietuvos jūrų skautai Kaune. Kablys visam gyvenimui!",
+    "tagline": "Lietuvos jūrų skautai. Kablys visam gyvenimui!",
     "scoutsTitle": "Jūrų skautams",
     "scouts": ["Skautų įkūrėjas", "Istorija", "Atributika", "Šimtmečio daina"],
     "leadersTitle": "Vadovams",
+    "library": "Biblioteka",
     "linksTitle": "Naudingos nuorodos",
     "rights": "Visos teisės saugomos"
   }
