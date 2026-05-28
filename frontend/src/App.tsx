@@ -5,6 +5,8 @@ import Founder from "./pages/Founder";
 import History from "./pages/History";
 import Attributes from "./pages/Attributes";
 import Song from "./pages/Song";
+import Abilities from "./pages/Abilities";
+import AbilityDetail from "./pages/AbilityDetail";
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
         <Route path="/istorija" element={<History />} />
         <Route path="/atributika" element={<Attributes />} />
         <Route path="/daina" element={<Song />} />
+        <Route path="/gebejimai" element={<Abilities />} />
+        <Route path="/gebejimai/:slug" element={<AbilityDetail />} />
       </Route>
     </Routes>
   );
