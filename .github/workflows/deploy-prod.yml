@@ -20,6 +20,9 @@ jobs:
       s3_frontend_bucket: ${{ steps.outputs.outputs.s3_frontend_bucket }}
       cloudfront_distribution_id: ${{ steps.outputs.outputs.cloudfront_distribution_id }}
       cloudfront_domain_name: ${{ steps.outputs.outputs.cloudfront_domain_name }}
+      api_url: ${{ steps.outputs.outputs.api_url }}
+      user_pool_id: ${{ steps.outputs.outputs.user_pool_id }}
+      user_pool_client_id: ${{ steps.outputs.outputs.user_pool_client_id }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,6 +31,20 @@ jobs:
         with:
           terraform_version: "1.5.7"
           terraform_wrapper: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      # Lambda bundles must exist before `terraform apply` zips them.
+      - name: Build backend Lambdas
+        working-directory: backend
+        run: |
+          npm ci
+          npm run build
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -49,6 +66,9 @@ jobs:
           echo "s3_frontend_bucket=$(terraform output -raw s3_frontend_bucket)" >> "$GITHUB_OUTPUT"
           echo "cloudfront_distribution_id=$(terraform output -raw cloudfront_distribution_id)" >> "$GITHUB_OUTPUT"
           echo "cloudfront_domain_name=$(terraform output -raw cloudfront_domain_name)" >> "$GITHUB_OUTPUT"
+          echo "api_url=$(terraform output -raw api_url)" >> "$GITHUB_OUTPUT"
+          echo "user_pool_id=$(terraform output -raw user_pool_id)" >> "$GITHUB_OUTPUT"
+          echo "user_pool_client_id=$(terraform output -raw user_pool_client_id)" >> "$GITHUB_OUTPUT"
 
   frontend:
     name: Deploy Frontend
@@ -79,6 +99,10 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_API_URL: ${{ needs.infra.outputs.api_url }}
+          VITE_USER_POOL_ID: ${{ needs.infra.outputs.user_pool_id }}
+          VITE_USER_POOL_CLIENT_ID: ${{ needs.infra.outputs.user_pool_client_id }}
 
       - name: Sync to S3
         run: aws s3 sync dist/ s3://${{ needs.infra.outputs.s3_frontend_bucket }} --delete

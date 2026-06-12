@@ -5,10 +5,12 @@ static, bilingual (Lithuanian default, English). "Kablys visam gyvenimui!"
 
 ## Tech Stack
 
-- **Frontend:** React 19, Vite, TypeScript, i18next (LT/EN)
+- **Frontend:** React 19, Vite, TypeScript, i18next (LT/EN), amazon-cognito-identity-js
 - **Hosting:** S3 (private bucket) + CloudFront (OAC)
+- **Abilities tracker backend:** Cognito (team-lead auth), API Gateway (HTTP API) +
+  Node 24 Lambdas, DynamoDB. Lambda code in `backend/`, bundled with esbuild.
 - **Infrastructure:** Terraform (modular), single prod environment
-- **CI/CD:** GitHub Actions (Terraform apply → build → S3 sync → CloudFront invalidation)
+- **CI/CD:** GitHub Actions (build backend → Terraform apply → build frontend → S3 sync → CloudFront invalidation)
 - **Region:** eu-central-1, CloudFront PriceClass_100
 
 ## Architecture
@@ -18,6 +20,13 @@ static, bilingual (Lithuanian default, English). "Kablys visam gyvenimui!"
 - Custom domain (juruskautai.lt) is wired but disabled by default — set
   `acm_certificate_arn` (an ACM cert in us-east-1) to enable the alias + TLS.
   Until then the site serves on the default `*.cloudfront.net` URL.
+- **Abilities tracker:** team leads sign up at `/vadovas` (Cognito email/password +
+  name + tuntas) and confirm their email with a code, then register members from
+  `/vadovas/skydelis`. Each member gets a unique ID (`firstnamelastname-xxxx`); members
+  open `/narys/<id>` with no password (the ID is the credential). The `api` Lambda
+  reads/writes DynamoDB (progress is saved as per-key deltas, validated server-side);
+  the `authorizer` Lambda validates the Cognito JWT on admin routes. Progress keys use
+  stable task IDs from `abilities.json` (`slug/level/t1`) — never renumber existing IDs.
 
 ## Project Structure
 
@@ -25,14 +34,21 @@ static, bilingual (Lithuanian default, English). "Kablys visam gyvenimui!"
 frontend/
   src/
     components/      One component per page section (Header, Hero, ...)
+    pages/           Routed pages (incl. LeadAuth, LeadDashboard, MemberHome, ...)
+    auth/            Cognito wrapper + AuthContext
+    lib/             abilities.ts (pure helpers) + api.ts (members API client)
     i18n/            i18next setup + lt.json / en.json content
   public/assets/     Images and the scout emblem
+backend/
+  src/               api.ts, authorizer.ts, members.ts, progress.ts, ids.ts, http.ts
+  build.mjs          esbuild → dist/{api,authorizer}/index.mjs
 infra/
   modules/
     s3-frontend/     Private S3 bucket
     cloudfront/      CloudFront distribution + OAC
+    backend/         Cognito + DynamoDB + Lambdas + API Gateway
   environments/
-    prod/            Production composition (S3 + CloudFront + bucket policy)
+    prod/            Production composition (S3 + CloudFront + backend + bucket policy)
 mockups/             Static HTML design mockup (reference only)
 ```
 
@@ -55,7 +71,12 @@ cd frontend && npm install && npm run dev     # Local dev server (http://localho
 cd frontend && npm run build                   # Production build → dist/
 cd frontend && npm run lint                    # Lint
 
-# Infrastructure
+# Backend (abilities tracker Lambdas)
+cd backend && npm install && npm run build     # esbuild → dist/{api,authorizer}
+cd backend && npm test                         # Unit tests (node --test)
+
+# Infrastructure (build backend first so the Lambda zips exist)
+cd backend && npm ci && npm run build
 cd infra/environments/prod && terraform init && terraform plan
 ```
 

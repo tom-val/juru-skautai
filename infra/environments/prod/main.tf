@@ -22,6 +22,21 @@ module "cloudfront" {
   acm_certificate_arn            = var.acm_certificate_arn
 }
 
+# --- Backend (Cognito + DynamoDB + Lambda + API Gateway) ---
+
+module "backend" {
+  source = "../../modules/backend"
+
+  project_name = local.project_name
+  environment  = local.environment
+
+  # Allow the SPA (CloudFront, optional custom domain) and local dev to call the API.
+  cors_allow_origins = concat(
+    ["https://${module.cloudfront.distribution_domain_name}", "http://localhost:5173"],
+    var.acm_certificate_arn != "" ? ["https://juruskautai.lt", "https://www.juruskautai.lt"] : [],
+  )
+}
+
 # S3 bucket policy granting CloudFront OAC read access.
 resource "aws_s3_bucket_policy" "frontend" {
   bucket = module.s3_frontend.bucket_id

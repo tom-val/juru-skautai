@@ -1,26 +1,31 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import ContentPage from "../components/ContentPage";
-import { useProgress } from "../hooks/useProgress";
+import MemberStatusGate from "../components/MemberStatusGate";
+import { useMemberProgress } from "../hooks/useMemberProgress";
 import {
   getAbility,
   sutarimai,
   taskKey,
-  sutKey,
   isLevelComplete,
   levelProgress,
 } from "../lib/abilities";
+import { memberPath } from "../lib/paths";
 
-export default function AbilityDetail() {
-  const { slug = "" } = useParams();
-  const { checked, toggle } = useProgress();
+export default function MemberAbilityDetail() {
+  const { memberId = "", slug = "" } = useParams();
+  const { checked, toggle, status, saveFailed } = useMemberProgress(memberId);
   const ability = getAbility(slug);
 
-  if (!ability) return <Navigate to="/gebejimai" replace />;
+  if (!ability) return <Navigate to={memberPath(memberId)} replace />;
 
   return (
-    <ContentPage title={ability.title} subtitle="Pažymėk atliktus gebėjimus. Lygmuo pasiektas, kai pažymėti visi punktai.">
+    <MemberStatusGate
+      status={status}
+      saveFailed={saveFailed}
+      title={ability.title}
+      subtitle="Pažymėk atliktus gebėjimus. Lygmuo pasiektas, kai pažymėti visi punktai."
+    >
       <div className="back-row">
-        <Link to="/gebejimai" className="btn btn-outline">
+        <Link to={memberPath(memberId)} className="btn btn-outline">
           ← Visi gebėjimai
         </Link>
       </div>
@@ -44,13 +49,13 @@ export default function AbilityDetail() {
               </div>
 
               <ul className="checks">
-                {lvl.tasks.map((task, i) => {
-                  const key = taskKey(slug, lvl.level, i);
+                {lvl.tasks.map((task) => {
+                  const key = taskKey(slug, lvl.level, task.id);
                   return (
                     <li key={key}>
                       <label>
                         <input type="checkbox" checked={!!checked[key]} onChange={() => toggle(key)} />
-                        <span>{task}</span>
+                        <span>{task.text}</span>
                       </label>
                     </li>
                   );
@@ -60,13 +65,13 @@ export default function AbilityDetail() {
               <div className="sutarimai">
                 <span className="sutarimai-title">Trys sutarimai · aš, vienetas, vadovas</span>
                 <ul className="checks">
-                  {sutarimai.map((s, i) => {
-                    const key = sutKey(slug, lvl.level, i);
+                  {sutarimai.map((s) => {
+                    const key = taskKey(slug, lvl.level, s.id);
                     return (
                       <li key={key}>
                         <label>
                           <input type="checkbox" checked={!!checked[key]} onChange={() => toggle(key)} />
-                          <span>{s}</span>
+                          <span>{s.text}</span>
                         </label>
                       </li>
                     );
@@ -77,6 +82,6 @@ export default function AbilityDetail() {
           );
         })}
       </div>
-    </ContentPage>
+    </MemberStatusGate>
   );
 }

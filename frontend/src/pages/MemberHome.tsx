@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
-import ContentPage from "../components/ContentPage";
-import { useProgress } from "../hooks/useProgress";
+import { Link, useParams } from "react-router-dom";
+import MemberStatusGate from "../components/MemberStatusGate";
+import { useMemberProgress } from "../hooks/useMemberProgress";
 import { completedCount, getAbility, highestLevel } from "../lib/abilities";
+import { memberPath } from "../lib/paths";
 
 // Official emblem layout (rows: blue / red / green groups).
 const EMBLEM = [
@@ -10,15 +11,18 @@ const EMBLEM = [
   "medziu", "zygiu", "stovyklu",
 ];
 
-export default function Abilities() {
-  const { checked } = useProgress();
+export default function MemberHome() {
+  const { memberId = "" } = useParams();
+  const { member, checked, status, saveFailed } = useMemberProgress(memberId);
 
   return (
-    <ContentPage
+    <MemberStatusGate
+      status={status}
+      saveFailed={saveFailed}
       title="Laukinių įgūdžių gebėjimai"
-      subtitle="Pasižymėk atliktus gebėjimus ir sek savo lygmenis. Pažanga saugoma tik šioje naršyklėje."
+      subtitle="Pasižymėk atliktus gebėjimus ir sek savo lygmenis. Pažanga saugoma tavo paskyroje."
     >
-      <h2 className="greeting">Labas, Ugne!</h2>
+      <h2 className="greeting">Labas, {member?.firstName ?? ""}!</h2>
 
       <p className="emblem-label">Tavo emblema</p>
       <div className="emblem">
@@ -27,7 +31,7 @@ export default function Abilities() {
           if (!a) return null;
           const lvl = highestLevel(checked, a);
           return (
-            <Link to={`/gebejimai/${slug}`} key={slug} title={a.title}>
+            <Link to={memberPath(memberId, slug)} key={slug} title={a.title}>
               <img
                 src={`/assets/abilities/${slug}-${lvl || 1}.png`}
                 alt={a.title}
@@ -45,7 +49,7 @@ export default function Abilities() {
           const lvl = highestLevel(checked, a);
           const done = completedCount(checked, a);
           return (
-            <Link to={`/gebejimai/${a.slug}`} className="ability-card" key={a.slug}>
+            <Link to={memberPath(memberId, a.slug)} className="ability-card" key={a.slug}>
               <div className="level-badge">
                 <img
                   src={`/assets/abilities/${a.slug}-${lvl || 1}.png`}
@@ -64,6 +68,6 @@ export default function Abilities() {
           );
         })}
       </div>
-    </ContentPage>
+    </MemberStatusGate>
   );
 }

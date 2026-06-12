@@ -69,13 +69,40 @@ Push to `main` — `.github/workflows/deploy-prod.yml` runs Terraform apply → 
 → `aws s3 sync` → CloudFront invalidation. The site comes up on the
 `*.cloudfront.net` URL shown in the Terraform output `cloudfront_domain_name`.
 
-## Infrastructure
+## Abilities tracker (accounts + persistence)
 
-Terraform provisions a private S3 bucket and a CloudFront distribution (OAC) in
-`eu-central-1`. To run it locally instead of via CI (requires the bootstrap above):
+The `/gebejimai` abilities tracker is backed by AWS so progress is saved per member:
+
+- **Team leads** register at `/vadovas` (email + password, name + tuntas) via **Cognito**
+  and confirm their email with a code, then add members from the dashboard
+  (`/vadovas/skydelis`). Each member gets a unique ID (`firstnamelastname-xxxx`).
+- **Members** open `/narys/<id>` (or type their ID at `/gebejimai`) — no password; the ID
+  is the credential. Progress is stored in **DynamoDB**.
+- A **Node 24 Lambda** handles the data API behind **API Gateway (HTTP API)**; a second
+  **Lambda authorizer** validates the Cognito token on the admin (lead) routes.
+
+Backend code lives in [`backend/`](backend/) (bundled with esbuild). Build + test:
 
 ```bash
-cd infra/environments/prod
+cd backend
+npm install
+npm run build   # → dist/{api,authorizer}  (Terraform zips these)
+npm test
+```
+
+The frontend reads `VITE_API_URL`, `VITE_USER_POOL_ID`, `VITE_USER_POOL_CLIENT_ID`
+(injected from Terraform outputs in CI; see [`frontend/.env.example`](frontend/.env.example)).
+
+## Infrastructure
+
+Terraform provisions a private S3 bucket + CloudFront distribution (OAC) and the tracker
+backend (Cognito, DynamoDB, Lambdas, API Gateway) in `eu-central-1`. To run it locally
+instead of via CI (requires the bootstrap above), **build the Lambdas first** so the zips
+exist:
+
+```bash
+cd backend && npm ci && npm run build
+cd ../infra/environments/prod
 terraform init
 terraform plan
 terraform apply
@@ -100,5 +127,6 @@ the CloudFront distribution afterwards.
 | Path | Purpose |
 | --- | --- |
 | `frontend/` | React + Vite SPA |
+| `backend/` | Node 24 Lambdas (members API, Cognito authorizer) |
 | `infra/` | Terraform modules and the prod environment |
 | `mockups/` | Static HTML design mockup (reference) |

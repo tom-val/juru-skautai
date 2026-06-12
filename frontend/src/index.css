@@ -284,3 +284,58 @@ footer a:hover { color: var(--sun); }
   .flags { grid-template-columns: 1fr 1fr; }
   .flag-main { grid-template-columns: 1fr; max-width: 420px; }
 }
+
+/* --- Gebėjimai: kodo įvedimas, vadovo prisijungimas, skydelis --- */
+
+/* Member ID entry */
+.id-entry { display: flex; flex-direction: column; gap: 12px; max-width: 420px; margin: 0 auto; }
+.id-entry label { font-weight: 700; color: var(--azure-deep); font-size: .9rem; }
+.id-entry input,
+.auth-form input,
+.dash-create input { width: 100%; padding: 13px 16px; border: 1px solid var(--mist-2); border-radius: 12px; font-size: 1rem; font-family: inherit; background: var(--mist); transition: border-color .15s ease, background .15s ease; }
+.id-entry input:focus,
+.auth-form input:focus,
+.dash-create input:focus { outline: none; border-color: var(--azure); background: #fff; }
+.id-entry button { justify-content: center; }
+.id-entry-hint { text-align: center; color: #7089a0; font-size: .9rem; margin: 18px auto 0; max-width: 420px; }
+.lead-link { text-align: center; margin-top: 28px; font-weight: 600; }
+.lead-link a { color: var(--azure-deep); }
+
+/* Auth card */
+.auth-page { display: flex; }
+.auth-card { max-width: 440px; margin: 0 auto; background: #fff; border: 1px solid var(--mist-2); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 36px 32px; }
+.auth-emblem { display: block; width: 84px; height: 84px; object-fit: contain; margin: 0 auto 18px; }
+.auth-card h1 { text-align: center; font-size: 1.5rem; margin-bottom: 20px; }
+.auth-form { display: grid; gap: 16px; }
+.auth-form label { display: grid; gap: 6px; font-weight: 700; font-size: .9rem; color: var(--navy-soft); }
+.auth-form button { justify-content: center; margin-top: 4px; }
+.auth-switch { display: flex; flex-direction: column; gap: 10px; align-items: center; margin-top: 22px; }
+.auth-switch button { background: none; border: 0; color: var(--azure-deep); font-weight: 600; font-size: .92rem; cursor: pointer; padding: 0; }
+.auth-switch button:hover { text-decoration: underline; }
+.auth-error { background: #fff1f0; border: 1px solid #ffd5d0; color: #b42318; border-radius: 12px; padding: 12px 16px; font-size: .92rem; margin-bottom: 16px; }
+.auth-notice { background: #f3fcfa; border: 1px solid #c7efe7; color: #0f766e; border-radius: 12px; padding: 12px 16px; font-size: .92rem; margin-bottom: 16px; }
+
+/* Lead dashboard */
+.dash-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+.dash-tuntas { color: var(--azure-deep); font-weight: 600; margin-top: 2px; }
+.dash-create { background: var(--mist); border: 1px solid var(--mist-2); border-radius: var(--radius); padding: 22px 24px; margin-bottom: 36px; }
+.dash-create h2 { font-size: 1.15rem; margin-bottom: 14px; }
+.dash-create form { display: flex; gap: 12px; flex-wrap: wrap; }
+.dash-create form input { flex: 1; min-width: 160px; width: auto; }
+.dash-create form button { justify-content: center; }
+
+.member-list { list-style: none; display: grid; gap: 12px; margin-top: 16px; }
+.member-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; background: #fff; border: 1px solid var(--mist-2); border-radius: 14px; padding: 16px 20px; box-shadow: var(--shadow-sm); }
+.member-main { display: flex; flex-direction: column; gap: 4px; }
+.member-main a { font-weight: 700; color: var(--navy); font-size: 1.05rem; }
+.member-main a:hover { color: var(--azure-deep); }
+.member-id { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .82rem; color: #7089a0; background: var(--mist); padding: 2px 8px; border-radius: 6px; width: fit-content; }
+.member-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.member-progress { font-size: .88rem; font-weight: 700; color: var(--azure-deep); white-space: nowrap; }
+.btn-sm { padding: 8px 16px; font-size: .85rem; }
+.member-del { background: transparent; color: #b42318; border: 2px solid #ffd5d0; }
+
+@media (max-width: 600px) {
+  .member-row { flex-direction: column; align-items: flex-start; }
+  .dash-create form input { min-width: 100%; }
+}

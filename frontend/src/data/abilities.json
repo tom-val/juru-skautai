@@ -1,8 +1,17 @@
 {
   "sutarimai": [
-    "Parodžiau vienetui savo pasiekimus",
-    "Aptariau juos su vieneto skautais",
-    "Aptariau juos su vadovu"
+    {
+      "id": "s1",
+      "text": "Parodžiau vienetui savo pasiekimus"
+    },
+    {
+      "id": "s2",
+      "text": "Aptariau juos su vieneto skautais"
+    },
+    {
+      "id": "s3",
+      "text": "Aptariau juos su vadovu"
+    }
   ],
   "abilities": [
     {
@@ -12,96 +21,261 @@
         {
           "level": 1,
           "tasks": [
-            "Rengdama(s) kuprinę vienos dienos žygiui, nepamirštu vandens, maisto, higienos priemonių ir atsarginių kojinių.",
-            "Pasirenku tinkamą aprangą ir apavą pagal numatomas oro sąlygas žygio dieną.",
-            "Žygiuodama(s) būnu savarankiška(s), stengiuosi kuo mažiau prašyti pagalbos dalykams, kuriuos galiu padaryti pats (pati).",
-            "Nueinu 1 dienos žygį su savo skautišku vienetu.",
-            "Parodau ir įvardiju pagrindines kompaso dalis.",
-            "Laikausi pagrindinių saugumo reikalavimų žygio metu: kelio dalimi einu kaire kelio puse kuo arčiau kelkraščio, miške nepaleidžiu nulenktų šakų, kad nesužeisčiau už manęs einančio."
+            {
+              "id": "t1",
+              "text": "Rengdama(s) kuprinę vienos dienos žygiui, nepamirštu vandens, maisto, higienos priemonių ir atsarginių kojinių."
+            },
+            {
+              "id": "t2",
+              "text": "Pasirenku tinkamą aprangą ir apavą pagal numatomas oro sąlygas žygio dieną."
+            },
+            {
+              "id": "t3",
+              "text": "Žygiuodama(s) būnu savarankiška(s), stengiuosi kuo mažiau prašyti pagalbos dalykams, kuriuos galiu padaryti pats (pati)."
+            },
+            {
+              "id": "t4",
+              "text": "Nueinu 1 dienos žygį su savo skautišku vienetu."
+            },
+            {
+              "id": "t5",
+              "text": "Parodau ir įvardiju pagrindines kompaso dalis."
+            },
+            {
+              "id": "t6",
+              "text": "Laikausi pagrindinių saugumo reikalavimų žygio metu: kelio dalimi einu kaire kelio puse kuo arčiau kelkraščio, miške nepaleidžiu nulenktų šakų, kad nesužeisčiau už manęs einančio."
+            }
           ]
         },
         {
           "level": 2,
           "tasks": [
-            "Pasiimu papildomos įrangos, reikalingos pagal per žygį numatomas oro sąlygas: kitus batus, lietpaltį, kepuraitę...",
-            "Prieš žygį tinkamai prisitvirtinu inventorių, kad jis nepasimestų ir saugiai laikytųsi.",
-            "Su šeimos narių pagalba susikomplektuoju ir į žygį pasiimu asmeninę vaistinėlę, žinau, ką joje turiu ir kam tai naudojama.",
-            "Žygio dieną patikrinu orų prognozę.",
-            "Galiu žemėlapyje parodyti 10 sutartinių žemėlapio simbolių ir įvardyti, ką jie žymi.",
-            "Galiu parodyti 4 pasaulio kryptis, naudodamasi(s) kompasu.",
-            "Per žygį seku maršrutą žemėlapyje.",
-            "Nueinu 2 dienų žygį su savo skautišku vienetu."
+            {
+              "id": "t1",
+              "text": "Pasiimu papildomos įrangos, reikalingos pagal per žygį numatomas oro sąlygas: kitus batus, lietpaltį, kepuraitę..."
+            },
+            {
+              "id": "t2",
+              "text": "Prieš žygį tinkamai prisitvirtinu inventorių, kad jis nepasimestų ir saugiai laikytųsi."
+            },
+            {
+              "id": "t3",
+              "text": "Su šeimos narių pagalba susikomplektuoju ir į žygį pasiimu asmeninę vaistinėlę, žinau, ką joje turiu ir kam tai naudojama."
+            },
+            {
+              "id": "t4",
+              "text": "Žygio dieną patikrinu orų prognozę."
+            },
+            {
+              "id": "t5",
+              "text": "Galiu žemėlapyje parodyti 10 sutartinių žemėlapio simbolių ir įvardyti, ką jie žymi."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu parodyti 4 pasaulio kryptis, naudodamasi(s) kompasu."
+            },
+            {
+              "id": "t7",
+              "text": "Per žygį seku maršrutą žemėlapyje."
+            },
+            {
+              "id": "t8",
+              "text": "Nueinu 2 dienų žygį su savo skautišku vienetu."
+            }
           ]
         },
         {
           "level": 3,
           "tasks": [
-            "Nueinu bent vieną ilgesnį nei 12 km žygį per 1 dieną.",
-            "Žygiuodama(s) pritaikau pagrindinius ,,Nepalik pėdsakų\" filosofijos principus, paaiškinu, ką, kaip ir kodėl darau.",
-            "Bent 1 km vedu žygeivius nurodytu maršrutu, naviguodamas su kompasu ir žemėlapiu. Atpažįstu atvejus, kada neišvengiamas GPS prietaisas.",
-            "Kitą išmokau kompaso naudojimo pradmenų.",
-            "Jei atsiskiriu nuo grupės, nepradedu panikuoti, stengiuosi grįžti į paskutinę žinomą vietą ir šūkaliodama(s) laukiu sugrįžtančių.",
-            "Žygiuodama(s) stebiu savo organizmo reakciją į orą ir atstumus. Parodau, ką daryčiau sustojęs (sustojusi) vėsiu oru, kad neperšalčiau, o karštu oru - kad neperkaisčiau. Jei pradeda trinti kojas, artimiausiame sustojime jį apžiūriu, pasitaisau aprangą, o nepraėjus kreipiuosi į vadovą.",
-            "Per žygį stebiu, kaip jaučiasi mano žygio draugai, palaikau juos ir padedu iškilus sunkumams."
+            {
+              "id": "t1",
+              "text": "Nueinu bent vieną ilgesnį nei 12 km žygį per 1 dieną."
+            },
+            {
+              "id": "t2",
+              "text": "Žygiuodama(s) pritaikau pagrindinius ,,Nepalik pėdsakų\" filosofijos principus, paaiškinu, ką, kaip ir kodėl darau."
+            },
+            {
+              "id": "t3",
+              "text": "Bent 1 km vedu žygeivius nurodytu maršrutu, naviguodamas su kompasu ir žemėlapiu. Atpažįstu atvejus, kada neišvengiamas GPS prietaisas."
+            },
+            {
+              "id": "t4",
+              "text": "Kitą išmokau kompaso naudojimo pradmenų."
+            },
+            {
+              "id": "t5",
+              "text": "Jei atsiskiriu nuo grupės, nepradedu panikuoti, stengiuosi grįžti į paskutinę žinomą vietą ir šūkaliodama(s) laukiu sugrįžtančių."
+            },
+            {
+              "id": "t6",
+              "text": "Žygiuodama(s) stebiu savo organizmo reakciją į orą ir atstumus. Parodau, ką daryčiau sustojęs (sustojusi) vėsiu oru, kad neperšalčiau, o karštu oru - kad neperkaisčiau. Jei pradeda trinti kojas, artimiausiame sustojime jį apžiūriu, pasitaisau aprangą, o nepraėjus kreipiuosi į vadovą."
+            },
+            {
+              "id": "t7",
+              "text": "Per žygį stebiu, kaip jaučiasi mano žygio draugai, palaikau juos ir padedu iškilus sunkumams."
+            }
           ]
         },
         {
           "level": 4,
           "tasks": [
-            "Jaunesniam skautui patariu, ką turėtų pasiimti į 12km žygį ir kaip susikrauti kuprinę.",
-            "Prisidedu prie 1 žygio planavimo ir įgyvendinimo.",
-            "Nueinu bent 3 žygius, kurių vienas - su nakvyne.",
-            "Įsirengiu laikino gyvenimo gamtoje pastogę (ne palapinę).",
-            "Bent 2 km naviguoju žemėlapiu miškingoje vietovėje ir gebu vesti žygeivius nurodytu maršrutu.",
-            "Esu naudojęsis GPS prietaisais ir gebu rasti duotą tašką, suvedęs GPS kordinates.",
-            "Atpažįstu pagrindinius dehidratacijos pažymius: galvos skausmas, rankų tinimas, silpnumas. Papasakoju, ką tuo atveju daryčiau.",
-            "Apibūdinu, kokiais atvejais per žygį reikia papildomų saugumo priemonių, ir pats (pati) jas aktyviai naudoju (kepurė nuo saulės, šalmas važiuojant dviračiu, šviečianti liemenė/aštvaitas keliaujant tamsiu paros metu...)"
+            {
+              "id": "t1",
+              "text": "Jaunesniam skautui patariu, ką turėtų pasiimti į 12km žygį ir kaip susikrauti kuprinę."
+            },
+            {
+              "id": "t2",
+              "text": "Prisidedu prie 1 žygio planavimo ir įgyvendinimo."
+            },
+            {
+              "id": "t3",
+              "text": "Nueinu bent 3 žygius, kurių vienas - su nakvyne."
+            },
+            {
+              "id": "t4",
+              "text": "Įsirengiu laikino gyvenimo gamtoje pastogę (ne palapinę)."
+            },
+            {
+              "id": "t5",
+              "text": "Bent 2 km naviguoju žemėlapiu miškingoje vietovėje ir gebu vesti žygeivius nurodytu maršrutu."
+            },
+            {
+              "id": "t6",
+              "text": "Esu naudojęsis GPS prietaisais ir gebu rasti duotą tašką, suvedęs GPS kordinates."
+            },
+            {
+              "id": "t7",
+              "text": "Atpažįstu pagrindinius dehidratacijos pažymius: galvos skausmas, rankų tinimas, silpnumas. Papasakoju, ką tuo atveju daryčiau."
+            },
+            {
+              "id": "t8",
+              "text": "Apibūdinu, kokiais atvejais per žygį reikia papildomų saugumo priemonių, ir pats (pati) jas aktyviai naudoju (kepurė nuo saulės, šalmas važiuojant dviračiu, šviečianti liemenė/aštvaitas keliaujant tamsiu paros metu...)"
+            }
           ]
         },
         {
           "level": 5,
           "tasks": [
-            "Parenku žygio aprangą įvairioms klimato sąlygoms ir paaiškinu, kurie pasirinkimai praktiškiausi.",
-            "Prisidedu prie 2 dienų žygio su nakvyne gamtoje planavimo ir įgyvendinimo.",
-            "Nueinu 4 žygius, kurių bent vienas yra naktinis.",
-            "Persikeliu per upelį, per kurį nėra tilto ar valties/kelto.",
-            "Sekdamas gamtos reiškinius (medžiai, žvaigždės, kiti gamtos ženklai), nustatau pasaulio kryptis.",
-            "Jaunesniems skautams pravedu instruktažą apie saugų žygiavimą keliuose."
+            {
+              "id": "t1",
+              "text": "Parenku žygio aprangą įvairioms klimato sąlygoms ir paaiškinu, kurie pasirinkimai praktiškiausi."
+            },
+            {
+              "id": "t2",
+              "text": "Prisidedu prie 2 dienų žygio su nakvyne gamtoje planavimo ir įgyvendinimo."
+            },
+            {
+              "id": "t3",
+              "text": "Nueinu 4 žygius, kurių bent vienas yra naktinis."
+            },
+            {
+              "id": "t4",
+              "text": "Persikeliu per upelį, per kurį nėra tilto ar valties/kelto."
+            },
+            {
+              "id": "t5",
+              "text": "Sekdamas gamtos reiškinius (medžiai, žvaigždės, kiti gamtos ženklai), nustatau pasaulio kryptis."
+            },
+            {
+              "id": "t6",
+              "text": "Jaunesniems skautams pravedu instruktažą apie saugų žygiavimą keliuose."
+            }
           ]
         },
         {
           "level": 6,
           "tasks": [
-            "Planuodama(s) žygį, tikslingai planuoju poilsio laiką - atsižvelgiu į maršrutą, vietovę, paros metą, orą, žygeivių patyrimą ir kt.",
-            "Įvardinu žygio komandos silpnybes ir stiprybes ir pasiūlau būdų, kaip sustiprėti kaip komandai.",
-            "Suplanuoju ir užsakau transportą žygiui – prieš jį ir jo metu.",
-            "Sudarau sąmatą, kiek žygis kainuos kiekvienam keliautojui.",
-            "Nueinu 6 žygius, 2 iš jų - su dviejų naktų nakvynėmis gamtoje.",
-            "Atpažįstu pagrindinius negalavimus, galimus žygyje, ir esu pasirengęs (pasirengusi) suteikti pirmą pagalbą astmos, saulės smūgio, dehidratacijos atvejais.",
-            "Atpažįstu ir kitiems įvardinu nesaugaus maršruto tikimybę. Parodau, kaip sumažinčiau pavojaus riziką atsidūrus nesaugiame kelyje (greitkelis, nėra kelkraščių, pelkė, miškas audros metu...) Žygių įgūdis"
+            {
+              "id": "t1",
+              "text": "Planuodama(s) žygį, tikslingai planuoju poilsio laiką - atsižvelgiu į maršrutą, vietovę, paros metą, orą, žygeivių patyrimą ir kt."
+            },
+            {
+              "id": "t2",
+              "text": "Įvardinu žygio komandos silpnybes ir stiprybes ir pasiūlau būdų, kaip sustiprėti kaip komandai."
+            },
+            {
+              "id": "t3",
+              "text": "Suplanuoju ir užsakau transportą žygiui – prieš jį ir jo metu."
+            },
+            {
+              "id": "t4",
+              "text": "Sudarau sąmatą, kiek žygis kainuos kiekvienam keliautojui."
+            },
+            {
+              "id": "t5",
+              "text": "Nueinu 6 žygius, 2 iš jų - su dviejų naktų nakvynėmis gamtoje."
+            },
+            {
+              "id": "t6",
+              "text": "Atpažįstu pagrindinius negalavimus, galimus žygyje, ir esu pasirengęs (pasirengusi) suteikti pirmą pagalbą astmos, saulės smūgio, dehidratacijos atvejais."
+            },
+            {
+              "id": "t7",
+              "text": "Atpažįstu ir kitiems įvardinu nesaugaus maršruto tikimybę. Parodau, kaip sumažinčiau pavojaus riziką atsidūrus nesaugiame kelyje (greitkelis, nėra kelkraščių, pelkė, miškas audros metu...) Žygių įgūdis"
+            }
           ]
         },
         {
           "level": 7,
           "tasks": [
-            "Susikraunu kuprinę žygiui su 2 nakvynėmis ir patikrinu savo vieneto pasiruošimą.",
-            "Surenku vaistinėlę žygiui su 2 nakvynėmis.",
-            "Iš anksto numatau oro pasikeitimus, nesinaudodama(s) orų prognozėmis.",
-            "Pravedu naktinį žygį - esu pasirengęs (pasirengusi) tai daryti esant prastam matomumui, sunkiai pažįstamai vietai ir įvairiomis oro sąlygomis.",
-            "Nueinu 50km žygį.",
-            "Kitam skautui arba skilčiai mentoriauju žygio organizavimo klausimais.",
-            "Išklausiau išorinius kursus ar mokymus, susijusius su navigacija, orientavimusi, žygiavimu ar ištverme."
+            {
+              "id": "t1",
+              "text": "Susikraunu kuprinę žygiui su 2 nakvynėmis ir patikrinu savo vieneto pasiruošimą."
+            },
+            {
+              "id": "t2",
+              "text": "Surenku vaistinėlę žygiui su 2 nakvynėmis."
+            },
+            {
+              "id": "t3",
+              "text": "Iš anksto numatau oro pasikeitimus, nesinaudodama(s) orų prognozėmis."
+            },
+            {
+              "id": "t4",
+              "text": "Pravedu naktinį žygį - esu pasirengęs (pasirengusi) tai daryti esant prastam matomumui, sunkiai pažįstamai vietai ir įvairiomis oro sąlygomis."
+            },
+            {
+              "id": "t5",
+              "text": "Nueinu 50km žygį."
+            },
+            {
+              "id": "t6",
+              "text": "Kitam skautui arba skilčiai mentoriauju žygio organizavimo klausimais."
+            },
+            {
+              "id": "t7",
+              "text": "Išklausiau išorinius kursus ar mokymus, susijusius su navigacija, orientavimusi, žygiavimu ar ištverme."
+            }
           ]
         },
         {
           "level": 8,
           "tasks": [
-            "Suorganizuoju žygį neskautams: įvertinu jų pasirengimą, patirtį, poreikius, pagal tai parenku trukmę, maršrutą, programą, padedu susirinkti reikalingą inventorių, pravedu patį žygį ir jo refleksiją.",
-            "Tunto, krašto arba tautinėje stovykloje esu atsakinga(s) už žygių planavimą bent vienai amžiaus grupei arba suorganizuoju žygį tunto/krašto mastu.",
-            "Sudalyvauju bent 5 žygiuose, iš jų bent vienas 10km, 20km, 50km ir bent vienas 3 dienų ar ilgesnis teminis žygyje (piligriminis žygis, kelionė į kalnus...).",
-            "Suorganizuoju grupės skautų žygį užsienyje arba užsienio skautų žygį Lietuvoje.",
-            "Kitą vienetą, planuojantį žygį, pakonsultuoju apie žygio inventorių: įvertinu turimą inventoriu, pateikiu rekomendacijas, kaip jį pagerinti.",
-            "Tunto, krašto arba Lietuvos skautijos mastu suorganizuoju ir pravedu žygiavimo arba orientavimosi mokymus vadovams arba įgūdžio gilinimo dieną patyrusiems skautams."
+            {
+              "id": "t1",
+              "text": "Suorganizuoju žygį neskautams: įvertinu jų pasirengimą, patirtį, poreikius, pagal tai parenku trukmę, maršrutą, programą, padedu susirinkti reikalingą inventorių, pravedu patį žygį ir jo refleksiją."
+            },
+            {
+              "id": "t2",
+              "text": "Tunto, krašto arba tautinėje stovykloje esu atsakinga(s) už žygių planavimą bent vienai amžiaus grupei arba suorganizuoju žygį tunto/krašto mastu."
+            },
+            {
+              "id": "t3",
+              "text": "Sudalyvauju bent 5 žygiuose, iš jų bent vienas 10km, 20km, 50km ir bent vienas 3 dienų ar ilgesnis teminis žygyje (piligriminis žygis, kelionė į kalnus...)."
+            },
+            {
+              "id": "t4",
+              "text": "Suorganizuoju grupės skautų žygį užsienyje arba užsienio skautų žygį Lietuvoje."
+            },
+            {
+              "id": "t5",
+              "text": "Kitą vienetą, planuojantį žygį, pakonsultuoju apie žygio inventorių: įvertinu turimą inventoriu, pateikiu rekomendacijas, kaip jį pagerinti."
+            },
+            {
+              "id": "t6",
+              "text": "Tunto, krašto arba Lietuvos skautijos mastu suorganizuoju ir pravedu žygiavimo arba orientavimosi mokymus vadovams arba įgūdžio gilinimo dieną patyrusiems skautams."
+            }
           ]
         }
       ]
@@ -113,111 +287,321 @@
         {
           "level": 1,
           "tasks": [
-            "Atpažįstu pagrindines gelbėjimo priemones (gelbėjimo ratas, liemenė ir pan.).",
-            "Papasakoju, kaip saugiai elgčiausi (ką daryčiau ir ko nedaryčiau) prie vandens.",
-            "Į baseiną bei natūralius vandens telkinius įlipu ir iš jų išlipu saugiai.",
-            "Papasakoju, ką reiškia pagalbos signalas SOS ir MAYDAY.",
-            "Buvimui prie vandens pasiruošiu taip, kad išvengčiau perkaitimo ir staigaus nudegimo (kremas nuo saulės, UV spindulių nepraleidžiantys drabužiai, kepurė, akiniai nuo saulės).",
-            "Įvardiju bent 5 pagrindines Lietuvos telkinių žuvų rūšis.",
-            "Atpažįstu 4 pagrindinius nardymo įrangos elementus (plaukmenys, kaukė, vamzdelis, nardymo akiniai).",
-            "Gebu plūduriuoti 5 sekundes ir galiu nusiirti 5 metrus plaukdama(s) ant pilvo ar nugaros be pagalbos.",
-            "Galiu panardinti galvą ir burbuliuoti po vandeniu."
+            {
+              "id": "t1",
+              "text": "Atpažįstu pagrindines gelbėjimo priemones (gelbėjimo ratas, liemenė ir pan.)."
+            },
+            {
+              "id": "t2",
+              "text": "Papasakoju, kaip saugiai elgčiausi (ką daryčiau ir ko nedaryčiau) prie vandens."
+            },
+            {
+              "id": "t3",
+              "text": "Į baseiną bei natūralius vandens telkinius įlipu ir iš jų išlipu saugiai."
+            },
+            {
+              "id": "t4",
+              "text": "Papasakoju, ką reiškia pagalbos signalas SOS ir MAYDAY."
+            },
+            {
+              "id": "t5",
+              "text": "Buvimui prie vandens pasiruošiu taip, kad išvengčiau perkaitimo ir staigaus nudegimo (kremas nuo saulės, UV spindulių nepraleidžiantys drabužiai, kepurė, akiniai nuo saulės)."
+            },
+            {
+              "id": "t6",
+              "text": "Įvardiju bent 5 pagrindines Lietuvos telkinių žuvų rūšis."
+            },
+            {
+              "id": "t7",
+              "text": "Atpažįstu 4 pagrindinius nardymo įrangos elementus (plaukmenys, kaukė, vamzdelis, nardymo akiniai)."
+            },
+            {
+              "id": "t8",
+              "text": "Gebu plūduriuoti 5 sekundes ir galiu nusiirti 5 metrus plaukdama(s) ant pilvo ar nugaros be pagalbos."
+            },
+            {
+              "id": "t9",
+              "text": "Galiu panardinti galvą ir burbuliuoti po vandeniu."
+            }
           ]
         },
         {
           "level": 2,
           "tasks": [
-            "Parodau, kaip saugiai elgiuosi vandens telkinyje ir baseine.",
-            "Praktiškai parodau, kaip veikia „draugo-porininko“ principas: išsirenku draugą, jį/ją stebiu, prireikus padedu ar kviečiu pagalbą.",
-            "Parodau, kaip taisyklingai užsidėti gelbėjimosi liemenę.",
-            "Įvardiju bent 5 didžiausius Lietuvos ežerus ir upes.",
-            "Pasinėręs (pasinėrusi) sugebu po vandeniu išbūti bent 10 sekundžių.",
-            "Įvardiju keturis plaukimo stilius ir paaiškinu jų skirtumus.",
-            "Galiu nuplaukti bent 10 metrų tiek krūtine, tiek nugara.",
-            "Moku pasinerti į 1 metro gylį ir nuo dugno pakelti vadovo įmestą daiktelį."
+            {
+              "id": "t1",
+              "text": "Parodau, kaip saugiai elgiuosi vandens telkinyje ir baseine."
+            },
+            {
+              "id": "t2",
+              "text": "Praktiškai parodau, kaip veikia „draugo-porininko“ principas: išsirenku draugą, jį/ją stebiu, prireikus padedu ar kviečiu pagalbą."
+            },
+            {
+              "id": "t3",
+              "text": "Parodau, kaip taisyklingai užsidėti gelbėjimosi liemenę."
+            },
+            {
+              "id": "t4",
+              "text": "Įvardiju bent 5 didžiausius Lietuvos ežerus ir upes."
+            },
+            {
+              "id": "t5",
+              "text": "Pasinėręs (pasinėrusi) sugebu po vandeniu išbūti bent 10 sekundžių."
+            },
+            {
+              "id": "t6",
+              "text": "Įvardiju keturis plaukimo stilius ir paaiškinu jų skirtumus."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu nuplaukti bent 10 metrų tiek krūtine, tiek nugara."
+            },
+            {
+              "id": "t8",
+              "text": "Moku pasinerti į 1 metro gylį ir nuo dugno pakelti vadovo įmestą daiktelį."
+            }
           ]
         },
         {
           "level": 3,
           "tasks": [
-            "Prie vandens telkinio parodau, kokie pavojai gali pasitaikyti, ir papasakoju, kaip jų išvengčiau.",
-            "Pagal savo nuovargį ir sotumą nusprendžiu, ar man šiuo metu nepavojinga plaukti ar maudytis.",
-            "Parodau, kaip išsilaisvinti gelbstint skęstantįjį.",
-            "Galiu užsidėti nardymo kaukę arba plaukimo akinius ir pagal dydį prisitaikyti sau.",
-            "Parodau, kaip elgčiausi, jei plaukiant ištiktų mėšlungis.",
-            "Atpažįstu panikuojančio plaukiko požymius ir papasakoju, kaip kviesčiau pagalbą.",
-            "Galiu nuplaukti baseine 25 metrus nesustodama(s) bet kuriuo stiliumi.",
-            "Gebu paaiškinti, kaip plaukti pakliuvus į jūros duobę.",
-            "Parodau, kaip netraumuojant nugaros panerti šokant nuo bokštelio."
+            {
+              "id": "t1",
+              "text": "Prie vandens telkinio parodau, kokie pavojai gali pasitaikyti, ir papasakoju, kaip jų išvengčiau."
+            },
+            {
+              "id": "t2",
+              "text": "Pagal savo nuovargį ir sotumą nusprendžiu, ar man šiuo metu nepavojinga plaukti ar maudytis."
+            },
+            {
+              "id": "t3",
+              "text": "Parodau, kaip išsilaisvinti gelbstint skęstantįjį."
+            },
+            {
+              "id": "t4",
+              "text": "Galiu užsidėti nardymo kaukę arba plaukimo akinius ir pagal dydį prisitaikyti sau."
+            },
+            {
+              "id": "t5",
+              "text": "Parodau, kaip elgčiausi, jei plaukiant ištiktų mėšlungis."
+            },
+            {
+              "id": "t6",
+              "text": "Atpažįstu panikuojančio plaukiko požymius ir papasakoju, kaip kviesčiau pagalbą."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu nuplaukti baseine 25 metrus nesustodama(s) bet kuriuo stiliumi."
+            },
+            {
+              "id": "t8",
+              "text": "Gebu paaiškinti, kaip plaukti pakliuvus į jūros duobę."
+            },
+            {
+              "id": "t9",
+              "text": "Parodau, kaip netraumuojant nugaros panerti šokant nuo bokštelio."
+            }
           ]
         },
         {
           "level": 4,
           "tasks": [
-            "Pasiruošiu vandens žygiui: įranga, apranga, apsauga nuo saulės.",
-            "Savo skautiškam vienetui papasakoju, kas yra hipotermija ir kuo ji yra pavojinga.",
-            "Gebu viena ranka laikydama(s) skęstantįjį nuplaukti 25 metrus.",
-            "Papasakoju, kaip atlikčiau dirbtinį kvėpavimą.",
-            "Gebu nusirengti vandenyje, kai gylis ne mažesnis nei iki kaklo.",
-            "Galiu nardyti iki 1,5 metro.",
-            "Įšokęs (įšokusi) į gilų vandenį moku padaryti plaukiojančią pūslę iš medvilninių kelnių ar marškinių ir ant jos išsilaikyti bent 1 minutę.",
-            "Papasakoju, kodėl nardant yra svarbu slėgio išlyginimas ausyse.",
-            "Įvardiju pagrindines nardymo kaukių ir vamzdelių rūšis ir parodau, kaip pasirinkti kaukę.",
-            "Galiu taisyklingai nuplaukti 75 metrų nesustojęs (nesustojusi): po 25m krūtine, šonu ir nugara"
+            {
+              "id": "t1",
+              "text": "Pasiruošiu vandens žygiui: įranga, apranga, apsauga nuo saulės."
+            },
+            {
+              "id": "t2",
+              "text": "Savo skautiškam vienetui papasakoju, kas yra hipotermija ir kuo ji yra pavojinga."
+            },
+            {
+              "id": "t3",
+              "text": "Gebu viena ranka laikydama(s) skęstantįjį nuplaukti 25 metrus."
+            },
+            {
+              "id": "t4",
+              "text": "Papasakoju, kaip atlikčiau dirbtinį kvėpavimą."
+            },
+            {
+              "id": "t5",
+              "text": "Gebu nusirengti vandenyje, kai gylis ne mažesnis nei iki kaklo."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu nardyti iki 1,5 metro."
+            },
+            {
+              "id": "t7",
+              "text": "Įšokęs (įšokusi) į gilų vandenį moku padaryti plaukiojančią pūslę iš medvilninių kelnių ar marškinių ir ant jos išsilaikyti bent 1 minutę."
+            },
+            {
+              "id": "t8",
+              "text": "Papasakoju, kodėl nardant yra svarbu slėgio išlyginimas ausyse."
+            },
+            {
+              "id": "t9",
+              "text": "Įvardiju pagrindines nardymo kaukių ir vamzdelių rūšis ir parodau, kaip pasirinkti kaukę."
+            },
+            {
+              "id": "t10",
+              "text": "Galiu taisyklingai nuplaukti 75 metrų nesustojęs (nesustojusi): po 25m krūtine, šonu ir nugara"
+            }
           ]
         },
         {
           "level": 5,
           "tasks": [
-            "To dar nemokantiems skautams papasakoju, kaip apsisaugoti nuo hipotermijos.",
-            "Dalyvavau skęstančiojo gelbėjimo pratybose baseine.",
-            "Parodau, kaip atlikti dirbtinį kvėpavimą.",
-            "Atpažįstu 5 vandens gyvūnus ir augalus, taip pat ir pavojingus.",
-            "Galiu taisyklingai nuplaukti 150 metrų nesustojęs: po 50 m krūtine, šonu ir nugara.",
-            "Moku nesukeldama(s) jokio triukšmo įbristi į vandenį, nuplaukti 50 metrų ir išlipti į krantą.",
-            "Galiu plaukdama(s) panerti į 3 m gylį ir nuo dugno iškelti kokį nors daiktą.",
-            "Galiu nuplaukti 20 metrų užsidėjęs kaukę ir kvėpuodama(s) tik per vamzdelį.",
-            "Panardinęs (panardinusi) galvą vandenyje pašalinu susikaupusį vandenį iš kaukės jos nenusiimdama(s)."
+            {
+              "id": "t1",
+              "text": "To dar nemokantiems skautams papasakoju, kaip apsisaugoti nuo hipotermijos."
+            },
+            {
+              "id": "t2",
+              "text": "Dalyvavau skęstančiojo gelbėjimo pratybose baseine."
+            },
+            {
+              "id": "t3",
+              "text": "Parodau, kaip atlikti dirbtinį kvėpavimą."
+            },
+            {
+              "id": "t4",
+              "text": "Atpažįstu 5 vandens gyvūnus ir augalus, taip pat ir pavojingus."
+            },
+            {
+              "id": "t5",
+              "text": "Galiu taisyklingai nuplaukti 150 metrų nesustojęs: po 50 m krūtine, šonu ir nugara."
+            },
+            {
+              "id": "t6",
+              "text": "Moku nesukeldama(s) jokio triukšmo įbristi į vandenį, nuplaukti 50 metrų ir išlipti į krantą."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu plaukdama(s) panerti į 3 m gylį ir nuo dugno iškelti kokį nors daiktą."
+            },
+            {
+              "id": "t8",
+              "text": "Galiu nuplaukti 20 metrų užsidėjęs kaukę ir kvėpuodama(s) tik per vamzdelį."
+            },
+            {
+              "id": "t9",
+              "text": "Panardinęs (panardinusi) galvą vandenyje pašalinu susikaupusį vandenį iš kaukės jos nenusiimdama(s)."
+            }
           ]
         },
         {
           "level": 6,
           "tasks": [
-            "Parengiau saugaus elgesio prie vandens taisykles stovyklai.",
-            "Dalyvavau skęstančiojo gelbėjimo pratybose ežere.",
-            "Visiškai apsirengęs (su marškiniais, kelnėmis ir sportiniais batais) gebu nuplaukti 20 metrus ir 20 metrus parplukdyti skęstantįjį.",
-            "Savo skautiškam vienetui papasakoju, iš ko daromos gelbėjimo plūdės (gelbėjimo ratas, liemenė, diržas) ir parodau, kaip jas saugoti, kad neprarastų savo keliamosios jėgos.",
-            "Savo skautiškam vienetui papasakoju, kam skirti ir kaip išsiskleidžia jūriniai gelbėjimosi plaustai.",
-            "Papasakoju, kuo skiriasi dirbtinio kvėpavimo atlikimas suaugusiems ir vaikams.",
-            "Galiu nuplaukti po 100 m krūtine, nugara ir šonu.",
-            "Pasirinktu stiliumi galiu nuplaukti 50 metrų ežere.",
-            "Savo skautiškam vienetui papasakoju, kuo skiriasi plaukimas upėje, ežere bei jūroje bei parodau, kaip juose plaukti norima kryptimi. Vandens įgūdis"
+            {
+              "id": "t1",
+              "text": "Parengiau saugaus elgesio prie vandens taisykles stovyklai."
+            },
+            {
+              "id": "t2",
+              "text": "Dalyvavau skęstančiojo gelbėjimo pratybose ežere."
+            },
+            {
+              "id": "t3",
+              "text": "Visiškai apsirengęs (su marškiniais, kelnėmis ir sportiniais batais) gebu nuplaukti 20 metrus ir 20 metrus parplukdyti skęstantįjį."
+            },
+            {
+              "id": "t4",
+              "text": "Savo skautiškam vienetui papasakoju, iš ko daromos gelbėjimo plūdės (gelbėjimo ratas, liemenė, diržas) ir parodau, kaip jas saugoti, kad neprarastų savo keliamosios jėgos."
+            },
+            {
+              "id": "t5",
+              "text": "Savo skautiškam vienetui papasakoju, kam skirti ir kaip išsiskleidžia jūriniai gelbėjimosi plaustai."
+            },
+            {
+              "id": "t6",
+              "text": "Papasakoju, kuo skiriasi dirbtinio kvėpavimo atlikimas suaugusiems ir vaikams."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu nuplaukti po 100 m krūtine, nugara ir šonu."
+            },
+            {
+              "id": "t8",
+              "text": "Pasirinktu stiliumi galiu nuplaukti 50 metrų ežere."
+            },
+            {
+              "id": "t9",
+              "text": "Savo skautiškam vienetui papasakoju, kuo skiriasi plaukimas upėje, ežere bei jūroje bei parodau, kaip juose plaukti norima kryptimi. Vandens įgūdis"
+            }
           ]
         },
         {
           "level": 7,
           "tasks": [
-            "Įrengiu maudynių vietą pagal LR įstatymais nustatytus reikalavimus.",
-            "Dalyvavau skęstančiojo gelbėjimo pratybose upėje.",
-            "Visiškai apsirengęs (apsirengusi) (su marškiniais, kelnėmis ir sportiniais batais) gebu nuplaukti 40 metrus ir 40 metrus parplukdyti skęstantįjį.",
-            "Pasirinktu stiliumi galiu nuplaukti 50 metrų upėje.",
-            "Stovykloje pravedu saugaus elgesio prie vandens instruktažą jaunesniems skautams.",
-            "Kitiems skautams pristatau, kokių iššūkių gali pasitaikyti vandenyje dėl nepažymėtų srovių ar seklumų.",
-            "Vadovavau komandai vandens aplinkos projekte, kuriame buvo valomas vandens telkinys.",
-            "Išklausau Pirmosios pagalbos kursą."
+            {
+              "id": "t1",
+              "text": "Įrengiu maudynių vietą pagal LR įstatymais nustatytus reikalavimus."
+            },
+            {
+              "id": "t2",
+              "text": "Dalyvavau skęstančiojo gelbėjimo pratybose upėje."
+            },
+            {
+              "id": "t3",
+              "text": "Visiškai apsirengęs (apsirengusi) (su marškiniais, kelnėmis ir sportiniais batais) gebu nuplaukti 40 metrus ir 40 metrus parplukdyti skęstantįjį."
+            },
+            {
+              "id": "t4",
+              "text": "Pasirinktu stiliumi galiu nuplaukti 50 metrų upėje."
+            },
+            {
+              "id": "t5",
+              "text": "Stovykloje pravedu saugaus elgesio prie vandens instruktažą jaunesniems skautams."
+            },
+            {
+              "id": "t6",
+              "text": "Kitiems skautams pristatau, kokių iššūkių gali pasitaikyti vandenyje dėl nepažymėtų srovių ar seklumų."
+            },
+            {
+              "id": "t7",
+              "text": "Vadovavau komandai vandens aplinkos projekte, kuriame buvo valomas vandens telkinys."
+            },
+            {
+              "id": "t8",
+              "text": "Išklausau Pirmosios pagalbos kursą."
+            }
           ]
         },
         {
           "level": 8,
           "tasks": [
-            "Nupiešiu žemėlapį, rodantį saugias ir nesaugias zonas stovykloje ežero pakrantėje.",
-            "Įrengiu stovyklos maudynių vietą ir būnu joje budinčiu gelbėtoju.",
-            "Stovykloje suorganizuoju plaukimo varžybas.",
-            "Suorganizuoju bent dviejų dienų vandens žygį.",
-            "Dalyvavau naktinio plaukimo pratybose.",
-            "Galiu nuplaukti 50 metrų jūroje.",
-            "Baigiau skęstančiųjų gelbėjimo kursus.",
-            "Tunto arba aukštesniu lygmeniu pravedu su vandens įgūdžiu susijusius mokymus suaugusiems vadovams"
+            {
+              "id": "t1",
+              "text": "Nupiešiu žemėlapį, rodantį saugias ir nesaugias zonas stovykloje ežero pakrantėje."
+            },
+            {
+              "id": "t2",
+              "text": "Įrengiu stovyklos maudynių vietą ir būnu joje budinčiu gelbėtoju."
+            },
+            {
+              "id": "t3",
+              "text": "Stovykloje suorganizuoju plaukimo varžybas."
+            },
+            {
+              "id": "t4",
+              "text": "Suorganizuoju bent dviejų dienų vandens žygį."
+            },
+            {
+              "id": "t5",
+              "text": "Dalyvavau naktinio plaukimo pratybose."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu nuplaukti 50 metrų jūroje."
+            },
+            {
+              "id": "t7",
+              "text": "Baigiau skęstančiųjų gelbėjimo kursus."
+            },
+            {
+              "id": "t8",
+              "text": "Tunto arba aukštesniu lygmeniu pravedu su vandens įgūdžiu susijusius mokymus suaugusiems vadovams"
+            }
           ]
         }
       ]
@@ -229,90 +613,237 @@
         {
           "level": 1,
           "tasks": [
-            "Palaikau tvarką savo namų virtuvėje ir papasakoju, kur laikomi visi maisto produktai, prieskoniai ir virtuvės įrankiai - indai, puodai, keptuvės, įrankiai, pašluostės.",
-            "Žinau, kur stovykloje laikomas maistas. Nelaikau maisto savo palapinėje ir ant saulės.",
-            "Su vadovo pagalba išbandau vieną paprastą primityviosios virtuvės receptą - keptas bulves žarijose, bananus su šokoladu ar skautišką duonelę.",
-            "Pasiklausiu savo skilties skautų ir įsimenu, ką kiekvienas valgo ir nevalgo, kas kam alergiškas.",
-            "Stovyklaudama(s) gamtoje, randu maisto atliekų vietą. Jei turiu nesuvalgyto maisto, jį ten išmetu.",
-            "Turiu valgymui gamtoje reikalingą asmeninį inventorių - dubenėlį maistui, puodelį gėrimui, šaukštą, šakutę ir peilį.",
-            "Prižiūriu savo valgymo įrankius - laikau vienoje vietoje, savo maišelyje, o jį - skautiškoje indaujoje ar kitoje sutartoje vietoje. Po kiekvieno valgymo įrankius iškart išsiplaunu ir vėl padedu į vietą. Savo indelius pasižymiu, kad nepamesčiau - pvz. užsirašau vardą ant įrankių ir ant maišelio."
+            {
+              "id": "t1",
+              "text": "Palaikau tvarką savo namų virtuvėje ir papasakoju, kur laikomi visi maisto produktai, prieskoniai ir virtuvės įrankiai - indai, puodai, keptuvės, įrankiai, pašluostės."
+            },
+            {
+              "id": "t2",
+              "text": "Žinau, kur stovykloje laikomas maistas. Nelaikau maisto savo palapinėje ir ant saulės."
+            },
+            {
+              "id": "t3",
+              "text": "Su vadovo pagalba išbandau vieną paprastą primityviosios virtuvės receptą - keptas bulves žarijose, bananus su šokoladu ar skautišką duonelę."
+            },
+            {
+              "id": "t4",
+              "text": "Pasiklausiu savo skilties skautų ir įsimenu, ką kiekvienas valgo ir nevalgo, kas kam alergiškas."
+            },
+            {
+              "id": "t5",
+              "text": "Stovyklaudama(s) gamtoje, randu maisto atliekų vietą. Jei turiu nesuvalgyto maisto, jį ten išmetu."
+            },
+            {
+              "id": "t6",
+              "text": "Turiu valgymui gamtoje reikalingą asmeninį inventorių - dubenėlį maistui, puodelį gėrimui, šaukštą, šakutę ir peilį."
+            },
+            {
+              "id": "t7",
+              "text": "Prižiūriu savo valgymo įrankius - laikau vienoje vietoje, savo maišelyje, o jį - skautiškoje indaujoje ar kitoje sutartoje vietoje. Po kiekvieno valgymo įrankius iškart išsiplaunu ir vėl padedu į vietą. Savo indelius pasižymiu, kad nepamesčiau - pvz. užsirašau vardą ant įrankių ir ant maišelio."
+            }
           ]
         },
         {
           "level": 2,
           "tasks": [
-            "Žygio išvakarėse namuose paruošiu užkandį sau ir draugui - pvz. sutepu sumuštinius, supjaustau daržoves.",
-            "Namų virtuvėje paruošiu šiltą gėrimą - saugiai užverdu ir pagaminu arbatą, kakavą, pieną su medumi.",
-            "Pasidarau savo skautiškų receptų knygelę.",
-            "Iš skirtingo amžiaus stovyklos dalyvių sužinau 2 naujus skautiškus patiekalus ir užsirašau jų receptus į savo knygelę.",
-            "Per dieną išgeriu tinkamą kiekį vandens, daug cukraus turinčius gėrimus vartoju saikingai.",
-            "Atskiriu ir į tinkamą vietą išmetu tinkamas rūšiuoti popieriaus ir kartono atliekas.",
-            "Sulaukęs (sulaukusi) visų skilties skautų, prieš valgydamas skautiškai padėkoju už maistą - kartu sudainuojame dainelę arba sukalbame maldelę."
+            {
+              "id": "t1",
+              "text": "Žygio išvakarėse namuose paruošiu užkandį sau ir draugui - pvz. sutepu sumuštinius, supjaustau daržoves."
+            },
+            {
+              "id": "t2",
+              "text": "Namų virtuvėje paruošiu šiltą gėrimą - saugiai užverdu ir pagaminu arbatą, kakavą, pieną su medumi."
+            },
+            {
+              "id": "t3",
+              "text": "Pasidarau savo skautiškų receptų knygelę."
+            },
+            {
+              "id": "t4",
+              "text": "Iš skirtingo amžiaus stovyklos dalyvių sužinau 2 naujus skautiškus patiekalus ir užsirašau jų receptus į savo knygelę."
+            },
+            {
+              "id": "t5",
+              "text": "Per dieną išgeriu tinkamą kiekį vandens, daug cukraus turinčius gėrimus vartoju saikingai."
+            },
+            {
+              "id": "t6",
+              "text": "Atskiriu ir į tinkamą vietą išmetu tinkamas rūšiuoti popieriaus ir kartono atliekas."
+            },
+            {
+              "id": "t7",
+              "text": "Sulaukęs (sulaukusi) visų skilties skautų, prieš valgydamas skautiškai padėkoju už maistą - kartu sudainuojame dainelę arba sukalbame maldelę."
+            }
           ]
         },
         {
           "level": 3,
           "tasks": [
-            "Stovyklaudama(s) gamtoje parodau, kaip pašildyti atvėsusį maistą ant laužo, o kaip šiltą atvėsinti požeminiame skautiškame šaldytuve ar pamerkus vėsiame upelyje.",
-            "Jaunesnius arba to dar nemokančius skautus išmokau tinkamai nusiplauti rankas ir įrankius, patikrinti produktų galiojimo laiką, nuplauti maisto produktus, pavalgius - išplauti indus ir įrankius, nusausinti ir padėti į vietą.",
-            "Tinkamai pasiruošiu prieš gamindamas maistą stovykloje - apsirengiu švariais darbo rūbais, susirišu plaukus, nuplaunu gaminimo paviršius ir įrankius, prieš bei po gaminimo plaunu rankas su muilu ne trumpiau kaip 30 sekundžių, nuplaunu maisto produktus.",
-            "Savo receptų knygelę papildau 5 naujais skautiškais receptais. Vienas iš jų - skautiškas desertas!",
-            "Išbandęs vieną patiekalą pats, pagaminu jį savo skilties nariams.",
-            "Atskiriu, išplaunu ir į tam skirtą vietą išmetu tinkamas rūšiuoti stiklo ir plastiko atliekas."
+            {
+              "id": "t1",
+              "text": "Stovyklaudama(s) gamtoje parodau, kaip pašildyti atvėsusį maistą ant laužo, o kaip šiltą atvėsinti požeminiame skautiškame šaldytuve ar pamerkus vėsiame upelyje."
+            },
+            {
+              "id": "t2",
+              "text": "Jaunesnius arba to dar nemokančius skautus išmokau tinkamai nusiplauti rankas ir įrankius, patikrinti produktų galiojimo laiką, nuplauti maisto produktus, pavalgius - išplauti indus ir įrankius, nusausinti ir padėti į vietą."
+            },
+            {
+              "id": "t3",
+              "text": "Tinkamai pasiruošiu prieš gamindamas maistą stovykloje - apsirengiu švariais darbo rūbais, susirišu plaukus, nuplaunu gaminimo paviršius ir įrankius, prieš bei po gaminimo plaunu rankas su muilu ne trumpiau kaip 30 sekundžių, nuplaunu maisto produktus."
+            },
+            {
+              "id": "t4",
+              "text": "Savo receptų knygelę papildau 5 naujais skautiškais receptais. Vienas iš jų - skautiškas desertas!"
+            },
+            {
+              "id": "t5",
+              "text": "Išbandęs vieną patiekalą pats, pagaminu jį savo skilties nariams."
+            },
+            {
+              "id": "t6",
+              "text": "Atskiriu, išplaunu ir į tam skirtą vietą išmetu tinkamas rūšiuoti stiklo ir plastiko atliekas."
+            }
           ]
         },
         {
           "level": 4,
           "tasks": [
-            "Pasikalbėjęs (pasikalbėjusi) su skautu, dirbančiu stovyklos virtuvėje, sužinau kiek ilgai stovyklos sąlygomis išsilaiko pagrindiniai maisto produktai.",
-            "Atskiriu, kurį maistą stovykloje reikia suvartoti iškart arba laikyti temperatūroje nuo 0º c iki +6º c, o likusius produktus laikau vėsiai, švarioje vietoje, atskirdama(s) skirtingų grupių produktus.",
-            "Išbandau bent 2 primityviosios virtuvės receptus - išsikepu valgyti iš skirtingų produktų, neturėdama(s) puodo/keptuvės.",
-            "Savo skilčiai papasakoju, kiek produktų iš skirtingų maisto grupių rekomenduojama suvartoti per dieną mano amžiaus žmogui ir kokia rekomenduojama dienos kcal norma.",
-            "Pagal artimiausio žygio intensyvumą sudarau savo vieneto 1 dienos meniu ir kartu su skiltimi jį įgyvendinu.",
-            "Stovykloje parenku gėrimui ir virimui tinkamą vandenį. Nešvarų vandenį išfiltruoju su savo gamybos vandens filtru."
+            {
+              "id": "t1",
+              "text": "Pasikalbėjęs (pasikalbėjusi) su skautu, dirbančiu stovyklos virtuvėje, sužinau kiek ilgai stovyklos sąlygomis išsilaiko pagrindiniai maisto produktai."
+            },
+            {
+              "id": "t2",
+              "text": "Atskiriu, kurį maistą stovykloje reikia suvartoti iškart arba laikyti temperatūroje nuo 0º c iki +6º c, o likusius produktus laikau vėsiai, švarioje vietoje, atskirdama(s) skirtingų grupių produktus."
+            },
+            {
+              "id": "t3",
+              "text": "Išbandau bent 2 primityviosios virtuvės receptus - išsikepu valgyti iš skirtingų produktų, neturėdama(s) puodo/keptuvės."
+            },
+            {
+              "id": "t4",
+              "text": "Savo skilčiai papasakoju, kiek produktų iš skirtingų maisto grupių rekomenduojama suvartoti per dieną mano amžiaus žmogui ir kokia rekomenduojama dienos kcal norma."
+            },
+            {
+              "id": "t5",
+              "text": "Pagal artimiausio žygio intensyvumą sudarau savo vieneto 1 dienos meniu ir kartu su skiltimi jį įgyvendinu."
+            },
+            {
+              "id": "t6",
+              "text": "Stovykloje parenku gėrimui ir virimui tinkamą vandenį. Nešvarų vandenį išfiltruoju su savo gamybos vandens filtru."
+            }
           ]
         },
         {
           "level": 5,
           "tasks": [
-            "Pasirenku vieną pasaulio kultūrą ar regioną, pagaminu bei pristatau jų virtuvės nacionalinį patiekalą savo skilčiai (vidaus sąlygomis).",
-            "Suplanuoju, kiek peilių, pjaustymo lentų, pjaustyklių reikės stovyklos virtuvėje skirtingoms produktų grupėms, ir paženklinu inventorių (arba patikrinu, ar paženklintas) pagal produktus.",
-            "Bent dieną dirbu stovyklos virtuvėje (50< žmonių), sėkmingai padedu įgyvendinti virtuvės vadovo numatytą stovyklos meniu.",
-            "Sudarau savaitės meniu sau, atsižvelgdama(s) į sveikos mitybos principus, mitybos poreikius, alergijas, dienos veiklos aktyvumą. Suskaičiuoju asmeninio meniu kainą, sudarau pirkinių sąrašą ir tai įgyvendinu.",
-            "Pagal pakuotės ženklinimą atskiriu, ar pakuotė perdirbama arba pagaminta iš perdirbtų medžiagų.",
-            "Pamokau to dar nemokančius skautus taisyklingai rūšiuoti atliekas."
+            {
+              "id": "t1",
+              "text": "Pasirenku vieną pasaulio kultūrą ar regioną, pagaminu bei pristatau jų virtuvės nacionalinį patiekalą savo skilčiai (vidaus sąlygomis)."
+            },
+            {
+              "id": "t2",
+              "text": "Suplanuoju, kiek peilių, pjaustymo lentų, pjaustyklių reikės stovyklos virtuvėje skirtingoms produktų grupėms, ir paženklinu inventorių (arba patikrinu, ar paženklintas) pagal produktus."
+            },
+            {
+              "id": "t3",
+              "text": "Bent dieną dirbu stovyklos virtuvėje (50< žmonių), sėkmingai padedu įgyvendinti virtuvės vadovo numatytą stovyklos meniu."
+            },
+            {
+              "id": "t4",
+              "text": "Sudarau savaitės meniu sau, atsižvelgdama(s) į sveikos mitybos principus, mitybos poreikius, alergijas, dienos veiklos aktyvumą. Suskaičiuoju asmeninio meniu kainą, sudarau pirkinių sąrašą ir tai įgyvendinu."
+            },
+            {
+              "id": "t5",
+              "text": "Pagal pakuotės ženklinimą atskiriu, ar pakuotė perdirbama arba pagaminta iš perdirbtų medžiagų."
+            },
+            {
+              "id": "t6",
+              "text": "Pamokau to dar nemokančius skautus taisyklingai rūšiuoti atliekas."
+            }
           ]
         },
         {
           "level": 6,
           "tasks": [
-            "Sužinau dviejų dienų stovyklos/žygio intensyvumą ir sudarau meniu 25-50 žmonių, atsižvelgdama(s) į mitybos normas ir mitybos poreikius (alergijos, vegetariška, veganiška mityba), apskaičiuoju maisto kiekius ir numatau, kokios bus išlaidos maistui.",
-            "Su skiltimi įgyvendinu savo parengtą stovyklos/žygio meniu (aukščiau) - superku maistą, jį parengiu transportavimui ir laikymui, gaminu pagal numatytą receptūrą. Perku tik tiek, kiek numatyta išankstiniame sąraše, įvertinu, kiek ir kokių produktų pavyks suvartoti, ar yra sąlygos juos tinkamai laikyti. Pirkdama(s) nepamirštu 9 skautų priesako - skautas taupus.",
-            "Įrengiu virtuvę, reikalingą dviejų dienų stovyklai, atitinkančią higienos normas, - maisto rengimo paviršiai, inventorius, higienos priemonės, prieiga prie vandens.",
-            "Pamokau to dar nemokantį skautą pagaminti bent vieną primityviosios virtuvės patiekalą.",
-            "Bent jau savaitę gyvenu, laikydamasis \"nulis atliekų\" principų, paskui įvertinu, kokių ilgai yrančių, vienkartinio panaudojimo produktų galėčiau atsisakyti, kaip galėčiau mažinti bereikalingą vartojimą. Virtuvės įgūdis"
+            {
+              "id": "t1",
+              "text": "Sužinau dviejų dienų stovyklos/žygio intensyvumą ir sudarau meniu 25-50 žmonių, atsižvelgdama(s) į mitybos normas ir mitybos poreikius (alergijos, vegetariška, veganiška mityba), apskaičiuoju maisto kiekius ir numatau, kokios bus išlaidos maistui."
+            },
+            {
+              "id": "t2",
+              "text": "Su skiltimi įgyvendinu savo parengtą stovyklos/žygio meniu (aukščiau) - superku maistą, jį parengiu transportavimui ir laikymui, gaminu pagal numatytą receptūrą. Perku tik tiek, kiek numatyta išankstiniame sąraše, įvertinu, kiek ir kokių produktų pavyks suvartoti, ar yra sąlygos juos tinkamai laikyti. Pirkdama(s) nepamirštu 9 skautų priesako - skautas taupus."
+            },
+            {
+              "id": "t3",
+              "text": "Įrengiu virtuvę, reikalingą dviejų dienų stovyklai, atitinkančią higienos normas, - maisto rengimo paviršiai, inventorius, higienos priemonės, prieiga prie vandens."
+            },
+            {
+              "id": "t4",
+              "text": "Pamokau to dar nemokantį skautą pagaminti bent vieną primityviosios virtuvės patiekalą."
+            },
+            {
+              "id": "t5",
+              "text": "Bent jau savaitę gyvenu, laikydamasis \"nulis atliekų\" principų, paskui įvertinu, kokių ilgai yrančių, vienkartinio panaudojimo produktų galėčiau atsisakyti, kaip galėčiau mažinti bereikalingą vartojimą. Virtuvės įgūdis"
+            }
           ]
         },
         {
           "level": 7,
           "tasks": [
-            "Susipažinęs (susipažinusi) su pagrindinėmis konservavimo rūšimis (fizinis, biocheminis, cheminis), išbandau vieną iš konservavimo būdų namų sąlygomis (džiovinimas, raugimas, marinavimas, konservavimas druska, pūdymas...) ir pademonstruoju jį jaunesniems skautams.",
-            "Susipažįstu su įvairiais matavimo vienetais, vartojamais virtuvėje, ir atrandu savo būdą, kaip žaismingai juos atsiminti.",
-            "Sudarau meniu, reikalingą dviejų dienų stovyklai (100 < žmonių), atsižvelgdama(s) į specialius mitybos poreikius (alergijos, vegetariška, veganiška mityba ir pan.). Produktus superku, laikydamasi(s) atsakingo vartojimo principų.",
-            "Pamokau jaunesnius skautus praktiškai pritaikyti \"nulis atliekų\" principus ruošiantis stovyklai ar žygiui.",
-            "Išmokstu ir išmokau jaunesnius skautus kitame vienete, organizacijoje naudojamos dainos ar maldelės prieš valgį.",
-            "Dviejų dienų stovyklos virtuvėje (100 < žmonių) apsiimu lyderio - virtuvės šefo pareigas, kuriose sudarau komandą, pasirūpinu gaminimo įrankiais, paskirstau darbus, išskiriu laiko visų poilsiui ir pasirūpinu, jog visi virtuvės nariai būtų susipažinę su skautiškos virtuvės ypatumais, savo atsakomybėmis."
+            {
+              "id": "t1",
+              "text": "Susipažinęs (susipažinusi) su pagrindinėmis konservavimo rūšimis (fizinis, biocheminis, cheminis), išbandau vieną iš konservavimo būdų namų sąlygomis (džiovinimas, raugimas, marinavimas, konservavimas druska, pūdymas...) ir pademonstruoju jį jaunesniems skautams."
+            },
+            {
+              "id": "t2",
+              "text": "Susipažįstu su įvairiais matavimo vienetais, vartojamais virtuvėje, ir atrandu savo būdą, kaip žaismingai juos atsiminti."
+            },
+            {
+              "id": "t3",
+              "text": "Sudarau meniu, reikalingą dviejų dienų stovyklai (100 < žmonių), atsižvelgdama(s) į specialius mitybos poreikius (alergijos, vegetariška, veganiška mityba ir pan.). Produktus superku, laikydamasi(s) atsakingo vartojimo principų."
+            },
+            {
+              "id": "t4",
+              "text": "Pamokau jaunesnius skautus praktiškai pritaikyti \"nulis atliekų\" principus ruošiantis stovyklai ar žygiui."
+            },
+            {
+              "id": "t5",
+              "text": "Išmokstu ir išmokau jaunesnius skautus kitame vienete, organizacijoje naudojamos dainos ar maldelės prieš valgį."
+            },
+            {
+              "id": "t6",
+              "text": "Dviejų dienų stovyklos virtuvėje (100 < žmonių) apsiimu lyderio - virtuvės šefo pareigas, kuriose sudarau komandą, pasirūpinu gaminimo įrankiais, paskirstau darbus, išskiriu laiko visų poilsiui ir pasirūpinu, jog visi virtuvės nariai būtų susipažinę su skautiškos virtuvės ypatumais, savo atsakomybėmis."
+            }
           ]
         },
         {
           "level": 8,
           "tasks": [
-            "Įvertinu, ar kitų skautų įrengta virtuvė atitinka maisto ruošos higienos normas, suteikiu grįžtamąjį ryšį ir rekomendacijas.",
-            "Padedu kitiems skautams parengti žygio ar stovyklos meniu, suteikiu grįžtamąjį ryšį ir rekomendacijas.",
-            "Savaitės trukmės stovyklos virtuvėje (100 < žmonių) apsiimu lyderio - virtuvės šefo pareigas, kuriose sudarau komandą, pasirūpinu gaminimo įrankiais, paskirstau darbus, išskiriu laiko visų poilsiui ir pasirūpinu, jog visi virtuvės nariai būtų susipažinę su skautiškos virtuvės ypatumais, savo atsakomybėmis.",
-            "Pasisemiu patirties tarptautinio skautiško kolektyvo virtuvėje (rekomenduojama pasavanoriauti užsienio skautiškame renginyje, tačiau nesant galimybei, pasikviesti į virtuvę skautų draugą iš užsienio ir kartu suplanuoti virtuvės meniu ir dalinantis patirtimis jį įgyvendinti).",
-            "Baigiu išorinius su mityba, maisto produktais ar maisto gamyba susijusius mokymus.",
-            "Tunto, krašto arba Lietuvos skautijos mastu pravedu mokymus, susijusius su virtuvės įgūdžiu arba darbu skautiškoje virtuvėje."
+            {
+              "id": "t1",
+              "text": "Įvertinu, ar kitų skautų įrengta virtuvė atitinka maisto ruošos higienos normas, suteikiu grįžtamąjį ryšį ir rekomendacijas."
+            },
+            {
+              "id": "t2",
+              "text": "Padedu kitiems skautams parengti žygio ar stovyklos meniu, suteikiu grįžtamąjį ryšį ir rekomendacijas."
+            },
+            {
+              "id": "t3",
+              "text": "Savaitės trukmės stovyklos virtuvėje (100 < žmonių) apsiimu lyderio - virtuvės šefo pareigas, kuriose sudarau komandą, pasirūpinu gaminimo įrankiais, paskirstau darbus, išskiriu laiko visų poilsiui ir pasirūpinu, jog visi virtuvės nariai būtų susipažinę su skautiškos virtuvės ypatumais, savo atsakomybėmis."
+            },
+            {
+              "id": "t4",
+              "text": "Pasisemiu patirties tarptautinio skautiško kolektyvo virtuvėje (rekomenduojama pasavanoriauti užsienio skautiškame renginyje, tačiau nesant galimybei, pasikviesti į virtuvę skautų draugą iš užsienio ir kartu suplanuoti virtuvės meniu ir dalinantis patirtimis jį įgyvendinti)."
+            },
+            {
+              "id": "t5",
+              "text": "Baigiu išorinius su mityba, maisto produktais ar maisto gamyba susijusius mokymus."
+            },
+            {
+              "id": "t6",
+              "text": "Tunto, krašto arba Lietuvos skautijos mastu pravedu mokymus, susijusius su virtuvės įgūdžiu arba darbu skautiškoje virtuvėje."
+            }
           ]
         }
       ]
@@ -324,108 +855,309 @@
         {
           "level": 1,
           "tasks": [
-            "Atskiriu sausas ir šlapias/žalias malkas.",
-            "Atrenku atliekas, kurias galima sudeginti lauže, ir atliekas, kurių į laužą dėti nereikėtų.",
-            "Matydama(s) už laužavietės plintančią liepsną, ją sustabdau (žeme, vandeniu, trypdama(s) ir t.t.), sutvarkau laužavietę, stoviu saugiu atstumu nuo ugnies.",
-            "Surenku priemones, reikalingas laužui įkurti.",
-            "Bendrame stovyklos lauže prisijungiu prie dainuojančiųjų/įsitraukiu į laužo programą.",
-            "Kartu su kitais vieneto nariais sudainuoju bent dvi dainas.",
-            "Sugalvoju šūkį rikiuotei.",
-            "Pasisakau vieneto vakarinėje refleksijoje.",
-            "Kalbant kitiems skautams išklausau nepertraukdama(s) ir reaguoju į iškeltą ranką (dėmesio ženklą)."
+            {
+              "id": "t1",
+              "text": "Atskiriu sausas ir šlapias/žalias malkas."
+            },
+            {
+              "id": "t2",
+              "text": "Atrenku atliekas, kurias galima sudeginti lauže, ir atliekas, kurių į laužą dėti nereikėtų."
+            },
+            {
+              "id": "t3",
+              "text": "Matydama(s) už laužavietės plintančią liepsną, ją sustabdau (žeme, vandeniu, trypdama(s) ir t.t.), sutvarkau laužavietę, stoviu saugiu atstumu nuo ugnies."
+            },
+            {
+              "id": "t4",
+              "text": "Surenku priemones, reikalingas laužui įkurti."
+            },
+            {
+              "id": "t5",
+              "text": "Bendrame stovyklos lauže prisijungiu prie dainuojančiųjų/įsitraukiu į laužo programą."
+            },
+            {
+              "id": "t6",
+              "text": "Kartu su kitais vieneto nariais sudainuoju bent dvi dainas."
+            },
+            {
+              "id": "t7",
+              "text": "Sugalvoju šūkį rikiuotei."
+            },
+            {
+              "id": "t8",
+              "text": "Pasisakau vieneto vakarinėje refleksijoje."
+            },
+            {
+              "id": "t9",
+              "text": "Kalbant kitiems skautams išklausau nepertraukdama(s) ir reaguoju į iškeltą ranką (dėmesio ženklą)."
+            }
           ]
         },
         {
           "level": 2,
           "tasks": [
-            "Su vadovo priežiūra/pagalba palankiomis sąlygomis užkuriu laužą ir palaikau jo degimą.",
-            "Atpažįstu medžius, kurių nekertame ir kurie tinka laužui.",
-            "Kurdamas laužą atpažįstu, kas gali kelti pavojų, saugau save ir kitus (nemosuoju uždegtais pagaliukais, paruošiu laužavietę su akmenimis, nemetu sausos žolės ir t.t.).",
-            "Savo vienetui pravedu bent vieną skautišką žaidimą.",
-            "Vesdama(s) vienetą į rikiuotę aiškiai sakau komandas, saliutuoju vėliavai, tvarkingai atiduodu raportą.",
-            "Apmokau kitą skautą rikiuotės eigos.",
-            "Suburiu vienetą vakaro pasirodymui. Padedu drovesniam vaikui įsilieti į vakaro pasirodymo kūrimą, palaikau jį (ją).",
-            "Vadovui papasakojus istoriją/pasaką ar su vienetu pažiūrėjus filmą, spektaklį, savais žodžiais paaiškinu, kokie buvo veikėjai, ką jie jautė, kas ir kodėl įvyko."
+            {
+              "id": "t1",
+              "text": "Su vadovo priežiūra/pagalba palankiomis sąlygomis užkuriu laužą ir palaikau jo degimą."
+            },
+            {
+              "id": "t2",
+              "text": "Atpažįstu medžius, kurių nekertame ir kurie tinka laužui."
+            },
+            {
+              "id": "t3",
+              "text": "Kurdamas laužą atpažįstu, kas gali kelti pavojų, saugau save ir kitus (nemosuoju uždegtais pagaliukais, paruošiu laužavietę su akmenimis, nemetu sausos žolės ir t.t.)."
+            },
+            {
+              "id": "t4",
+              "text": "Savo vienetui pravedu bent vieną skautišką žaidimą."
+            },
+            {
+              "id": "t5",
+              "text": "Vesdama(s) vienetą į rikiuotę aiškiai sakau komandas, saliutuoju vėliavai, tvarkingai atiduodu raportą."
+            },
+            {
+              "id": "t6",
+              "text": "Apmokau kitą skautą rikiuotės eigos."
+            },
+            {
+              "id": "t7",
+              "text": "Suburiu vienetą vakaro pasirodymui. Padedu drovesniam vaikui įsilieti į vakaro pasirodymo kūrimą, palaikau jį (ją)."
+            },
+            {
+              "id": "t8",
+              "text": "Vadovui papasakojus istoriją/pasaką ar su vienetu pažiūrėjus filmą, spektaklį, savais žodžiais paaiškinu, kokie buvo veikėjai, ką jie jautė, kas ir kodėl įvyko."
+            }
           ]
         },
         {
           "level": 3,
           "tasks": [
-            "Sukraunu bent dviejų skirtingų tipų laužus, lengvai juos atpažįstu.",
-            "Įrengiu vietą laužui, kurioje galima saugiai įkurti ugnį, ir malkinę, kuri nepraleidžia vandens.",
-            "Pastebiu, kada trūksta malkų, ir suorganizuoju vieneto skautus malkinei papildyti.",
-            "Be vadovo priežiūros/pagalbos palankiomis sąlygomis užkuriu laužą ir palaikau jo degimą.",
-            "Užvedu dainą pastovyklės lauže.",
-            "Kartu su kitais vieneto nariais galiu sudainuoti bent 5 dainas.",
-            "Išgirdęs (-usi) švilpuką atpažįstu signalus, atitinkamai reaguoju į švilpuko komandas (susiburti, skubėti,dėmesio ir t.t.). Esu išbandęs (išbandžiusi) perduoti komandas švilpuku savo vienetui."
+            {
+              "id": "t1",
+              "text": "Sukraunu bent dviejų skirtingų tipų laužus, lengvai juos atpažįstu."
+            },
+            {
+              "id": "t2",
+              "text": "Įrengiu vietą laužui, kurioje galima saugiai įkurti ugnį, ir malkinę, kuri nepraleidžia vandens."
+            },
+            {
+              "id": "t3",
+              "text": "Pastebiu, kada trūksta malkų, ir suorganizuoju vieneto skautus malkinei papildyti."
+            },
+            {
+              "id": "t4",
+              "text": "Be vadovo priežiūros/pagalbos palankiomis sąlygomis užkuriu laužą ir palaikau jo degimą."
+            },
+            {
+              "id": "t5",
+              "text": "Užvedu dainą pastovyklės lauže."
+            },
+            {
+              "id": "t6",
+              "text": "Kartu su kitais vieneto nariais galiu sudainuoti bent 5 dainas."
+            },
+            {
+              "id": "t7",
+              "text": "Išgirdęs (-usi) švilpuką atpažįstu signalus, atitinkamai reaguoju į švilpuko komandas (susiburti, skubėti,dėmesio ir t.t.). Esu išbandęs (išbandžiusi) perduoti komandas švilpuku savo vienetui."
+            }
           ]
         },
         {
           "level": 4,
           "tasks": [
-            "Sėkmingai užkuriu laužą 2 skirtingais būdais.",
-            "Be vadovo priežiūros/pagalbos nepalankiomis sąlygomis užkuriu laužą ir palaikau jo degimą.",
-            "Paruošiu ir savo draugovei (laivui) pravedu pastovyklės laužo programą.",
-            "Pakalbinęs (pakalbinusi) vyresnius skautus, išmokstu naują dainą/žaidimą ir išmokau savo vieneto narius.",
-            "Prieš stovyklą savarankiškai pasidomiu naujomis dainomis/sutartinėmis ir stovykloje jų išmokau savo vieneto narius.",
-            "Pagarbiai sulankstau Lietuvos, organizacijos ar tunto vėliavas.",
-            "Galiu parinkti/sugalvoti tinkamą šūkį pagal situaciją.",
-            "Sukuriu kažką naujo ir pristatau vienetui - savo kūrybos dainą, istoriją, pasirodymą, paveikslą ir t.t.",
-            "Pravedu refleksiją skilčiai (valčiai).",
-            "Priimu į pastovyklę (sueigą) atvykusius svečius, užduodu jiems klausimų."
+            {
+              "id": "t1",
+              "text": "Sėkmingai užkuriu laužą 2 skirtingais būdais."
+            },
+            {
+              "id": "t2",
+              "text": "Be vadovo priežiūros/pagalbos nepalankiomis sąlygomis užkuriu laužą ir palaikau jo degimą."
+            },
+            {
+              "id": "t3",
+              "text": "Paruošiu ir savo draugovei (laivui) pravedu pastovyklės laužo programą."
+            },
+            {
+              "id": "t4",
+              "text": "Pakalbinęs (pakalbinusi) vyresnius skautus, išmokstu naują dainą/žaidimą ir išmokau savo vieneto narius."
+            },
+            {
+              "id": "t5",
+              "text": "Prieš stovyklą savarankiškai pasidomiu naujomis dainomis/sutartinėmis ir stovykloje jų išmokau savo vieneto narius."
+            },
+            {
+              "id": "t6",
+              "text": "Pagarbiai sulankstau Lietuvos, organizacijos ar tunto vėliavas."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu parinkti/sugalvoti tinkamą šūkį pagal situaciją."
+            },
+            {
+              "id": "t8",
+              "text": "Sukuriu kažką naujo ir pristatau vienetui - savo kūrybos dainą, istoriją, pasirodymą, paveikslą ir t.t."
+            },
+            {
+              "id": "t9",
+              "text": "Pravedu refleksiją skilčiai (valčiai)."
+            },
+            {
+              "id": "t10",
+              "text": "Priimu į pastovyklę (sueigą) atvykusius svečius, užduodu jiems klausimų."
+            }
           ]
         },
         {
           "level": 5,
           "tasks": [
-            "Pagal stovyklautojų amžių ir stovyklos programą parenku tinkamiausią laužo tipą 30-50 žmonių grupei, paruošiu ir pravedu dinamišką laužo programą.",
-            "Reaguoju į laužo dalyvių emocijas, gebu pakeisti scenarijų, pasinaudoti atsarginiu planu.",
-            "Planuodamas laužą atsižvelgiu į laužo dinamiką ir tinkamai paruošiu dainas, pasirodymus, žaidimus, šūkius.",
-            "Galiu parinkti tinkamiausią laužo krovimo būdą pagal situaciją (kuris kaitresnis, suteikia daugiau apšvietimo, ilgiau dega, pan.).",
-            "Savo vienete surengiu diskusiją visiems įdomia tema, diskusijoje išklausau visų nuomonių, išreiškiu savąją, nešališkai apibendrinu diskusiją.",
-            "Susipažinęs (susipažinusi) su savo vieneto istorija, pristatau savo vienetą kito tunto/krašto stovykloje.",
-            "Bent kartą vadovauju pastovyklės, renginio ar sueigos rikiuotei (priimu raportus, duodu komandas visai rikiuotei, perduodu informaciją).",
-            "Išmokau jaunesnius skautus dainų/žaidimų.",
-            "Kartu su kitais vieneto nariais sudainuoju bent 10 dainų.",
-            "Pasirinkęs (pasirinkusi) 3 liaudies dainas ar sutartines, sužinau daugiau apie jų prasmę ir savo vienetui papasakoju, kokioms progoms jos tinkamos, kokia tekstų reikšmė.",
-            "Surandu anksčiau nebandytą refleksijos metodą ir jį panaudodama(s) pravedu vieneto refleksiją."
+            {
+              "id": "t1",
+              "text": "Pagal stovyklautojų amžių ir stovyklos programą parenku tinkamiausią laužo tipą 30-50 žmonių grupei, paruošiu ir pravedu dinamišką laužo programą."
+            },
+            {
+              "id": "t2",
+              "text": "Reaguoju į laužo dalyvių emocijas, gebu pakeisti scenarijų, pasinaudoti atsarginiu planu."
+            },
+            {
+              "id": "t3",
+              "text": "Planuodamas laužą atsižvelgiu į laužo dinamiką ir tinkamai paruošiu dainas, pasirodymus, žaidimus, šūkius."
+            },
+            {
+              "id": "t4",
+              "text": "Galiu parinkti tinkamiausią laužo krovimo būdą pagal situaciją (kuris kaitresnis, suteikia daugiau apšvietimo, ilgiau dega, pan.)."
+            },
+            {
+              "id": "t5",
+              "text": "Savo vienete surengiu diskusiją visiems įdomia tema, diskusijoje išklausau visų nuomonių, išreiškiu savąją, nešališkai apibendrinu diskusiją."
+            },
+            {
+              "id": "t6",
+              "text": "Susipažinęs (susipažinusi) su savo vieneto istorija, pristatau savo vienetą kito tunto/krašto stovykloje."
+            },
+            {
+              "id": "t7",
+              "text": "Bent kartą vadovauju pastovyklės, renginio ar sueigos rikiuotei (priimu raportus, duodu komandas visai rikiuotei, perduodu informaciją)."
+            },
+            {
+              "id": "t8",
+              "text": "Išmokau jaunesnius skautus dainų/žaidimų."
+            },
+            {
+              "id": "t9",
+              "text": "Kartu su kitais vieneto nariais sudainuoju bent 10 dainų."
+            },
+            {
+              "id": "t10",
+              "text": "Pasirinkęs (pasirinkusi) 3 liaudies dainas ar sutartines, sužinau daugiau apie jų prasmę ir savo vienetui papasakoju, kokioms progoms jos tinkamos, kokia tekstų reikšmė."
+            },
+            {
+              "id": "t11",
+              "text": "Surandu anksčiau nebandytą refleksijos metodą ir jį panaudodama(s) pravedu vieneto refleksiją."
+            }
           ]
         },
         {
           "level": 6,
           "tasks": [
-            "Sėkmingai užkuriu laužą trimis skirtingais būdais.",
-            "Susirenku asmeninį stovyklos/žygio inventorių, su kurio pagalba galėsiu užkurti laužą bet kokiomis oro sąlygomis.",
-            "Įkuriu ir iškuriu laužavietę nepalikdamas pėdsakų.",
-            "Vykdau pagrindinio bendro stovyklos laužo laužavedžio pareigas (nebūtinai visą laužą vedu viena(s) - vadovauju laužavedžių grupei).",
-            "Susiruošiu ir į stovyklą/žygį vežuosi rinkinėlį priemonių, kurios man padėtų pasiruošti laužui (dainorėliai, dainų/žaidimų užrašai, papildomos priemonės pasirodymams). Prieš kiekvieną stovyklą savo rinkinį papildau ir susitvarkau.",
-            "Iš už tunto/krašto ribų atsivežiau naujų dainų/žaidimų ir išmokiau savo vienetą.",
-            "Skautiškame renginyje užsienyje supažindinau skautus su lietuviškais žaidimais.",
-            "Sugalvoju, vadovų komandai pristatau ir su reikiama pagalba įgyvendinu naują kūrybišką idėją bendrai stovyklos programai arba bendram laužui.",
-            "Apsiimu pareigas, kuriose turiu valdyti didelę auditoriją (ne laužavedžio, o kitas - pavyzdžiui, didelio žaidimo ar renginio vedėjas, stovyklos komendantas ir pan.). Kai kalbu auditorijai, sėkmingai atkreipiu dėmesį, suvaldau triukšmą, sudominu klausytojus ir įtraukiu į programą.",
-            "Sugalvoju ir įgyvendinu būdą stovykloje pastebėti ir paskatinti kiekvieną vieneto narį (pvz. kasdien kiekvieną už ką nors pagirsiu, įteiksiu kiekvienam paties padarytą dovanėlę ar pan.) Vakaro įgūdis"
+            {
+              "id": "t1",
+              "text": "Sėkmingai užkuriu laužą trimis skirtingais būdais."
+            },
+            {
+              "id": "t2",
+              "text": "Susirenku asmeninį stovyklos/žygio inventorių, su kurio pagalba galėsiu užkurti laužą bet kokiomis oro sąlygomis."
+            },
+            {
+              "id": "t3",
+              "text": "Įkuriu ir iškuriu laužavietę nepalikdamas pėdsakų."
+            },
+            {
+              "id": "t4",
+              "text": "Vykdau pagrindinio bendro stovyklos laužo laužavedžio pareigas (nebūtinai visą laužą vedu viena(s) - vadovauju laužavedžių grupei)."
+            },
+            {
+              "id": "t5",
+              "text": "Susiruošiu ir į stovyklą/žygį vežuosi rinkinėlį priemonių, kurios man padėtų pasiruošti laužui (dainorėliai, dainų/žaidimų užrašai, papildomos priemonės pasirodymams). Prieš kiekvieną stovyklą savo rinkinį papildau ir susitvarkau."
+            },
+            {
+              "id": "t6",
+              "text": "Iš už tunto/krašto ribų atsivežiau naujų dainų/žaidimų ir išmokiau savo vienetą."
+            },
+            {
+              "id": "t7",
+              "text": "Skautiškame renginyje užsienyje supažindinau skautus su lietuviškais žaidimais."
+            },
+            {
+              "id": "t8",
+              "text": "Sugalvoju, vadovų komandai pristatau ir su reikiama pagalba įgyvendinu naują kūrybišką idėją bendrai stovyklos programai arba bendram laužui."
+            },
+            {
+              "id": "t9",
+              "text": "Apsiimu pareigas, kuriose turiu valdyti didelę auditoriją (ne laužavedžio, o kitas - pavyzdžiui, didelio žaidimo ar renginio vedėjas, stovyklos komendantas ir pan.). Kai kalbu auditorijai, sėkmingai atkreipiu dėmesį, suvaldau triukšmą, sudominu klausytojus ir įtraukiu į programą."
+            },
+            {
+              "id": "t10",
+              "text": "Sugalvoju ir įgyvendinu būdą stovykloje pastebėti ir paskatinti kiekvieną vieneto narį (pvz. kasdien kiekvieną už ką nors pagirsiu, įteiksiu kiekvienam paties padarytą dovanėlę ar pan.) Vakaro įgūdis"
+            }
           ]
         },
         {
           "level": 7,
           "tasks": [
-            "Vykdau pagrindinio laužavedžio pareigas bent 10-tyje skautiškų laužų.",
-            "Iš bent trijų skirtingų šalių užsienio skautų išmokstu ir į vienetą atsinešu naujų laužo žaidimų/dainų.",
-            "Esu kaip Lietuvos skautijos narys atstovavęs organizacijai nacionaliniame lygmenyje ar bendraujant su kitomis organizacijomis (pvz. koordinavau renginį su kitomis skautiškomis ar neskautiškomis organizacijomis, buvau LS deleguotas į LiJOT renginį, priklausau apskritajam stalui ar kt.)",
-            "Padedu stovyklos komendantui parinkti stovyklos laužaviečių vietas, atitinkančias Skautų stovyklos gaisrinės saugos instrukcijų reikalavimus. Stovykloje reguliariai apeinu laužavietes ir ten, kur ugnis kūrenama nesaugiai, instruktuoju vienetą, kaip laužavietę susitvarkyti.",
-            "Instruktuoju patyrusių arba vyresniųjų skautų vienetą arba suaugusių skautų gildiją, kaip žygiuoti ir rikiuotis keliomis linijomis, taisyklingai lygiuoti, saliutuoti, stovėti. Suteikiu instruktuotam vienetui grįžtamąjį ryšį apie jų rikuotę.",
-            "Pats (pati) dalyvauju ir koordinuoju draugovės ar tunto narių dalyvavimą tarptautiniame projekte arba mokymuose."
+            {
+              "id": "t1",
+              "text": "Vykdau pagrindinio laužavedžio pareigas bent 10-tyje skautiškų laužų."
+            },
+            {
+              "id": "t2",
+              "text": "Iš bent trijų skirtingų šalių užsienio skautų išmokstu ir į vienetą atsinešu naujų laužo žaidimų/dainų."
+            },
+            {
+              "id": "t3",
+              "text": "Esu kaip Lietuvos skautijos narys atstovavęs organizacijai nacionaliniame lygmenyje ar bendraujant su kitomis organizacijomis (pvz. koordinavau renginį su kitomis skautiškomis ar neskautiškomis organizacijomis, buvau LS deleguotas į LiJOT renginį, priklausau apskritajam stalui ar kt.)"
+            },
+            {
+              "id": "t4",
+              "text": "Padedu stovyklos komendantui parinkti stovyklos laužaviečių vietas, atitinkančias Skautų stovyklos gaisrinės saugos instrukcijų reikalavimus. Stovykloje reguliariai apeinu laužavietes ir ten, kur ugnis kūrenama nesaugiai, instruktuoju vienetą, kaip laužavietę susitvarkyti."
+            },
+            {
+              "id": "t5",
+              "text": "Instruktuoju patyrusių arba vyresniųjų skautų vienetą arba suaugusių skautų gildiją, kaip žygiuoti ir rikiuotis keliomis linijomis, taisyklingai lygiuoti, saliutuoti, stovėti. Suteikiu instruktuotam vienetui grįžtamąjį ryšį apie jų rikuotę."
+            },
+            {
+              "id": "t6",
+              "text": "Pats (pati) dalyvauju ir koordinuoju draugovės ar tunto narių dalyvavimą tarptautiniame projekte arba mokymuose."
+            }
           ]
         },
         {
           "level": 8,
           "tasks": [
-            "Gaunu tarptautinę radijo mėgėjo licenciją ir šaukinį, dalyvauju radijo mėgėjų veikloje.",
-            "Sudalyvauju sportinės radiopelegenacijos orientavimosi varžybose (Lapių medžioklėje).",
-            "Tautinėje arba tarptautinėje stovykloje savanoriauju stovyklos apsaugos arba medikų komandoje.",
-            "Savo vienetą instruktuoju, kaip evakuotis ir evakuoti sužeistajį iš stipriai miškingos teritorijos.",
-            "Pravedu ryšininkų kursus arba sueigų šia tema ciklą vieneto skautams.",
-            "Tunto, krašto arba Lietuvos skautijos mastu suorganizuoju ir pravedu pirmosios pagalbos, krizių valdymo arba ryšininkavimo mokymus vadovams arba įgūdžio gilinimo dieną patyrusiems skautams."
+            {
+              "id": "t1",
+              "text": "Gaunu tarptautinę radijo mėgėjo licenciją ir šaukinį, dalyvauju radijo mėgėjų veikloje."
+            },
+            {
+              "id": "t2",
+              "text": "Sudalyvauju sportinės radiopelegenacijos orientavimosi varžybose (Lapių medžioklėje)."
+            },
+            {
+              "id": "t3",
+              "text": "Tautinėje arba tarptautinėje stovykloje savanoriauju stovyklos apsaugos arba medikų komandoje."
+            },
+            {
+              "id": "t4",
+              "text": "Savo vienetą instruktuoju, kaip evakuotis ir evakuoti sužeistajį iš stipriai miškingos teritorijos."
+            },
+            {
+              "id": "t5",
+              "text": "Pravedu ryšininkų kursus arba sueigų šia tema ciklą vieneto skautams."
+            },
+            {
+              "id": "t6",
+              "text": "Tunto, krašto arba Lietuvos skautijos mastu suorganizuoju ir pravedu pirmosios pagalbos, krizių valdymo arba ryšininkavimo mokymus vadovams arba įgūdžio gilinimo dieną patyrusiems skautams."
+            }
           ]
         }
       ]
@@ -437,123 +1169,369 @@
         {
           "level": 1,
           "tasks": [
-            "Papasakoju, kada naudočiau gelbėjimosi liemenę.",
-            "Pasakau, koks man tinkamas gelbėjimosi liemenės dydis, ją apsivelku bei tinkamai susiveržiu. Galiu papasakoti, kaip saugiai elgtis šalia vandens.",
-            "Paaiškinu, kuo pavojingas šaltas vanduo.",
-            "Papasakoju, kaip iškviesčiau gelbėjimo tarnybas.",
-            "Parodau, kaip taisyklingai laikyti baidarės ir/arba kanojos irklą.",
-            "Įvardiju bent 2 irklinių valčių tipus.",
-            "Parodau, ką daryčiau pametęs (pametusi) vandenyje irklą arba bent kaip panaudočiau busoką.",
-            "Irklavau bent vienos valandos trukmės irklavimo pratybose arba vandens žygyje."
+            {
+              "id": "t1",
+              "text": "Papasakoju, kada naudočiau gelbėjimosi liemenę."
+            },
+            {
+              "id": "t2",
+              "text": "Pasakau, koks man tinkamas gelbėjimosi liemenės dydis, ją apsivelku bei tinkamai susiveržiu. Galiu papasakoti, kaip saugiai elgtis šalia vandens."
+            },
+            {
+              "id": "t3",
+              "text": "Paaiškinu, kuo pavojingas šaltas vanduo."
+            },
+            {
+              "id": "t4",
+              "text": "Papasakoju, kaip iškviesčiau gelbėjimo tarnybas."
+            },
+            {
+              "id": "t5",
+              "text": "Parodau, kaip taisyklingai laikyti baidarės ir/arba kanojos irklą."
+            },
+            {
+              "id": "t6",
+              "text": "Įvardiju bent 2 irklinių valčių tipus."
+            },
+            {
+              "id": "t7",
+              "text": "Parodau, ką daryčiau pametęs (pametusi) vandenyje irklą arba bent kaip panaudočiau busoką."
+            },
+            {
+              "id": "t8",
+              "text": "Irklavau bent vienos valandos trukmės irklavimo pratybose arba vandens žygyje."
+            }
           ]
         },
         {
           "level": 2,
           "tasks": [
-            "Papasakoju, kokie yra hipotermijos simptomai.",
-            "Galiu nuplaukti 25 m vilkėdama(s) gelbėjimosi liemenę.",
-            "Papasakoju, ką daryčiau, jeigu laivo įgulos narys iškristų iš irklinio laivo.",
-            "Prieš išplaukdama(s) laivu, įvardiju, kur saugu plaukti.",
-            "Savo skautiškam vienetui papasakoju, kodėl neturėčiau gerti vandens iš ežero ar upės, kuriame plaukiojame, kol jis nėra išfiltruotas.",
-            "Sugebu įlipti ir išlipti iš irklinio laivo laikydamasi(s) saugumo instrukcijų.",
-            "Galiu pademonstruoti, kaip saugiai elgtis irkliniame laive.",
-            "Papasakoju, kokių neigiamų pasekmių gamtai gali turėti irklavimas natūraliuose vandens telkiniuose.",
-            "Vykdau bent 4 irklavimo komandas.",
-            "Pademonstruoju bendrus švilpuko signalus ir papasakoju, kada juos naudočiau.",
-            "Galiu įvardinti bent vieno tipo irklinio laivo ir jo irklų dalis.",
-            "Dalyvavau bent dviejose irklavimo pratybose arba 2 vandens žygiuose."
+            {
+              "id": "t1",
+              "text": "Papasakoju, kokie yra hipotermijos simptomai."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu nuplaukti 25 m vilkėdama(s) gelbėjimosi liemenę."
+            },
+            {
+              "id": "t3",
+              "text": "Papasakoju, ką daryčiau, jeigu laivo įgulos narys iškristų iš irklinio laivo."
+            },
+            {
+              "id": "t4",
+              "text": "Prieš išplaukdama(s) laivu, įvardiju, kur saugu plaukti."
+            },
+            {
+              "id": "t5",
+              "text": "Savo skautiškam vienetui papasakoju, kodėl neturėčiau gerti vandens iš ežero ar upės, kuriame plaukiojame, kol jis nėra išfiltruotas."
+            },
+            {
+              "id": "t6",
+              "text": "Sugebu įlipti ir išlipti iš irklinio laivo laikydamasi(s) saugumo instrukcijų."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu pademonstruoti, kaip saugiai elgtis irkliniame laive."
+            },
+            {
+              "id": "t8",
+              "text": "Papasakoju, kokių neigiamų pasekmių gamtai gali turėti irklavimas natūraliuose vandens telkiniuose."
+            },
+            {
+              "id": "t9",
+              "text": "Vykdau bent 4 irklavimo komandas."
+            },
+            {
+              "id": "t10",
+              "text": "Pademonstruoju bendrus švilpuko signalus ir papasakoju, kada juos naudočiau."
+            },
+            {
+              "id": "t11",
+              "text": "Galiu įvardinti bent vieno tipo irklinio laivo ir jo irklų dalis."
+            },
+            {
+              "id": "t12",
+              "text": "Dalyvavau bent dviejose irklavimo pratybose arba 2 vandens žygiuose."
+            }
           ]
         },
         {
           "level": 3,
           "tasks": [
-            "Galiu nuplaukti 100 m vilkėdama(s) gelbėjimosi liemenę.",
-            "Papasakoju, kaip elgčiausi iškritęs (iškritusi) iš laivo.",
-            "Saugiai perlipu iš vieno irklinio laivo į kitą.",
-            "Plaukdama(s) irkliniu laivu gebu pasikviesti pagalbą, jei jos prireikia.",
-            "Pamokau jaunesnį skautą taisyklingai užsidėti gelbėjimosi liemenę.",
-            "Jaunesniems skautams parodau, kaip tvarkingai laikyti gelbėjimosi liemenes.",
-            "Pasiruošiu aprangą vandens žygiui irkliniais laivais.",
-            "Randu orų prognozę vietovei, kurioje planuoju irkluoti.",
-            "Pagal būsimas oro sąlygas įvertinu ir kitiems pristatau riziką, kuri gali kilti irkluojant.",
-            "Komandiniame irkliniame laive gebu prisiderinti prie pirmo irklo ir irkluoti tokiu pačiu ritmu bent 3 min.",
-            "Galiu pasukti baidarę arba kanoją norima kryptimi.",
-            "Įvardiju keturis inkarų tipus ir paaiškinu jų skirtumus.",
-            "Dalyvavau dviejuose irklavimo pratybose arba 2 trumpuose vandens žygiuose."
+            {
+              "id": "t1",
+              "text": "Galiu nuplaukti 100 m vilkėdama(s) gelbėjimosi liemenę."
+            },
+            {
+              "id": "t2",
+              "text": "Papasakoju, kaip elgčiausi iškritęs (iškritusi) iš laivo."
+            },
+            {
+              "id": "t3",
+              "text": "Saugiai perlipu iš vieno irklinio laivo į kitą."
+            },
+            {
+              "id": "t4",
+              "text": "Plaukdama(s) irkliniu laivu gebu pasikviesti pagalbą, jei jos prireikia."
+            },
+            {
+              "id": "t5",
+              "text": "Pamokau jaunesnį skautą taisyklingai užsidėti gelbėjimosi liemenę."
+            },
+            {
+              "id": "t6",
+              "text": "Jaunesniems skautams parodau, kaip tvarkingai laikyti gelbėjimosi liemenes."
+            },
+            {
+              "id": "t7",
+              "text": "Pasiruošiu aprangą vandens žygiui irkliniais laivais."
+            },
+            {
+              "id": "t8",
+              "text": "Randu orų prognozę vietovei, kurioje planuoju irkluoti."
+            },
+            {
+              "id": "t9",
+              "text": "Pagal būsimas oro sąlygas įvertinu ir kitiems pristatau riziką, kuri gali kilti irkluojant."
+            },
+            {
+              "id": "t10",
+              "text": "Komandiniame irkliniame laive gebu prisiderinti prie pirmo irklo ir irkluoti tokiu pačiu ritmu bent 3 min."
+            },
+            {
+              "id": "t11",
+              "text": "Galiu pasukti baidarę arba kanoją norima kryptimi."
+            },
+            {
+              "id": "t12",
+              "text": "Įvardiju keturis inkarų tipus ir paaiškinu jų skirtumus."
+            },
+            {
+              "id": "t13",
+              "text": "Dalyvavau dviejuose irklavimo pratybose arba 2 trumpuose vandens žygiuose."
+            }
           ]
         },
         {
           "level": 4,
           "tasks": [
-            "Jaunesniam skautui paaiškinu, kaip saugiai elgtis prie vandens.",
-            "Galiu apibūdinti irklavimui pavojingas oro sąlygas ir paaiškinti, ką daryti, jei tokios sąlygos ištinka esant vandenyje.",
-            "Moku taisyklingai irkluoti 4 tipų irklinius laivus.",
-            "Įvardiju 6 inkarų rūšis ir galiu paaiškinti jų skirtumus.",
-            "Kitiems paaiškinu, ką reikia daryti apvirtus valčiai.",
-            "Vykdau irklavimo komandas.",
-            "Įtempiu valtį į vandenį ir ištempiu ją iš vandens į krantą.",
-            "Surišu tikrąjį, piemenų, gelbėjimo ir inkaro mazgus, pririšu valtį.",
-            "Įlipu į valtį iš vandens.",
-            "Pagelbėju išleidžiant baidares į vandenį ir traukiant jas iš vandens.",
-            "Sugebu kanoja arba baidare plaukti tiesiai bent 50 metrų.",
-            "Plaukdama(s) irkliniu laivu galiu atlikti bazinius manevrus (plaukti į priekį, pasukti, apsisukti, sustoti, priplaukti prie kranto).",
-            "Dalyvavau bent ketveriose valandos trukmės irklavimo pratybose arba 4 vandens žygiuose."
+            {
+              "id": "t1",
+              "text": "Jaunesniam skautui paaiškinu, kaip saugiai elgtis prie vandens."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu apibūdinti irklavimui pavojingas oro sąlygas ir paaiškinti, ką daryti, jei tokios sąlygos ištinka esant vandenyje."
+            },
+            {
+              "id": "t3",
+              "text": "Moku taisyklingai irkluoti 4 tipų irklinius laivus."
+            },
+            {
+              "id": "t4",
+              "text": "Įvardiju 6 inkarų rūšis ir galiu paaiškinti jų skirtumus."
+            },
+            {
+              "id": "t5",
+              "text": "Kitiems paaiškinu, ką reikia daryti apvirtus valčiai."
+            },
+            {
+              "id": "t6",
+              "text": "Vykdau irklavimo komandas."
+            },
+            {
+              "id": "t7",
+              "text": "Įtempiu valtį į vandenį ir ištempiu ją iš vandens į krantą."
+            },
+            {
+              "id": "t8",
+              "text": "Surišu tikrąjį, piemenų, gelbėjimo ir inkaro mazgus, pririšu valtį."
+            },
+            {
+              "id": "t9",
+              "text": "Įlipu į valtį iš vandens."
+            },
+            {
+              "id": "t10",
+              "text": "Pagelbėju išleidžiant baidares į vandenį ir traukiant jas iš vandens."
+            },
+            {
+              "id": "t11",
+              "text": "Sugebu kanoja arba baidare plaukti tiesiai bent 50 metrų."
+            },
+            {
+              "id": "t12",
+              "text": "Plaukdama(s) irkliniu laivu galiu atlikti bazinius manevrus (plaukti į priekį, pasukti, apsisukti, sustoti, priplaukti prie kranto)."
+            },
+            {
+              "id": "t13",
+              "text": "Dalyvavau bent ketveriose valandos trukmės irklavimo pratybose arba 4 vandens žygiuose."
+            }
           ]
         },
         {
           "level": 5,
           "tasks": [
-            "Savo skautiškam vienetui pristatau irklavimo vandens telkiniuose taisykles.",
-            "Galiu pademonstruoti tris būdus, kaip padėti vandenyje atsidūrusiam žmogui saugiai pasiekti krantą.",
-            "Papasakoju, kaip elgčiausi kilus audrai.",
-            "Paruošiu valtį ar kitokį irklinį laivą transportavimui.",
-            "Paruošiu valtį ar kitokį irklinį laivą sandėliavimui.",
-            "Galiu su irkline valtimi nuplaukti bent 10 km.",
-            "Padedu kitam įlipti į laivą iš vandens.",
-            "Atpažįstu kliūtis upėje: seklumas, rėvas, povandeninius akmenis ir pan.",
-            "Dalyvavau 9 valandų vandens žygyje."
+            {
+              "id": "t1",
+              "text": "Savo skautiškam vienetui pristatau irklavimo vandens telkiniuose taisykles."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu pademonstruoti tris būdus, kaip padėti vandenyje atsidūrusiam žmogui saugiai pasiekti krantą."
+            },
+            {
+              "id": "t3",
+              "text": "Papasakoju, kaip elgčiausi kilus audrai."
+            },
+            {
+              "id": "t4",
+              "text": "Paruošiu valtį ar kitokį irklinį laivą transportavimui."
+            },
+            {
+              "id": "t5",
+              "text": "Paruošiu valtį ar kitokį irklinį laivą sandėliavimui."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu su irkline valtimi nuplaukti bent 10 km."
+            },
+            {
+              "id": "t7",
+              "text": "Padedu kitam įlipti į laivą iš vandens."
+            },
+            {
+              "id": "t8",
+              "text": "Atpažįstu kliūtis upėje: seklumas, rėvas, povandeninius akmenis ir pan."
+            },
+            {
+              "id": "t9",
+              "text": "Dalyvavau 9 valandų vandens žygyje."
+            }
           ]
         },
         {
           "level": 6,
           "tasks": [
-            "Savo skautiškam vienetui papasakoju, kaip elgtis skęstant valčiai ar kitokiam irkliniam laivui.",
-            "Viena ranka laikydamas skęstantįjį galiu nuplaukti 30 metrų.",
-            "Paruošiu valtį ar kitokį irklinį laivą žiemai.",
-            "Galiu išvardinti 5 irklinių valčių tipus ir moku taisyklingai juos irkluoti.",
-            "Galiu su irkline valtimi nuplaukti bent 20 km.",
-            "Galiu vadovauti kitiems irkluotojams laive naudodama(s) irklavimo komandas.",
-            "Moku mazgus ir kilpas: inkaro, gelbėjimo, žvejo, dvipuskilpio, sutrumpinimo, tikrąjį ir paprastą polerio, piemenų. Paaiškinu, kokiam tikslui jie naudojami. Irklavimo įgūdis"
+            {
+              "id": "t1",
+              "text": "Savo skautiškam vienetui papasakoju, kaip elgtis skęstant valčiai ar kitokiam irkliniam laivui."
+            },
+            {
+              "id": "t2",
+              "text": "Viena ranka laikydamas skęstantįjį galiu nuplaukti 30 metrų."
+            },
+            {
+              "id": "t3",
+              "text": "Paruošiu valtį ar kitokį irklinį laivą žiemai."
+            },
+            {
+              "id": "t4",
+              "text": "Galiu išvardinti 5 irklinių valčių tipus ir moku taisyklingai juos irkluoti."
+            },
+            {
+              "id": "t5",
+              "text": "Galiu su irkline valtimi nuplaukti bent 20 km."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu vadovauti kitiems irkluotojams laive naudodama(s) irklavimo komandas."
+            },
+            {
+              "id": "t7",
+              "text": "Moku mazgus ir kilpas: inkaro, gelbėjimo, žvejo, dvipuskilpio, sutrumpinimo, tikrąjį ir paprastą polerio, piemenų. Paaiškinu, kokiam tikslui jie naudojami. Irklavimo įgūdis"
+            }
           ]
         },
         {
           "level": 7,
           "tasks": [
-            "Moku gaivinti žmogų po skendimo.",
-            "Visiškai apsirengęs (su marškiniais, kelnėmis ir sportiniais batais) gebu nuplaukti 15 metrų ir 15 metrų parplukdyti skęstantįjį.",
-            "Moku nuleisti inkarą vandens telkinyje.",
-            "Pademonstruoju, kaip prasilenkti su kitais laivais laikantis taisyklių.",
-            "Papasakoju apie dažniausiai pasitaikančius valties gedimus ir jų šalinimo būdus.",
-            "Moku išvengti kliūčių upėje arba teisingai jas įveikti.",
-            "Moku naudotis motorine valtimi.",
-            "Pademonstruoju, kaip saugiai transportuoti įvairius irklinius laivus bei jų dalis.",
-            "Pademonstruoju, kaip taisyklingai sandėliuoti įvairius irklinius laivus bei jų dalis.",
-            "Pamokau jaunesnius skautus irklavimo pagrindų.",
-            "Suorganizuoju irklavimo žygį ar pratybas jaunesniems skautams."
+            {
+              "id": "t1",
+              "text": "Moku gaivinti žmogų po skendimo."
+            },
+            {
+              "id": "t2",
+              "text": "Visiškai apsirengęs (su marškiniais, kelnėmis ir sportiniais batais) gebu nuplaukti 15 metrų ir 15 metrų parplukdyti skęstantįjį."
+            },
+            {
+              "id": "t3",
+              "text": "Moku nuleisti inkarą vandens telkinyje."
+            },
+            {
+              "id": "t4",
+              "text": "Pademonstruoju, kaip prasilenkti su kitais laivais laikantis taisyklių."
+            },
+            {
+              "id": "t5",
+              "text": "Papasakoju apie dažniausiai pasitaikančius valties gedimus ir jų šalinimo būdus."
+            },
+            {
+              "id": "t6",
+              "text": "Moku išvengti kliūčių upėje arba teisingai jas įveikti."
+            },
+            {
+              "id": "t7",
+              "text": "Moku naudotis motorine valtimi."
+            },
+            {
+              "id": "t8",
+              "text": "Pademonstruoju, kaip saugiai transportuoti įvairius irklinius laivus bei jų dalis."
+            },
+            {
+              "id": "t9",
+              "text": "Pademonstruoju, kaip taisyklingai sandėliuoti įvairius irklinius laivus bei jų dalis."
+            },
+            {
+              "id": "t10",
+              "text": "Pamokau jaunesnius skautus irklavimo pagrindų."
+            },
+            {
+              "id": "t11",
+              "text": "Suorganizuoju irklavimo žygį ar pratybas jaunesniems skautams."
+            }
           ]
         },
         {
           "level": 8,
           "tasks": [
-            "Papasakoju, kaip suteikti pirmąją pagalbą skęstančiajam atsižvelgiant į oro sąlygas.",
-            "Galiu irkline valtimi nuplaukti bent 50 km.",
-            "Susipažįstu su LR įstatymais, aktualiais plaukiojant irkliniais laivais su varikliu ir be jo, įvertinu, ar stovykloje /žygyje laikomasi visų reikalavimų, prireikus užtikrinu, kad reikalavimų būtų laikomasi.",
-            "Suplanuoju ir įrengiu uostą stovykloje.",
-            "Suorganizuoju kelių dienų skautišką žygį irkliniais laivais.",
-            "Apmokau vadovų komandą gaivinti skęstantįjį bei suteikti pirmąją pagalbą nušalus.",
-            "To nemokantiems skautams pademonstruoju, kaip gelbėti žmones iš skęstančio laivo.",
-            "Papasakoju kitiems, kaip organizuoti skęstančiųjų gelbėjimą.",
-            "Pravedu mokymus arba sueigų ciklą apie irklavimą tunto arba aukštesniu lygmeniu."
+            {
+              "id": "t1",
+              "text": "Papasakoju, kaip suteikti pirmąją pagalbą skęstančiajam atsižvelgiant į oro sąlygas."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu irkline valtimi nuplaukti bent 50 km."
+            },
+            {
+              "id": "t3",
+              "text": "Susipažįstu su LR įstatymais, aktualiais plaukiojant irkliniais laivais su varikliu ir be jo, įvertinu, ar stovykloje /žygyje laikomasi visų reikalavimų, prireikus užtikrinu, kad reikalavimų būtų laikomasi."
+            },
+            {
+              "id": "t4",
+              "text": "Suplanuoju ir įrengiu uostą stovykloje."
+            },
+            {
+              "id": "t5",
+              "text": "Suorganizuoju kelių dienų skautišką žygį irkliniais laivais."
+            },
+            {
+              "id": "t6",
+              "text": "Apmokau vadovų komandą gaivinti skęstantįjį bei suteikti pirmąją pagalbą nušalus."
+            },
+            {
+              "id": "t7",
+              "text": "To nemokantiems skautams pademonstruoju, kaip gelbėti žmones iš skęstančio laivo."
+            },
+            {
+              "id": "t8",
+              "text": "Papasakoju kitiems, kaip organizuoti skęstančiųjų gelbėjimą."
+            },
+            {
+              "id": "t9",
+              "text": "Pravedu mokymus arba sueigų ciklą apie irklavimą tunto arba aukštesniu lygmeniu."
+            }
           ]
         }
       ]
@@ -565,99 +1543,273 @@
         {
           "level": 1,
           "tasks": [
-            "Žinau, kur yra vaistinėlės (namuose, skautiškame būkle) bei kas atsakingas už mediciną stovykloje.",
-            "Klausydama(s) stovyklos ar žygio saugumo instruktažo, pasitikrinu, ar viską supratau, ir paklausiu vadovo, jei kas neaišku.",
-            "Papasakoju, kokie nelaimingi atsitikimai gali nutikti stovyklaujant ir žinau, kad visada pirmiausia turiu informuoti vadovą.",
-            "Papasakoju, ką daryčiau, jei nutiktų nelaimė mieste: pirmiausia kreipčiausi į suaugusiuosius, paaiškinčiau, kas nutiko, o jeigu jų nėra, skambinčiau pagalbos numeriu 112 ir papasakočiau apie nelaimingą atsitikimą. Nelaimės atveju turiu būti drąsus ir žinoti, kad policija, greitoji medicininė pagalba, bei ugniagesiai gelbėtojai yra visuomet nusiteikę padėti ir jų bijoti nereikia.",
-            "Norėdama(s) atsiskirti nuo grupės, visuomet informuoju vadovą, kad jis žinotų, kur aš esu.",
-            "Žinau savo ir savo artimųjų, vieneto vadovų adresus, mintinai išmokstu savo artimųjų ir savo telefono numerius."
+            {
+              "id": "t1",
+              "text": "Žinau, kur yra vaistinėlės (namuose, skautiškame būkle) bei kas atsakingas už mediciną stovykloje."
+            },
+            {
+              "id": "t2",
+              "text": "Klausydama(s) stovyklos ar žygio saugumo instruktažo, pasitikrinu, ar viską supratau, ir paklausiu vadovo, jei kas neaišku."
+            },
+            {
+              "id": "t3",
+              "text": "Papasakoju, kokie nelaimingi atsitikimai gali nutikti stovyklaujant ir žinau, kad visada pirmiausia turiu informuoti vadovą."
+            },
+            {
+              "id": "t4",
+              "text": "Papasakoju, ką daryčiau, jei nutiktų nelaimė mieste: pirmiausia kreipčiausi į suaugusiuosius, paaiškinčiau, kas nutiko, o jeigu jų nėra, skambinčiau pagalbos numeriu 112 ir papasakočiau apie nelaimingą atsitikimą. Nelaimės atveju turiu būti drąsus ir žinoti, kad policija, greitoji medicininė pagalba, bei ugniagesiai gelbėtojai yra visuomet nusiteikę padėti ir jų bijoti nereikia."
+            },
+            {
+              "id": "t5",
+              "text": "Norėdama(s) atsiskirti nuo grupės, visuomet informuoju vadovą, kad jis žinotų, kur aš esu."
+            },
+            {
+              "id": "t6",
+              "text": "Žinau savo ir savo artimųjų, vieneto vadovų adresus, mintinai išmokstu savo artimųjų ir savo telefono numerius."
+            }
           ]
         },
         {
           "level": 2,
           "tasks": [
-            "Padedama(s) šeimos narių, susipažįstu su namų vaistinėle, padedama(s) vadovo (vadovės) - su pastovyklės ar skautų būklo vaistinėle. Žinau, kurios vaistinėlės priemonės kam naudojamos, kurių priemonių neturėčiau naudoti be suaugusiųjų priežiūros.",
-            "Moku susitvarkyti mažą įpjovimą, nubrozdinimą ar nusideginimą - visais atvejais pirmiausia reikia išvalyti žaizdą su tam skirtomis priemonėmis, ją dezinfekuoti ir tuomet pagal žaizdos tipą ir dydį užklijuoti pleistrą ar naudotis tvarsčiu.",
-            "Pasidomiu, kokie chemikalai naudojami buityje, ir žinau, kaip tinkamai su jais elgtis, - jų negeriu ir nepilu ant kūno.",
-            "Savo šeimai ir vienetui papasakoju, ką daryčiau namuose ir stovykloje, jei susidarytų krizinė situacija. Laikausi pagrindinės taisyklės - nepasimesti ir nepanikuoti, blaiviai vertinti situaciją ir nedelsiant ieškoti vyresnių žmonių pagalbos.",
-            "Papasakoju, ką daryčiau užsidegus drabužiams: greitai nusirengti degantį drabužį, jei to negaliu padaryti - griūti ant žemės ir voliotis ties ugnies židiniu, kad užgesinčiau ugnį. Jeigu užsidegtų draugo drabužiai, ieškoti audeklo ir bandyti uždengti ugnį.",
-            "Galiu skirtingais būdais iškviesti pagalbą ar perduoti pavojaus signalą. Žinau, kaip elgtis paskambinus į BPC."
+            {
+              "id": "t1",
+              "text": "Padedama(s) šeimos narių, susipažįstu su namų vaistinėle, padedama(s) vadovo (vadovės) - su pastovyklės ar skautų būklo vaistinėle. Žinau, kurios vaistinėlės priemonės kam naudojamos, kurių priemonių neturėčiau naudoti be suaugusiųjų priežiūros."
+            },
+            {
+              "id": "t2",
+              "text": "Moku susitvarkyti mažą įpjovimą, nubrozdinimą ar nusideginimą - visais atvejais pirmiausia reikia išvalyti žaizdą su tam skirtomis priemonėmis, ją dezinfekuoti ir tuomet pagal žaizdos tipą ir dydį užklijuoti pleistrą ar naudotis tvarsčiu."
+            },
+            {
+              "id": "t3",
+              "text": "Pasidomiu, kokie chemikalai naudojami buityje, ir žinau, kaip tinkamai su jais elgtis, - jų negeriu ir nepilu ant kūno."
+            },
+            {
+              "id": "t4",
+              "text": "Savo šeimai ir vienetui papasakoju, ką daryčiau namuose ir stovykloje, jei susidarytų krizinė situacija. Laikausi pagrindinės taisyklės - nepasimesti ir nepanikuoti, blaiviai vertinti situaciją ir nedelsiant ieškoti vyresnių žmonių pagalbos."
+            },
+            {
+              "id": "t5",
+              "text": "Papasakoju, ką daryčiau užsidegus drabužiams: greitai nusirengti degantį drabužį, jei to negaliu padaryti - griūti ant žemės ir voliotis ties ugnies židiniu, kad užgesinčiau ugnį. Jeigu užsidegtų draugo drabužiai, ieškoti audeklo ir bandyti uždengti ugnį."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu skirtingais būdais iškviesti pagalbą ar perduoti pavojaus signalą. Žinau, kaip elgtis paskambinus į BPC."
+            }
           ]
         },
         {
           "level": 3,
           "tasks": [
-            "Parodau, kaip suteikčiau pirmąją pagalbą esant kraujuojančiai žaizdai (stabdyti kraujavimą) ar nualpus (žmogų paguldyti pavėsyje, atlaisvinti kvėpavimo takus, vandeniu šaldyti pakaušį).",
-            "Išmanau, kaip padėti žmogui šoko būsenoje: jis labai sunerimęs ir jo kvėpavimas padažnėjęs, todėl stengiuosi jį nuraminti ir kartu su juo giliai kvėpuoju.",
-            "Atpažįstu pavojingus elektros šaltinius, moku jų išvengti, apeiti (el. piemenys, el. skydinės, el. prieigos taškai buityje, atviri laidai, baterijos...)",
-            "Esant audrai išeinu į atvirą vietovę, jeigu yra aplinkui tvirtų statinių, slepiuosi juose.",
-            "Parodau, ką daryčiau, jei šalia manęs kam nors nutiktų didesnis nelaimingas įvykis: iškart informuočiau vadovą ir pagal galimybes suteikčiau pirmąją pagalbą.",
-            "Moku naudotis laidiniu telefonu.",
-            "Moku fonetinę abėcėlę ir galiu ja naudodamasi(s) padiktuoti savo vardą.",
-            "Galiu paaiškinti radijo ryšio veikimo principą ir gebu kalbėtis tarp dviejų radijo stotelių.",
-            "Moku perduoti informaciją švilpesiais",
-            "Moku savarankiškai surasti norimo adreso pašto kodą."
+            {
+              "id": "t1",
+              "text": "Parodau, kaip suteikčiau pirmąją pagalbą esant kraujuojančiai žaizdai (stabdyti kraujavimą) ar nualpus (žmogų paguldyti pavėsyje, atlaisvinti kvėpavimo takus, vandeniu šaldyti pakaušį)."
+            },
+            {
+              "id": "t2",
+              "text": "Išmanau, kaip padėti žmogui šoko būsenoje: jis labai sunerimęs ir jo kvėpavimas padažnėjęs, todėl stengiuosi jį nuraminti ir kartu su juo giliai kvėpuoju."
+            },
+            {
+              "id": "t3",
+              "text": "Atpažįstu pavojingus elektros šaltinius, moku jų išvengti, apeiti (el. piemenys, el. skydinės, el. prieigos taškai buityje, atviri laidai, baterijos...)"
+            },
+            {
+              "id": "t4",
+              "text": "Esant audrai išeinu į atvirą vietovę, jeigu yra aplinkui tvirtų statinių, slepiuosi juose."
+            },
+            {
+              "id": "t5",
+              "text": "Parodau, ką daryčiau, jei šalia manęs kam nors nutiktų didesnis nelaimingas įvykis: iškart informuočiau vadovą ir pagal galimybes suteikčiau pirmąją pagalbą."
+            },
+            {
+              "id": "t6",
+              "text": "Moku naudotis laidiniu telefonu."
+            },
+            {
+              "id": "t7",
+              "text": "Moku fonetinę abėcėlę ir galiu ja naudodamasi(s) padiktuoti savo vardą."
+            },
+            {
+              "id": "t8",
+              "text": "Galiu paaiškinti radijo ryšio veikimo principą ir gebu kalbėtis tarp dviejų radijo stotelių."
+            },
+            {
+              "id": "t9",
+              "text": "Moku perduoti informaciją švilpesiais"
+            },
+            {
+              "id": "t10",
+              "text": "Moku savarankiškai surasti norimo adreso pašto kodą."
+            }
           ]
         },
         {
           "level": 4,
           "tasks": [
-            "Įtarus apsinuodijimą, geriu daug vandens, kad paskatinčiau vėmimą ir išvalyčiau skrandžio turinį. Aiškinuosi, dėl ko galėjo kilti apsinuodijimas.",
-            "Išmanau, jog nušalimo atveju audiniai turi būti atšildomi palaipsniui, bet ne staigiai (pvz. po karštu vandeniu). Nudegus, pažeistą vietą šaldau.",
-            "Žinau, kas sudaro vieneto vaistinėlės inventorių, kur jis laikomas ir kaip juo naudotis.",
-            "Vienetui papasakoju, ką daryčiau pastebėjęs (pastebėjusi) gaisrą.",
-            "Įvardinu 10 pavojų kurie gali ištikti stovyklaujant.",
-            "Moku iškviesti gelbėjimo tarnybas turėdama(s) telefoną ir be jo.",
-            "Žinau, kur yra artimiausia mano gyvenamajai vietai civilinės saugos slėptuvė, policijos komisariatas, ligoninė, vaistinė, gaisrinė ir kaip į ten patekti.",
-            "Mintinai moku ir laisvai operuoju fonetine abecėle.",
-            "Moku užmegzti ir patikrinti radijo ryšį. Žinau pagrindines radijo ryšio palaikymo procedūras ir eterio etiketo principus."
+            {
+              "id": "t1",
+              "text": "Įtarus apsinuodijimą, geriu daug vandens, kad paskatinčiau vėmimą ir išvalyčiau skrandžio turinį. Aiškinuosi, dėl ko galėjo kilti apsinuodijimas."
+            },
+            {
+              "id": "t2",
+              "text": "Išmanau, jog nušalimo atveju audiniai turi būti atšildomi palaipsniui, bet ne staigiai (pvz. po karštu vandeniu). Nudegus, pažeistą vietą šaldau."
+            },
+            {
+              "id": "t3",
+              "text": "Žinau, kas sudaro vieneto vaistinėlės inventorių, kur jis laikomas ir kaip juo naudotis."
+            },
+            {
+              "id": "t4",
+              "text": "Vienetui papasakoju, ką daryčiau pastebėjęs (pastebėjusi) gaisrą."
+            },
+            {
+              "id": "t5",
+              "text": "Įvardinu 10 pavojų kurie gali ištikti stovyklaujant."
+            },
+            {
+              "id": "t6",
+              "text": "Moku iškviesti gelbėjimo tarnybas turėdama(s) telefoną ir be jo."
+            },
+            {
+              "id": "t7",
+              "text": "Žinau, kur yra artimiausia mano gyvenamajai vietai civilinės saugos slėptuvė, policijos komisariatas, ligoninė, vaistinė, gaisrinė ir kaip į ten patekti."
+            },
+            {
+              "id": "t8",
+              "text": "Mintinai moku ir laisvai operuoju fonetine abecėle."
+            },
+            {
+              "id": "t9",
+              "text": "Moku užmegzti ir patikrinti radijo ryšį. Žinau pagrindines radijo ryšio palaikymo procedūras ir eterio etiketo principus."
+            }
           ]
         },
         {
           "level": 5,
           "tasks": [
-            "Parodau, kaip gamtoje pritaikyčiau turimus pirmosios pagalbos gebėjimus.",
-            "Gebu tiksliai įvardinti, kas įvyko nelaimingo atsitikimo metu.",
-            "Per stovyklą visada žinau, kur artimiausia ligoninė, policija, gaisrinė ir kaip susisiekti su girininku.",
-            "Parodau, kaip padėčiau savo pastovyklei pasiruošti artėjančiai audrai: surinkčiau palaidą inventorių, įtempčiau palapines, tentus, parodyčiau, kur slėptis (ne po medžiais), instruktuočiau metalinius daiktus laikyti atokiau ir t.t.",
-            "Reguliariai susirašinėju su draugu ar kitu skautu (siektina - užsieniečiu) paštu.",
-            "Savo pasirinktu būdu užšifruoju ir dešifruoju pranešimą.",
-            "Per stovyklą ar kitą renginį suorganizuoju ryšio palaikymo radijo ryšiu sistemą. Paruošiu stoteles ir suvedu dažnius, instruktuoju bei paskirstau šaukinius, apmokau dalyvius."
+            {
+              "id": "t1",
+              "text": "Parodau, kaip gamtoje pritaikyčiau turimus pirmosios pagalbos gebėjimus."
+            },
+            {
+              "id": "t2",
+              "text": "Gebu tiksliai įvardinti, kas įvyko nelaimingo atsitikimo metu."
+            },
+            {
+              "id": "t3",
+              "text": "Per stovyklą visada žinau, kur artimiausia ligoninė, policija, gaisrinė ir kaip susisiekti su girininku."
+            },
+            {
+              "id": "t4",
+              "text": "Parodau, kaip padėčiau savo pastovyklei pasiruošti artėjančiai audrai: surinkčiau palaidą inventorių, įtempčiau palapines, tentus, parodyčiau, kur slėptis (ne po medžiais), instruktuočiau metalinius daiktus laikyti atokiau ir t.t."
+            },
+            {
+              "id": "t5",
+              "text": "Reguliariai susirašinėju su draugu ar kitu skautu (siektina - užsieniečiu) paštu."
+            },
+            {
+              "id": "t6",
+              "text": "Savo pasirinktu būdu užšifruoju ir dešifruoju pranešimą."
+            },
+            {
+              "id": "t7",
+              "text": "Per stovyklą ar kitą renginį suorganizuoju ryšio palaikymo radijo ryšiu sistemą. Paruošiu stoteles ir suvedu dažnius, instruktuoju bei paskirstau šaukinius, apmokau dalyvius."
+            }
           ]
         },
         {
           "level": 6,
           "tasks": [
-            "Sudarau stovyklose ir žygiuose dažnai pasitaikančių traumų ir negalavimų sąrašą, susitinku su mediku (medike) ir išsiaiškinu, kokią pirmąją pagalbą galiu suteikti kiekvienu atveju.",
-            "Susitinku su savo bendruomenės saugumo institucijos atstovu (galiu susitikti su skiltimi, pasikviesti į sueigą, apsilankyti institucijoje) - gaisrininku, policininku, greitosios pagalbos mediku, gelbėtoju, viešojo saugumo atstovu. Aptariu jo bei savo asmenines atsakomybes, pareigas, susipažįstu su jo(s) sričiai būdingų krizinių situacijų pavyzdžiais.",
-            "Perskaitau KAM knygą ,,Ką turime žinoti apie pasirengimą ekstremaliosioms situacijoms ir karo metui\", su šeima aptariu veiksmus nelaimės atveju ir surenku atsargas bei svarbiausius daiktus, reikalingus evakuojantis arba nelaimės metu liekant namie.",
-            "Paruošiu atmintinę 2 krizinėms situacijoms stovyklų metu.",
-            "Pravedu informacinę sueigą apie pasirengimą krizinėms situacijoms už save jaunesniems arba mažiau patyrusiems skautams.",
-            "Savarankiškai suplanuoju ir suorganizuoju sueigą apie ryšius nuotoliniu būdu vienu metu naudodamasis bent dviems skirtingomis ryšio linijomis. (Pvz. vaizdas - web cam,garsas - telefonu, tekstas - el. paštu ir pan.)",
-            "Padedant vietos radijo mėgėjams ar sąvarankiškai sudalyvauju tarptautiniame skautų radijo mėgėjų/internetiniame renginyje JOTA-JOTI (Jamboree-on-the-air / Jamboree-o- the-Internet ).",
-            "Pats (pati) sukuriu pranešimo šifravimo sistemą ir išmokau ja naudotis skilties narius. Saugumo įgūdis"
+            {
+              "id": "t1",
+              "text": "Sudarau stovyklose ir žygiuose dažnai pasitaikančių traumų ir negalavimų sąrašą, susitinku su mediku (medike) ir išsiaiškinu, kokią pirmąją pagalbą galiu suteikti kiekvienu atveju."
+            },
+            {
+              "id": "t2",
+              "text": "Susitinku su savo bendruomenės saugumo institucijos atstovu (galiu susitikti su skiltimi, pasikviesti į sueigą, apsilankyti institucijoje) - gaisrininku, policininku, greitosios pagalbos mediku, gelbėtoju, viešojo saugumo atstovu. Aptariu jo bei savo asmenines atsakomybes, pareigas, susipažįstu su jo(s) sričiai būdingų krizinių situacijų pavyzdžiais."
+            },
+            {
+              "id": "t3",
+              "text": "Perskaitau KAM knygą ,,Ką turime žinoti apie pasirengimą ekstremaliosioms situacijoms ir karo metui\", su šeima aptariu veiksmus nelaimės atveju ir surenku atsargas bei svarbiausius daiktus, reikalingus evakuojantis arba nelaimės metu liekant namie."
+            },
+            {
+              "id": "t4",
+              "text": "Paruošiu atmintinę 2 krizinėms situacijoms stovyklų metu."
+            },
+            {
+              "id": "t5",
+              "text": "Pravedu informacinę sueigą apie pasirengimą krizinėms situacijoms už save jaunesniems arba mažiau patyrusiems skautams."
+            },
+            {
+              "id": "t6",
+              "text": "Savarankiškai suplanuoju ir suorganizuoju sueigą apie ryšius nuotoliniu būdu vienu metu naudodamasis bent dviems skirtingomis ryšio linijomis. (Pvz. vaizdas - web cam,garsas - telefonu, tekstas - el. paštu ir pan.)"
+            },
+            {
+              "id": "t7",
+              "text": "Padedant vietos radijo mėgėjams ar sąvarankiškai sudalyvauju tarptautiniame skautų radijo mėgėjų/internetiniame renginyje JOTA-JOTI (Jamboree-on-the-air / Jamboree-o- the-Internet )."
+            },
+            {
+              "id": "t8",
+              "text": "Pats (pati) sukuriu pranešimo šifravimo sistemą ir išmokau ja naudotis skilties narius. Saugumo įgūdis"
+            }
           ]
         },
         {
           "level": 7,
           "tasks": [
-            "Vienos savaitės ar ilgesnėje stovykloje vykdau mediko pareigas.",
-            "Organizavau ar padėjau tikroje arba simuliuotoje gelbėjimo operacijoje.",
-            "Asmeniniame automobilyje įsirengiu CB radio stotelę arba naudojuosi skaitmeniniu analogu (Zello ar pan. programėle).",
-            "Gebu mobilizuoti visą stovyklą ekstremalios situacijos metu. Tunto arba krašto stovyklos komandą apmokau, kaip elgtis iškilus tokiai situacijai.",
-            "Išklausau pirmosios pagalbos ir sveikatos žinių kursą ir įgyju kompetenciją žymintį pažymėjimą.",
-            "Tunto, krašto arba Lietuvos skautijos mastu pravedu mokymus viena iš \"Ne(s)svarbu\" temų."
+            {
+              "id": "t1",
+              "text": "Vienos savaitės ar ilgesnėje stovykloje vykdau mediko pareigas."
+            },
+            {
+              "id": "t2",
+              "text": "Organizavau ar padėjau tikroje arba simuliuotoje gelbėjimo operacijoje."
+            },
+            {
+              "id": "t3",
+              "text": "Asmeniniame automobilyje įsirengiu CB radio stotelę arba naudojuosi skaitmeniniu analogu (Zello ar pan. programėle)."
+            },
+            {
+              "id": "t4",
+              "text": "Gebu mobilizuoti visą stovyklą ekstremalios situacijos metu. Tunto arba krašto stovyklos komandą apmokau, kaip elgtis iškilus tokiai situacijai."
+            },
+            {
+              "id": "t5",
+              "text": "Išklausau pirmosios pagalbos ir sveikatos žinių kursą ir įgyju kompetenciją žymintį pažymėjimą."
+            },
+            {
+              "id": "t6",
+              "text": "Tunto, krašto arba Lietuvos skautijos mastu pravedu mokymus viena iš \"Ne(s)svarbu\" temų."
+            }
           ]
         },
         {
           "level": 8,
           "tasks": [
-            "Gaunu tarptautinę radijo mėgėjo licenciją ir šaukinį, dalyvauju radijo mėgėjų veikloje.",
-            "Sudalyvauju sportinės radiopelegenacijos orientavimosi varžybose (Lapių medžioklėje).",
-            "Tautinėje arba tarptautinėje stovykloje savanoriauju stovyklos apsaugos arba medikų komandoje.",
-            "Savo vienetą instruktuoju, kaip evakuotis ir evakuoti sužeistajį iš stipriai miškingos teritorijos.",
-            "Pravedu ryšininkų kursus arba sueigų šia tema ciklą vieneto skautams.",
-            "Tunto, krašto arba Lietuvos skautijos mastu suorganizuoju ir pravedu pirmosios pagalbos, krizių valdymo arba ryšininkavimo mokymus vadovams arba įgūdžio gilinimo dieną patyrusiems skautams."
+            {
+              "id": "t1",
+              "text": "Gaunu tarptautinę radijo mėgėjo licenciją ir šaukinį, dalyvauju radijo mėgėjų veikloje."
+            },
+            {
+              "id": "t2",
+              "text": "Sudalyvauju sportinės radiopelegenacijos orientavimosi varžybose (Lapių medžioklėje)."
+            },
+            {
+              "id": "t3",
+              "text": "Tautinėje arba tarptautinėje stovykloje savanoriauju stovyklos apsaugos arba medikų komandoje."
+            },
+            {
+              "id": "t4",
+              "text": "Savo vienetą instruktuoju, kaip evakuotis ir evakuoti sužeistajį iš stipriai miškingos teritorijos."
+            },
+            {
+              "id": "t5",
+              "text": "Pravedu ryšininkų kursus arba sueigų šia tema ciklą vieneto skautams."
+            },
+            {
+              "id": "t6",
+              "text": "Tunto, krašto arba Lietuvos skautijos mastu suorganizuoju ir pravedu pirmosios pagalbos, krizių valdymo arba ryšininkavimo mokymus vadovams arba įgūdžio gilinimo dieną patyrusiems skautams."
+            }
           ]
         }
       ]
@@ -669,95 +1821,257 @@
         {
           "level": 1,
           "tasks": [
-            "Vieną naktį praleidžiu miške nakvodamas palapinėje.",
-            "Stovykloje turiu asmenines švaros priemones - dantų šepetėlį, muilą, rankšluostį ir kt., - jas laikau man randamoje vietoje.",
-            "Randu bendram pastovyklės inventoriui (pjūklui, kirviui, virvėms ir kt.) skirtą vietą ir padedu į ją inventorių.",
-            "Asmeninį stovyklavimo inventorių - miegmaišį, kilimėlį, drabužius - laikau tvarkingai, o nenaudojamą peilį įdedu į įdėklą ar užlenkiu ašmenis.",
-            "Žibintuvėliu naktį naudojuosi saugiai - nešviečiu į akis, taupau baterijas, laikau sausoje vietoje.",
-            "Orientuojuosi pagal stovyklos ženklus ir jos viduje - randu svarbiausius stovyklos objektus ir savo pastovyklę, parodau stovyklos teritoriją, kurioje galiu judėti."
+            {
+              "id": "t1",
+              "text": "Vieną naktį praleidžiu miške nakvodamas palapinėje."
+            },
+            {
+              "id": "t2",
+              "text": "Stovykloje turiu asmenines švaros priemones - dantų šepetėlį, muilą, rankšluostį ir kt., - jas laikau man randamoje vietoje."
+            },
+            {
+              "id": "t3",
+              "text": "Randu bendram pastovyklės inventoriui (pjūklui, kirviui, virvėms ir kt.) skirtą vietą ir padedu į ją inventorių."
+            },
+            {
+              "id": "t4",
+              "text": "Asmeninį stovyklavimo inventorių - miegmaišį, kilimėlį, drabužius - laikau tvarkingai, o nenaudojamą peilį įdedu į įdėklą ar užlenkiu ašmenis."
+            },
+            {
+              "id": "t5",
+              "text": "Žibintuvėliu naktį naudojuosi saugiai - nešviečiu į akis, taupau baterijas, laikau sausoje vietoje."
+            },
+            {
+              "id": "t6",
+              "text": "Orientuojuosi pagal stovyklos ženklus ir jos viduje - randu svarbiausius stovyklos objektus ir savo pastovyklę, parodau stovyklos teritoriją, kurioje galiu judėti."
+            }
           ]
         },
         {
           "level": 2,
           "tasks": [
-            "Įvertinu vienos nakties stovyklai reikalingą asmeninį inventorių ir jį susikraunu.",
-            "Dvi naktis praleidžiu miške nakvodamas palapinėje.",
-            "Padedu kitiems įsirengti miegojimo vietą - parinkti lygią vietą, išvalyti kankorėžius, šakas ir pastatyti palapinę, jog ji nebūtų ant tiesioginių saulės spindulių ir bent metro atstumu nuo artimiausios palapinės.",
-            "Randu stovykloje pavyzdžių, kam naudojami pagrindiniai įrankiai - kirvis, pjūklas, kastuvas, virvės.",
-            "Laikausi stovyklos taisyklių, paaiškinu, kodėl jos tokios yra.",
-            "Parodau, kur mano pastovyklėje yra įvairūs statiniai, paaiškinu, kam jie skirti.",
-            "Stovyklavietėje stebiu ir kitiems parodau, kurioje pusėje teka ir leidžiasi saulė."
+            {
+              "id": "t1",
+              "text": "Įvertinu vienos nakties stovyklai reikalingą asmeninį inventorių ir jį susikraunu."
+            },
+            {
+              "id": "t2",
+              "text": "Dvi naktis praleidžiu miške nakvodamas palapinėje."
+            },
+            {
+              "id": "t3",
+              "text": "Padedu kitiems įsirengti miegojimo vietą - parinkti lygią vietą, išvalyti kankorėžius, šakas ir pastatyti palapinę, jog ji nebūtų ant tiesioginių saulės spindulių ir bent metro atstumu nuo artimiausios palapinės."
+            },
+            {
+              "id": "t4",
+              "text": "Randu stovykloje pavyzdžių, kam naudojami pagrindiniai įrankiai - kirvis, pjūklas, kastuvas, virvės."
+            },
+            {
+              "id": "t5",
+              "text": "Laikausi stovyklos taisyklių, paaiškinu, kodėl jos tokios yra."
+            },
+            {
+              "id": "t6",
+              "text": "Parodau, kur mano pastovyklėje yra įvairūs statiniai, paaiškinu, kam jie skirti."
+            },
+            {
+              "id": "t7",
+              "text": "Stovyklavietėje stebiu ir kitiems parodau, kurioje pusėje teka ir leidžiasi saulė."
+            }
           ]
         },
         {
           "level": 3,
           "tasks": [
-            "Savaitės trukmės stovyklai susiplanuoju asmeninį inventorių ir susikraunu kuprinę pats (pati).",
-            "Savaitę praleidžiu miške nakvodamas palapinėje.",
-            "Be kitų pagalbos pastatau paprastą palapinę.",
-            "Jaunesniam arba pirmąkart stovyklaujančiam skautui aprodau stovyklavietę, papasakoju, kokių statinių ir įrankių reikia, norint įsirengti pastovyklę.",
-            "Su skiltimi aptveriu pastovyklę stovykline tvora ir sutariame, kaip saugosime savo pastovyklę ir jos tvarką.",
-            "Su vadovo pagalba ištempiu tentą virš vieneto laužavietės, papasakoju skilčiai, kaip parinkti tinkamą vietą tentui kabinti, kaip jį įtempti ir kokius mazgus rišti.",
-            "Naktiniame danguje parodau Didžiuosius ir Mažuosius Grįžulo Ratus, Šiaurinę žvaigždę."
+            {
+              "id": "t1",
+              "text": "Savaitės trukmės stovyklai susiplanuoju asmeninį inventorių ir susikraunu kuprinę pats (pati)."
+            },
+            {
+              "id": "t2",
+              "text": "Savaitę praleidžiu miške nakvodamas palapinėje."
+            },
+            {
+              "id": "t3",
+              "text": "Be kitų pagalbos pastatau paprastą palapinę."
+            },
+            {
+              "id": "t4",
+              "text": "Jaunesniam arba pirmąkart stovyklaujančiam skautui aprodau stovyklavietę, papasakoju, kokių statinių ir įrankių reikia, norint įsirengti pastovyklę."
+            },
+            {
+              "id": "t5",
+              "text": "Su skiltimi aptveriu pastovyklę stovykline tvora ir sutariame, kaip saugosime savo pastovyklę ir jos tvarką."
+            },
+            {
+              "id": "t6",
+              "text": "Su vadovo pagalba ištempiu tentą virš vieneto laužavietės, papasakoju skilčiai, kaip parinkti tinkamą vietą tentui kabinti, kaip jį įtempti ir kokius mazgus rišti."
+            },
+            {
+              "id": "t7",
+              "text": "Naktiniame danguje parodau Didžiuosius ir Mažuosius Grįžulo Ratus, Šiaurinę žvaigždę."
+            }
           ]
         },
         {
           "level": 4,
           "tasks": [
-            "Paruošiu asmeninio ir skilties inventoriaus sąrašą stovyklavimui įvairiomis oro sąlygomis - kaitriu, vėsiu, šaltu, lietingu oru (nuo tinkamos aprangos iki inventoriaus).",
-            "Be vadovo pagalbos išrenku vietą tentui įtempti, pagrindžiu savo pasirinkimą ir su skilties nariais jį įtempiu.",
-            "Su skiltimi sutariame, kas ir kada budės naktį prie laužo, kokios budėtojo atsakomybės ir ką budėtojas darys, pastebėjęs pavojų. Budžiu man paskirtą laiko tarpą.",
-            "Suskaičiuoju skilties žygiui/renginiui reikalingas išlaidas.",
-            "Prisidedu prie skilties žygio/stovyklos programos kūrimo ir įgyvendinimo.",
-            "Naktiniame danguje parodau Oriono, Kasiopėjos, Lyros, Drakono ir Sietyno žvaigždynus.",
-            "Randu šiaurę pagal dangaus kūnus."
+            {
+              "id": "t1",
+              "text": "Paruošiu asmeninio ir skilties inventoriaus sąrašą stovyklavimui įvairiomis oro sąlygomis - kaitriu, vėsiu, šaltu, lietingu oru (nuo tinkamos aprangos iki inventoriaus)."
+            },
+            {
+              "id": "t2",
+              "text": "Be vadovo pagalbos išrenku vietą tentui įtempti, pagrindžiu savo pasirinkimą ir su skilties nariais jį įtempiu."
+            },
+            {
+              "id": "t3",
+              "text": "Su skiltimi sutariame, kas ir kada budės naktį prie laužo, kokios budėtojo atsakomybės ir ką budėtojas darys, pastebėjęs pavojų. Budžiu man paskirtą laiko tarpą."
+            },
+            {
+              "id": "t4",
+              "text": "Suskaičiuoju skilties žygiui/renginiui reikalingas išlaidas."
+            },
+            {
+              "id": "t5",
+              "text": "Prisidedu prie skilties žygio/stovyklos programos kūrimo ir įgyvendinimo."
+            },
+            {
+              "id": "t6",
+              "text": "Naktiniame danguje parodau Oriono, Kasiopėjos, Lyros, Drakono ir Sietyno žvaigždynus."
+            },
+            {
+              "id": "t7",
+              "text": "Randu šiaurę pagal dangaus kūnus."
+            }
           ]
         },
         {
           "level": 5,
           "tasks": [
-            "Per žygį ar stovyklą paruošiu nakvynės vietą skilčiai - įtempiu tentą, paruošiu laužavietę ir kt.",
-            "Parengiu planą, ką aš ir mano skiltis darytume, kilus krizinei situacijai stovykloje - numatau galimas situacijas ir parengiu veiksmų planą.",
-            "Pasiklausinėju kitų skautų, kurie būdai informacijai stovykloje perduoti yra efektyviausi, ir išbandau bent tris būdus pats (pvz. pasakant per rikiuotę, pasakant pastovyklės guru, organizuojant skiltininkų susibėgimą, duodant komandas švilpukais, bendraujant per racijas ir t.t.)",
-            "Parenku inventorių ir statinius pastovyklei, atsižvelgdamas į pastovyklės vietos ypatumus.",
-            "Parenku svarbiausius statinius, kurie turėtų būti pastovyklėje ir išrenku jiems geriausiai tinkamą vietą.",
-            "Stovykloje padarau saulės laikrodį ir išmokau kitus skautus juo naudotis."
+            {
+              "id": "t1",
+              "text": "Per žygį ar stovyklą paruošiu nakvynės vietą skilčiai - įtempiu tentą, paruošiu laužavietę ir kt."
+            },
+            {
+              "id": "t2",
+              "text": "Parengiu planą, ką aš ir mano skiltis darytume, kilus krizinei situacijai stovykloje - numatau galimas situacijas ir parengiu veiksmų planą."
+            },
+            {
+              "id": "t3",
+              "text": "Pasiklausinėju kitų skautų, kurie būdai informacijai stovykloje perduoti yra efektyviausi, ir išbandau bent tris būdus pats (pvz. pasakant per rikiuotę, pasakant pastovyklės guru, organizuojant skiltininkų susibėgimą, duodant komandas švilpukais, bendraujant per racijas ir t.t.)"
+            },
+            {
+              "id": "t4",
+              "text": "Parenku inventorių ir statinius pastovyklei, atsižvelgdamas į pastovyklės vietos ypatumus."
+            },
+            {
+              "id": "t5",
+              "text": "Parenku svarbiausius statinius, kurie turėtų būti pastovyklėje ir išrenku jiems geriausiai tinkamą vietą."
+            },
+            {
+              "id": "t6",
+              "text": "Stovykloje padarau saulės laikrodį ir išmokau kitus skautus juo naudotis."
+            }
           ]
         },
         {
           "level": 6,
           "tasks": [
-            "Išmokau jaunesnį ar to nemokantį skautą parinkti vietą tentui ir jį ištempti.",
-            "Stovyklavau ir gebu pasiruošti stovyklauti trimis skirtingais sezonais - vasarą, žiemą ir rudenį/pavasarį (karšta, šalta, lyja).",
-            "Sudalyvauju bent savaitgalio trukmės stovykloje ne savo krašte.",
-            "Jaunesniam ar pirmąkart stovyklaujančiam skautui papasakoju, kokios stovyklos viršininko, komendanto, programos vadovo, ūkvedžio ir kitų savanorių atsakomybės.",
-            "Sudarau dirbančių stovykloje skautų sąrašą, paskirstau pareigybes, užtikrinu, kad visi suprastų ir vykdytų savo atsakomybes.",
-            "Dviejų dienų stovykloje apsiimu vykdyti viršininko, komendanto, ūkvedžio arba programos vadovo pareigas.",
-            "Pasirūpinu stovyklos logistika, transportu - surandu suaugusį žmogų, kuris galėtų padėti stovyklos metu vežiojant inventorių, maistą, suderinu transportą į stovyklą, iš jos - autobusas, traukinys, baidarės...",
-            "Apskaičiuoju ir prižiūriu dviejų dienų stovyklai reikalingas išlaidas.",
-            "Stebėdama(s) dangų, sudarau žvaigždėlapį ir jame pažymiu pagrindinius žvaigždynus. Stovyklų įgūdis"
+            {
+              "id": "t1",
+              "text": "Išmokau jaunesnį ar to nemokantį skautą parinkti vietą tentui ir jį ištempti."
+            },
+            {
+              "id": "t2",
+              "text": "Stovyklavau ir gebu pasiruošti stovyklauti trimis skirtingais sezonais - vasarą, žiemą ir rudenį/pavasarį (karšta, šalta, lyja)."
+            },
+            {
+              "id": "t3",
+              "text": "Sudalyvauju bent savaitgalio trukmės stovykloje ne savo krašte."
+            },
+            {
+              "id": "t4",
+              "text": "Jaunesniam ar pirmąkart stovyklaujančiam skautui papasakoju, kokios stovyklos viršininko, komendanto, programos vadovo, ūkvedžio ir kitų savanorių atsakomybės."
+            },
+            {
+              "id": "t5",
+              "text": "Sudarau dirbančių stovykloje skautų sąrašą, paskirstau pareigybes, užtikrinu, kad visi suprastų ir vykdytų savo atsakomybes."
+            },
+            {
+              "id": "t6",
+              "text": "Dviejų dienų stovykloje apsiimu vykdyti viršininko, komendanto, ūkvedžio arba programos vadovo pareigas."
+            },
+            {
+              "id": "t7",
+              "text": "Pasirūpinu stovyklos logistika, transportu - surandu suaugusį žmogų, kuris galėtų padėti stovyklos metu vežiojant inventorių, maistą, suderinu transportą į stovyklą, iš jos - autobusas, traukinys, baidarės..."
+            },
+            {
+              "id": "t8",
+              "text": "Apskaičiuoju ir prižiūriu dviejų dienų stovyklai reikalingas išlaidas."
+            },
+            {
+              "id": "t9",
+              "text": "Stebėdama(s) dangų, sudarau žvaigždėlapį ir jame pažymiu pagrindinius žvaigždynus. Stovyklų įgūdis"
+            }
           ]
         },
         {
           "level": 7,
           "tasks": [
-            "Praleidžiu bent 30 dienų gamtoje visais keturiais metų sezonais, iš jų dvi stovyklaudama(s) ir pasiruošdama(s) stovyklauti viena(s).",
-            "Numatau stovyklai (50 < žmonių) reikalingą inventorių. Įvertinu vieneto turimo inventoriaus būklę, numatau, kokio inventoriaus užteks, o kokio reikės papildomai. Randu šaltinius, kur galima trūkstamą inventorių įsigyti, išsinuomoti.",
-            "Parengiu stovyklos nuostatus, taisykles ir šabloną tėvų leidimui. Atlieku stovyklos rizikos vertinimą, parengiu saugos ir sveikatos instrukciją ir pagal ją apmokau stovykloje dirbsiančius savanorius.",
-            "Koordinuoju stovyklos įkūrimą ir iškūrimą: pasirūpinu žmonėmis, jų maitinimu, darbų planu, inventoriumi, transportu, vietos suradimu, įvertinimu svarbiausių artimiausių vietų - ligoninė, policija, gaisrinė, parduotuvė, vandens šaltinis, šiukšlių išmetimo vieta.",
-            "Savaitės trukmės stovykloje prisiimu atsakomybę už žmonių grupę - vaikų vadovo, pastovyklės vadovo, viršininko ar kitas pareigas, kuriose vadovaujama komandai.",
-            "Pravedu postovyklinę refleksiją savo komandos nariams, įvertinu +/-, susisteminu ir palyginu su praėjusiomis stovyklomis."
+            {
+              "id": "t1",
+              "text": "Praleidžiu bent 30 dienų gamtoje visais keturiais metų sezonais, iš jų dvi stovyklaudama(s) ir pasiruošdama(s) stovyklauti viena(s)."
+            },
+            {
+              "id": "t2",
+              "text": "Numatau stovyklai (50 < žmonių) reikalingą inventorių. Įvertinu vieneto turimo inventoriaus būklę, numatau, kokio inventoriaus užteks, o kokio reikės papildomai. Randu šaltinius, kur galima trūkstamą inventorių įsigyti, išsinuomoti."
+            },
+            {
+              "id": "t3",
+              "text": "Parengiu stovyklos nuostatus, taisykles ir šabloną tėvų leidimui. Atlieku stovyklos rizikos vertinimą, parengiu saugos ir sveikatos instrukciją ir pagal ją apmokau stovykloje dirbsiančius savanorius."
+            },
+            {
+              "id": "t4",
+              "text": "Koordinuoju stovyklos įkūrimą ir iškūrimą: pasirūpinu žmonėmis, jų maitinimu, darbų planu, inventoriumi, transportu, vietos suradimu, įvertinimu svarbiausių artimiausių vietų - ligoninė, policija, gaisrinė, parduotuvė, vandens šaltinis, šiukšlių išmetimo vieta."
+            },
+            {
+              "id": "t5",
+              "text": "Savaitės trukmės stovykloje prisiimu atsakomybę už žmonių grupę - vaikų vadovo, pastovyklės vadovo, viršininko ar kitas pareigas, kuriose vadovaujama komandai."
+            },
+            {
+              "id": "t6",
+              "text": "Pravedu postovyklinę refleksiją savo komandos nariams, įvertinu +/-, susisteminu ir palyginu su praėjusiomis stovyklomis."
+            }
           ]
         },
         {
           "level": 8,
           "tasks": [
-            "Suorganizuoju transportą savo vieneto kelionei į užsienį ir šalies viduje.",
-            "Suorganizuoju ypatingąjį žygį/stovyklą (renginį, kuriam reikalingas specialus fizinis ar teorinis dalyvių pasiruošimas, kuriuo rūpinasi žygio organizatorius arba suranda žmogų, kuris galėtų tai padaryti; pvz. baidarių, sniegbačių, lipimo į kalnus žygis).",
-            "Suorganizuoju grupės skautų dalyvavimą stovykloje užsienyje arba stovykloje Lietuvoje su užsienio skautais.",
-            "Padedu kitam skautui ar skilčiai pasiruošti vykdyti bent vienas pareigas stovykloje - supažindinu iki stovyklos, per ją padedu arba būnu kartu, suteikiu grįžtamąjį ryšį.",
-            "Nustatau, kiek būsimos stovyklos komanda pasiruošusi vykdyti savo pareigas, ir tiems, kam trūksta kompetencijų, padedu jas įgyti per mentorystę ar mokymus.",
-            "Tunto, krašto arba Lietuvos skautijos mastu suorganizuoju ir pravedu su stovyklų įgūdžiu susijusius mokymus vadovams arba įgūdžio gilinimo dieną patyrusiems skautams."
+            {
+              "id": "t1",
+              "text": "Suorganizuoju transportą savo vieneto kelionei į užsienį ir šalies viduje."
+            },
+            {
+              "id": "t2",
+              "text": "Suorganizuoju ypatingąjį žygį/stovyklą (renginį, kuriam reikalingas specialus fizinis ar teorinis dalyvių pasiruošimas, kuriuo rūpinasi žygio organizatorius arba suranda žmogų, kuris galėtų tai padaryti; pvz. baidarių, sniegbačių, lipimo į kalnus žygis)."
+            },
+            {
+              "id": "t3",
+              "text": "Suorganizuoju grupės skautų dalyvavimą stovykloje užsienyje arba stovykloje Lietuvoje su užsienio skautais."
+            },
+            {
+              "id": "t4",
+              "text": "Padedu kitam skautui ar skilčiai pasiruošti vykdyti bent vienas pareigas stovykloje - supažindinu iki stovyklos, per ją padedu arba būnu kartu, suteikiu grįžtamąjį ryšį."
+            },
+            {
+              "id": "t5",
+              "text": "Nustatau, kiek būsimos stovyklos komanda pasiruošusi vykdyti savo pareigas, ir tiems, kam trūksta kompetencijų, padedu jas įgyti per mentorystę ar mokymus."
+            },
+            {
+              "id": "t6",
+              "text": "Tunto, krašto arba Lietuvos skautijos mastu suorganizuoju ir pravedu su stovyklų įgūdžiu susijusius mokymus vadovams arba įgūdžio gilinimo dieną patyrusiems skautams."
+            }
           ]
         }
       ]
@@ -769,108 +2083,309 @@
         {
           "level": 1,
           "tasks": [
-            "Stovyklaudama(s) gamtoje pastebiu ir vengiu nuodingų augalų, galiu paaiškinti jų kenksmingumą (Sosnovskio barštis, vilkauogė, musmirė ir t.t.).",
-            "Galiu parodyti tris skirtingus augalus, juos įvardyti ir pasakyti, kaip juos atskyriau.",
-            "Pažvelgęs (pažvelgusi) į medžio kamieną, jo viršūnę, galiu įvardinti, ar tai yra sausuolis, ar dar gyvas medis.",
-            "Galiu atpažinti ir pasakyti, kokia yra vėjo kryptis.",
-            "Droždama(s) pagalį, elgiuosi saugiai (drožiu nuo savęs, ramiai sėdžiu, perduodu peilį kitam skautui laikydama(s) už ašmenų ir t.t.).",
-            "Panaudojęs (panaudojusi) skautiško inventoriaus įrankius, juos sudedu tvarkingai, tam skirtoje vietoje.",
-            "Taisyklingai laikydama(s) ir naudodama(s) pjūklą perpjaunu 5 cm skersmens šaką.",
-            "Moku pririšti virvę skalbiniams, naudodama(s) medkirčio kilpą."
+            {
+              "id": "t1",
+              "text": "Stovyklaudama(s) gamtoje pastebiu ir vengiu nuodingų augalų, galiu paaiškinti jų kenksmingumą (Sosnovskio barštis, vilkauogė, musmirė ir t.t.)."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu parodyti tris skirtingus augalus, juos įvardyti ir pasakyti, kaip juos atskyriau."
+            },
+            {
+              "id": "t3",
+              "text": "Pažvelgęs (pažvelgusi) į medžio kamieną, jo viršūnę, galiu įvardinti, ar tai yra sausuolis, ar dar gyvas medis."
+            },
+            {
+              "id": "t4",
+              "text": "Galiu atpažinti ir pasakyti, kokia yra vėjo kryptis."
+            },
+            {
+              "id": "t5",
+              "text": "Droždama(s) pagalį, elgiuosi saugiai (drožiu nuo savęs, ramiai sėdžiu, perduodu peilį kitam skautui laikydama(s) už ašmenų ir t.t.)."
+            },
+            {
+              "id": "t6",
+              "text": "Panaudojęs (panaudojusi) skautiško inventoriaus įrankius, juos sudedu tvarkingai, tam skirtoje vietoje."
+            },
+            {
+              "id": "t7",
+              "text": "Taisyklingai laikydama(s) ir naudodama(s) pjūklą perpjaunu 5 cm skersmens šaką."
+            },
+            {
+              "id": "t8",
+              "text": "Moku pririšti virvę skalbiniams, naudodama(s) medkirčio kilpą."
+            }
           ]
         },
         {
           "level": 2,
           "tasks": [
-            "Galiu iš pažiūrėjimo įvardyti 3 medžius, augančius miške.",
-            "Vienetui papasakoju, kuo svarbūs ir kuo skiriasi draustiniai, rezervatai, saugomos teritorijos.",
-            "Pažvelgęs (pažvelgusi) į dangų atpažįstu, kokie debesys susiformavo (kamuoliniai, sluoksniniai ar plunksniniai), kokius orus jie pranašauja/atspindi.",
-            "Galiu saugiai pernešti ir paduoti kitam skautišką inventorių (kirvį, pjūklą, kastuvą ir t.t.).",
-            "Moku dviem būdais surišti piemens mazgą: 1) naudodama(s) kilpas, kurias užmaunu ant pagalio; 2) be kilpų, rišdama(s) tiesiai ant šakos.",
-            "Galiu surišti tikrąjį ir medkirčio mazgą.",
-            "Tvirtai surišu du pagalius kryžmai.",
-            "Pagaminu šaukštą iš gamtos medžiagų (išdrožiau iš pagalio, išlipdžiau iš molio ir pan.)."
+            {
+              "id": "t1",
+              "text": "Galiu iš pažiūrėjimo įvardyti 3 medžius, augančius miške."
+            },
+            {
+              "id": "t2",
+              "text": "Vienetui papasakoju, kuo svarbūs ir kuo skiriasi draustiniai, rezervatai, saugomos teritorijos."
+            },
+            {
+              "id": "t3",
+              "text": "Pažvelgęs (pažvelgusi) į dangų atpažįstu, kokie debesys susiformavo (kamuoliniai, sluoksniniai ar plunksniniai), kokius orus jie pranašauja/atspindi."
+            },
+            {
+              "id": "t4",
+              "text": "Galiu saugiai pernešti ir paduoti kitam skautišką inventorių (kirvį, pjūklą, kastuvą ir t.t.)."
+            },
+            {
+              "id": "t5",
+              "text": "Moku dviem būdais surišti piemens mazgą: 1) naudodama(s) kilpas, kurias užmaunu ant pagalio; 2) be kilpų, rišdama(s) tiesiai ant šakos."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu surišti tikrąjį ir medkirčio mazgą."
+            },
+            {
+              "id": "t7",
+              "text": "Tvirtai surišu du pagalius kryžmai."
+            },
+            {
+              "id": "t8",
+              "text": "Pagaminu šaukštą iš gamtos medžiagų (išdrožiau iš pagalio, išlipdžiau iš molio ir pan.)."
+            }
           ]
         },
         {
           "level": 3,
           "tasks": [
-            "Galiu atpažinti trijų laukinių gyvūnų pėdsakus.",
-            "Iš paveikslėlio ir gamtoje atpažįstu pagrindines valgomas mūsų krašto miško gėrybes - bent po 2 grybus, uogas ir žoleles.",
-            "Išbandau 3 medžio sakų valymo iš drabužių būdus.",
-            "Pastebiu, kada keičiasi oro temperatūra, apsiniaukia, pragiedrėja. Galiu pats (pati) apsirengti taip, kaip reikalauja oro sąlygos.",
-            "Kirsdama(s) medį ar krūmą, nepalieku kelmuko.",
-            "Tarp dviejų medžių klubų aukštyje įtempiu virvę, kuri išlaiko bent vieną skautą.",
-            "Moku surišti 4 mazgus: tikrąjį, medkirčio, piemens ir žvejo.",
-            "Surišu indaują.",
-            "Pastatau pionerijos statinį nenaudodama(s) pirktos virvės, tik gamtines medžiagas (pvz.: nusipinu iš žolynų virvę, pagaliuose/rąstukuose padarau įpjovas ir t.t.).",
-            "Pasigaminu fakelą iš gamtinių medžiagų.",
-            "Teoriškai žinau, kokios priemonės padėtų išgyventi gamtoje, ką reiktų turėti (virvę, degtukų, vandens filtrą)."
+            {
+              "id": "t1",
+              "text": "Galiu atpažinti trijų laukinių gyvūnų pėdsakus."
+            },
+            {
+              "id": "t2",
+              "text": "Iš paveikslėlio ir gamtoje atpažįstu pagrindines valgomas mūsų krašto miško gėrybes - bent po 2 grybus, uogas ir žoleles."
+            },
+            {
+              "id": "t3",
+              "text": "Išbandau 3 medžio sakų valymo iš drabužių būdus."
+            },
+            {
+              "id": "t4",
+              "text": "Pastebiu, kada keičiasi oro temperatūra, apsiniaukia, pragiedrėja. Galiu pats (pati) apsirengti taip, kaip reikalauja oro sąlygos."
+            },
+            {
+              "id": "t5",
+              "text": "Kirsdama(s) medį ar krūmą, nepalieku kelmuko."
+            },
+            {
+              "id": "t6",
+              "text": "Tarp dviejų medžių klubų aukštyje įtempiu virvę, kuri išlaiko bent vieną skautą."
+            },
+            {
+              "id": "t7",
+              "text": "Moku surišti 4 mazgus: tikrąjį, medkirčio, piemens ir žvejo."
+            },
+            {
+              "id": "t8",
+              "text": "Surišu indaują."
+            },
+            {
+              "id": "t9",
+              "text": "Pastatau pionerijos statinį nenaudodama(s) pirktos virvės, tik gamtines medžiagas (pvz.: nusipinu iš žolynų virvę, pagaliuose/rąstukuose padarau įpjovas ir t.t.)."
+            },
+            {
+              "id": "t10",
+              "text": "Pasigaminu fakelą iš gamtinių medžiagų."
+            },
+            {
+              "id": "t11",
+              "text": "Teoriškai žinau, kokios priemonės padėtų išgyventi gamtoje, ką reiktų turėti (virvę, degtukų, vandens filtrą)."
+            }
           ]
         },
         {
           "level": 4,
           "tasks": [
-            "Prirenku ir sudžiovinu arbatžolių ir išverdu iš jų arbatos.",
-            "Galiu pagal kelis požymius nustatyti 3 valgomas miško uogas ir 3 grybus.",
-            "Pagalandu savo peilį, teoriškai žinau, kaip reikia galąsti kirvius ir pjūklus.",
-            "Gebu įlipti į medį ir nuo jo įtempti virvę.",
-            "Moku surišti bent 5 mazgus: tikrąjį, medkirčio, piemens, žvejo ir ąsos kilpą.",
-            "Surišu trikojį su kabliu maisto gamybai.",
-            "Kartu su kitais skautais pastatau pastovyklės vartus.",
-            "Su skautų grupe pastatau statinį, ant kurio galėtų užlipti bent du skautai."
+            {
+              "id": "t1",
+              "text": "Prirenku ir sudžiovinu arbatžolių ir išverdu iš jų arbatos."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu pagal kelis požymius nustatyti 3 valgomas miško uogas ir 3 grybus."
+            },
+            {
+              "id": "t3",
+              "text": "Pagalandu savo peilį, teoriškai žinau, kaip reikia galąsti kirvius ir pjūklus."
+            },
+            {
+              "id": "t4",
+              "text": "Gebu įlipti į medį ir nuo jo įtempti virvę."
+            },
+            {
+              "id": "t5",
+              "text": "Moku surišti bent 5 mazgus: tikrąjį, medkirčio, piemens, žvejo ir ąsos kilpą."
+            },
+            {
+              "id": "t6",
+              "text": "Surišu trikojį su kabliu maisto gamybai."
+            },
+            {
+              "id": "t7",
+              "text": "Kartu su kitais skautais pastatau pastovyklės vartus."
+            },
+            {
+              "id": "t8",
+              "text": "Su skautų grupe pastatau statinį, ant kurio galėtų užlipti bent du skautai."
+            }
           ]
         },
         {
           "level": 5,
           "tasks": [
-            "Papasakoju, kokie laukiniai gyvūnai supa mane stovyklaujant miške, ir įvardijau, kaip nuo jų apsisaugočiau sutikęs (sutikusi).",
-            "Stebėdama(s) gamtos ženklus (kregždučių skraidymas prie žemės, skruzdžių, bičių, drugių pasislėpimas, įkyrus uodų puolimas ir t.t.), galiu numatyti artėjantį lietų ir perspėti kitus skautus.",
-            "Moku naudotis visais stovykloje esančiais įvairių tipų įrankiais: kirviai, pjūklai, grąžtai, kastuvai, peiliai...",
-            "Išdrožinėju 10 cm ilgio figūrėlę.",
-            "Kartu su kitais skautais pasistatau virš žemės pakeltą nakvynės vietą, naudodama(s) miško medžiagas ir virvę.",
-            "Pastatau stovyklines supynes.",
-            "Moku įsikurti pilną skautišką virtuvę, kur visos priemonės turi savo sudėjimo vietą ir paskirtį: indauja, laužas gaminimui, stalas pjaustymui, puodų laikymo vieta.",
-            "Pastatau lapinę, kurioje telpa du skautai, ir praleidžiu joje naktį.",
-            "Moku pasigaminti galvos apdangalą iš gamtos medžiagų."
+            {
+              "id": "t1",
+              "text": "Papasakoju, kokie laukiniai gyvūnai supa mane stovyklaujant miške, ir įvardijau, kaip nuo jų apsisaugočiau sutikęs (sutikusi)."
+            },
+            {
+              "id": "t2",
+              "text": "Stebėdama(s) gamtos ženklus (kregždučių skraidymas prie žemės, skruzdžių, bičių, drugių pasislėpimas, įkyrus uodų puolimas ir t.t.), galiu numatyti artėjantį lietų ir perspėti kitus skautus."
+            },
+            {
+              "id": "t3",
+              "text": "Moku naudotis visais stovykloje esančiais įvairių tipų įrankiais: kirviai, pjūklai, grąžtai, kastuvai, peiliai..."
+            },
+            {
+              "id": "t4",
+              "text": "Išdrožinėju 10 cm ilgio figūrėlę."
+            },
+            {
+              "id": "t5",
+              "text": "Kartu su kitais skautais pasistatau virš žemės pakeltą nakvynės vietą, naudodama(s) miško medžiagas ir virvę."
+            },
+            {
+              "id": "t6",
+              "text": "Pastatau stovyklines supynes."
+            },
+            {
+              "id": "t7",
+              "text": "Moku įsikurti pilną skautišką virtuvę, kur visos priemonės turi savo sudėjimo vietą ir paskirtį: indauja, laužas gaminimui, stalas pjaustymui, puodų laikymo vieta."
+            },
+            {
+              "id": "t8",
+              "text": "Pastatau lapinę, kurioje telpa du skautai, ir praleidžiu joje naktį."
+            },
+            {
+              "id": "t9",
+              "text": "Moku pasigaminti galvos apdangalą iš gamtos medžiagų."
+            }
           ]
         },
         {
           "level": 6,
           "tasks": [
-            "Prisėlinu prie laukinio gyvūno ir jį stebiu.",
-            "Moku 10 skirtingų mazgų ir galiu visus juos pritaikyti praktiškai.",
-            "Gebu naudodama(s) kirvį, pjūklą, peilį, virvę įkurti laužavietę, kurioje tilptų 15 asmenų. Laužavietė turi būti su suoliukais, pakeltais nuo žemės, kurie turi atramas, ištemptu tentu virš laužavietės ir malkine.",
-            "Su savo vienetu pastatau tiltą (kabantį arba stacionarų).",
-            "Padarau vandens filtravimo sistemą, per stovyklą sugaudau ir išfiltruoju bent litrą lietaus vandens.",
-            "Pastatau lapinę (arba iglu žiemą) ir ten praleidžiu naktį.",
-            "Galiu užkurti laužą, naudodamasi(s) tik skeltuvu arba kitais primityviais ugnies įžiebimo įrankiais.",
-            "Pasigaminu kuprinę iš gamtos medžiagų. Medžių įgūdis"
+            {
+              "id": "t1",
+              "text": "Prisėlinu prie laukinio gyvūno ir jį stebiu."
+            },
+            {
+              "id": "t2",
+              "text": "Moku 10 skirtingų mazgų ir galiu visus juos pritaikyti praktiškai."
+            },
+            {
+              "id": "t3",
+              "text": "Gebu naudodama(s) kirvį, pjūklą, peilį, virvę įkurti laužavietę, kurioje tilptų 15 asmenų. Laužavietė turi būti su suoliukais, pakeltais nuo žemės, kurie turi atramas, ištemptu tentu virš laužavietės ir malkine."
+            },
+            {
+              "id": "t4",
+              "text": "Su savo vienetu pastatau tiltą (kabantį arba stacionarų)."
+            },
+            {
+              "id": "t5",
+              "text": "Padarau vandens filtravimo sistemą, per stovyklą sugaudau ir išfiltruoju bent litrą lietaus vandens."
+            },
+            {
+              "id": "t6",
+              "text": "Pastatau lapinę (arba iglu žiemą) ir ten praleidžiu naktį."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu užkurti laužą, naudodamasi(s) tik skeltuvu arba kitais primityviais ugnies įžiebimo įrankiais."
+            },
+            {
+              "id": "t8",
+              "text": "Pasigaminu kuprinę iš gamtos medžiagų. Medžių įgūdis"
+            }
           ]
         },
         {
           "level": 7,
           "tasks": [
-            "Moku ištempti lygiagretes ar nusileidimo lyną taip, kad jis neišsitampytų.",
-            "Nenaudodama(s) metalinių konstrukcinių priemonių (varžtai, vinys, kampuočiai), pastatau stovyklinius vartus ar bokštą, kad jis būtų bent 7 metrų aukščio ir jame galėtų vienu metu būti bent 5 žmonės.",
-            "Surišu plaustą ir juo perplaukiu ežerą arba nuplaukiu bent 1 km upe palei srovę, nenuskandinęs (-usi) plausto.",
-            "Pasigaminu dubenėlį ir valgymo įrankius iš gamtos medžiagų.",
-            "Jaunesnius skautus išmokau bent 5 naujų mazgų.",
-            "Padedu jaunesniems skautams susirinkti visą inventorių poros dienų vieneto stovyklai, paaiškinu, kaip visais įrankiais naudotis, bei kartu įkuriu stovyklavietę.",
-            "Paaiškinu jaunesniems visų stovykloje naudojamų įrankių pavojus bei pravedu saugaus elgesio su jais praktinį instruktažą.",
-            "Išklausiau išorinius kursus/mokymus, susijusius su botanika, zoologija, ornitologija, miškininkyste, išlikimu gamtoje arba meterologija. Arba: dalyvavau tęstinėje praktinėje veikloje su organizacija, veikiančia šioje srityje."
+            {
+              "id": "t1",
+              "text": "Moku ištempti lygiagretes ar nusileidimo lyną taip, kad jis neišsitampytų."
+            },
+            {
+              "id": "t2",
+              "text": "Nenaudodama(s) metalinių konstrukcinių priemonių (varžtai, vinys, kampuočiai), pastatau stovyklinius vartus ar bokštą, kad jis būtų bent 7 metrų aukščio ir jame galėtų vienu metu būti bent 5 žmonės."
+            },
+            {
+              "id": "t3",
+              "text": "Surišu plaustą ir juo perplaukiu ežerą arba nuplaukiu bent 1 km upe palei srovę, nenuskandinęs (-usi) plausto."
+            },
+            {
+              "id": "t4",
+              "text": "Pasigaminu dubenėlį ir valgymo įrankius iš gamtos medžiagų."
+            },
+            {
+              "id": "t5",
+              "text": "Jaunesnius skautus išmokau bent 5 naujų mazgų."
+            },
+            {
+              "id": "t6",
+              "text": "Padedu jaunesniems skautams susirinkti visą inventorių poros dienų vieneto stovyklai, paaiškinu, kaip visais įrankiais naudotis, bei kartu įkuriu stovyklavietę."
+            },
+            {
+              "id": "t7",
+              "text": "Paaiškinu jaunesniems visų stovykloje naudojamų įrankių pavojus bei pravedu saugaus elgesio su jais praktinį instruktažą."
+            },
+            {
+              "id": "t8",
+              "text": "Išklausiau išorinius kursus/mokymus, susijusius su botanika, zoologija, ornitologija, miškininkyste, išlikimu gamtoje arba meterologija. Arba: dalyvavau tęstinėje praktinėje veikloje su organizacija, veikiančia šioje srityje."
+            }
           ]
         },
         {
           "level": 8,
           "tasks": [
-            "Įkuriu pastovyklę ir ją išardau taip, kad liktų tik minimalios žymės, kad ten kas nors stovyklavo.",
-            "Galiu įkurti visus pagrindinius stovyklos infrastruktūros objektus: tualetus, virtuvės zoną, prausimosi zoną, indų plovimo zoną.",
-            "Pasigaminu bučį ir su juo pagaunu žuvį/vėžį.",
-            "Jaunesniems pravedu pionerijos sueigą (gamtoje, stovykloje, žygyje), kurioje pastatėme bokštelį ir supynes.",
-            "Vieneto nariams statant vėliavos stiebą, vartus, stalą ar kitą pionerijos statinį, aiškiai jiems duodu nurodymus, pats (pati) nestatydama(s).",
-            "Prisidedu įkūrinėjant tarptautinės arba tautinės stovyklos statinius, infrastruktūrą.",
-            "Tunto, krašto arba Lietuvos skautijos mastu pravedu pionerijos, gamtos pažinimo arba išgyvenimo gamtoje mokymus arba įgūdžio gilinimo dieną patyrusiems skautams."
+            {
+              "id": "t1",
+              "text": "Įkuriu pastovyklę ir ją išardau taip, kad liktų tik minimalios žymės, kad ten kas nors stovyklavo."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu įkurti visus pagrindinius stovyklos infrastruktūros objektus: tualetus, virtuvės zoną, prausimosi zoną, indų plovimo zoną."
+            },
+            {
+              "id": "t3",
+              "text": "Pasigaminu bučį ir su juo pagaunu žuvį/vėžį."
+            },
+            {
+              "id": "t4",
+              "text": "Jaunesniems pravedu pionerijos sueigą (gamtoje, stovykloje, žygyje), kurioje pastatėme bokštelį ir supynes."
+            },
+            {
+              "id": "t5",
+              "text": "Vieneto nariams statant vėliavos stiebą, vartus, stalą ar kitą pionerijos statinį, aiškiai jiems duodu nurodymus, pats (pati) nestatydama(s)."
+            },
+            {
+              "id": "t6",
+              "text": "Prisidedu įkūrinėjant tarptautinės arba tautinės stovyklos statinius, infrastruktūrą."
+            },
+            {
+              "id": "t7",
+              "text": "Tunto, krašto arba Lietuvos skautijos mastu pravedu pionerijos, gamtos pažinimo arba išgyvenimo gamtoje mokymus arba įgūdžio gilinimo dieną patyrusiems skautams."
+            }
           ]
         }
       ]
@@ -882,145 +2397,457 @@
         {
           "level": 1,
           "tasks": [
-            "Paaiškinu šalto vandens pavojų.",
-            "Paaiškinu, kam naudočiau gelbėjimosi liemenę.",
-            "Įvardiju, koks gelbėjimosi liemenės dydis man tinka, ir ją apsivelku.",
-            "Prieš buriuodama(s) pasiruošiu, kad nenudegčiau saulėje.",
-            "Parodau, kaip susisiekti su gelbėjimo tarnybomis.",
-            "Galiu įšokti į vandenį iki krūtinės, dėvėdama(s) gelbėjimosi liemenę.",
-            "Galiu panardinęs (panardinusi) galvą į vandenį pūsti burbuliukus 10 sekundžių.",
-            "Galiu paaiškinti ir parodyti, kaip saugiai elgtis burlaivyje.",
-            "Parodau, kur burlaivyje yra laivo priekis ir laivagalis.",
-            "Dalyvavau ne trumpesniame nei valandos trukmės buriavimo užsiėmime."
+            {
+              "id": "t1",
+              "text": "Paaiškinu šalto vandens pavojų."
+            },
+            {
+              "id": "t2",
+              "text": "Paaiškinu, kam naudočiau gelbėjimosi liemenę."
+            },
+            {
+              "id": "t3",
+              "text": "Įvardiju, koks gelbėjimosi liemenės dydis man tinka, ir ją apsivelku."
+            },
+            {
+              "id": "t4",
+              "text": "Prieš buriuodama(s) pasiruošiu, kad nenudegčiau saulėje."
+            },
+            {
+              "id": "t5",
+              "text": "Parodau, kaip susisiekti su gelbėjimo tarnybomis."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu įšokti į vandenį iki krūtinės, dėvėdama(s) gelbėjimosi liemenę."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu panardinęs (panardinusi) galvą į vandenį pūsti burbuliukus 10 sekundžių."
+            },
+            {
+              "id": "t8",
+              "text": "Galiu paaiškinti ir parodyti, kaip saugiai elgtis burlaivyje."
+            },
+            {
+              "id": "t9",
+              "text": "Parodau, kur burlaivyje yra laivo priekis ir laivagalis."
+            },
+            {
+              "id": "t10",
+              "text": "Dalyvavau ne trumpesniame nei valandos trukmės buriavimo užsiėmime."
+            }
           ]
         },
         {
           "level": 2,
           "tasks": [
-            "Galiu paaiškinti saug aus elgesio prie vandens taisykles.",
-            "Papasakoju, iš ko atpažinčiau lengvos formos hipotermiją.",
-            "Paaiškinu, kaip prižiūrėti gelbėjimosi liemenę.",
-            "Atskiriu jūrinę gelbėjimosi liemenę nuo paprastos.",
-            "Atpažįstu ir reaguoju į tris pagrindinius švilpuko signalus.",
-            "Papasakoju, ką daryčiau, jei apsiverstų mano burlaivis.",
-            "Galiu nuplaukti 50 metrų, dėvėdama(s) gelbėjimosi liemenę.",
-            "Surišu rifo, audėjų ir aštuoniukės mazgus.",
-            "Įvardiju dvylika pagrindinių burlaivio dalių.",
-            "Paruošiu savo burlaivį plaukimui ir pademonstruoju, kaip saugiai į jį įlipti ir išlipti.",
-            "Prieš išplaukdama(s) parodau, kokioje teritorijoje ma n leidžiama buriuoti.",
-            "Bent aštuonias valandas praleidau buriavimo užsiėmimuose"
+            {
+              "id": "t1",
+              "text": "Galiu paaiškinti saug aus elgesio prie vandens taisykles."
+            },
+            {
+              "id": "t2",
+              "text": "Papasakoju, iš ko atpažinčiau lengvos formos hipotermiją."
+            },
+            {
+              "id": "t3",
+              "text": "Paaiškinu, kaip prižiūrėti gelbėjimosi liemenę."
+            },
+            {
+              "id": "t4",
+              "text": "Atskiriu jūrinę gelbėjimosi liemenę nuo paprastos."
+            },
+            {
+              "id": "t5",
+              "text": "Atpažįstu ir reaguoju į tris pagrindinius švilpuko signalus."
+            },
+            {
+              "id": "t6",
+              "text": "Papasakoju, ką daryčiau, jei apsiverstų mano burlaivis."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu nuplaukti 50 metrų, dėvėdama(s) gelbėjimosi liemenę."
+            },
+            {
+              "id": "t8",
+              "text": "Surišu rifo, audėjų ir aštuoniukės mazgus."
+            },
+            {
+              "id": "t9",
+              "text": "Įvardiju dvylika pagrindinių burlaivio dalių."
+            },
+            {
+              "id": "t10",
+              "text": "Paruošiu savo burlaivį plaukimui ir pademonstruoju, kaip saugiai į jį įlipti ir išlipti."
+            },
+            {
+              "id": "t11",
+              "text": "Prieš išplaukdama(s) parodau, kokioje teritorijoje ma n leidžiama buriuoti."
+            },
+            {
+              "id": "t12",
+              "text": "Bent aštuonias valandas praleidau buriavimo užsiėmimuose"
+            }
           ]
         },
         {
           "level": 3,
           "tasks": [
-            "Papasakoju, kaip iškviesčiau pagalbą, jei matyčiau, kad kažkam vandenyje yra sunkumų.",
-            "Galiu paaiškinti, kodėl neturėčiau gerti vandens iš ežero, upės ar jūros, kurioje buriuoju.",
-            "Atpažįstu pagrindinius rankų signalus ir papasakoju, kada jie yra naudojami.",
-            "Galiu, būdama(s) pilnai apsirengęs ir dėvėdama(s) gelbėjimosi liemenę, plūduriuoti vandenyje 5 minutes, o po to nuplaukti 100 metrų bet kuriuo plaukimo stiliumi.",
-            "Galiu užrišti gelbėjimosi kilpą, rifo, aštuoniukės ir audėjo mazgus.",
-            "Galiu paaiškinti, kaip skirtingos oro sąlygos gali daryti įtaką buriavimui.",
-            "Pasakau, iš kur gaučiau naujausias žinias apie oro sąlygas toje vietovėje, kurioje buriuosiu.",
-            "Galiu išvardinti įrangą, kurią privalau turėti burlaivyje.",
-            "Galiu paaiškinti, kokią įtaką darau aplinkai, kai buriuoju.",
-            "Galiu atpažinti šešis burlaivių tipus.",
-            "Sugebu kartu su kitais pakelti laivą, tinkamai jį paruošti plaukimui ir pademonstruoti, kaip saugiai į jį įlipti ir išlipti.",
-            "Galiu venduoti, halsuoti, sėdėti ant falšborto, krenuoti, sulėtinti laivą, pagreitinti laivą, išsemti vandenį iš laivo.",
-            "Galiu nutakeluoti laivą, išdžiovinti bures ir sudėti saugojimui visas laivo dalis.",
-            "Dalyvavau mažiausiai trijuose dienos plaukimuose po keturias valandas kasdien arba šešiuose po dvi valandas."
+            {
+              "id": "t1",
+              "text": "Papasakoju, kaip iškviesčiau pagalbą, jei matyčiau, kad kažkam vandenyje yra sunkumų."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu paaiškinti, kodėl neturėčiau gerti vandens iš ežero, upės ar jūros, kurioje buriuoju."
+            },
+            {
+              "id": "t3",
+              "text": "Atpažįstu pagrindinius rankų signalus ir papasakoju, kada jie yra naudojami."
+            },
+            {
+              "id": "t4",
+              "text": "Galiu, būdama(s) pilnai apsirengęs ir dėvėdama(s) gelbėjimosi liemenę, plūduriuoti vandenyje 5 minutes, o po to nuplaukti 100 metrų bet kuriuo plaukimo stiliumi."
+            },
+            {
+              "id": "t5",
+              "text": "Galiu užrišti gelbėjimosi kilpą, rifo, aštuoniukės ir audėjo mazgus."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu paaiškinti, kaip skirtingos oro sąlygos gali daryti įtaką buriavimui."
+            },
+            {
+              "id": "t7",
+              "text": "Pasakau, iš kur gaučiau naujausias žinias apie oro sąlygas toje vietovėje, kurioje buriuosiu."
+            },
+            {
+              "id": "t8",
+              "text": "Galiu išvardinti įrangą, kurią privalau turėti burlaivyje."
+            },
+            {
+              "id": "t9",
+              "text": "Galiu paaiškinti, kokią įtaką darau aplinkai, kai buriuoju."
+            },
+            {
+              "id": "t10",
+              "text": "Galiu atpažinti šešis burlaivių tipus."
+            },
+            {
+              "id": "t11",
+              "text": "Sugebu kartu su kitais pakelti laivą, tinkamai jį paruošti plaukimui ir pademonstruoti, kaip saugiai į jį įlipti ir išlipti."
+            },
+            {
+              "id": "t12",
+              "text": "Galiu venduoti, halsuoti, sėdėti ant falšborto, krenuoti, sulėtinti laivą, pagreitinti laivą, išsemti vandenį iš laivo."
+            },
+            {
+              "id": "t13",
+              "text": "Galiu nutakeluoti laivą, išdžiovinti bures ir sudėti saugojimui visas laivo dalis."
+            },
+            {
+              "id": "t14",
+              "text": "Dalyvavau mažiausiai trijuose dienos plaukimuose po keturias valandas kasdien arba šešiuose po dvi valandas."
+            }
           ]
         },
         {
           "level": 4,
           "tasks": [
-            "Papasakoju, iš ko atpažinčiau sunkios formos hipotermiją.",
-            "Galiu papasakoti apie ir parodyti saugų elgesį vandenyje ir ant vandens.",
-            "Galiu surišti aštuonis mazgus, reikalingus buriavimui.",
-            "Papasakoju, kokios oro sąlygos buriavimui yra per pavojingos.",
-            "Parodau, kaip tinkamai pritvirtinti buksyravimo lyną prie burlaivio.",
-            "Papasakoju ir parodau, kaip išlaikyti burlaivio pusiausvyrą.",
-            "Papasakoju ir parodau, kaip suderinti bures taip, kad burlaivis plauktų geriausiai.",
-            "Gebu nuburiuoti į nurodytą tikslą.",
-            "Parodau, kaip valdyti burlaivį plaukiant priešvėjiniu ir pavėjiniu kursu.",
-            "Moku atversti apsivertusį burlaivį.",
-            "Galiu įlipti atgal į laivą pats (pati) ar su draugo pagalba, jei burlaivis apsiverčia.",
-            "Dalyvavau mažiausiai keturiuose dienos plaukimuose po keturias valandas kasdien arba aštuoniuose po dvi valandas."
+            {
+              "id": "t1",
+              "text": "Papasakoju, iš ko atpažinčiau sunkios formos hipotermiją."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu papasakoti apie ir parodyti saugų elgesį vandenyje ir ant vandens."
+            },
+            {
+              "id": "t3",
+              "text": "Galiu surišti aštuonis mazgus, reikalingus buriavimui."
+            },
+            {
+              "id": "t4",
+              "text": "Papasakoju, kokios oro sąlygos buriavimui yra per pavojingos."
+            },
+            {
+              "id": "t5",
+              "text": "Parodau, kaip tinkamai pritvirtinti buksyravimo lyną prie burlaivio."
+            },
+            {
+              "id": "t6",
+              "text": "Papasakoju ir parodau, kaip išlaikyti burlaivio pusiausvyrą."
+            },
+            {
+              "id": "t7",
+              "text": "Papasakoju ir parodau, kaip suderinti bures taip, kad burlaivis plauktų geriausiai."
+            },
+            {
+              "id": "t8",
+              "text": "Gebu nuburiuoti į nurodytą tikslą."
+            },
+            {
+              "id": "t9",
+              "text": "Parodau, kaip valdyti burlaivį plaukiant priešvėjiniu ir pavėjiniu kursu."
+            },
+            {
+              "id": "t10",
+              "text": "Moku atversti apsivertusį burlaivį."
+            },
+            {
+              "id": "t11",
+              "text": "Galiu įlipti atgal į laivą pats (pati) ar su draugo pagalba, jei burlaivis apsiverčia."
+            },
+            {
+              "id": "t12",
+              "text": "Dalyvavau mažiausiai keturiuose dienos plaukimuose po keturias valandas kasdien arba aštuoniuose po dvi valandas."
+            }
           ]
         },
         {
           "level": 5,
           "tasks": [
-            "Atpažįstu lengvos formos hipotermijos požymius.",
-            "Pasirenku buriavimui tinkamą aprangą.",
-            "Įvardiju tris pagalbos būdus, kaip esančiam vandenyje padėti pasiekti saugią vietą. Išbandžiau vieną iš šių būdų pasirinktinai.",
-            "Gebu priplaukti prie iš laivo iškritusio žmogaus ir padėti jam įlipti.",
-            "Sudarau ir įgyvendinu buriavimo sueigos planą.",
-            "Paaiškinu, kodėl burlaiviui reikia švartovo.",
-            "Galiu papasakoti apie pagrindinius navigacijos prietaisus, naudojamus buriniuose laivuose.",
-            "Galiu įvertinti buriavimui paruoštą burlaivį ir atpažinti padarytas klaidas, dėl kurių nesaugu buriuoti.",
-            "Moku išplaukti iš uosto ir/ar nuplaukti nuo kranto su burlaiviu.",
-            "Moku vairuoti prieš vėją, „nukristi” nuo vėjo, ir vairuoti pavėjui, esant vidutinio stiprumo vėjui.",
-            "Galiu paaiškinti naujokams, kaip atversti švertbotą.",
-            "Galiu efektyviai vairuoti burlaivį plaukiant pasirinkta kryptimi. Gebu atpažinti vėjo kryptį buriuojant, pasukti burlaivį prieš vėją arba pavėjui. Gebu burlaivį apsukti.",
-            "Pademonstruoju, kaip reikia valdyti burę įvairiose situacijose, įskaitant vėjo krypties pokyčius, vėjo gūsius bei štilį.",
-            "Galiu manevruoti burlaivį tuo pačiu metu duodama(s) komandas savo įgulai.",
-            "Galiu saugiai prisišvartuoti uoste ar paplūdimyje.",
-            "Galiu iškelti burlaivį iš vandens ir pernešti į saugojimo vietą, išrinkti burlaivį, tinkamai sulankstyti bures ir viską tvarkingai sudėti į sandėliavimo vietą.",
-            "Dalyvavau vienos dienos plaukime, trukusiame mažiausiai šešias valandas, kurio metu buvo buriuojama, švartuojamasi paplūdimyje, gaminamas maistas ir saugiai grįžtama atgal.",
-            "Dalyvavau mažiausiai penkiuose dienos plaukimuose po šešias valandas kasdien arba dešimtyje plaukimų po tris valandas, buriuojant saugiuose, pažįstamuose vandenyse."
+            {
+              "id": "t1",
+              "text": "Atpažįstu lengvos formos hipotermijos požymius."
+            },
+            {
+              "id": "t2",
+              "text": "Pasirenku buriavimui tinkamą aprangą."
+            },
+            {
+              "id": "t3",
+              "text": "Įvardiju tris pagalbos būdus, kaip esančiam vandenyje padėti pasiekti saugią vietą. Išbandžiau vieną iš šių būdų pasirinktinai."
+            },
+            {
+              "id": "t4",
+              "text": "Gebu priplaukti prie iš laivo iškritusio žmogaus ir padėti jam įlipti."
+            },
+            {
+              "id": "t5",
+              "text": "Sudarau ir įgyvendinu buriavimo sueigos planą."
+            },
+            {
+              "id": "t6",
+              "text": "Paaiškinu, kodėl burlaiviui reikia švartovo."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu papasakoti apie pagrindinius navigacijos prietaisus, naudojamus buriniuose laivuose."
+            },
+            {
+              "id": "t8",
+              "text": "Galiu įvertinti buriavimui paruoštą burlaivį ir atpažinti padarytas klaidas, dėl kurių nesaugu buriuoti."
+            },
+            {
+              "id": "t9",
+              "text": "Moku išplaukti iš uosto ir/ar nuplaukti nuo kranto su burlaiviu."
+            },
+            {
+              "id": "t10",
+              "text": "Moku vairuoti prieš vėją, „nukristi” nuo vėjo, ir vairuoti pavėjui, esant vidutinio stiprumo vėjui."
+            },
+            {
+              "id": "t11",
+              "text": "Galiu paaiškinti naujokams, kaip atversti švertbotą."
+            },
+            {
+              "id": "t12",
+              "text": "Galiu efektyviai vairuoti burlaivį plaukiant pasirinkta kryptimi. Gebu atpažinti vėjo kryptį buriuojant, pasukti burlaivį prieš vėją arba pavėjui. Gebu burlaivį apsukti."
+            },
+            {
+              "id": "t13",
+              "text": "Pademonstruoju, kaip reikia valdyti burę įvairiose situacijose, įskaitant vėjo krypties pokyčius, vėjo gūsius bei štilį."
+            },
+            {
+              "id": "t14",
+              "text": "Galiu manevruoti burlaivį tuo pačiu metu duodama(s) komandas savo įgulai."
+            },
+            {
+              "id": "t15",
+              "text": "Galiu saugiai prisišvartuoti uoste ar paplūdimyje."
+            },
+            {
+              "id": "t16",
+              "text": "Galiu iškelti burlaivį iš vandens ir pernešti į saugojimo vietą, išrinkti burlaivį, tinkamai sulankstyti bures ir viską tvarkingai sudėti į sandėliavimo vietą."
+            },
+            {
+              "id": "t17",
+              "text": "Dalyvavau vienos dienos plaukime, trukusiame mažiausiai šešias valandas, kurio metu buvo buriuojama, švartuojamasi paplūdimyje, gaminamas maistas ir saugiai grįžtama atgal."
+            },
+            {
+              "id": "t18",
+              "text": "Dalyvavau mažiausiai penkiuose dienos plaukimuose po šešias valandas kasdien arba dešimtyje plaukimų po tris valandas, buriuojant saugiuose, pažįstamuose vandenyse."
+            }
           ]
         },
         {
           "level": 6,
           "tasks": [
-            "Atpažįstu vidutinio lygio hipotermijos ženklus.",
-            "Papasakoju, kodėl ir kaip reikia rūpintis hidratacija, ir imuosi priemonių, kad vartočiau tinkamą kiekį skysčių.",
-            "Galiu įvertinti vietinius buriavimo pavojus.",
-            "Savo skautiškam vienetui paaiškinu oro dinamikos poveikį burėms.",
-            "Galiu aiškiai paaiškinti įgulai, kaip suderinti vairavimą prie burės įtempimo ir laivo balansą.",
-            "Pademonstruoju, kad sugebu tinkamai naudoti įvairias vairavimo technikas, įskaitant buojos apiplaukimą skirtingais bortais, plaukimą pavėjui laikant bures skirtingose pusėse bei efektyvų burių pusės keitimą, kai burlaivis sukasi.",
-            "Galiu manevruoti burlaivį: sustabdyti jį ir paplaukti 100 metrų atgal, sustoti šalia kito laivo iš pavėjinės pusės, rasti vietą starto vietoje, lenktynėse startuoti iš starto linijos.",
-            "Dalyvavau vietinio burlaivių klubo lenktynėse.",
-            "Dalyvavau burlaivio apvertimo pratybose tam, kad įgyčiau žinių, kaip tinkamai atversti burlaivį.",
-            "Dalyvavau mažiausiai šešiose dienos plaukimų išvykose.",
-            "Padėjau buriavimo treneriui pravesti bent vieną sueigą apie vandens saugumą, bent vieną sueigą apie buriavimo teoriją ir bent vieną praktinį buriavimo užsiėmimą skautams, kurie gilina žemesnius įgūdžio lygmenis."
+            {
+              "id": "t1",
+              "text": "Atpažįstu vidutinio lygio hipotermijos ženklus."
+            },
+            {
+              "id": "t2",
+              "text": "Papasakoju, kodėl ir kaip reikia rūpintis hidratacija, ir imuosi priemonių, kad vartočiau tinkamą kiekį skysčių."
+            },
+            {
+              "id": "t3",
+              "text": "Galiu įvertinti vietinius buriavimo pavojus."
+            },
+            {
+              "id": "t4",
+              "text": "Savo skautiškam vienetui paaiškinu oro dinamikos poveikį burėms."
+            },
+            {
+              "id": "t5",
+              "text": "Galiu aiškiai paaiškinti įgulai, kaip suderinti vairavimą prie burės įtempimo ir laivo balansą."
+            },
+            {
+              "id": "t6",
+              "text": "Pademonstruoju, kad sugebu tinkamai naudoti įvairias vairavimo technikas, įskaitant buojos apiplaukimą skirtingais bortais, plaukimą pavėjui laikant bures skirtingose pusėse bei efektyvų burių pusės keitimą, kai burlaivis sukasi."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu manevruoti burlaivį: sustabdyti jį ir paplaukti 100 metrų atgal, sustoti šalia kito laivo iš pavėjinės pusės, rasti vietą starto vietoje, lenktynėse startuoti iš starto linijos."
+            },
+            {
+              "id": "t8",
+              "text": "Dalyvavau vietinio burlaivių klubo lenktynėse."
+            },
+            {
+              "id": "t9",
+              "text": "Dalyvavau burlaivio apvertimo pratybose tam, kad įgyčiau žinių, kaip tinkamai atversti burlaivį."
+            },
+            {
+              "id": "t10",
+              "text": "Dalyvavau mažiausiai šešiose dienos plaukimų išvykose."
+            },
+            {
+              "id": "t11",
+              "text": "Padėjau buriavimo treneriui pravesti bent vieną sueigą apie vandens saugumą, bent vieną sueigą apie buriavimo teoriją ir bent vieną praktinį buriavimo užsiėmimą skautams, kurie gilina žemesnius įgūdžio lygmenis."
+            }
           ]
         },
         {
           "level": 7,
           "tasks": [
-            "Galiu atpažinti ir gydyti sunkios formos hipotermiją ir hipertermiją.",
-            "Galiu nupasakoti pagrindines jūreivystės žinias.",
-            "Papasakoju apie pagrindines lenktyniavimo strategijas ir atpažįstu, kai jas naudoja kiti.",
-            "Papasakoju, kaip oro srovės veikia bures.",
-            "Papasakoju, kaip derinti burlaivį.",
-            "Papasakoju, kaip paruoščiau laivo takelažą buriavimui.",
-            "Buriuodama(s) parodžiau savo gebėjimus išlaikyti burlaivio pusiausvyrą.",
-            "Buriuodama(s) parodžiau savo gebėjimus vairuoti burlaivį.",
-            "Buriuodama(s) parodžiau savo gebėjimus valdyti bures.",
-            "Parodžiau, kad galiu sėkmingai manevruoti burlaivį.",
-            "Parodžiau, kaip sugebu išlaikyti poziciją starto linijoje.",
-            "Per lenktynes parodžiau taktinius manevrus.",
-            "Dalyvavau vienos ar dviejų dienų vietinėje regatoje.",
-            "Dalyvavau mažiausiai septyniose dienos plaukimo išvykose."
+            {
+              "id": "t1",
+              "text": "Galiu atpažinti ir gydyti sunkios formos hipotermiją ir hipertermiją."
+            },
+            {
+              "id": "t2",
+              "text": "Galiu nupasakoti pagrindines jūreivystės žinias."
+            },
+            {
+              "id": "t3",
+              "text": "Papasakoju apie pagrindines lenktyniavimo strategijas ir atpažįstu, kai jas naudoja kiti."
+            },
+            {
+              "id": "t4",
+              "text": "Papasakoju, kaip oro srovės veikia bures."
+            },
+            {
+              "id": "t5",
+              "text": "Papasakoju, kaip derinti burlaivį."
+            },
+            {
+              "id": "t6",
+              "text": "Papasakoju, kaip paruoščiau laivo takelažą buriavimui."
+            },
+            {
+              "id": "t7",
+              "text": "Buriuodama(s) parodžiau savo gebėjimus išlaikyti burlaivio pusiausvyrą."
+            },
+            {
+              "id": "t8",
+              "text": "Buriuodama(s) parodžiau savo gebėjimus vairuoti burlaivį."
+            },
+            {
+              "id": "t9",
+              "text": "Buriuodama(s) parodžiau savo gebėjimus valdyti bures."
+            },
+            {
+              "id": "t10",
+              "text": "Parodžiau, kad galiu sėkmingai manevruoti burlaivį."
+            },
+            {
+              "id": "t11",
+              "text": "Parodžiau, kaip sugebu išlaikyti poziciją starto linijoje."
+            },
+            {
+              "id": "t12",
+              "text": "Per lenktynes parodžiau taktinius manevrus."
+            },
+            {
+              "id": "t13",
+              "text": "Dalyvavau vienos ar dviejų dienų vietinėje regatoje."
+            },
+            {
+              "id": "t14",
+              "text": "Dalyvavau mažiausiai septyniose dienos plaukimo išvykose."
+            }
           ]
         },
         {
           "level": 8,
           "tasks": [
-            "Tinkamai paruošiu burlaivį saugiai kelionei.",
-            "Įvardiju, kaip laikysiuosi lenktynių taisyklių.",
-            "Parodau, kaip derinti burlaivį.",
-            "Parodau, kokia turi būti optimali kūno padėtis buriavimo metu.",
-            "Parodau vendo/halso manevrus.",
-            "Galiu sėkmingai buriuoti dvivietį burlaivį su spinakeriu.",
-            "Galiu parodyti, kaip halsuoti plaukiant su spinakeriu.",
-            "Galiu parodyti taktinius gebėjimus lenktyniaujant.",
-            "Parodau lenktyniavimo strategijas.",
-            "Dalyvavau mažiausiai aštuoniose dienos plaukimo išvykose.",
-            "Dalyvavau regioninėje stovykloje ir regioninėje regatoje.",
-            "Esu išsilaikęs vidaus vandenų laivavedžio teises.",
-            "Pravedžiau su buriavimo įgūdžiu susijusius mokymus arba sueigų ciklą."
+            {
+              "id": "t1",
+              "text": "Tinkamai paruošiu burlaivį saugiai kelionei."
+            },
+            {
+              "id": "t2",
+              "text": "Įvardiju, kaip laikysiuosi lenktynių taisyklių."
+            },
+            {
+              "id": "t3",
+              "text": "Parodau, kaip derinti burlaivį."
+            },
+            {
+              "id": "t4",
+              "text": "Parodau, kokia turi būti optimali kūno padėtis buriavimo metu."
+            },
+            {
+              "id": "t5",
+              "text": "Parodau vendo/halso manevrus."
+            },
+            {
+              "id": "t6",
+              "text": "Galiu sėkmingai buriuoti dvivietį burlaivį su spinakeriu."
+            },
+            {
+              "id": "t7",
+              "text": "Galiu parodyti, kaip halsuoti plaukiant su spinakeriu."
+            },
+            {
+              "id": "t8",
+              "text": "Galiu parodyti taktinius gebėjimus lenktyniaujant."
+            },
+            {
+              "id": "t9",
+              "text": "Parodau lenktyniavimo strategijas."
+            },
+            {
+              "id": "t10",
+              "text": "Dalyvavau mažiausiai aštuoniose dienos plaukimo išvykose."
+            },
+            {
+              "id": "t11",
+              "text": "Dalyvavau regioninėje stovykloje ir regioninėje regatoje."
+            },
+            {
+              "id": "t12",
+              "text": "Esu išsilaikęs vidaus vandenų laivavedžio teises."
+            },
+            {
+              "id": "t13",
+              "text": "Pravedžiau su buriavimo įgūdžiu susijusius mokymus arba sueigų ciklą."
+            }
           ]
         }
       ]
