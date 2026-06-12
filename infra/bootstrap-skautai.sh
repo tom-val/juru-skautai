@@ -136,6 +136,54 @@ DEPLOY_POLICY=$(cat <<JSON
       "Effect": "Allow",
       "Action": ["cloudfront:*", "sts:GetCallerIdentity"],
       "Resource": "*"
+    },
+    {
+      "Sid": "MembersTable",
+      "Effect": "Allow",
+      "Action": "dynamodb:*",
+      "Resource": [
+        "arn:aws:dynamodb:${REGION}:${ACCOUNT_ID}:table/${PROJECT}-prod-members",
+        "arn:aws:dynamodb:${REGION}:${ACCOUNT_ID}:table/${PROJECT}-prod-members/index/*"
+      ]
+    },
+    {
+      "Sid": "BackendLambdas",
+      "Effect": "Allow",
+      "Action": "lambda:*",
+      "Resource": "arn:aws:lambda:${REGION}:${ACCOUNT_ID}:function:${PROJECT}-prod-*"
+    },
+    {
+      "Sid": "LambdaExecRole",
+      "Effect": "Allow",
+      "Action": "iam:*",
+      "Resource": "arn:aws:iam::${ACCOUNT_ID}:role/${PROJECT}-prod-lambda"
+    },
+    {
+      "Sid": "Cognito",
+      "Effect": "Allow",
+      "Action": "cognito-idp:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "ApiGateway",
+      "Effect": "Allow",
+      "Action": "apigateway:*",
+      "Resource": "arn:aws:apigateway:${REGION}::/*"
+    },
+    {
+      "Sid": "LambdaLogGroups",
+      "Effect": "Allow",
+      "Action": "logs:*",
+      "Resource": [
+        "arn:aws:logs:${REGION}:${ACCOUNT_ID}:log-group:/aws/lambda/${PROJECT}-prod-*",
+        "arn:aws:logs:${REGION}:${ACCOUNT_ID}:log-group:/aws/lambda/${PROJECT}-prod-*:*"
+      ]
+    },
+    {
+      "Sid": "LogsList",
+      "Effect": "Allow",
+      "Action": "logs:DescribeLogGroups",
+      "Resource": "*"
     }
   ]
 }
