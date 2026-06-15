@@ -15,15 +15,15 @@ test("randomSuffix is 4 lowercase alphanumerics by default", () => {
   }
 });
 
-test("buildMemberId has the firstname+lastname-suffix shape", () => {
-  assert.match(buildMemberId("Jonas", "Jonaitis"), /^jonasjonaitis-[a-z0-9]{4}$/);
+test("buildMemberId has the firstname-suffix shape", () => {
+  assert.match(buildMemberId("Jonas"), /^jonas-[a-z0-9]{4}$/);
 });
 
-test("buildMemberId falls back when names have no usable chars", () => {
-  assert.match(buildMemberId("!!!", "???"), /^narys-[a-z0-9]{4}$/);
+test("buildMemberId falls back when the name has no usable chars", () => {
+  assert.match(buildMemberId("!!!"), /^narys-[a-z0-9]{4}$/);
 });
 
 test("buildMemberId is practically unique across calls", () => {
-  const ids = new Set(Array.from({ length: 1000 }, () => buildMemberId("Jonas", "Jonaitis")));
+  const ids = new Set(Array.from({ length: 1000 }, () => buildMemberId("Jonas")));
   assert.ok(ids.size > 990, `expected near-unique IDs, got ${ids.size}/1000`);
 });

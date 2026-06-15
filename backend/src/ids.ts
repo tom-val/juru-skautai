@@ -1,5 +1,5 @@
-// Member ID generation: firstname + lastname + "-" + 4 random alphanumerics.
-// e.g. "Jonas", "Jonaitis" -> "jonasjonaitis-7g2k".
+// Member ID generation: firstname + "-" + 4 random alphanumerics.
+// e.g. "Jonas" -> "jonas-7g2k".
 
 // Map common Lithuanian diacritics to ASCII so IDs stay URL-safe and typeable.
 const LT_MAP: Record<string, string> = {
@@ -28,7 +28,7 @@ export function randomSuffix(length = 4): string {
 }
 
 /** Build a candidate member ID. Caller persists with a uniqueness check and retries. */
-export function buildMemberId(firstName: string, lastName: string): string {
-  const base = slugify(firstName) + slugify(lastName);
+export function buildMemberId(firstName: string): string {
+  const base = slugify(firstName);
   return `${base || "narys"}-${randomSuffix()}`;
 }

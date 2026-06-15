@@ -22,7 +22,6 @@ export default function LeadDashboard() {
   const [error, setError] = useState("");
 
   const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
   const [creating, setCreating] = useState(false);
   const [copied, setCopied] = useState("");
 
@@ -58,9 +57,8 @@ export default function LeadDashboard() {
     setCreating(true);
     setError("");
     try {
-      const member = await createMember(firstName.trim(), lastName.trim());
+      const member = await createMember(firstName.trim());
       setFirstName("");
-      setLastName("");
       setMembers((prev) => [...prev, member]);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Nepavyko sukurti nario.");
@@ -70,7 +68,7 @@ export default function LeadDashboard() {
   };
 
   const remove = async (member: Member) => {
-    if (!window.confirm(`Pašalinti narį ${member.firstName} ${member.lastName}?`)) return;
+    if (!window.confirm(`Pašalinti narį ${member.firstName}?`)) return;
     try {
       await deleteMember(member.memberId);
       setMembers((prev) => prev.filter((m) => m.memberId !== member.memberId));
@@ -124,17 +122,10 @@ export default function LeadDashboard() {
               placeholder="Vardas"
               required
             />
-            <input
-              type="text"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-              placeholder="Pavardė"
-              required
-            />
             <button
               type="submit"
               className="btn btn-sun"
-              disabled={creating || !firstName.trim() || !lastName.trim()}
+              disabled={creating || !firstName.trim()}
             >
               {creating ? "Kuriama…" : "Sukurti"}
             </button>
@@ -151,9 +142,7 @@ export default function LeadDashboard() {
             {members.map((m) => (
               <li key={m.memberId} className="member-row">
                 <div className="member-main">
-                  <Link to={memberPath(m.memberId)}>
-                    {m.firstName} {m.lastName}
-                  </Link>
+                  <Link to={memberPath(m.memberId)}>{m.firstName}</Link>
                   <code className="member-id">{m.memberId}</code>
                 </div>
                 <div className="member-meta">

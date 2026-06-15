@@ -8,7 +8,6 @@ export type Progress = Record<string, boolean>;
 export interface Member {
   memberId: string;
   firstName: string;
-  lastName: string;
   tuntas: string;
   progress: Progress;
   createdAt: string;
@@ -19,7 +18,6 @@ export interface Member {
 export interface MemberProfile {
   memberId: string;
   firstName: string;
-  lastName: string;
   tuntas: string;
   progress: Progress;
 }
@@ -73,10 +71,10 @@ export const listMembers = () =>
     (r) => r.members,
   );
 
-export const createMember = (firstName: string, lastName: string) =>
+export const createMember = (firstName: string) =>
   request<Member>("POST", "/members", {
     auth: true,
-    body: { firstName, lastName },
+    body: { firstName },
   });
 
 export const deleteMember = (memberId: string) =>

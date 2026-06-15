@@ -23,7 +23,6 @@ export type Progress = Record<string, boolean>;
 export interface Member {
   memberId: string;
   firstName: string;
-  lastName: string;
   leadSub: string;
   leadEmail: string;
   leadName: string;
@@ -38,7 +37,6 @@ export function publicView(m: Member) {
   return {
     memberId: m.memberId,
     firstName: m.firstName,
-    lastName: m.lastName,
     tuntas: m.tuntas ?? "",
     progress: m.progress ?? {},
   };
@@ -66,7 +64,6 @@ export async function listMembersByLead(leadSub: string): Promise<Member[]> {
 /** Create a member with a unique ID, retrying on the rare collision. */
 export async function createMember(input: {
   firstName: string;
-  lastName: string;
   leadSub: string;
   leadEmail: string;
   leadName: string;
@@ -75,9 +72,8 @@ export async function createMember(input: {
   const now = new Date().toISOString();
   for (let attempt = 0; attempt < 5; attempt++) {
     const member: Member = {
-      memberId: buildMemberId(input.firstName, input.lastName),
+      memberId: buildMemberId(input.firstName),
       firstName: input.firstName,
-      lastName: input.lastName,
       leadSub: input.leadSub,
       leadEmail: input.leadEmail,
       leadName: input.leadName,

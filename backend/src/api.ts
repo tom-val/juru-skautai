@@ -84,10 +84,9 @@ export const handler = async (
     switch (route) {
       case "POST /members": {
         const { sub, email, name, tuntas } = lead(event);
-        const input = body<{ firstName?: string; lastName?: string }>(event);
+        const input = body<{ firstName?: string }>(event);
         const member = await createMember({
           firstName: cleanName(input.firstName, "firstName"),
-          lastName: cleanName(input.lastName, "lastName"),
           leadSub: sub,
           leadEmail: email,
           leadName: name,
