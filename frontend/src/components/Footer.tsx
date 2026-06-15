@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const scoutRoutes = ["/skautu-ikurejas", "/istorija", "/atributika", "/daina"];
+const scoutRoutes = ["/skautu-ikurejas", "/istorija", "/atributika", "/daina", "/dainos", "/izodziai"];
 
 export default function Footer() {
   const { t } = useTranslation();

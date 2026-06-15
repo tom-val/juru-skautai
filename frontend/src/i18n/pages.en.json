@@ -10,22 +10,70 @@
     "photoCaption": "B-P meets the Cub Scouts at the 1st International Jamboree at Olympia, 1920.",
     "portraitCaption": "Lord Robert Baden-Powell (1857–1941)",
     "timeline": [
-      { "year": "1857", "text": "On 22 February, Robert Stephenson Smyth Baden-Powell, founder of world scouting, was born. His father, H. G. Baden-Powell, was a professor at Oxford University and a member of the Royal Society, author of many works on philosophy and theology." },
-      { "year": "1869", "text": "He began learning seamanship aboard the ship \"Conway\". He never parted from the ship, even on holidays — sailing the sea with his brothers. He quickly learned to handle a boat, camp, cook and carry out orders, gaining the experience of a naturalist and scout." },
-      { "year": "1871", "text": "He passed the entrance exams to Charterhouse School." },
-      { "year": "1873", "text": "Charterhouse moved to Godalming. In the dense woods nearby Robert learned to stalk, track, observe birds and animals, pitch a tent and use a hatchet." },
-      { "year": "1876", "text": "He joined the British Army and went to fight in India." },
-      { "year": "1883", "text": "He was appointed regimental adjutant." },
-      { "year": "1899", "text": "During the siege of Mafeking he became known for organising volunteer boys — cadets — who carried out signalling duties with courage and responsibility. This was the beginning of the idea of scouting." },
-      { "year": "1900", "text": "Queen Victoria granted him the rank of Major-General." },
-      { "year": "1901", "text": "He was awarded the title of Lord." },
-      { "year": "1907", "text": "He held the first scout camp on Brownsea Island — the date considered the official beginning of scouting." },
-      { "year": "1908", "text": "He published the book \"Scouting for Boys\"." },
-      { "year": "1910", "text": "He retired from the army and devoted himself to scouting." },
-      { "year": "1912", "text": "He set off on a journey around the world to study scouting in different countries. On the trip he met Olave St. Clair Soames, whom he married on returning to England." },
-      { "year": "1933", "text": "On 17 August, Baden-Powell and Olave, patroness of the Girl Guides, arrived in Palanga with their family and 650 English scout and guide leaders." },
-      { "year": "1938", "text": "In failing health he travelled to Africa (Kenya)." },
-      { "year": "1941", "text": "He died on 8 January and is buried in Africa." }
+      {
+        "year": "1857",
+        "text": "On 22 February, Robert Stephenson Smyth Baden-Powell, founder of world scouting, was born. His father, H. G. Baden-Powell, was a professor at Oxford University and a member of the Royal Society, author of many works on philosophy and theology."
+      },
+      {
+        "year": "1869",
+        "text": "He began learning seamanship aboard the ship \"Conway\". He never parted from the ship, even on holidays — sailing the sea with his brothers. He quickly learned to handle a boat, camp, cook and carry out orders, gaining the experience of a naturalist and scout."
+      },
+      {
+        "year": "1871",
+        "text": "He passed the entrance exams to Charterhouse School."
+      },
+      {
+        "year": "1873",
+        "text": "Charterhouse moved to Godalming. In the dense woods nearby Robert learned to stalk, track, observe birds and animals, pitch a tent and use a hatchet."
+      },
+      {
+        "year": "1876",
+        "text": "He joined the British Army and went to fight in India."
+      },
+      {
+        "year": "1883",
+        "text": "He was appointed regimental adjutant."
+      },
+      {
+        "year": "1899",
+        "text": "During the siege of Mafeking he became known for organising volunteer boys — cadets — who carried out signalling duties with courage and responsibility. This was the beginning of the idea of scouting."
+      },
+      {
+        "year": "1900",
+        "text": "Queen Victoria granted him the rank of Major-General."
+      },
+      {
+        "year": "1901",
+        "text": "He was awarded the title of Lord."
+      },
+      {
+        "year": "1907",
+        "text": "He held the first scout camp on Brownsea Island — the date considered the official beginning of scouting."
+      },
+      {
+        "year": "1908",
+        "text": "He published the book \"Scouting for Boys\"."
+      },
+      {
+        "year": "1910",
+        "text": "He retired from the army and devoted himself to scouting."
+      },
+      {
+        "year": "1912",
+        "text": "He set off on a journey around the world to study scouting in different countries. On the trip he met Olave St. Clair Soames, whom he married on returning to England."
+      },
+      {
+        "year": "1933",
+        "text": "On 17 August, Baden-Powell and Olave, patroness of the Girl Guides, arrived in Palanga with their family and 650 English scout and guide leaders."
+      },
+      {
+        "year": "1938",
+        "text": "In failing health he travelled to Africa (Kenya)."
+      },
+      {
+        "year": "1941",
+        "text": "He died on 8 January and is buried in Africa."
+      }
     ]
   },
   "history": {
@@ -43,16 +91,31 @@
     ],
     "flagMainTitle": "The Sea Scout flag",
     "flagMain": [
-      { "image": "/assets/flag-main-2.jpg", "label": "Sea Scout flag" },
-      { "image": "/assets/flag-main-1.jpg", "label": "Sea Scout flag (reverse)" }
+      {
+        "image": "/assets/flag-main-2.jpg",
+        "label": "Sea Scout flag"
+      },
+      {
+        "image": "/assets/flag-main-1.jpg",
+        "label": "Sea Scout flag (reverse)"
+      }
     ],
     "timelineTitle": "History of the Lithuanian Sea Scouts",
     "bookCaption": "\"Scouting for Boys\", 1908.",
     "flagsTitle": "Historic sea scout flags",
     "flags": [
-      { "image": "/assets/flag-zarasai.jpg", "label": "Zarasai company flag (LJSS)" },
-      { "image": "/assets/flag-panevezys.jpg", "label": "Panevėžys unit flag (LJSS)" },
-      { "image": "/assets/flag-kaunas.jpg", "label": "Kaunas Vaidotas unit flag (LJSS)" }
+      {
+        "image": "/assets/flag-zarasai.jpg",
+        "label": "Zarasai company flag (LJSS)"
+      },
+      {
+        "image": "/assets/flag-panevezys.jpg",
+        "label": "Panevėžys unit flag (LJSS)"
+      },
+      {
+        "image": "/assets/flag-kaunas.jpg",
+        "label": "Kaunas Vaidotas unit flag (LJSS)"
+      }
     ],
     "periods": [
       {
@@ -98,7 +161,78 @@
           "On 25 July 1997 Lithuanian Scouting became a member of the World Organization of the Scout Movement (WOSM). In 2001 Lithuanian Sea Scouting was founded."
         ]
       }
-    ]
+    ],
+    "maritime": {
+      "title": "The path of the Lithuanian sea scouts",
+      "intro": "A fuller history of sea scouting — from the early interwar years to the present day and the diaspora.",
+      "chapters": [
+        {
+          "title": "The beginnings and growth of the sea scouts in Lithuania",
+          "paragraphs": [
+            "For several years the sea scouts were sponsored by the so-called Lithuanian Yacht Club, established in Kaunas in 1921 — an organisation that united enthusiasts of every kind of water sport (not only yachting). From those days to the present the sea scouts have used an inherited flag — the flag of the former Yacht Club (a symmetrical blue cross on a white field, with the national tricolour in the upper quarter by the staff) with the sea scout emblem — a fleur-de-lis with an anchor — added opposite it in the lower quarter (by the rules of heraldry the emblem should be in the lower quarter by the staff). Incidentally, the former flag of that yacht club has in our day become the flag of the Lithuanian Naval Force.",
+            "At the start of 1922 the \"Rimgaudas\" troop in Kaunas had 6 patrols. The troop leader's assistant, senior patrol leader Julius Jurgėla Jurgelevičius (aged 16), founded a water scout patrol. The start was active in scoutcraft and in preparing for water activities and for service in the Lithuanian navy. Soon a second patrol formed, and on 12 March 1922 J. Jurgėla, with both patrols, broke away from the \"Rimgaudas\" troop and created a new sea scout troop under the name \"Algimantas\". The first patrols were named the \"Otters\" and the \"Beavers\". The troop staff chose Lithuanian nautical names, set the programme of sea scout proficiency grades, and designed a badge and a uniform. From 1925, having received no confirmation from the LSS, the Lithuanian sea scouts operated as a separate, independent organisation led by Petras Jurgėla, but in 1927 they once again merged with the united Lithuanian Scout Union.",
+            "Historic for the Lithuanian sea scouts was the voyage from Kaunas to Klaipėda in the spring of 1924 in two small sailing boats — the \"Gulbė\" (Swan), captained by Kostas Jurgėla, and the \"Ruonis\" (Seal), captained by Petras Labanauskas (who later finished his studies in Italy, became a naval officer and commanded the training warship \"Prezidentas Smetona\"). The result of the voyage was the founding of the first sea scout troop branch in Klaipėda, which soon became the spiritual centre of gravity of our entire sea scout movement. Later sea scout units sprang up across the country — in Panevėžys, Mažeikiai, Telšiai, Biržai, Ukmergė, Tauragė, Alytus, Jurbarkas, Kėdainiai, Marijampolė, Rokiškis, Utena, even in such a remote little town as Viekšniai on the Venta. New units formed in the cradle of sea scouting, Kaunas, and there and in Klaipėda larger formations took shape — the sea scout units."
+          ],
+          "figures": []
+        },
+        {
+          "title": "Along the waterways of old Lithuania",
+          "paragraphs": [
+            "In 1930 the first girl sea scout crew, the \"Gulbės\" (Swans), was established in Mažeikiai. The founding of the girl sea scouts, however, is dated to 16 February 1936, when the \"Birutės\" crew was established. The activity of the girl sea scouts spread less rapidly than that of the brothers. By 1940 there were 100 girl sea scouts, 5 crews and 2 boats.",
+            "A great event not only for the scouts but for the whole of Lithuanian society was the visit of the movement's founder and ideologue R. Baden-Powell with his wife — the organiser of the girls' scout movement — and an escort of 650 English scouts. In the summer of 1933 this Baden-Powell mission visited, aboard the ship \"Calgaric\", every state of the Baltic Sea except Hitler's Germany and Stalin's Russia. For several days the large passenger ship adorned the port of Klaipėda.",
+            "In those days the sea scouts widely cultivated journeys by boat and kayak on inland waters. In 1934, for the first Sea Day, which drew tens of thousands of guests to Klaipėda, 60 sea scout kayaks gathered from every corner of Lithuania. The expedition was led by the noted geographer and water-travel enthusiast Prof. S. Kolupaila. It is worth noting that the Sea Day, then solemnly marked across all Lithuania, was understood not as just another occasion to make merry, forget oneself and feast, but as a meaningful patriotic festival; it had no official beer, as it does now, but in return it had its lofty national idea.",
+            "At the parade held in 1935 on the occasion of the World Lithuanian Congress, as many as 115 sea scout kayaks took part, and before that 82 kayaks had sailed the rivers along the administrative line of the occupied Vilnius region. By 1936 the inland-water routes covered by the sea scouts amounted to 10,000 kilometres in all.",
+            "Many sea scouts from all over Lithuania attended the sailing school operating in Smiltynė, Klaipėda, in the summers of 1936 and 1937. The Biržai sea scouts took up the building of sailing boats themselves, building them not only for themselves but for other sea scout units too.",
+            "In the summer of 1939 a group of Biržai sea scouts, in a small sailing boat they had built themselves, reached the Baltic Sea by river through Latvia and sailed along the coast as far as Palanga. It was a symbolic expedition by which the young people sought to show that Lithuania, having lost Klaipėda in the spring of that year, would not give up its maritime aspirations. As the port of Šventoji was urgently being enlarged and adapted for overseas shipping as an alternative to the Klaipėda port seized by Hitler, and a new railway branch was being laid, the sea scouts took an active part in the youth working parties. These were no empty efforts: by 1940 the first sea merchant ship from Holland had already sailed into the port of Šventoji."
+          ],
+          "figures": [
+            {
+              "image": "/assets/hist-birzu-laivelis.jpg",
+              "caption": "It was in this boat of their own making that the Biržai sea scouts sailed to Palanga by river and sea in 1939."
+            }
+          ]
+        },
+        {
+          "title": "The sea scouts of Lithuania Minor",
+          "paragraphs": [
+            "From the spring of 1924 in Klaipėda, encouraged by the Kaunas men who had sailed in and authorised by an official letter signed by the commodore of the Lithuanian Yacht Club and the chief scoutmaster, Martynas Brakas gathered the sea scouts — the youngest brother of Adomas Brakas, the noted public figure and artist of Lithuania Minor (both of them died far from their Homeland: Adomas, having withdrawn from Klaipėda to Kaunas in the spring of 1939 to escape the vengeance of the Hitlerites, found himself in Siberia within a year and a half and died in the Biysk concentration camp in 1942; Martynas had to emigrate and died in the USA after the rebirth of independent Lithuania).",
+            "The young people of Lithuania Minor, fired by the ideas of a maritime Lithuania and of scouting, were supported by the head of the Klaipėda port authority, an old sea dog, Captain Liudas Stulpinas; he gave them the use of a large rowing-and-sailing harbour training boat and part of the premises in Kopgalis fortress. The patriotically minded Klaipėda sea scouts wished to bear a Lithuanian name too — on the advice of Vydūnas himself they chose the name budžiai (from the scout sub-motto \"Be prepared!\")."
+          ],
+          "figures": []
+        },
+        {
+          "title": "The sea scouts of present-day Lithuania",
+          "paragraphs": [
+            "The budžiai, having learned the basics of seamanship in the harbour waters, were soon fortunate enough to become the owners of a real seagoing sailing ship. This was the \"Malaya\", a Danzig spirit-smugglers' vessel caught by the border guards in Lithuanian waters off Palanga and later confiscated by the court. For almost a year the sturdy, handsome but greatly neglected oak cutter — of 24 tonnes' displacement and 80 square metres of sail — had stood by the customs quay, and the sea scouts acquired it at auction with a subsidy from the Lithuanian Women's Society for the support of a national fleet. Having repaired, fitted out and repainted the ship with their own hands and given it the name \"Budys\", on 1 October 1926 they set out on their first voyage to Liepāja. This was the beginning of Lithuanian sporting and training sailing: such sailing had been brought to Klaipėda in the 19th century by English merchants living there, and the sailing club \"Memeler Segelverein\", founded in 1884, was made up mostly of foreigners or wealthy local Germans. (Incidentally, the first Lithuanian foreign-trade ships to sail under the Lithuanian flag, even before Klaipėda was regained, were the cargo sailing ships \"Jūratė\" and \"Kastytis\".)",
+            "The sea scouts travelled widely in the \"Budys\", not disdaining the Curonian Lagoon either, and visited the ports of almost all the Baltic Sea countries. On 15 July 1933 a storm dashed the \"Budys\", as it was setting out to sea, against the northern mole of the Klaipėda entrance, and three crew members perished. Later the sea scouts acquired three small seagoing yachts of the then-popular \"Hai\" class (the first two named \"Budys I\" and \"Budys II\") and a larger one, the \"Baltoji lelija\" (White Lily), with which they took part in — and even won — sailing races in Lithuania and abroad.",
+            "In those days Lithuania strove most vigorously to establish itself at sea, though it had begun to build its maritime potential from the most meagre of beginnings; the sea scouts were a living source of future strength. Almost 70 per cent of the personnel of the Lithuanian merchant and naval fleet had come from the sea scouts.",
+            "Close to the sea both literally and figuratively was the youth organisation of the Lithuanians of the Klaipėda region — Santara, or simply Santara — from 1924 an independent offshoot of the old Union of Prussian Lithuanian Societies that had existed even before the First World War. Santara, with over 4,000 members, gathered young people for cultural and community work, set up choirs, drama circles and travelling libraries, developed youth sport and had a weekly slot on Klaipėda radio. In 1934, when Santara drew closer to the \"Young Lithuania\" union, a maritime section was established. Three of Santara's yachts, together with the boats of the yacht club and the sea scouts, took part successfully in maritime regattas.",
+            "All this youth work, which had already borne fine fruit, was destroyed in 1940 by the Soviet occupation. For Lithuanians the sea became scarcely accessible for a long time, and until the time of Sąjūdis it was not even permitted to mention the scout name in public.",
+            "The Sąjūdis movement of national rebirth freed people from fear, and then also from the total control of the Soviet authorities. Conditions arose for the rebirth of political, community, religious and national organisations independent of the regime's will — both new ones and those with old, not yet wholly forgotten traditions. This process was spontaneous, and chance people with selfish aims, and at times even hostile infiltrated elements, soon began attaching themselves to it.",
+            "In 1988 the scouting movement was reborn — sadly not as one whole, splitting apart at once. The sea scouts first began to form in Kaunas and Klaipėda. In Klaipėda a sea scout unit existed for a year or two, belonging to the Lithuanian division of a separate scouting current — the Catholic Scouts of Europe, or Euroscouts (with their centre in Paris). The Klaipėda scouts cultivated sailing, although they had no yachts of their own, and did take part in races at sea, winning a place in the \"Budys\" memorial regatta held annually since 1987. After the Euroscout group broke up, almost nothing was heard of sea scout activity in Klaipėda for nearly a decade; now they seem to be reviving here again and maintain contact with the maritime history and culture club named after the \"Budys\", founded in 1988.",
+            "The Kaunas sea scouts (who began their activity within the Lithuanian Scout Union) took over part of the equipment from the liquidated sea club of the Soviet semi-military DOSAAF organisation, and acquired a modest base of sorts by the Kaunas Sea, so they had relatively decent conditions in which to work.",
+            "In the summer of 1991 a group of Kaunas scouts more or less repeated the pioneering expedition of their predecessors of the 1920s — in two training boats (\"yals\") and seven kayaks they set off down the Nemunas towards the coast, reached Nida, met the Klaipėda Euroscouts there, camped together and tidied up the National Park's surroundings. Kaunas is currently home to the \"Divytis\" and \"Nemunas\" units.",
+            "In Vilnius an attempt was made to found the first sea scout unit in the spring of 1989 at the S. Nėris secondary school, but it withered away that same year; this activity really began in 1993, when the first camp for newcomers was held in the summer on an island in Lake Gulbinas, followed by an excursion to Klaipėda, a visit aboard Lithuanian warships and a hike along the Neris to Kaunas. Since then the \"Vidgautas\" unit has operated in Vilnius.",
+            "Until 2013 the \"Vėtra\" unit operated in Panevėžys. The \"Šešupė\" unit currently operates in Marijampolė. A few units operate in Tauragė and Klaipėda. From 2013 sea scout activity revived in Ukmergė, where the \"Šventoji\" unit now operates."
+          ],
+          "figures": [
+            {
+              "image": "/assets/hist-laivas-budys.jpg",
+              "caption": "The historic Lithuanian sea scout ship \"Budys\"."
+            }
+          ]
+        },
+        {
+          "title": "Lithuanian sea scouts in the diaspora",
+          "paragraphs": [
+            "As the Second World War drew to a close, most of the Lithuanians who had withdrawn from the Soviet occupation gathered at first in Germany, where, still in the refugee camps, community work, education and Lithuanian organisations began to revive. A Lithuanian maritime school was established in Flensburg, and on 10 May 1947 the Lithuanian Seamen's Union was re-established (from 1952 it was based in New York).",
+            "From 1949 most of the refugees moved overseas, mainly to the USA. After the scattered diaspora sea scout movement united under the flag of the World Lithuanian Scout Union, the most prominent centres of sea scouting were in America: in the USA — Chicago, Cleveland; in Canada — Toronto, Montreal; and also in Australia. Scout activity in the diaspora is an important means of preserving Lithuanian identity in the young generation. Bronys Stundžia, who lives in Canada, published two Lithuanian textbooks intended in part for the training of sea scouts — \"Buriavimas ir jūrininkystė\" (Sailing and Seamanship) in 1953 and \"Burės ir varikliai\" (Sails and Engines) in 1978 (reprinted in 1985 and 2000) — as well as two versions of the dictionary \"Jūriniai įvardiai\" (Nautical Terms); the Chicagoan Bronius Juodelis published the guidebook \"Jūrinis skautavimas\" (Sea Scouting) in 1976.",
+            "At present the \"Nerija\" girl sea scout unit is active in Lemont near Chicago in the USA; sea scout crews operate in the \"Lituanica\" unit and in the Toronto \"Šatrija\" and \"Rambynas\" units, and a budžiai crew operates in Melbourne, Australia."
+          ],
+          "figures": []
+        }
+      ]
+    }
   },
   "attributes": {
     "title": "Attributes",
@@ -107,9 +241,18 @@
     "uniformText": "For a tidy uniform you need to know where to sew the emblems, pin the badges and embroider your name. The diagram marks the place of every badge.",
     "neckerchiefTitle": "Neckerchiefs by age group",
     "neckerchiefs": [
-      { "image": "/assets/uniform-bebrai.png", "label": "6–10 yrs — light blue" },
-      { "image": "/assets/uniform-skautai.png", "label": "10–14 yrs — blue with 3 stripes" },
-      { "image": "/assets/uniform-patyre.png", "label": "14–18 yrs — black with 3 stripes" }
+      {
+        "image": "/assets/uniform-bebrai.png",
+        "label": "6–10 yrs — light blue"
+      },
+      {
+        "image": "/assets/uniform-skautai.png",
+        "label": "10–14 yrs — blue with 3 stripes"
+      },
+      {
+        "image": "/assets/uniform-patyre.png",
+        "label": "14–18 yrs — black with 3 stripes"
+      }
     ],
     "emblemTitle": "The Sea Scout emblem",
     "emblem": "The emblem is made of several parts, each with its own meaning. The rue symbolises the sisterhood, and the fleur-de-lis inside it the brotherhood. The three petals of the fleur-de-lis stand for the motto \"For God, Homeland and neighbour\" and are joined together — the unity of scouting. The Columns of Gediminas are a symbol of Lithuania, and the anchor is a reminder not to forget safety at sea.",
@@ -147,5 +290,156 @@
   },
   "library": {
     "url": "https://drive.google.com/drive/folders/1mNeiy2-NT_TWEhPlR9neIJ4ZQDqT4EeW?usp=sharing"
+  },
+  "songbook": {
+    "title": "Songbook",
+    "subtitle": "Sea scout songs for the campfire and the journey",
+    "intro": "Song is an inseparable part of sea scout campfires, camps and hikes. Click on a song to see its words.",
+    "hymnLink": "Looking for the centennial anthem \"100 jūrmylių\"? →",
+    "print": "Print",
+    "chords": "with chords",
+    "source": "The songs are gathered from the \"Tradicijų\" booklet (Lithuanian Scouting, 2020).",
+    "songs": [
+      {
+        "title": "Jūreivio daina",
+        "body": "Aš toks vienišas, jaunas jūreivis\nmindau svetimo uosto gatves\nieškau knaipės, kur gaučiau išgerti\nnes niekad nieks nemylėjo manęs.\n\nAš rūkau tik tai stiprią taboką\nnesvarbu man prie ko tai prives\nmano laimė man sukelia juoką\nnes niekad nieks nemylėjo manęs.\n\nŠtai tos durys kur įpila vyno\nkur dainuoja ir daužo taures\naš taip pat su visais jas daužysiu\nnes niekad nieks nemylėjo manęs.\n\nĮeinu tas duris atidaręs\nir nužvelgęs visas merginas\natsisėdu į kampą prie stalo\nnes niekad nieks nemylėjo manęs.\n\nKai viena tu merginų prieina\npajuntu jos aistringas rankas\ndar įsipilu vyno į taurę\nnes niekad nieks nemylėjo manęs.\n\nJi paklausia „ko ieškai čia broli?\nnegi tau taip negaila savęs?\"\natsakau jai kad nieko nenoriu\nnes niekad nieks nemylėjo manęs.\n\nJi pasiūlo išeit pasivaikščiot\naš žinau, kur mane ji nuves\nsutinku, nors gal to ir nereikia\nnes niekad nieks nemylėjo manęs.\n\nTai jau buvo gal tūkstantį kartų\nji man taria „aš noriu tavęs\"\naš jai pinigus duodu iš anksto\nnes niekad nieks nemylėjo manęs.\n\nAtsibudęs pro viešbučio langą\npamatau savo laivo bures\nišeinu neištaręs nei žodžio\nnes niekad nieks nemylėjo manęs.\n\nAš toks vienišas jaunas jūreivis\nmindau svetimo uosto gatves\nnežinau ar kada čia sugrįšiu\nnes niekad nieks nemylėjo manęs.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Žemyn upe",
+        "body": "Mes prie Nemuno užaugę,\nMylim savo gimtą Kauną,\nNieks tikriausiai neužpyks,\nKaunas - Lietuvos širdis!\n\nŽemyn upe, žemyn upe,\nPlaukia valtis palengva -\nŽemyn upe.\n\nKai tik vasara ateina,\nMes užtraukiam linksmą dainą,\nIr su linksma saulute -\nŽemyn upe.\n\nNei sušilsim, nei sušalsim,\nVien tik pieną, sultis gersim.\nIr su linksma saulute -\nŽemyn upe.\n\nMes lietuviai, mes barzdočiai,\nGeriam alų gardžiai, sočiai,\nRūkom pypkę kukavinę,\nMylim savąją Tėvynę.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Jūreivių daina",
+        "body": "Ei, pirmyn, ei, drąsyn\nJūreiviai greičiau.\nNeškim laiko vėliavą,\nLietuvos plačiau.\n\nPriedainis\nNuo jūrų iki jūrų\nSklinda garsas Lietuvos,\nTai bunda Vytauto dvasia.\nĮ jūrą marš, marš marš marš\nĮ laivyną marš.\n\nNesitrauksim mes nuo jūros\nDievas mums padės.\nKursim, stiprinsim laivyną –\nTauta to norės. 2k\n\nPriedainis\nNutilkit marių audros,\nPlaukia Lietuvos vaikai\nMūs jaunos sesės marš į jūrą\nJūron marš marš, į jūrą marš marš,\nĮ laivyną marš.\n\nNoras ir tvirta valia\nTraukia jūron vis.\nĮ jūružę, į pasaulį –\nMūsų obalsis.  2k\n\nPriedainis\nNuo jūrų iki jūrų\nSklinda garsas Lietuvos,\nTai bunda Vytauto dvasia.\nĮ jūrą marš, marš marš marš\nĮ laivyną marš.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Baltos burės plazda",
+        "body": "Baltos burės plazda\nBangos duokit kelią\nPasakyk, kur plaukti\nJūra motinėle\n\nPriedainis\nTra lia lia lia lia lia lia\nTra lia lia lia lia lia\nPasakyk, kur plaukti\nJūra motinėle\n\nMėlyni takeliai\nMėlynos papievės,\nO kuriuo pasukti –\nŽino vienas Dievas\n\nMano laivas naujas,\nĄžuolinės sienos,\nViesulai sukaukia,\nKai aš plaukiu vienas.\n\nJūra motinėle\nTur dukrelių būrį\nVėjui tėvui liepiant\nVisos šokti turi\n\nBaltos burės plazda,\nBangos duokit kelią.\nNeškit mane jauną,\nNeškit mano dalią.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Laivai",
+        "body": "      G            Em\nMes be jūros dar turime dangų\n      G              Em\nIr laivus jame matom keistus.\n       Am            Am\nLaivai plaukia lėtai pro langus\n      C        D\nIr pro būstus mūsų šaltus.\nJie nuspalvina mūsų vienatvę,\nMūsų liūdesį, dar kažką.\nTas spalvas mes paliekame gatvėj,\nJas uždengia niūri pilkuma.\n\n        C           D\nLaivus lydi lietus ir vėjas,\n     G        Em\nLydi saulė ir meilė mūsų.\n       C          D\nJų tiesa - mūs tiesos teisėja.\n      C           D\nKaip gyventum, jei jų nebutu?\n\nSu sparnais - be sparnų užgimę\nĮ savo jūrą – dangų žiūrim,\nO jame mūs laivai – likimai\nVisuomet su pakeltom burėm.\nJie nuspalvina mūsų vienatvę,\nMūsų liūdesį, dar kažką.\nTas spalvas mes paliekame gatvėj,\nJas uždengia niūri pilkuma.",
+        "hasChords": true,
+        "footnote": ""
+      },
+      {
+        "title": "Jūreivis grįžta į namus",
+        "body": "Jūreivis grįžta į namus\nKiria viria vim bom bom\nApsukęs žemę tris kartus\nKiria viria vim bom taip valio\n\nPriedainis\n\nViktoria viktoria\nKiria viria vim bom taip valio\nViktoria viktoria\nKiria viria vim bom bom\n\nJis iškentė visas audras\nTik kas jo širdį čia supras\n\nKur jis pavargęs pailsės\nNebent mergelė pamylės\n\nSiuvėjas jam gyvent neduos\nUž kelnes vis prašys skolos",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "O jūra motule",
+        "body": "Prie gintaro jūros, prie marių plačių\nStovėjo jūreivis, prislėgtas minčių,\nPrie jo prisiglaudus, nuleidus rankas\nGraži šviesiaplaukė svajojo svajas.\n\nPriedainis\n\nJūra, tavo bangos švelniai glamonėja,\nJūra, tavo pasaką seka man vėjas.\nO jūra motule, kokia tu žiauri,\nKam sujungi širdis ir vėl jas skiri.\n\nPrie gintaro jūros nuplauksime mes\nIr josios bangose pakelsim bures,\nIr klykaus žuvėdra virš marių toli,\nNebaisios bus vėtros, nei jūra žiauri.\n\nPriedainis\n\nJūra, tavo bangos švelniai glamonėja,\nJūra, tavo pasaką seka man vėjas.\nO jūra motule, kokia tu žiauri,\nKam sujungi širdis ir vėl jas skiri.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Piratų daina",
+        "body": "Skandinsim svetimus laivus,\nKas ne su mumis, tas prieš mus\nJuoda piratų vėliava\nPergalė telydi mus.\n\nLa bela bela bela bela muzika,\nGriaus muzika, griaus muzika\nLa bela bela bela bela muzika,\nGriaus muzika, ciuriuk.\n\nUžkas mus bet kuriuos kapuos,\nPiratų net velniai bijos,\nBanga, daina ir draugija\nVisada telydi mus.\n\nLa bela bela bela bela muzika,\nGriaus muzika, griaus muzika\nLa bela bela bela bela muzika,\nGriaus muzika, ciuriuk.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Parbėg laivelis",
+        "body": "Parbėg laivelis nuo Venčio rago\nSidabro šotoms, auksu lioduotoms\n\nĮ tą laivelį, į tą juodąjį\nSėd ir bernelis, baltai raudonas\n\nEikš eikš, bernyti, eikš eikš, jaunasai\nO tai mudu bėgsiv plačioms maružėms\n\nO kad aš ėjau per Minės kiemą\nMinės berneliai į man veizdėjo\n\nO ar jūs veizdat, ar jūs neveizdat\nJuk žinot patys, aš jums neteksiu\n\nKatro norėjau, širdy turėjau\nTam aš ir daviau baltą rankelę\n\nDabok bernyti, kad neuždegtų\nTavo akelės mano širdelės.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Mėnesiena",
+        "body": "Mėnesionoj tarp vandens gėlių\nF        G      C   G\nplaukiam dviese baltu laiveliu\nC            Am\nĮsirėžęs traukiu irklą\nF      G  C     G\nvisas prakaitę išmirkęs.\n\nTau tai gal labai gražu atrodo\nO man viskas viskas viskas nusibodo\nNusibodo man kas naktį\nmėnesienoj irklais plakti.\n\nVėl sustoju nusišypsau gudriai\nIr metu tave į tamsią upę\nVandenėlis burbuliuoja\nViso gero mylimoji.",
+        "hasChords": true,
+        "footnote": ""
+      },
+      {
+        "title": "Prie gintaro jūros",
+        "body": "Prie gintaro jūros, prie marių plačių\nStovėjo jūreivis prislėgtas minčių,\nPrie jo prisiglaudus, nuleidus kasas\nGraži šviesiaplaukė kalbėjo svajas.\n\nPriedainis\nPlauki su manim į jūra bekraštę\nPlauki, ten lemta mums laimę surasti\nNeskirs mūsų niekas, tai likimo valia\nTu vėjas, aš jūra, mes liksim drauge.\n\nIr ošia vis bangos, sena jų daina,\nRytoj tu išplauksi, aš liksiu viena...\nRytoj tu pranyksi melsvoj tolumoj,\nTavo sugrįžimas likimo rankoj.\n\nAcj, jūra jūruže, tu močia žiauri,\nKam sujungei širdis ir vėl jas skiri?\nGalbūt paskutinė ši mūsų naktis,\nRytoj išsiskirsim, vien meilė beliks.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Pajūry, pajūry",
+        "body": "Smėlio krantas baltuoja.\nVirš bangų neramių\nBaltijos vėjas skrajoja.\nMano šalis rytuose toli\nPajūryje rauda;\nPajūry, pajūry,\nSmėlio kas pilį sugriovė?\n\nO šalie mylima,\nNors tavęs nepažįstu,\nBet viena mintyse\nTavo padangėn nuklystu.\nMelsvo dangaus ir laukų plačių\nVisada ilgiuosi,\nO šalie mylima,\nAr tave pamatysiu?\n\nMano šalis rytuose toli\nPajūry rauda;\nPajūry, pajūry,\nSmėlio kas pilį sugriovė?",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Baltijos vėjelis",
+        "body": "Baltijos vėjelis tilsta jau.\nSesutė laivelį sups ramiau.\nTieskime bures, plaukim į jūrą,\nPrie žvejų arčiau.\n\nPalauki broleli, dar palauk\nToli į jūružę dar neplauk.\nTen prie Palangos didelės bangos,\nBroli, aš bijau.\n\nPriedainis:\n\nPlaukia laivelis, supas ramiai.\nTra lia lia lia lia lia lia supas ramiai.\nSkamba dainelė, ošia šilai\nTra lia lia lia lia lial ia lia ošia šilai.\nSaulutė leidžias vakaruose.\nTra lia lia lia lia lia lia vakaruose.\nSpinduliai maudos jau bangose,\nTra lia lia lia lia lia lia jau bangose.\n\nGrįžkim grįžkim, broluželi,\nGamta jau kviečia poilsio.\nJau žvaigždutėm dangus nusėtas,\nLaikas ir mum sapnais grožėtis",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Vai linksmai plaukia",
+        "body": "Vai linksmai plaukia\nGeltons laivelis\nAnt jūružių marelių.    2k\n\nVai šipor šipor,\nJauns šiporėli*,\nĮlipki į mastelį**.\n\nTen tu matysi\nKopų kalnely\nNaują rūtų darželį.\n\nTame daržely,\nTame naujajam,\nStovi jauna mergelė.\n\nKai puč vėjelis,\nTai bėg laivelis,\nLinksma žvejų mergelė.\n\nNepuč vėjelis\nNebėg laivelis,\nLiūdna žvejų mergelė.",
+        "hasChords": false,
+        "footnote": "(*Šipors – junga,\n**mastas – laivo stiebas)"
+      },
+      {
+        "title": "Ūžia jūružė",
+        "body": "Ūžia jūružė\nBangos krantą\nplauna,\nVėjas įtūžęs\nVis blaškos į duris\n\nŽvejo laivelį\nSūkuriai gramzdina\nVėjas nuo stiebo\nNudraskė jau bures.\n\nKopų grytelėj\nMirga žiburėlis.\nMeldžias už tėvą.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Turiu laivelį mažą",
+        "body": "Turiu laivelį mažą\nPlonų plonų lentučių,\nJį man padarė tėtis,\nKad jūrininku būčiau.\n\nBuvau Jonelis mažas,\nDabar jau didis Jonas.\nIr ant širdies taip gera,\nKad aš jau kapitonas.\n\nEinu krantu smėlėtu,\nBangelės tyliai šnara.\nEi,plaukite žuvelės,\nIr duokit laivui kelią.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Jūrų skautų daina „Ritas bangos“",
+        "body": "Ritas bangos, plazda burės,\nPlevėsuoja lelija,\nJaunus vėjus pasikinkius,\nPlaukia jūrų skautija.\n\nMarš, marš marš....\nEi valio, valio jūruže\nEi valio, valio maruže\nJaunus vėjus pasikinkius,\nPlaukia jūrų skautija\n\nNors ir žydrūs vandenynai,\nBet mums moja Baltija.\nKur Jūratė kelia tiesia\nJuosta gintaro plačia.\n\nMarš, marš marš....\nEi valio, valio jūruže\nEi valio, valio maruže\nKur Jūratė kelia tiesia\nJuosta gintaro plačia.\n\nKilkit bangos, vėjai neškit\nMūsų dvasią ant sparnų.\nBaltą vytį, šiaurės žvaigždę\nNeišleidžiam iš akių.\n\nMarš, marš marš....\nEi valio, valio jūruže\nEi valio, valio maruže\nBaltą vytį, šiaurės žvaigždę\nNeišleidžiam iš akių.",
+        "hasChords": false,
+        "footnote": ""
+      }
+    ]
+  },
+  "oaths": {
+    "title": "Promises and prayer",
+    "subtitle": "The pledges taken by sea scouts",
+    "intro": "Sea scouts have a tradition of the \"wet\" promise. Promises are most often taken outdoors by the water, before the sea scout or Lithuanian flags. Before the promise is taken the ends of the neckerchief are wetted, and the one who has just taken the promise is often christened by being dipped in the water.",
+    "oathsTitle": "Texts of the promises",
+    "items": [
+      {
+        "rank": "Junior Sea Scout",
+        "text": "„Aš pasižadu stengtis mylėti Dievą, Tėvynę, Jūrą, vykdyti jaunesniųjų skautų priesakus ir kasdien padaryti gerą darbelį\"",
+        "note": "The promise is most often taken before 12.00. It is public and may be given during a parade or another event."
+      },
+      {
+        "rank": "Sea Scout",
+        "text": "„Brangindamas (-a) savo garbę, aš pasižadu stengtis tarnauti Dievui ir Tėvynei, mylėti Jūrą, padėti Artimui ir vykdyti skautų (-čių) priesakus.\"",
+        "note": "The promise is most often taken before the evening parade. It is public and may be given during a parade or another event."
+      },
+      {
+        "rank": "Senior Sea Scout",
+        "text": "„Brangindamas (-a) savo garbę, aš pasižadu stengtis tarnauti Dievui ir Tėvynei, mylėti Jūrą, padėti Artimui, vykdyti skautų (-čių) priesakus ir būti pavyzdžiu jaunesniesiems skautams.\"",
+        "note": "The promise is most often taken before 24.00. It is not public; by established tradition the promise is organised by the water or on the water."
+      },
+      {
+        "rank": "Adult Sea Scout",
+        "text": "„Brangindamas (-a) savo garbę aš pasižadu stengtis tarnauti Dievui ir Tėvynei, mylėti Jūrą, padėti Artimui, vykdyti skautų (-čių) priesakus ir visomis jėgomis dirbti skautijos gerovei.\"",
+        "note": ""
+      },
+      {
+        "rank": "Sea Scout Leader",
+        "text": "„Brangindamas(-a) savo garbę, aš pasižadu stengtis tarnauti Dievui, Tėvynei ir Artimui, vykdyti skautų (-čių) priesakus ir visomis jėgomis dirbti Lietuvos skautijos gerovei ir Lietuvos jūrinei idėjai.\"",
+        "note": ""
+      }
+    ],
+    "prayer": {
+      "title": "The Sea Scout prayer",
+      "intro": "Sea scouts have their own prayer. This prayer has come down to us from the interwar period, when sea scouting was at its height. River sailings, lake activities and trips out to sea were organised, and so a prayer was composed to be dedicated to the sea scouts. The prayer was passed on by Koleta Chmieliauskaitė, an active interwar sea scout who in 1933, together with her father, her brother and the scout B. Rėkus, sailed in two kayaks from Obeliai across Lake Sartai, along the Šventoji and the Neris to Kaunas in 10 days. In all they covered 266 kilometres. This sister was a pioneer of the girl sea scouts in Lithuania.",
+      "text": "Visagalis Dieve, kūrėjau visatos,\nkurio klauso vėjai ir bangos,\nkuris nustatai saulės ir žvaigždžių kelius,\nį tave mes, jūrų skautai, kreipiamės.\nStiprink mus tikėjime,\nduok dvasios ramybės, ryžto ir jėgos.\nGlobok mūsų kraštą ir artimuosius,\nlaimink mūsų žygius ir savo apvaizda saugoki,\nkad jaunos krūtinės, tvirtesnės už laivo medį,\natlaikytu bangų puolimą ir\ntamsią naktį, per rūką ir audras,\nmūsų laivai nepalūžusiais stiebais,\nlaimingai pasiektų uostą. Amen"
+    }
   }
 }

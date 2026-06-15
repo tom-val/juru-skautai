@@ -5,6 +5,8 @@ import Founder from "./pages/Founder";
 import History from "./pages/History";
 import Attributes from "./pages/Attributes";
 import Song from "./pages/Song";
+import Songbook from "./pages/Songbook";
+import Oaths from "./pages/Oaths";
 import MemberEntry from "./pages/MemberEntry";
 import LeadAuth from "./pages/LeadAuth";
 import LeadDashboard from "./pages/LeadDashboard";
@@ -20,6 +22,8 @@ export default function App() {
         <Route path="/istorija" element={<History />} />
         <Route path="/atributika" element={<Attributes />} />
         <Route path="/daina" element={<Song />} />
+        <Route path="/dainos" element={<Songbook />} />
+        <Route path="/izodziai" element={<Oaths />} />
 
         {/* Abilities tracker: member entry, team-lead area, and member profiles. */}
         <Route path="/gebejimai" element={<MemberEntry />} />

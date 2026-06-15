@@ -10,22 +10,70 @@
     "photoCaption": "B-P su vilkiukais pirmajame tarptautiniame Jamboree Olimpijoje, 1920 m.",
     "portraitCaption": "Lordas Robertas Baden-Powell’is (1857–1941)",
     "timeline": [
-      { "year": "1857", "text": "Vasario 22 d. gimė pasaulio skautų įkūrėjas Robertas Stephensonas Smythas Baden-Powell’is. Jo tėvas H. G. Baden-Powell’is buvo Oksfordo universiteto profesorius, Karališkosios mokslų akademijos narys, parašęs nemažai filosofijos ir teologijos veikalų." },
-      { "year": "1869", "text": "Pradėjo mokytis jūrininkystės „Conway“ laive. Su laivu nesiskirdavo net šventadieniais – plaukiodavo jūra su broliais. Čia greitai išmoko valdyti laivą, stovyklauti, virti ir greitai vykdyti vyresniųjų įsakymus, įgijo gamtininko ir žvalgo patyrimą." },
-      { "year": "1871", "text": "Išlaikė egzaminus į Charterhouse mokyklą." },
-      { "year": "1873", "text": "Charterhouse mokykla perkelta į Godalmingą. Netoliese esančiame tankiame miške Robertas išmoko sėlinti, sekti pėdsakus, stebėti paukščių ir žvėrių gyvenimą, pasistatyti palapinę, naudotis kirvuku." },
-      { "year": "1876", "text": "Įstojo į britų kariuomenę ir išvyko kariauti į Indiją." },
-      { "year": "1883", "text": "Paskirtas pulko adjutantu." },
-      { "year": "1899", "text": "Mafekingo apsuptyje pagarsėjo suorganizavęs savanorius berniukus – kadetus, kurie atliko ryšininkų pareigas ir pasižymėjo drąsa bei atsakingumu. Tai buvo skautybės idėjos pradžia." },
-      { "year": "1900", "text": "Karalienė Viktorija jam suteikė generolo-majoro laipsnį." },
-      { "year": "1901", "text": "Apdovanotas lordo titulu." },
-      { "year": "1907", "text": "Surengė pirmąją skautų stovyklą Brownsea saloje. Ši data laikoma oficialia skautybės pradžia." },
-      { "year": "1908", "text": "Išleido knygą „Skautybė berniukams“ (Scouting for Boys)." },
-      { "year": "1910", "text": "Pasitraukė iš kariuomenės ir atsidėjo skautybei." },
-      { "year": "1912", "text": "Išvyko į kelionę aplink pasaulį studijuoti skautybės įvairiose šalyse. Kelionėje sutiko Olave St. Clair Soames, kurią vedė grįžęs į Angliją." },
-      { "year": "1933", "text": "Rugpjūčio 17 d. Baden-Powell’is ir skaučių globėja Olave su šeima bei 650 anglų skautų vadų ir vadovių atvyko į Palangą." },
-      { "year": "1938", "text": "Jau silpnos sveikatos išvyko į Afriką (Keniją)." },
-      { "year": "1941", "text": "Sausio 8 d. mirė. Palaidotas Afrikoje." }
+      {
+        "year": "1857",
+        "text": "Vasario 22 d. gimė pasaulio skautų įkūrėjas Robertas Stephensonas Smythas Baden-Powell’is. Jo tėvas H. G. Baden-Powell’is buvo Oksfordo universiteto profesorius, Karališkosios mokslų akademijos narys, parašęs nemažai filosofijos ir teologijos veikalų."
+      },
+      {
+        "year": "1869",
+        "text": "Pradėjo mokytis jūrininkystės „Conway“ laive. Su laivu nesiskirdavo net šventadieniais – plaukiodavo jūra su broliais. Čia greitai išmoko valdyti laivą, stovyklauti, virti ir greitai vykdyti vyresniųjų įsakymus, įgijo gamtininko ir žvalgo patyrimą."
+      },
+      {
+        "year": "1871",
+        "text": "Išlaikė egzaminus į Charterhouse mokyklą."
+      },
+      {
+        "year": "1873",
+        "text": "Charterhouse mokykla perkelta į Godalmingą. Netoliese esančiame tankiame miške Robertas išmoko sėlinti, sekti pėdsakus, stebėti paukščių ir žvėrių gyvenimą, pasistatyti palapinę, naudotis kirvuku."
+      },
+      {
+        "year": "1876",
+        "text": "Įstojo į britų kariuomenę ir išvyko kariauti į Indiją."
+      },
+      {
+        "year": "1883",
+        "text": "Paskirtas pulko adjutantu."
+      },
+      {
+        "year": "1899",
+        "text": "Mafekingo apsuptyje pagarsėjo suorganizavęs savanorius berniukus – kadetus, kurie atliko ryšininkų pareigas ir pasižymėjo drąsa bei atsakingumu. Tai buvo skautybės idėjos pradžia."
+      },
+      {
+        "year": "1900",
+        "text": "Karalienė Viktorija jam suteikė generolo-majoro laipsnį."
+      },
+      {
+        "year": "1901",
+        "text": "Apdovanotas lordo titulu."
+      },
+      {
+        "year": "1907",
+        "text": "Surengė pirmąją skautų stovyklą Brownsea saloje. Ši data laikoma oficialia skautybės pradžia."
+      },
+      {
+        "year": "1908",
+        "text": "Išleido knygą „Skautybė berniukams“ (Scouting for Boys)."
+      },
+      {
+        "year": "1910",
+        "text": "Pasitraukė iš kariuomenės ir atsidėjo skautybei."
+      },
+      {
+        "year": "1912",
+        "text": "Išvyko į kelionę aplink pasaulį studijuoti skautybės įvairiose šalyse. Kelionėje sutiko Olave St. Clair Soames, kurią vedė grįžęs į Angliją."
+      },
+      {
+        "year": "1933",
+        "text": "Rugpjūčio 17 d. Baden-Powell’is ir skaučių globėja Olave su šeima bei 650 anglų skautų vadų ir vadovių atvyko į Palangą."
+      },
+      {
+        "year": "1938",
+        "text": "Jau silpnos sveikatos išvyko į Afriką (Keniją)."
+      },
+      {
+        "year": "1941",
+        "text": "Sausio 8 d. mirė. Palaidotas Afrikoje."
+      }
     ]
   },
   "history": {
@@ -43,16 +91,31 @@
     ],
     "flagMainTitle": "Jūrų skautų vėliava",
     "flagMain": [
-      { "image": "/assets/flag-main-2.jpg", "label": "Jūrų skautų vėliava" },
-      { "image": "/assets/flag-main-1.jpg", "label": "Jūrų skautų vėliava (reversas)" }
+      {
+        "image": "/assets/flag-main-2.jpg",
+        "label": "Jūrų skautų vėliava"
+      },
+      {
+        "image": "/assets/flag-main-1.jpg",
+        "label": "Jūrų skautų vėliava (reversas)"
+      }
     ],
     "timelineTitle": "Lietuvos jūrų skautų istorija",
     "bookCaption": "„Skautybė berniukams“ (Scouting for Boys), 1908 m.",
     "flagsTitle": "Istorinės jūrų skautų vėliavos",
     "flags": [
-      { "image": "/assets/flag-zarasai.jpg", "label": "LJSS Zarasų kuopos vėliava" },
-      { "image": "/assets/flag-panevezys.jpg", "label": "LJSS Panevėžio tunto vėliava" },
-      { "image": "/assets/flag-kaunas.jpg", "label": "LJSS Kauno Vaidoto tunto vėliava" }
+      {
+        "image": "/assets/flag-zarasai.jpg",
+        "label": "LJSS Zarasų kuopos vėliava"
+      },
+      {
+        "image": "/assets/flag-panevezys.jpg",
+        "label": "LJSS Panevėžio tunto vėliava"
+      },
+      {
+        "image": "/assets/flag-kaunas.jpg",
+        "label": "LJSS Kauno Vaidoto tunto vėliava"
+      }
     ],
     "periods": [
       {
@@ -98,7 +161,78 @@
           "1997 m. liepos 25 d. Lietuvos skautija tapo Pasaulinės skautų judėjimo organizacijos (WOSM) nare. 2001 m. įkurta Lietuvos jūrų skautija."
         ]
       }
-    ]
+    ],
+    "maritime": {
+      "title": "Lietuvos jūrų skautų kelias",
+      "intro": "Platesnė jūrinio skautavimo istorija – nuo tarpukario pradžios iki šių dienų ir išeivijos.",
+      "chapters": [
+        {
+          "title": "Jūrų skautų pradžia ir augimas Lietuvoje",
+          "paragraphs": [
+            "Keletą metų jūrų skautus globojo 1921 m. Kaune įsteigtas vadinamasis Lietuvos Jacht Klubas – organizacija, kuri vienijo visokiausio vandens sporto (ne vien jachtų) entuziastus. Nuo tų laikų iki šiol naudojama paveldėta jūrų skautų vėliava – tai buvusiojo Jachtklubo vėliava (mėlynas simetriškas kryžius baltame fone, viršutiniame prie koto ketvirtyje nacionalinė trispalvė) su pridėtu jūrų skautų ženklu – lelija su inkaru – priešpriešais apatiniame ketvirtyje (pagal heraldikos taisykles ženklas turėtų būti apatiniame prie koto ketvirtyje). Beje, buvusioji minėto jachtklubo vėliava mūsų laikais tapo Lietuvos karinių jūrų pajėgų vėliava.",
+            "1922 m. pradžioje Kauno „Rimgaudo“ draugovę turėjo 6 skiltis. Draugininko padėjėjas v.sl. Julius Jurgėla Jurgelevičius (16 m.) įsteigė vandens skautų skiltį. Pradžia buvo aktyvi skautamoksliu bei pasirengimu užsiėmimams vandenyje ir ruošiamasi tarnybai Lietuvos laivyne. Netrukus įsikūrė antra skiltis ir 1922 m. kovo 12 d. J. Jurgėla su abiem skiltimis atsiskyrė nuo „Rimgaudo“ draugovės ir sukūrė naują jūrų skautų draugovę „Algimanto“ vardu. Pirmųjų skilčių pavadinimai buvo „Ūdros“ ir „Vėbrai“. Draugovės štabas rinko lietuviškus laivybos pavadinimus, nustatė jūrų skautų patyrimo laipsnių programą, ženkliuką ir uniformą. Nuo 1925 m. Lietuvos jūrų skautai, negavę patvirtinimo iš LSS, veikė kaip atskira savarankiška organizacija, vadovaujama Petro Jurgėlos, tačiau 1927 m. vėl susiliejo su vieninga Lietuvos skautų sąjunga.",
+            "Istorinė Lietuvos jūrų skautams buvo kelionė iš Kauno į Klaipėdą 1924 m. pavasarį dviem nedidučiais burlaiviais – „Gulbe“ (vadas Kostas Jurgėla) ir „Ruoniu“ (vadas Petras Labanauskas, vėliau baigęs mokslus Italijoje, tapęs jūrų karininku, mokomojo karo laivo „Prezidentas Smetona“ vadu). Kelionės rezultatas buvo pirmosios jūrų skautų draugovės skyriaus įsteigimas Klaipėdoje, kuri netruko tapti viso mūsų jūrų skautų judėjimo dvasinės traukos centru. Vėliau jūrų skautų vienetai kūrėsi visame krašte – Panevėžyje, Mažeikiuose, Telšiuose, Biržuose, Ukmergėje, Tauragėje, Alytuje, Jurbarke, Kėdainiuose, Marijampolėje, Rokiškyje, Utenoje, net tokiame atkampiame miestelyje kaip Viekšniai prie Ventos. Nauji vienetai kūrėsi jūrų skautavimo lopšyje Kaune, čia ir Klaipėdoje susiformavo stambesni junginiai – jūrų skautų tuntai."
+          ],
+          "figures": []
+        },
+        {
+          "title": "Po senąją Lietuvą vandens keliais",
+          "paragraphs": [
+            "1930 m. Mažeikiuose buvo įsteigta pirmoji jūrų skaučių „Gulbių“ valtis. Tačiau jūrų skaučių įkūrimu laikoma 1936 m. vasario 16 d. kai buvo įsteigta „Birutės“ valtis. Jūrų skaučių veikla plėtėsi ne taip sparčiai kaip brolių. Iki 1940 m. buvo priskaičiuojama 100 jūrų skaučių, 5 valtys ir 2 laivai.",
+            "Didelis įvykis ne tik skautams, bet ir visai Lietuvos visuomenei buvo šio judėjimo kūrėjo bei ideologo R.Baden-Powello su žmona – mergaičių skautų judėjimo organizatore bei 650 anglų skautų palyda apsilankymas. 1933 m. vasarą ši Baden-Powello misija laivu „Calgaric“ aplankė visas Baltijos jūros valstybes, išskyrus hitlerinę Vokietiją ir stalinistinę Rusiją. Didelis keleivinis laivas kelias dienas puošė Klaipėdos uostą.",
+            "Anais laikais jūrų skautai vidaus vandenyse plačiai kultivavo keliones valtimis, baidarėmis. 1934 metais į pirmąją Jūros dieną, sutraukusią Klaipėdon dešimtis tūkstančių svečių, iš visų Lietuvos kampų suplaukė 60 jūrų skautų baidarių. Šiam žygiui vadovavo žymus geografas, vandens kelionių entuziastas prof. S. Kolupaila. Pastebėtina, kad anuomet visoje Lietuvoje iškilmingai minėta Jūros diena buvo suprantama ne kaip eilinė proga pasilinksminti, užsimiršti, palėbauti, o kaip prasminga patriotinė šventė; ji neturėjo savo oficialaus alaus, kaip dabar, užtat turėjo savo aukštą tautinę idėją.",
+            "1935 m. įvykusio Pasaulio lietuvių kongreso proga surengtame parade dalyvavo jau 115 jūrų skautų baidarių, o prieš tai 82 baidarės plaukė upėmis išilgai okupuoto Vilniaus krašto administracinės linijos. 1936 m. jūrų skautų nuplaukti keliai vidaus vandenimis sudarė viso 10 tūkstančių kilometrų.",
+            "Nemaža jūrų skautų iš visos Lietuvos 1936 ir 1937 m. vasarą lankė Klaipėdoje, Smiltynėje, veikusią buriavimo mokyklą. Biržų jūrų skautai patys ėmėsi burinių laivelių statybos, statė juos ne tik sau, bet ir kitiems jūrų skautų vienetams.",
+            "1939 m. vasarą savo pasistatytu nedideliu burlaiviu grupė Biržų jūrų skautų upėmis per Latviją pasiekė Baltijos jūrą ir pakrantėmis atplaukė iki Palangos. Tai buvo simboliškas žygis, juo jaunimas siekė parodyti, kad Lietuva, tų metų pavasarį netekusi Klaipėdos, neatsisakys savo jūrinių siekių. Skubiai didinant ir užjūrio laivybai pritaikant Šventosios uostą kaip alternatyvą Hitlerio užgrobtam Klaipėdos uostui, tiesiant naują geležinkelio atšaką, jūrų skautai aktyviai dalyvavo jaunimo darbo talkose. Tai nebuvo tuščios pastangos: 1940 metais į Šventosios uostą jau buvo įplaukęs pirmasis jūrų prekybos laivas iš Olandijos."
+          ],
+          "figures": [
+            {
+              "image": "/assets/hist-birzu-laivelis.jpg",
+              "caption": "Šiuo savo darbo laiveliu Biržų jūrų skautai 1939 m. atplaukė į Palangą upėmis ir jūra"
+            }
+          ]
+        },
+        {
+          "title": "Mažosios Lietuvos jūrų skautai",
+          "paragraphs": [
+            "Nuo 1924 m. pavasario Klaipėdoje, paskatintas atplaukusių kauniškių ir Lietuvos jachtklubo komodoro bei vyr. skautininko pasirašytu oficialiu raštu įgaliotas, jūrų skautus telkė Martynas Brakas, žymus Mažosios Lietuvos visuomenės veikėjo, dailininko Adomo Brako jaunėlis brolis (abu jiedu mirė toli nuo Tėvynės: Adomas, nuo hitlerininkų keršto 1939 m. pavasarį pasitraukęs iš Klaipėdos į Kauną, nė pusantrų metų neprėjęs atsidūrė Sibire ir 1942 m. mirė Bijsko konclageryje, Martynui teko emigruoti, jis mirė JAV jau atgimus nepriklausomai Lietuvai).",
+            "Jūrinės Lietuvos ir skautavimo idėjomis užsidegusį mažalietuvių jaunimą palaikė Klaipėdos uosto valdybai vadovavęs senas jūrų vilkas, kapitonas Liudas Stulpinas; jis perdavė jiems naudotis didelę irklinę-burinę uosto mokomąją valtį, dalį patalpų Kopgalio tvirtovėje. Patriotiškai nusiteikę klaipėdiškiai jūrų skautai panoro ir vadintis lietuviškai – paties Vydūno patarimu, pasirinko budžių vardą (nuo skautų šūkio „Budėk!“)."
+          ],
+          "figures": []
+        },
+        {
+          "title": "Dabartinės Lietuvos jūrų skautai",
+          "paragraphs": [
+            "Uosto akvatorijoje jūreivystės pagrindų pramokusiems budžiams netrukus nusišypsojo laimė tapti tikro jūros burlaivio šeimininkais. Tai buvo Lietuvos vandenyse ties Palanga pasieniečių sučiuptas ir vėliau teismo konfiskuotas Dancigo spirito kontrabandininkų laivas „Malaya“. Beveik metus ant muitinės krantinės prastovėjusį tvirtą, gražų, bet labai apleistą ąžuolinį 24 t vandentalpos, 80 kv.m burių ploto kuterį varžytynėse už Lietuvos moterų draugijos tautiniam laivynui remti subsidiją įsigijo jūrų skautai. Savo rankomis laivą suremontavę, įrengę, perdažę ir davę jam vardą „Budys“, 1926 m. spalio 1 d. išplaukė į pirmą kelionę Liepojon. Tai buvo lietuviško sportinio, mokomojo buriavimo pradžia: tokį buriavimą XIX a. į Klaipėdą atnešė čia gyvenę anglų pirkliai, o 1884 m. įkurtame buriavimo klube „Memeler Segelverein“ dalyvavo daugiausia svetimšaliai arba turtingi vietiniai vokiečiai. (Beje, pirmieji Lietuvos užsienio prekybos laivai, plaukioję su Lietuvos vėliava dar neatgavus Klaipėdos, buvo kroviniai burlaiviai „Jūratė“ ir „Kastytis“).",
+            "Jūrų skautai „Budžiu“, neniekindami ir Kuršių marių, daug keliavo, lankėsi kone visų Baltijos jūros šalių uostuose. 1933 m. liepos 15 d. į jūrą beišplaukiantį „Budį“ sudaužė audra į šiaurinį Klaipėdos įplaukos molą, žuvo trys įgulos nariai. Vėliau jūrų skautai įsigijo tris nedideles jūrines anuomet populiarios „Hai“ klasės jachtas (pirmąsias pavadino „Budys I“ ir „Budys II“), didesnę „Baltąją leliją“, jomis dalyvaudavo ir net laimėdavo buriavimo varžybas Lietuvoje bei užsienyje.",
+            "Anais laikais Lietuva labai veržliai siekė įsitvirtinti jūroje, nors pradėjusi kurti savo jūrinį potencialą nuo labai menkų pradmenų; jūrų skautai buvo gyvas ateities galios šaltinis. Bemaž 70 proc. lietuviškojo prekybos ir karo laivyno personalo buvo atėję iš jūrų skautų.",
+            "Arti jūros ir tiesiogine, ir perkeltine prasme veikė Klaipėdos krašto lietuvių jaunimo organizacija santara, arba tiesiog Santara - nuo 1924 m. savarankiška senosios, dar prieš I pasaulinį karą gyvavusios Prūsijos lietuvių draugijų santaros atšaka. Santara, turėjusi per 4000 narių, telkė jaunimą kultūriniam, visuomeniniam darbui, steigė chorus, vaidintojų ratelius, keliaujančias bibliotekėles, plėtojo jaunimo sportą, turėjo kassavaitę valandėlę Klaipėdos radiofone. 1934 m, kai Santara labiau suartėjo su „Jaunosios Lietuvos“ sąjunga, buvo įsteigta jūrinė sekcija. Trys Santaros jachtos sykiu su jachtklubo ir jūrų skautų laivais sėkmingai dalyvaudavo jūrinėse regatose.",
+            "Visą šį jau gražų vaisių davusį jaunimo darbą 1940 m. sugriovė sovietinė okupacija. Lietuviams jūra ilgiems laikams tapo vargiai beprieinama, o skautų vardo iki Sąjūdžio meto net viešai paminėti buvo nevalia.",
+            "Atgimimo sąjūdis išlaisvino žmones iš baimės, o jau tada ir iš sovietinės valdžios totalinės kontrolės. Susidarė prielaidos atgimti nuo režimo valios nepriklausomoms politinėms, visuomeninėms, religinėms, tautinėms organizacijoms – ir naujoms, ir turinčioms senas, dar ne visai pamirštas tradicijas. Šis procesas buvo stichiškas, prie jo tuoj ėmė šlietis ir atsitiktiniai žmonės, turėję egoistinių tikslų, kartais ir infiltruoti priešiški elementai.",
+            "1988 m. atgimė skautizmo judėjimas, deja, nevienalytis, iš karto įskilęs. Jūrų skautai pirmiausia ėmė formuotis Kaune ir Klaipėdoje. Klaipėdoje metus kitus gyvavo dalis jūrų skautų vienetas, priklausęs atskiros skautizmo srovės – katalikiškosios Europos skautų arba euroskautų (su centru Paryžiuje) Lietuvos padaliniui. Klaipėdiškiai kultivavo buriavimą, nors savų jachtų neturėjo, yra ir dalyvave varžybose jūroje, laimėję prizinę vietą nuo 1987 m. kasmet rengiamo „Budžio“ atminimo regatoje. Iširus euroskautų grupei, kone dešimtmetį apie jūrų skautų veiklą Klaipėdoje nebuvo girdėti, dabar jie čia lyg ir vėl atkunta, bendrauja su „Budžio“ vardu pavadintu 1988 m. įkurtu jūrinės istorijos ir kultūros klubu.",
+            "Kauno jūrų skautai (pradėję veiklą Lietuvos skautų sąjungos sudėtyje) perėmė dalį inventoriaus iš likviduotos sovietinės pusiau kariškos DOSAAF organizacijos jūrų klubo, prie Kauno marių įgijo šiokią tokią bazę, taigi turėjo palyginti neblogas sąlygas dirbti.",
+            "1991 m. vasarą būrys kauniečių lyg ir pakartojo trečiojo dešimtmečio savo pirmtakų pionierišką žygį – dviem mokomosiomis valtimis („jalais“) ir septyniomis baidarėmis Nemunu leidosi link pajūrio, pasiekė Nidą, čia susitiko su klaipėdiškiais euroskautais, sykiu stovyklavo ir tvarkė Nacionalinio parko aplinką. Kaune šiuo metu veikia „Divyčio“ ir „Nemuno“ tuntas.",
+            "Vilniuje pirmasis jūrų skautų vienetas bandytas įkurti 1989 m. pavasarį S.Nėries vidurinėje mokykloje, tačiau jis dar tais pačiais metais nunyko; realiai ši veikla prasidėjo 1993 m., vasarą surengta pirmoji stovykla naujokams Gulbino ežero saloje, vėliau įvyko ekskursija į Klaipėdą, viešnagė Lietuvos karo laivuose, žygis Nerimi iki Kauno. Nuo to laiko Vilniuje veikia „Vidgauto“ tuntas.",
+            "Iki 2013 m. Panevėžyje veikė „Vėtros“ tuntas. Marijampolėje šiuo metu veikia „Šešupės“ tuntas. Keli vienetai veikia Tauragėje ir Klaipėdoje. Nuo 2013 m. atsikūrė jūrų skautų veikla Ukmergėje ir šiuo metu ten veikia „Šventosios“ tuntas."
+          ],
+          "figures": [
+            {
+              "image": "/assets/hist-laivas-budys.jpg",
+              "caption": "Istorinis Lietuvos jūrų skautų laivas \"Budys\""
+            }
+          ]
+        },
+        {
+          "title": "Lietuviai jūrų skautai išeivijoje",
+          "paragraphs": [
+            "Baigiantis II pasauliniam karui, dauguma nuo sovietinės okupacijos pasitraukusių lietuvių iš pradžių telkėsi Vokietijoje, čia dar pabėgėlių stovyklose ėmė atgyti visuomeninė veikla, švietimas, lietuviškos organizacijos. Flensburge buvo įsteigta lietuviška jūrų mokykla, 1947 m. gegužės 10 d. atkurta Lietuvos jūrininkų sąjunga (nuo 1952 m. rezidavusi Niujorke).",
+            "Nuo 1949 m. dauguma pabėgėlių persikėlė į užjūrių kraštus, daugiausia į JAV. Išsiskaidžiusios išeivijos jūrų skautų judėjimui susivienijus po Pasaulio lietuvių skautų sąjungos vėliava, žymiausi jūrų skautijos židiniai veikė Amerikoje: JAV – Čikagoje, Klyvlende, Kanadoje – Toronte, Monrealyje, taip pat ir Australijoje. Skautų veikla išeivijoje yra svarbi priemonė jaunojoje kartoje lietuvybei išlaikyti. Kanadoje gyvenąs Bronys Stundžia išleido du lietuviškus vadovėlius, skirtus iš dalies jūrų skautų lavinimui – 1953 m. „Buriavimas ir jūrininkystė“, 1978 m. (pakartotinai 1985, 2000 m.) „Burės ir varikliai“, taip pat dvi versijas žodyno „Jūriniai įvardiai“, čikagietis Bronius Juodelis 1976 m. išleido knygą-vadovą „Jūrinis skautavimas“.",
+            "Šiuo metu JAV, Lemonte prie Čikagos, aktyviai veikia „Nerijos“ jūrų skaučių tuntas, jūrų skautų laivai veikia „Lituanicos“, Toronto „Šatrijos“ ir „Rambyno“ tuntuose, Australijoje, Melburne veikia budžių įgula."
+          ],
+          "figures": []
+        }
+      ]
+    }
   },
   "attributes": {
     "title": "Atributika",
@@ -107,9 +241,18 @@
     "uniformText": "Kad uniforma būtų tvarkinga, reikia žinoti, kur prisisiūti emblemas, prisegti ženkliukus ir išsiuvinėti savo vardą. Schemoje pažymėta kiekvieno ženklo vieta.",
     "neckerchiefTitle": "Kaklaraiščiai pagal amžiaus grupę",
     "neckerchiefs": [
-      { "image": "/assets/uniform-bebrai.png", "label": "6–10 m. – žydras" },
-      { "image": "/assets/uniform-skautai.png", "label": "10–14 m. – mėlynas su 3 juostelėmis" },
-      { "image": "/assets/uniform-patyre.png", "label": "14–18 m. – juodas su 3 juostelėmis" }
+      {
+        "image": "/assets/uniform-bebrai.png",
+        "label": "6–10 m. – žydras"
+      },
+      {
+        "image": "/assets/uniform-skautai.png",
+        "label": "10–14 m. – mėlynas su 3 juostelėmis"
+      },
+      {
+        "image": "/assets/uniform-patyre.png",
+        "label": "14–18 m. – juodas su 3 juostelėmis"
+      }
     ],
     "emblemTitle": "Jūrų skautų ženklas",
     "emblem": "Ženklas susideda iš kelių dalių, kiekviena turinti savo reikšmę. Rūtelė simbolizuoja seseriją, o lelijėlė viduje – broliją. Trys lelijėlės lapai simbolizuoja šūkį „Dievui, Tėvynei, artimui“ ir yra sujungti – tai skautijos vienybė. Gediminaičių stulpai – Lietuvos simbolis, o inkaras kviečia nepamiršti saugumo jūroje.",
@@ -147,5 +290,156 @@
   },
   "library": {
     "url": "https://drive.google.com/drive/folders/1mNeiy2-NT_TWEhPlR9neIJ4ZQDqT4EeW?usp=sharing"
+  },
+  "songbook": {
+    "title": "Dainynas",
+    "subtitle": "Jūrų skautų dainos laužui ir kelionei",
+    "intro": "Daina – neatsiejama jūrų skautų laužų, stovyklų ir žygių dalis. Spustelėk dainą ir pamatysi jos žodžius.",
+    "hymnLink": "Ieškai 100-mečio himno „100 jūrmylių“? →",
+    "print": "Spausdinti",
+    "chords": "su akordais",
+    "source": "Dainos surinktos iš „Tradicijų“ knygelės (Lietuvos skautija, 2020).",
+    "songs": [
+      {
+        "title": "Jūreivio daina",
+        "body": "Aš toks vienišas, jaunas jūreivis\nmindau svetimo uosto gatves\nieškau knaipės, kur gaučiau išgerti\nnes niekad nieks nemylėjo manęs.\n\nAš rūkau tik tai stiprią taboką\nnesvarbu man prie ko tai prives\nmano laimė man sukelia juoką\nnes niekad nieks nemylėjo manęs.\n\nŠtai tos durys kur įpila vyno\nkur dainuoja ir daužo taures\naš taip pat su visais jas daužysiu\nnes niekad nieks nemylėjo manęs.\n\nĮeinu tas duris atidaręs\nir nužvelgęs visas merginas\natsisėdu į kampą prie stalo\nnes niekad nieks nemylėjo manęs.\n\nKai viena tu merginų prieina\npajuntu jos aistringas rankas\ndar įsipilu vyno į taurę\nnes niekad nieks nemylėjo manęs.\n\nJi paklausia „ko ieškai čia broli?\nnegi tau taip negaila savęs?\"\natsakau jai kad nieko nenoriu\nnes niekad nieks nemylėjo manęs.\n\nJi pasiūlo išeit pasivaikščiot\naš žinau, kur mane ji nuves\nsutinku, nors gal to ir nereikia\nnes niekad nieks nemylėjo manęs.\n\nTai jau buvo gal tūkstantį kartų\nji man taria „aš noriu tavęs\"\naš jai pinigus duodu iš anksto\nnes niekad nieks nemylėjo manęs.\n\nAtsibudęs pro viešbučio langą\npamatau savo laivo bures\nišeinu neištaręs nei žodžio\nnes niekad nieks nemylėjo manęs.\n\nAš toks vienišas jaunas jūreivis\nmindau svetimo uosto gatves\nnežinau ar kada čia sugrįšiu\nnes niekad nieks nemylėjo manęs.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Žemyn upe",
+        "body": "Mes prie Nemuno užaugę,\nMylim savo gimtą Kauną,\nNieks tikriausiai neužpyks,\nKaunas - Lietuvos širdis!\n\nŽemyn upe, žemyn upe,\nPlaukia valtis palengva -\nŽemyn upe.\n\nKai tik vasara ateina,\nMes užtraukiam linksmą dainą,\nIr su linksma saulute -\nŽemyn upe.\n\nNei sušilsim, nei sušalsim,\nVien tik pieną, sultis gersim.\nIr su linksma saulute -\nŽemyn upe.\n\nMes lietuviai, mes barzdočiai,\nGeriam alų gardžiai, sočiai,\nRūkom pypkę kukavinę,\nMylim savąją Tėvynę.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Jūreivių daina",
+        "body": "Ei, pirmyn, ei, drąsyn\nJūreiviai greičiau.\nNeškim laiko vėliavą,\nLietuvos plačiau.\n\nPriedainis\nNuo jūrų iki jūrų\nSklinda garsas Lietuvos,\nTai bunda Vytauto dvasia.\nĮ jūrą marš, marš marš marš\nĮ laivyną marš.\n\nNesitrauksim mes nuo jūros\nDievas mums padės.\nKursim, stiprinsim laivyną –\nTauta to norės. 2k\n\nPriedainis\nNutilkit marių audros,\nPlaukia Lietuvos vaikai\nMūs jaunos sesės marš į jūrą\nJūron marš marš, į jūrą marš marš,\nĮ laivyną marš.\n\nNoras ir tvirta valia\nTraukia jūron vis.\nĮ jūružę, į pasaulį –\nMūsų obalsis.  2k\n\nPriedainis\nNuo jūrų iki jūrų\nSklinda garsas Lietuvos,\nTai bunda Vytauto dvasia.\nĮ jūrą marš, marš marš marš\nĮ laivyną marš.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Baltos burės plazda",
+        "body": "Baltos burės plazda\nBangos duokit kelią\nPasakyk, kur plaukti\nJūra motinėle\n\nPriedainis\nTra lia lia lia lia lia lia\nTra lia lia lia lia lia\nPasakyk, kur plaukti\nJūra motinėle\n\nMėlyni takeliai\nMėlynos papievės,\nO kuriuo pasukti –\nŽino vienas Dievas\n\nMano laivas naujas,\nĄžuolinės sienos,\nViesulai sukaukia,\nKai aš plaukiu vienas.\n\nJūra motinėle\nTur dukrelių būrį\nVėjui tėvui liepiant\nVisos šokti turi\n\nBaltos burės plazda,\nBangos duokit kelią.\nNeškit mane jauną,\nNeškit mano dalią.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Laivai",
+        "body": "      G            Em\nMes be jūros dar turime dangų\n      G              Em\nIr laivus jame matom keistus.\n       Am            Am\nLaivai plaukia lėtai pro langus\n      C        D\nIr pro būstus mūsų šaltus.\nJie nuspalvina mūsų vienatvę,\nMūsų liūdesį, dar kažką.\nTas spalvas mes paliekame gatvėj,\nJas uždengia niūri pilkuma.\n\n        C           D\nLaivus lydi lietus ir vėjas,\n     G        Em\nLydi saulė ir meilė mūsų.\n       C          D\nJų tiesa - mūs tiesos teisėja.\n      C           D\nKaip gyventum, jei jų nebutu?\n\nSu sparnais - be sparnų užgimę\nĮ savo jūrą – dangų žiūrim,\nO jame mūs laivai – likimai\nVisuomet su pakeltom burėm.\nJie nuspalvina mūsų vienatvę,\nMūsų liūdesį, dar kažką.\nTas spalvas mes paliekame gatvėj,\nJas uždengia niūri pilkuma.",
+        "hasChords": true,
+        "footnote": ""
+      },
+      {
+        "title": "Jūreivis grįžta į namus",
+        "body": "Jūreivis grįžta į namus\nKiria viria vim bom bom\nApsukęs žemę tris kartus\nKiria viria vim bom taip valio\n\nPriedainis\n\nViktoria viktoria\nKiria viria vim bom taip valio\nViktoria viktoria\nKiria viria vim bom bom\n\nJis iškentė visas audras\nTik kas jo širdį čia supras\n\nKur jis pavargęs pailsės\nNebent mergelė pamylės\n\nSiuvėjas jam gyvent neduos\nUž kelnes vis prašys skolos",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "O jūra motule",
+        "body": "Prie gintaro jūros, prie marių plačių\nStovėjo jūreivis, prislėgtas minčių,\nPrie jo prisiglaudus, nuleidus rankas\nGraži šviesiaplaukė svajojo svajas.\n\nPriedainis\n\nJūra, tavo bangos švelniai glamonėja,\nJūra, tavo pasaką seka man vėjas.\nO jūra motule, kokia tu žiauri,\nKam sujungi širdis ir vėl jas skiri.\n\nPrie gintaro jūros nuplauksime mes\nIr josios bangose pakelsim bures,\nIr klykaus žuvėdra virš marių toli,\nNebaisios bus vėtros, nei jūra žiauri.\n\nPriedainis\n\nJūra, tavo bangos švelniai glamonėja,\nJūra, tavo pasaką seka man vėjas.\nO jūra motule, kokia tu žiauri,\nKam sujungi širdis ir vėl jas skiri.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Piratų daina",
+        "body": "Skandinsim svetimus laivus,\nKas ne su mumis, tas prieš mus\nJuoda piratų vėliava\nPergalė telydi mus.\n\nLa bela bela bela bela muzika,\nGriaus muzika, griaus muzika\nLa bela bela bela bela muzika,\nGriaus muzika, ciuriuk.\n\nUžkas mus bet kuriuos kapuos,\nPiratų net velniai bijos,\nBanga, daina ir draugija\nVisada telydi mus.\n\nLa bela bela bela bela muzika,\nGriaus muzika, griaus muzika\nLa bela bela bela bela muzika,\nGriaus muzika, ciuriuk.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Parbėg laivelis",
+        "body": "Parbėg laivelis nuo Venčio rago\nSidabro šotoms, auksu lioduotoms\n\nĮ tą laivelį, į tą juodąjį\nSėd ir bernelis, baltai raudonas\n\nEikš eikš, bernyti, eikš eikš, jaunasai\nO tai mudu bėgsiv plačioms maružėms\n\nO kad aš ėjau per Minės kiemą\nMinės berneliai į man veizdėjo\n\nO ar jūs veizdat, ar jūs neveizdat\nJuk žinot patys, aš jums neteksiu\n\nKatro norėjau, širdy turėjau\nTam aš ir daviau baltą rankelę\n\nDabok bernyti, kad neuždegtų\nTavo akelės mano širdelės.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Mėnesiena",
+        "body": "Mėnesionoj tarp vandens gėlių\nF        G      C   G\nplaukiam dviese baltu laiveliu\nC            Am\nĮsirėžęs traukiu irklą\nF      G  C     G\nvisas prakaitę išmirkęs.\n\nTau tai gal labai gražu atrodo\nO man viskas viskas viskas nusibodo\nNusibodo man kas naktį\nmėnesienoj irklais plakti.\n\nVėl sustoju nusišypsau gudriai\nIr metu tave į tamsią upę\nVandenėlis burbuliuoja\nViso gero mylimoji.",
+        "hasChords": true,
+        "footnote": ""
+      },
+      {
+        "title": "Prie gintaro jūros",
+        "body": "Prie gintaro jūros, prie marių plačių\nStovėjo jūreivis prislėgtas minčių,\nPrie jo prisiglaudus, nuleidus kasas\nGraži šviesiaplaukė kalbėjo svajas.\n\nPriedainis\nPlauki su manim į jūra bekraštę\nPlauki, ten lemta mums laimę surasti\nNeskirs mūsų niekas, tai likimo valia\nTu vėjas, aš jūra, mes liksim drauge.\n\nIr ošia vis bangos, sena jų daina,\nRytoj tu išplauksi, aš liksiu viena...\nRytoj tu pranyksi melsvoj tolumoj,\nTavo sugrįžimas likimo rankoj.\n\nAcj, jūra jūruže, tu močia žiauri,\nKam sujungei širdis ir vėl jas skiri?\nGalbūt paskutinė ši mūsų naktis,\nRytoj išsiskirsim, vien meilė beliks.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Pajūry, pajūry",
+        "body": "Smėlio krantas baltuoja.\nVirš bangų neramių\nBaltijos vėjas skrajoja.\nMano šalis rytuose toli\nPajūryje rauda;\nPajūry, pajūry,\nSmėlio kas pilį sugriovė?\n\nO šalie mylima,\nNors tavęs nepažįstu,\nBet viena mintyse\nTavo padangėn nuklystu.\nMelsvo dangaus ir laukų plačių\nVisada ilgiuosi,\nO šalie mylima,\nAr tave pamatysiu?\n\nMano šalis rytuose toli\nPajūry rauda;\nPajūry, pajūry,\nSmėlio kas pilį sugriovė?",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Baltijos vėjelis",
+        "body": "Baltijos vėjelis tilsta jau.\nSesutė laivelį sups ramiau.\nTieskime bures, plaukim į jūrą,\nPrie žvejų arčiau.\n\nPalauki broleli, dar palauk\nToli į jūružę dar neplauk.\nTen prie Palangos didelės bangos,\nBroli, aš bijau.\n\nPriedainis:\n\nPlaukia laivelis, supas ramiai.\nTra lia lia lia lia lia lia supas ramiai.\nSkamba dainelė, ošia šilai\nTra lia lia lia lia lial ia lia ošia šilai.\nSaulutė leidžias vakaruose.\nTra lia lia lia lia lia lia vakaruose.\nSpinduliai maudos jau bangose,\nTra lia lia lia lia lia lia jau bangose.\n\nGrįžkim grįžkim, broluželi,\nGamta jau kviečia poilsio.\nJau žvaigždutėm dangus nusėtas,\nLaikas ir mum sapnais grožėtis",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Vai linksmai plaukia",
+        "body": "Vai linksmai plaukia\nGeltons laivelis\nAnt jūružių marelių.    2k\n\nVai šipor šipor,\nJauns šiporėli*,\nĮlipki į mastelį**.\n\nTen tu matysi\nKopų kalnely\nNaują rūtų darželį.\n\nTame daržely,\nTame naujajam,\nStovi jauna mergelė.\n\nKai puč vėjelis,\nTai bėg laivelis,\nLinksma žvejų mergelė.\n\nNepuč vėjelis\nNebėg laivelis,\nLiūdna žvejų mergelė.",
+        "hasChords": false,
+        "footnote": "(*Šipors – junga,\n**mastas – laivo stiebas)"
+      },
+      {
+        "title": "Ūžia jūružė",
+        "body": "Ūžia jūružė\nBangos krantą\nplauna,\nVėjas įtūžęs\nVis blaškos į duris\n\nŽvejo laivelį\nSūkuriai gramzdina\nVėjas nuo stiebo\nNudraskė jau bures.\n\nKopų grytelėj\nMirga žiburėlis.\nMeldžias už tėvą.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Turiu laivelį mažą",
+        "body": "Turiu laivelį mažą\nPlonų plonų lentučių,\nJį man padarė tėtis,\nKad jūrininku būčiau.\n\nBuvau Jonelis mažas,\nDabar jau didis Jonas.\nIr ant širdies taip gera,\nKad aš jau kapitonas.\n\nEinu krantu smėlėtu,\nBangelės tyliai šnara.\nEi,plaukite žuvelės,\nIr duokit laivui kelią.",
+        "hasChords": false,
+        "footnote": ""
+      },
+      {
+        "title": "Jūrų skautų daina „Ritas bangos“",
+        "body": "Ritas bangos, plazda burės,\nPlevėsuoja lelija,\nJaunus vėjus pasikinkius,\nPlaukia jūrų skautija.\n\nMarš, marš marš....\nEi valio, valio jūruže\nEi valio, valio maruže\nJaunus vėjus pasikinkius,\nPlaukia jūrų skautija\n\nNors ir žydrūs vandenynai,\nBet mums moja Baltija.\nKur Jūratė kelia tiesia\nJuosta gintaro plačia.\n\nMarš, marš marš....\nEi valio, valio jūruže\nEi valio, valio maruže\nKur Jūratė kelia tiesia\nJuosta gintaro plačia.\n\nKilkit bangos, vėjai neškit\nMūsų dvasią ant sparnų.\nBaltą vytį, šiaurės žvaigždę\nNeišleidžiam iš akių.\n\nMarš, marš marš....\nEi valio, valio jūruže\nEi valio, valio maruže\nBaltą vytį, šiaurės žvaigždę\nNeišleidžiam iš akių.",
+        "hasChords": false,
+        "footnote": ""
+      }
+    ]
+  },
+  "oaths": {
+    "title": "Įžodžiai ir malda",
+    "subtitle": "Pažadai, kuriuos duoda jūrų skautai",
+    "intro": "Jūrų skautai turi „šlapio“ įžodžio davimo tradiciją. Įžodžiai dažniausiai duodami gamtoje prie vandens, prieš jūrų skautų arba Lietuvos vėliavas. Prieš duodant įžodį kaklaraiščio galai sušlapinami, o naujai davęs įžodį dažnai būna pakrikštijamas išmaudant vandenyje.",
+    "oathsTitle": "Įžodžių tekstai",
+    "items": [
+      {
+        "rank": "Jaunesniojo jūrų skauto",
+        "text": "„Aš pasižadu stengtis mylėti Dievą, Tėvynę, Jūrą, vykdyti jaunesniųjų skautų priesakus ir kasdien padaryti gerą darbelį\"",
+        "note": "Įžodis dažniausiai duodamas iki 12.00. Jis būna viešas, gali būti rikiuotės metu ar kito renginio metu."
+      },
+      {
+        "rank": "Jūrų skauto",
+        "text": "„Brangindamas (-a) savo garbę, aš pasižadu stengtis tarnauti Dievui ir Tėvynei, mylėti Jūrą, padėti Artimui ir vykdyti skautų (-čių) priesakus.\"",
+        "note": "Įžodis dažniausiai duodamas iki vakarinės rikiuotės. Jis būna viešas, gali būti rikiuotės metu ar kito renginio metu."
+      },
+      {
+        "rank": "Patyrusių jūrų skautų",
+        "text": "„Brangindamas (-a) savo garbę, aš pasižadu stengtis tarnauti Dievui ir Tėvynei, mylėti Jūrą, padėti Artimui, vykdyti skautų (-čių) priesakus ir būti pavyzdžiu jaunesniesiems skautams.\"",
+        "note": "Įžodis dažniausiai duodamas iki 24.00. Jis būna ne viešas, pagal susiklosčiusią tradiciją įžodis organizuojamas prie vandens arba ant vandens."
+      },
+      {
+        "rank": "Suaugusio skautybėje jūrų skauto",
+        "text": "„Brangindamas (-a) savo garbę aš pasižadu stengtis tarnauti Dievui ir Tėvynei, mylėti Jūrą, padėti Artimui, vykdyti skautų (-čių) priesakus ir visomis jėgomis dirbti skautijos gerovei.\"",
+        "note": ""
+      },
+      {
+        "rank": "Jūrų skautininko",
+        "text": "„Brangindamas(-a) savo garbę, aš pasižadu stengtis tarnauti Dievui, Tėvynei ir Artimui, vykdyti skautų (-čių) priesakus ir visomis jėgomis dirbti Lietuvos skautijos gerovei ir Lietuvos jūrinei idėjai.\"",
+        "note": ""
+      }
+    ],
+    "prayer": {
+      "title": "Jūrų skautų malda",
+      "intro": "Jūrų skautai turi savo maldą. Ši malda iki mūsų laikų yra atėjusi iš tarpukario kuomet buvo aktyvus jūrinis skautavimas. Buvo organizuojami plaukimai upėmis, užsiėmimai ežeruose ir išėjimai į jūrą. Dėl to buvo sukurta malda, kuri būtų dedikuota jūrų skautams. Šią maldą perdavė aktyvi tarpukario jūrų skautė Koleta Chmieliauskaitė, kuri 1933 m. su savo tėčiu, broliu ir skautu B. Réku dviem baidarėmis iš Obelių per Sartų ežerą, Šventąją ir Nerį per 10 dienų nuplaukė iki Kauno. Iš viso buvo nuplaukta 266 kilometrai. Ši sesė buvo jūrų skaučių pradininkė Lietuvoje.",
+      "text": "Visagalis Dieve, kūrėjau visatos,\nkurio klauso vėjai ir bangos,\nkuris nustatai saulės ir žvaigždžių kelius,\nį tave mes, jūrų skautai, kreipiamės.\nStiprink mus tikėjime,\nduok dvasios ramybės, ryžto ir jėgos.\nGlobok mūsų kraštą ir artimuosius,\nlaimink mūsų žygius ir savo apvaizda saugoki,\nkad jaunos krūtinės, tvirtesnės už laivo medį,\natlaikytu bangų puolimą ir\ntamsią naktį, per rūką ir audras,\nmūsų laivai nepalūžusiais stiebais,\nlaimingai pasiektų uostą. Amen"
+    }
   }
 }

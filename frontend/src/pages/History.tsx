@@ -11,6 +11,17 @@ interface Flag {
   label: string;
 }
 
+interface Figure {
+  image: string;
+  caption: string;
+}
+
+interface Chapter {
+  title: string;
+  paragraphs: string[];
+  figures: Figure[];
+}
+
 export default function History() {
   const { t } = useTranslation();
   const intro = t("pages.history.intro", { returnObjects: true }) as string[];
@@ -18,6 +29,7 @@ export default function History() {
   const periods = t("pages.history.periods", { returnObjects: true }) as Period[];
   const flagMain = t("pages.history.flagMain", { returnObjects: true }) as Flag[];
   const flags = t("pages.history.flags", { returnObjects: true }) as Flag[];
+  const maritimeChapters = t("pages.history.maritime.chapters", { returnObjects: true }) as Chapter[];
   return (
     <ContentPage title={t("pages.history.title")}>
       <div className="prose">
@@ -70,6 +82,31 @@ export default function History() {
           </figure>
         ))}
       </div>
+
+      <h2 className="page-h2">{t("pages.history.maritime.title")}</h2>
+      <div className="prose">
+        <p>{t("pages.history.maritime.intro")}</p>
+      </div>
+      {maritimeChapters.map((chapter, i) => (
+        <section className="hist-chapter" key={i}>
+          <h3 className="hist-h3">{chapter.title}</h3>
+          <div className="prose">
+            {chapter.paragraphs.map((p, j) => (
+              <p key={j}>{p}</p>
+            ))}
+          </div>
+          {chapter.figures.length > 0 && (
+            <div className="hist-figs">
+              {chapter.figures.map((fig, k) => (
+                <figure key={k}>
+                  <img src={fig.image} alt={fig.caption} loading="lazy" />
+                  <figcaption>{fig.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
+        </section>
+      ))}
     </ContentPage>
   );
 }
