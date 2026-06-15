@@ -5,7 +5,8 @@ import {
   getAbility,
   sutarimai,
   taskKey,
-  isLevelComplete,
+  isLevelAchieved,
+  isLevelFilled,
   levelProgress,
 } from "../lib/abilities";
 import { memberPath } from "../lib/paths";
@@ -22,7 +23,7 @@ export default function MemberAbilityDetail() {
       status={status}
       saveFailed={saveFailed}
       title={ability.title}
-      subtitle="Pažymėk atliktus gebėjimus. Lygmuo pasiektas, kai pažymėti visi punktai."
+      subtitle="Pažymėk atliktus gebėjimus. Lygmuo pasiektas, kai pažymėti visi punktai ir užbaigti ankstesni lygmenys."
     >
       <div className="back-row">
         <Link to={memberPath(memberId)} className="btn btn-outline">
@@ -32,20 +33,28 @@ export default function MemberAbilityDetail() {
 
       <div className="levels">
         {ability.levels.map((lvl) => {
-          const complete = isLevelComplete(checked, slug, lvl);
+          const achieved = isLevelAchieved(checked, ability, lvl);
+          // All items ticked, but an earlier level is unfinished — does not count yet.
+          const locked = !achieved && isLevelFilled(checked, slug, lvl);
           const [done, total] = levelProgress(checked, slug, lvl);
           return (
-            <div className={`level-card${complete ? " complete" : ""}`} key={lvl.level}>
+            <div className={`level-card${achieved ? " complete" : ""}`} key={lvl.level}>
               <div className="level-head">
                 <div className="level-head-l">
                   <img
-                    className={`level-icon${complete ? "" : " dim"}`}
+                    className={`level-icon${achieved ? "" : " dim"}`}
                     src={`/assets/abilities/${slug}-${lvl.level}.png`}
                     alt=""
                   />
                   <h3>{lvl.level} lygmuo</h3>
                 </div>
-                <span className="level-status">{complete ? "✓ Pasiektas" : `${done} / ${total}`}</span>
+                <span className="level-status">
+                  {achieved
+                    ? "✓ Pasiektas"
+                    : locked
+                      ? "🔒 Užbaik ankstesnius lygmenis"
+                      : `${done} / ${total}`}
+                </span>
               </div>
 
               <ul className="checks">
