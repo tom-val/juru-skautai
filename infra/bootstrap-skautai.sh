@@ -180,7 +180,10 @@ DEPLOY_POLICY=$(cat <<JSON
     {
       "Sid": "SesReadIdentity",
       "Effect": "Allow",
-      "Action": "ses:GetEmailIdentity",
+      "Action": [
+        "ses:GetEmailIdentity",
+        "ses:ListTagsForResource"
+      ],
       "Resource": "arn:aws:ses:${REGION}:${ACCOUNT_ID}:identity/*"
     },
     {
