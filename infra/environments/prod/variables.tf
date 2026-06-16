@@ -7,7 +7,7 @@
 #   apex + www to CloudFront, and create the alias records.
 variable "domain_live" {
   type    = bool
-  default = false
+  default = true
 }
 
 # ARN of the verified SES identity Cognito uses to send confirmation emails.
