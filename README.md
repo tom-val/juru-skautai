@@ -60,8 +60,9 @@ In the repo: **Settings → Secrets and variables → Actions → New repository
 
 - `AWS_ROLE_ARN` — the role ARN printed by the script
 
-(The custom-domain cert and SES identity ARNs are set as defaults in
-[`infra/environments/prod/variables.tf`](infra/environments/prod/variables.tf), not secrets.)
+(The SES identity ARN is a default in
+[`infra/environments/prod/variables.tf`](infra/environments/prod/variables.tf), not a secret;
+the custom-domain cert is created and validated by Terraform — see "Custom domain".)
 
 The workflow uses a `Prod` environment, so also create it under
 **Settings → Environments → New environment → `Prod`**.
@@ -129,18 +130,45 @@ terraform apply
 
 ## Custom domain (juruskautai.lt)
 
-The distribution uses a `*.juruskautai.lt` wildcard certificate (in **us-east-1** —
-CloudFront only accepts certs from that region) and is served at **`www.juruskautai.lt`**.
-The cert ARN is the `acm_certificate_arn` default in
-[`infra/environments/prod/variables.tf`](infra/environments/prod/variables.tf); set it to
-`""` to serve on the default `*.cloudfront.net` URL instead.
+DNS is managed in **Route 53** ([`infra/environments/prod/dns.tf`](infra/environments/prod/dns.tf)),
+which is what lets the **bare apex** `juruskautai.lt` serve from CloudFront (apex alias
+records — impossible at the previous registrar, which had no ALIAS support). Terraform
+creates the hosted zone, an **apex + `*.juruskautai.lt` ACM cert** in `us-east-1`
+(DNS-validated automatically), and alias records so both `juruskautai.lt` and
+`www.juruskautai.lt` point at the distribution. Email stays on serveriai.lt — `MX`, SPF,
+DKIM (tokens read from the SES identity) and DMARC are recreated in the zone, with `MX`
+moved off the apex onto `mail.juruskautai.lt` so inbound mail is unaffected.
 
-Point a `www` CNAME (or alias record) at the CloudFront distribution.
+### One-time migration (staged — the zone must be authoritative before the cert can validate)
 
-> **The apex `juruskautai.lt` is not served.** A `*.juruskautai.lt` wildcard does not cover
-> the bare apex, so it is intentionally left off the distribution's aliases. To make people
-> who type `juruskautai.lt` land on the site, add an apex→`www` redirect (e.g. at the DNS
-> registrar, or a small redirect bucket) — this needs a cert that *includes* the apex.
+The cert validates via DNS in Route 53, but Route 53 isn't authoritative until the
+registrar's nameservers point at it. So create the zone first, switch nameservers, then
+apply the rest. Run with admin credentials (the GitHub Actions deploy role can take over
+afterwards):
+
+```bash
+cd infra/environments/prod
+terraform init
+
+# 1. Create just the hosted zone, then read its four nameservers.
+terraform apply -target=aws_route53_zone.main
+terraform output route53_name_servers
+
+# 2. At the registrar (iv.lt), set the domain's nameservers to those four values.
+#    From now on you manage records here in Terraform, not in iv.lt's zone editor.
+#    Wait until the switch is live (can be minutes to a few hours):
+dig +short NS juruskautai.lt        # should list the ns-….awsdns-… servers
+
+# 3. Zone is now authoritative — apply everything. ACM validates, CloudFront attaches
+#    the cert, and the apex/www alias records are created.
+terraform apply
+```
+
+Don't push to `main` (which runs a full `terraform apply` in CI) before step 2 is live —
+the cert-validation step would block for ~75 min and then fail. Once migrated, CI applies
+are steady-state. **CI also needs the broadened deploy-role permissions (Route 53 / ACM /
+SES read) — re-run [`infra/bootstrap-skautai.sh`](infra/bootstrap-skautai.sh) once with
+admin credentials to update the role policy.**
 
 ## Repository layout
 

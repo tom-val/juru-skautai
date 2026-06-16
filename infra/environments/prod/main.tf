@@ -18,10 +18,11 @@ module "cloudfront" {
   project_name                   = local.project_name
   environment                    = local.environment
   s3_bucket_regional_domain_name = module.s3_frontend.bucket_regional_domain_name
-  # The cert is a *.juruskautai.lt wildcard, which covers www (and any other single-label
-  # subdomain) but NOT the bare apex juruskautai.lt — so the apex is not served here.
-  aliases             = var.acm_certificate_arn != "" ? ["www.juruskautai.lt"] : []
-  acm_certificate_arn = var.acm_certificate_arn
+  # Apex + www, both backed by the apex-and-wildcard cert that Terraform validates
+  # via Route 53 (see dns.tf). Attached only once domain_live flips to true; until then
+  # the distribution stays on its default *.cloudfront.net URL.
+  aliases             = var.domain_live ? ["juruskautai.lt", "www.juruskautai.lt"] : []
+  acm_certificate_arn = var.domain_live ? one(aws_acm_certificate_validation.main[*].certificate_arn) : ""
 }
 
 # --- Backend (Cognito + DynamoDB + Lambda + API Gateway) ---
@@ -36,11 +37,13 @@ module "backend" {
   ses_source_arn = var.ses_source_arn
   ses_from_email = var.ses_from_email
 
-  # Allow the SPA (CloudFront, optional custom domain) and local dev to call the API.
-  cors_allow_origins = concat(
-    ["https://${module.cloudfront.distribution_domain_name}", "http://localhost:5173"],
-    var.acm_certificate_arn != "" ? ["https://www.juruskautai.lt"] : [],
-  )
+  # Allow the SPA (CloudFront default URL, the custom domain, and local dev) to call the API.
+  cors_allow_origins = [
+    "https://${module.cloudfront.distribution_domain_name}",
+    "https://juruskautai.lt",
+    "https://www.juruskautai.lt",
+    "http://localhost:5173",
+  ]
 }
 
 # S3 bucket policy granting CloudFront OAC read access.

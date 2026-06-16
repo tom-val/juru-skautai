@@ -32,3 +32,18 @@ provider "aws" {
     }
   }
 }
+
+# CloudFront viewer certificates must live in us-east-1, so the ACM cert is created
+# through this aliased provider while everything else stays in eu-central-1.
+provider "aws" {
+  alias  = "us_east_1"
+  region = "us-east-1"
+
+  default_tags {
+    tags = {
+      Project     = "juru-skautai"
+      Environment = "prod"
+      ManagedBy   = "terraform"
+    }
+  }
+}

@@ -70,6 +70,11 @@ jobs:
           echo "user_pool_id=$(terraform output -raw user_pool_id)" >> "$GITHUB_OUTPUT"
           echo "user_pool_client_id=$(terraform output -raw user_pool_client_id)" >> "$GITHUB_OUTPUT"
 
+      # After push #1, copy these four nameservers to the registrar (iv.lt) to activate
+      # the Route 53 zone, then flip `domain_live = true` and push again. See README.
+      - name: Show Route 53 nameservers
+        run: terraform output -json route53_name_servers
+
   frontend:
     name: Deploy Frontend
     needs: infra

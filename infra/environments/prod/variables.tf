@@ -1,9 +1,13 @@
-# ACM certificate ARN (must be in us-east-1) for the custom domain. This is the
-# *.juruskautai.lt wildcard cert; the distribution serves www.juruskautai.lt.
-# Set to "" to fall back to the default *.cloudfront.net URL.
-variable "acm_certificate_arn" {
-  type    = string
-  default = "arn:aws:acm:us-east-1:054630617930:certificate/5373b9fa-10fd-4e66-9a7d-a2c12c10c0f9"
+# Two-phase custom-domain switch (see README "Custom domain").
+# false (phase 1): create the Route 53 zone, mail records, and the ACM cert + its
+#   validation records — but DON'T wait on validation or attach the domain to CloudFront.
+#   This lets the first CI deploy finish without blocking on DNS that isn't authoritative
+#   yet. Switch the registrar's nameservers to the zone while this is false.
+# true (phase 2): the nameservers now point at Route 53, so confirm cert issuance, attach
+#   apex + www to CloudFront, and create the alias records.
+variable "domain_live" {
+  type    = bool
+  default = false
 }
 
 # ARN of the verified SES identity Cognito uses to send confirmation emails.

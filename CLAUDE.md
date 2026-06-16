@@ -17,9 +17,12 @@ static, bilingual (Lithuanian default, English). "Kablys visam gyvenimui!"
 
 - Static SPA built by Vite, served from a private S3 bucket via CloudFront with an
   Origin Access Control. The bucket is not public; only CloudFront can read it.
-- Custom domain (juruskautai.lt) is wired but disabled by default — set
-  `acm_certificate_arn` (an ACM cert in us-east-1) to enable the alias + TLS.
-  Until then the site serves on the default `*.cloudfront.net` URL.
+- Custom domain (juruskautai.lt) is managed in Route 53 (`infra/environments/prod/dns.tf`):
+  Terraform creates the hosted zone, an apex + `*.juruskautai.lt` ACM cert (us-east-1,
+  DNS-validated), and alias records so **both** the apex and `www` serve from CloudFront.
+  Email stays on serveriai.lt (MX/SPF/DKIM/DMARC recreated in the zone). Activated by
+  pointing the registrar's nameservers at the zone — see README "Custom domain" for the
+  staged migration.
 - **Abilities tracker:** team leads sign up at `/vadovas` (Cognito email/password +
   name + tuntas) and confirm their email with a code, then register members from
   `/vadovas/skydelis`. Each member gets a unique ID (`firstnamelastname-xxxx`); members

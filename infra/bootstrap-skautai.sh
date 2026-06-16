@@ -166,6 +166,24 @@ DEPLOY_POLICY=$(cat <<JSON
       "Resource": "*"
     },
     {
+      "Sid": "Route53",
+      "Effect": "Allow",
+      "Action": "route53:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Acm",
+      "Effect": "Allow",
+      "Action": "acm:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "SesReadIdentity",
+      "Effect": "Allow",
+      "Action": "ses:GetEmailIdentity",
+      "Resource": "arn:aws:ses:${REGION}:${ACCOUNT_ID}:identity/*"
+    },
+    {
       "Sid": "ApiGateway",
       "Effect": "Allow",
       "Action": "apigateway:*",
