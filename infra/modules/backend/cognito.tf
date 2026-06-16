@@ -6,6 +6,17 @@ resource "aws_cognito_user_pool" "leads" {
   username_attributes      = ["email"]
   auto_verified_attributes = ["email"]
 
+  # Send confirmation codes through our own SES identity (juruskautai.lt) when one is
+  # configured; otherwise Cognito falls back to its default low-volume sender.
+  dynamic "email_configuration" {
+    for_each = var.ses_source_arn != "" ? [1] : []
+    content {
+      email_sending_account = "DEVELOPER"
+      source_arn            = var.ses_source_arn
+      from_email_address    = var.ses_from_email
+    }
+  }
+
   # Tuntas (scout troop) name, captured at signup alongside the standard `name` attribute.
   schema {
     name                = "tuntas"

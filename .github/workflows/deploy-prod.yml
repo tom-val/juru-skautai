@@ -55,10 +55,10 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
+      # The custom-domain (ACM) and SES identity ARNs are set as defaults in
+      # infra/environments/prod/variables.tf, so no TF_VAR_* secrets are needed here.
       - name: Terraform Apply
         run: terraform apply -auto-approve -input=false
-        env:
-          TF_VAR_acm_certificate_arn: ${{ secrets.ACM_CERTIFICATE_ARN }}
 
       - name: Export outputs
         id: outputs

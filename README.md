@@ -58,7 +58,9 @@ It creates:
 In the repo: **Settings → Secrets and variables → Actions → New repository secret**
 
 - `AWS_ROLE_ARN` — the role ARN printed by the script
-- `ACM_CERTIFICATE_ARN` *(optional)* — only when adding the custom domain (see below)
+
+(The custom-domain cert and SES identity ARNs are set as defaults in
+[`infra/environments/prod/variables.tf`](infra/environments/prod/variables.tf), not secrets.)
 
 The workflow uses a `Prod` environment, so also create it under
 **Settings → Environments → New environment → `Prod`**.
@@ -93,6 +95,22 @@ npm test
 The frontend reads `VITE_API_URL`, `VITE_USER_POOL_ID`, `VITE_USER_POOL_CLIENT_ID`
 (injected from Terraform outputs in CI; see [`frontend/.env.example`](frontend/.env.example)).
 
+### Email (SES)
+
+Cognito sends confirmation codes through the verified SES identity for `juruskautai.lt`
+(its ARN is the `ses_source_arn` default in
+[`infra/environments/prod/variables.tf`](infra/environments/prod/variables.tf)), from
+`no-reply@juruskautai.lt` (override with `ses_from_email`). Set `ses_source_arn` to `""` to
+fall back to Cognito's own low-volume sender (~50/day, `no-reply@verificationemail.com`).
+
+Two requirements:
+
+- **Region:** the SES identity must be in a Region Cognito supports for SES. The user
+  pool's own Region, `eu-central-1`, is always valid — keep the identity there.
+- **Sandbox:** a fresh SES account is in the *sandbox* and can only email
+  **verified** addresses, so confirmation codes to real team leads will silently fail.
+  Request **production access** for SES in `eu-central-1` before relying on it.
+
 ## Infrastructure
 
 Terraform provisions a private S3 bucket + CloudFront distribution (OAC) and the tracker
@@ -110,17 +128,18 @@ terraform apply
 
 ## Custom domain (juruskautai.lt)
 
-The site serves on the default `*.cloudfront.net` URL until a domain is wired up. To use
-`juruskautai.lt`, create an ACM certificate in **us-east-1** (CloudFront only accepts certs
-from that region), then either set the `ACM_CERTIFICATE_ARN` GitHub secret or pass it
-directly:
+The distribution uses a `*.juruskautai.lt` wildcard certificate (in **us-east-1** —
+CloudFront only accepts certs from that region) and is served at **`www.juruskautai.lt`**.
+The cert ARN is the `acm_certificate_arn` default in
+[`infra/environments/prod/variables.tf`](infra/environments/prod/variables.tf); set it to
+`""` to serve on the default `*.cloudfront.net` URL instead.
 
-```bash
-terraform apply -var="acm_certificate_arn=arn:aws:acm:us-east-1:...:certificate/..."
-```
+Point a `www` CNAME (or alias record) at the CloudFront distribution.
 
-This enables the `juruskautai.lt` / `www.juruskautai.lt` aliases. Point the domain's DNS at
-the CloudFront distribution afterwards.
+> **The apex `juruskautai.lt` is not served.** A `*.juruskautai.lt` wildcard does not cover
+> the bare apex, so it is intentionally left off the distribution's aliases. To make people
+> who type `juruskautai.lt` land on the site, add an apex→`www` redirect (e.g. at the DNS
+> registrar, or a small redirect bucket) — this needs a cert that *includes* the apex.
 
 ## Repository layout
 
