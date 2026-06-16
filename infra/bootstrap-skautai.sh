@@ -9,6 +9,7 @@
 #   2. The Terraform state-lock DynamoDB table
 #   3. The GitHub Actions OIDC provider (if not already present)
 #   4. An IAM role GitHub Actions assumes to deploy (prints its ARN at the end)
+#   5. The Cognito email service-linked role (lets the user pool send via SES)
 #
 # Usage:
 #   bash bootstrap.sh
@@ -202,6 +203,19 @@ aws iam put-role-policy \
   --policy-name "${PROJECT}-deploy" \
   --policy-document "${DEPLOY_POLICY}" >/dev/null
 echo "✓ Role ready"
+echo
+
+# --- 5. Cognito email service-linked role -----------------------------------
+# When the user pool sends email via SES (DEVELOPER mode), Cognito needs the
+# 'email.cognito-idp.amazonaws.com' service-linked role. It is account-global and
+# created once here; the scoped deploy role deliberately can't create IAM roles.
+if aws iam get-role --role-name "AWSServiceRoleForAmazonCognitoIdpEmailService" >/dev/null 2>&1; then
+  echo "✓ Cognito email service-linked role already exists"
+else
+  echo "→ Creating Cognito email service-linked role"
+  aws iam create-service-linked-role --aws-service-name "email.cognito-idp.amazonaws.com" >/dev/null
+  echo "✓ Cognito email service-linked role created"
+fi
 echo
 
 ROLE_ARN="arn:aws:iam::${ACCOUNT_ID}:role/${ROLE_NAME}"

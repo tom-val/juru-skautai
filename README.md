@@ -52,6 +52,7 @@ It creates:
 | Lock table | `juru-skautai-terraform-locks` |
 | OIDC provider | `token.actions.githubusercontent.com` |
 | Deploy role | `juru-skautai-github-actions` |
+| Cognito email service-linked role (for SES sending) | `AWSServiceRoleForAmazonCognitoIdpEmailService` |
 
 ### 2. Add the GitHub secret
 
