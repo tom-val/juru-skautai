@@ -24,32 +24,42 @@ static, bilingual (Lithuanian default, English). "Kablys visam gyvenimui!"
   pointing the registrar's nameservers at the zone — see README "Custom domain" for the
   staged migration.
 - **Abilities tracker:** team leads sign up at `/vadovas` (Cognito email/password +
-  name + tuntas) and confirm their email with a code, then register members from
-  `/vadovas/skydelis`. Each member gets a unique ID (`firstnamelastname-xxxx`); members
-  open `/narys/<id>` with no password (the ID is the credential). The `api` Lambda
-  reads/writes DynamoDB (progress is saved as per-key deltas, validated server-side);
-  the `authorizer` Lambda validates the Cognito JWT on admin routes. Progress keys use
-  stable task IDs from `abilities.json` (`slug/level/t1`) — never renumber existing IDs.
+  name + tuntas) and confirm their email with a code. A lead owns any number of
+  **groups** (`/vadovas/skydelis` → `/vadovas/grupe/<groupId>`) and registers members
+  in them; each group has an invite code so other leads can join as co-leads
+  (`/vadovas/kvietimas/<code>`). Each member gets a unique ID (`firstname-xxxx`);
+  members open `/narys/<id>` with no password (the ID is the credential). A member's
+  tick is only **pending** (yellow) until a lead confirms it from
+  `/vadovas/grupe/<groupId>/narys/<memberId>`; only "done" items count towards levels.
+  The `api` Lambda reads/writes DynamoDB (`members` + `groups` tables; progress is a
+  map of `taskKey → "done" | "pending"`, saved as per-key deltas and validated
+  server-side); the `authorizer` Lambda validates the Cognito JWT on lead routes.
+  Progress keys use stable task IDs from `abilities.json` (`slug/level/t1`) — never
+  renumber existing IDs.
 
 ## Project Structure
 
 ```
 frontend/
   src/
-    components/      One component per page section (Header, Hero, ...)
-    pages/           Routed pages (incl. LeadAuth, LeadDashboard, MemberHome, ...)
+    components/      One component per page section (Header, Hero, ...) + shared
+                     tracker views (AbilityOverview, AbilityLevels, MemberStatusGate)
+    pages/           Routed pages (LeadAuth, LeadDashboard, GroupPage, LeadMember*,
+                     JoinGroup, MemberHome, MemberAbilityDetail, ...)
+    hooks/           useProgress (member/lead progress editing), useRequireLead
     auth/            Cognito wrapper + AuthContext
-    lib/             abilities.ts (pure helpers) + api.ts (members API client)
+    lib/             abilities.ts (pure helpers), api.ts (API client), paths.ts (routes)
     i18n/            i18next setup + lt.json / en.json content
   public/assets/     Images and the scout emblem
 backend/
-  src/               api.ts, authorizer.ts, members.ts, progress.ts, ids.ts, http.ts
+  src/               api.ts, authorizer.ts, groups.ts, members.ts, progress.ts, ids.ts, db.ts, http.ts
+                     local-server.ts + local-tables.ts (LocalStack dev/test only, not bundled)
   build.mjs          esbuild → dist/{api,authorizer}/index.mjs
 infra/
   modules/
     s3-frontend/     Private S3 bucket
     cloudfront/      CloudFront distribution + OAC
-    backend/         Cognito + DynamoDB + Lambdas + API Gateway
+    backend/         Cognito (+ email template) + DynamoDB + Lambdas + API Gateway
   environments/
     prod/            Production composition (S3 + CloudFront + backend + bucket policy)
 mockups/             Static HTML design mockup (reference only)
@@ -77,6 +87,12 @@ cd frontend && npm run lint                    # Lint
 # Backend (abilities tracker Lambdas)
 cd backend && npm install && npm run build     # esbuild → dist/{api,authorizer}
 cd backend && npm test                         # Unit tests (node --test)
+cd backend && npm run test:integration         # Full API flow vs LocalStack DynamoDB (:4567)
+
+# Local end-to-end (LocalStack DynamoDB, no AWS/Cognito) — see README "Running the tracker locally"
+docker run -d -p 4567:4566 -e SERVICES=dynamodb localstack/localstack:3
+cd backend && npm run local                    # API handler on http://localhost:3001
+cd frontend && npm run dev:local               # frontend with a fake signed-in lead
 
 # Infrastructure (build backend first so the Lambda zips exist)
 cd backend && npm ci && npm run build

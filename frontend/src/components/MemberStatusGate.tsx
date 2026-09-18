@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import ContentPage from "./ContentPage";
-import type { MemberStatus } from "../hooks/useMemberProgress";
+import type { MemberStatus } from "../hooks/useProgress";
 
 interface Props {
   status: MemberStatus;

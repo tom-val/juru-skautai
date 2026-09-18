@@ -78,12 +78,27 @@ Push to `main` — `.github/workflows/deploy-prod.yml` runs Terraform apply → 
 The `/gebejimai` abilities tracker is backed by AWS so progress is saved per member:
 
 - **Team leads** register at `/vadovas` (email + password, name + tuntas) via **Cognito**
-  and confirm their email with a code, then add members from the dashboard
-  (`/vadovas/skydelis`). Each member gets a unique ID (`firstnamelastname-xxxx`).
+  and confirm their email with a code. The dashboard (`/vadovas/skydelis`) lists their
+  **groups**; a lead can create any number of groups and open each one at
+  `/vadovas/grupe/<groupId>` to register members, copy their links, and review progress.
+- **Co-leads:** every group has an invite code (`xxxx-xxxx`). The owner shares the
+  invite link (`/vadovas/kvietimas/<code>`) or the code itself; a colleague who opens it
+  (after signing in or registering) joins the group with full member-management rights.
+  The owner can rotate the code, remove co-leads, rename or delete the group.
 - **Members** open `/narys/<id>` (or type their ID at `/gebejimai`) — no password; the ID
-  is the credential. Progress is stored in **DynamoDB**.
+  is the credential. Each member gets a unique ID (`firstname-xxxx`).
+- **Confirmation flow:** a member ticking an item only marks it **pending** (shown in
+  yellow). A lead confirms or rejects it from the group page; only lead-confirmed items
+  count towards levels. Leads can also tick items directly. Progress is stored in
+  **DynamoDB** as `taskKey → "done" | "pending"`.
 - A **Node 24 Lambda** handles the data API behind **API Gateway (HTTP API)**; a second
-  **Lambda authorizer** validates the Cognito token on the admin (lead) routes.
+  **Lambda authorizer** validates the Cognito token on the lead routes. Members
+  registered before groups existed are folded into a default group ("Mano grupė") the
+  first time their lead opens the dashboard.
+
+Cognito's confirmation / password-reset emails use the branded Lithuanian HTML template
+in [`infra/modules/backend/templates/verification-email.html`](infra/modules/backend/templates/verification-email.html)
+(one template serves both, as Cognito allows without a Custom Message Lambda).
 
 Backend code lives in [`backend/`](backend/) (bundled with esbuild). Build + test:
 
@@ -92,6 +107,28 @@ cd backend
 npm install
 npm run build   # → dist/{api,authorizer}  (Terraform zips these)
 npm test
+```
+
+### Running the tracker locally (LocalStack)
+
+The whole tracker can run on a laptop without AWS: DynamoDB comes from LocalStack, the
+API handler is served by a small Node HTTP server, and the frontend signs in a fake
+lead (no Cognito).
+
+```bash
+docker run -d --name juru-localstack -p 4567:4566 -e SERVICES=dynamodb localstack/localstack:3
+cd backend && npm run local            # API on http://localhost:3001 (creates the tables; --reset wipes them)
+cd frontend && npm run dev:local       # Vite in "localstack" mode → lead "Asta Vadovė" is signed in
+```
+
+`frontend/.env.localstack` holds the local API URL and the dev lead (`VITE_DEV_LEAD`);
+the bypass in `src/auth/cognito.ts` only exists in dev builds. Member pages
+(`/narys/<id>`) work as in production. The same LocalStack instance backs the
+end-to-end API test, which drives the real handler through the full group / invite /
+claim / confirm / delete flow:
+
+```bash
+cd backend && npm run test:integration
 ```
 
 The frontend reads `VITE_API_URL`, `VITE_USER_POOL_ID`, `VITE_USER_POOL_CLIENT_ID`

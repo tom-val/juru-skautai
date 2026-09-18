@@ -1,5 +1,5 @@
 import { useEffect, useState, type FormEvent } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 import { isBackendConfigured } from "../config";
 
@@ -46,6 +46,10 @@ export default function LeadAuth() {
     confirmNewPassword,
   } = useAuth();
   const navigate = useNavigate();
+  const [params] = useSearchParams();
+  // Where to go after signing in: only same-site lead paths (e.g. an invite link).
+  const rawNext = params.get("next") ?? "";
+  const next = rawNext.startsWith("/vadovas/") ? rawNext : "/vadovas/skydelis";
 
   const [mode, setMode] = useState<Mode>("login");
   const [email, setEmail] = useState("");
@@ -59,8 +63,8 @@ export default function LeadAuth() {
 
   // Already signed in → straight to the dashboard.
   useEffect(() => {
-    if (ready && profile) navigate("/vadovas/skydelis", { replace: true });
-  }, [ready, profile, navigate]);
+    if (ready && profile) navigate(next, { replace: true });
+  }, [ready, profile, navigate, next]);
 
   const switchMode = (next: Mode) => {
     setMode(next);
@@ -77,7 +81,7 @@ export default function LeadAuth() {
     try {
       if (mode === "login") {
         await login(email, password);
-        navigate("/vadovas/skydelis", { replace: true });
+        navigate(next, { replace: true });
       } else if (mode === "register") {
         await register(email, password, name.trim(), tuntas.trim());
         setMode("confirm-signup");
@@ -87,7 +91,7 @@ export default function LeadAuth() {
         if (password) {
           // Password still in state from register/login — sign straight in.
           await login(email, password);
-          navigate("/vadovas/skydelis", { replace: true });
+          navigate(next, { replace: true });
         } else {
           setMode("login");
           setNotice("El. paštas patvirtintas. Dabar gali prisijungti.");

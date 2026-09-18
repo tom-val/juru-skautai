@@ -10,6 +10,10 @@ import Oaths from "./pages/Oaths";
 import MemberEntry from "./pages/MemberEntry";
 import LeadAuth from "./pages/LeadAuth";
 import LeadDashboard from "./pages/LeadDashboard";
+import GroupPage from "./pages/GroupPage";
+import LeadMemberHome from "./pages/LeadMemberHome";
+import LeadMemberAbility from "./pages/LeadMemberAbility";
+import JoinGroup from "./pages/JoinGroup";
 import MemberHome from "./pages/MemberHome";
 import MemberAbilityDetail from "./pages/MemberAbilityDetail";
 
@@ -31,6 +35,10 @@ export default function App() {
         <Route path="/gebejimai/:slug" element={<Navigate to="/gebejimai" replace />} />
         <Route path="/vadovas" element={<LeadAuth />} />
         <Route path="/vadovas/skydelis" element={<LeadDashboard />} />
+        <Route path="/vadovas/kvietimas/:code" element={<JoinGroup />} />
+        <Route path="/vadovas/grupe/:groupId" element={<GroupPage />} />
+        <Route path="/vadovas/grupe/:groupId/narys/:memberId" element={<LeadMemberHome />} />
+        <Route path="/vadovas/grupe/:groupId/narys/:memberId/:slug" element={<LeadMemberAbility />} />
         <Route path="/narys/:memberId" element={<MemberHome />} />
         <Route path="/narys/:memberId/:slug" element={<MemberAbilityDetail />} />
 

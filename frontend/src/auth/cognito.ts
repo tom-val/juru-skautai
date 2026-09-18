@@ -15,6 +15,15 @@ const pool = new CognitoUserPool({
 
 const user = (email: string) => new CognitoUser({ Username: email, Pool: pool });
 
+// Local development against the LocalStack-backed API (`npm run dev:local`): with
+// VITE_DEV_LEAD set, that lead is "signed in" and the token is a dev marker the
+// local server understands. Dev builds only — `import.meta.env.DEV` is false in
+// production bundles, so this branch is compiled out.
+const DEV_LEAD: (LeadProfile & { sub: string }) | null =
+  import.meta.env.DEV && import.meta.env.VITE_DEV_LEAD
+    ? JSON.parse(import.meta.env.VITE_DEV_LEAD)
+    : null;
+
 export interface LeadProfile {
   email: string;
   name: string;
@@ -81,12 +90,14 @@ function currentSession(): Promise<CognitoUserSession | null> {
 
 /** Valid (auto-refreshed) Cognito ID token, or null if not signed in. */
 export async function getIdToken(): Promise<string | null> {
+  if (DEV_LEAD) return `dev:${btoa(unescape(encodeURIComponent(JSON.stringify(DEV_LEAD))))}`;
   const session = await currentSession();
   return session ? session.getIdToken().getJwtToken() : null;
 }
 
 /** The signed-in lead's profile from ID-token claims, or null. */
 export async function getProfile(): Promise<LeadProfile | null> {
+  if (DEV_LEAD) return { email: DEV_LEAD.email, name: DEV_LEAD.name, tuntas: DEV_LEAD.tuntas };
   const session = await currentSession();
   if (!session) return null;
   const c = session.getIdToken().decodePayload();

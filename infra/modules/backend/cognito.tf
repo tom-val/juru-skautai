@@ -17,6 +17,15 @@ resource "aws_cognito_user_pool" "leads" {
     }
   }
 
+  # Branded Lithuanian HTML for the emailed codes. Cognito uses this one template for
+  # both sign-up confirmation and password-reset codes (a per-event template would
+  # need a Custom Message Lambda), so the copy covers both. `{####}` is the code.
+  verification_message_template {
+    default_email_option = "CONFIRM_WITH_CODE"
+    email_subject        = "Jūrų skautai · tavo patvirtinimo kodas"
+    email_message        = file("${path.module}/templates/verification-email.html")
+  }
+
   # Tuntas (scout troop) name, captured at signup alongside the standard `name` attribute.
   schema {
     name                = "tuntas"

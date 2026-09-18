@@ -40,10 +40,14 @@ data "aws_iam_policy_document" "dynamodb" {
       "dynamodb:UpdateItem",
       "dynamodb:DeleteItem",
       "dynamodb:Query",
+      "dynamodb:BatchGetItem",
+      "dynamodb:BatchWriteItem",
     ]
     resources = [
       aws_dynamodb_table.members.arn,
       "${aws_dynamodb_table.members.arn}/index/*",
+      aws_dynamodb_table.groups.arn,
+      "${aws_dynamodb_table.groups.arn}/index/*",
     ]
   }
 }
@@ -67,7 +71,8 @@ resource "aws_lambda_function" "api" {
 
   environment {
     variables = {
-      TABLE_NAME = aws_dynamodb_table.members.name
+      TABLE_NAME        = aws_dynamodb_table.members.name
+      GROUPS_TABLE_NAME = aws_dynamodb_table.groups.name
     }
   }
 }

@@ -1,48 +1,35 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../auth/AuthContext";
-import { listMembers, createMember, deleteMember, type Member } from "../lib/api";
-import { abilities, completedCount } from "../lib/abilities";
-import { memberPath, memberUrl } from "../lib/paths";
+import { useRequireLead } from "../hooks/useRequireLead";
+import { listGroups, createGroup, joinGroup, type GroupSummary } from "../lib/api";
+import { groupPath } from "../lib/paths";
 
-const TOTAL_LEVELS = abilities.reduce((sum, a) => sum + a.levels.length, 0);
-
-function completedLevels(progress: Record<string, boolean>): number {
-  return abilities.reduce((sum, a) => sum + completedCount(progress, a), 0);
-}
-
-// Team-lead area: register members and review their progress. Guarded — redirects
-// to /vadovas when there is no Cognito session.
+// Team-lead home: the groups they own or were invited to, plus create / join forms.
 export default function LeadDashboard() {
-  const { profile, ready, logout } = useAuth();
+  const { profile, signedIn, logout } = useRequireLead();
   const navigate = useNavigate();
 
-  const [members, setMembers] = useState<Member[]>([]);
+  const [groups, setGroups] = useState<GroupSummary[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  const [firstName, setFirstName] = useState("");
+  const [name, setName] = useState("");
   const [creating, setCreating] = useState(false);
-  const [copied, setCopied] = useState("");
+  const [code, setCode] = useState("");
+  const [joining, setJoining] = useState(false);
 
+  // Load groups once signed in. State is only updated in the async callbacks.
   useEffect(() => {
-    if (ready && !profile) navigate("/vadovas", { replace: true });
-  }, [ready, profile, navigate]);
-
-  // Load the lead's members once signed in. State is only updated in the async
-  // callbacks (not synchronously in the effect body), and `loading` starts true.
-  useEffect(() => {
-    if (!profile) return;
+    if (!signedIn) return;
     let active = true;
-    listMembers()
+    listGroups()
       .then((list) => {
         if (!active) return;
-        list.sort((a, b) => a.createdAt.localeCompare(b.createdAt));
-        setMembers(list);
+        setGroups(list);
         setError("");
       })
       .catch((err) => {
-        if (active) setError(err instanceof Error ? err.message : "Nepavyko įkelti narių.");
+        if (active) setError(err instanceof Error ? err.message : "Nepavyko įkelti grupių.");
       })
       .finally(() => {
         if (active) setLoading(false);
@@ -50,44 +37,39 @@ export default function LeadDashboard() {
     return () => {
       active = false;
     };
-  }, [profile]);
+  }, [signedIn]);
 
-  const add = async (e: FormEvent) => {
+  const create = async (e: FormEvent) => {
     e.preventDefault();
     setCreating(true);
     setError("");
     try {
-      const member = await createMember(firstName.trim());
-      setFirstName("");
-      setMembers((prev) => [...prev, member]);
+      const group = await createGroup(name.trim());
+      setName("");
+      navigate(groupPath(group.groupId));
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Nepavyko sukurti nario.");
+      setError(err instanceof Error ? err.message : "Nepavyko sukurti grupės.");
     } finally {
       setCreating(false);
     }
   };
 
-  const remove = async (member: Member) => {
-    if (!window.confirm(`Pašalinti narį ${member.firstName}?`)) return;
+  const join = async (e: FormEvent) => {
+    e.preventDefault();
+    setJoining(true);
+    setError("");
     try {
-      await deleteMember(member.memberId);
-      setMembers((prev) => prev.filter((m) => m.memberId !== member.memberId));
+      const group = await joinGroup(code.trim());
+      setCode("");
+      navigate(groupPath(group.groupId));
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Nepavyko pašalinti nario.");
+      setError(err instanceof Error ? err.message : "Nepavyko prisijungti prie grupės.");
+    } finally {
+      setJoining(false);
     }
   };
 
-  const copyLink = async (memberId: string) => {
-    try {
-      await navigator.clipboard.writeText(memberUrl(memberId));
-      setCopied(memberId);
-      setTimeout(() => setCopied(""), 1500);
-    } catch {
-      /* clipboard unavailable */
-    }
-  };
-
-  if (!ready || !profile) {
+  if (!signedIn || !profile) {
     return (
       <section className="page">
         <div className="wrap">
@@ -112,49 +94,68 @@ export default function LeadDashboard() {
 
         {error && <p className="auth-error">{error}</p>}
 
-        <div className="dash-create">
-          <h2>Pridėti narį</h2>
-          <form onSubmit={add}>
-            <input
-              type="text"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-              placeholder="Vardas"
-              required
-            />
-            <button
-              type="submit"
-              className="btn btn-sun"
-              disabled={creating || !firstName.trim()}
-            >
-              {creating ? "Kuriama…" : "Sukurti"}
-            </button>
-          </form>
+        <div className="dash-forms">
+          <div className="dash-create">
+            <h2>Nauja grupė</h2>
+            <form onSubmit={create}>
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="pvz. Bebriukai"
+                required
+              />
+              <button type="submit" className="btn btn-sun" disabled={creating || !name.trim()}>
+                {creating ? "Kuriama…" : "Sukurti"}
+              </button>
+            </form>
+          </div>
+
+          <div className="dash-create">
+            <h2>Prisijungti prie grupės</h2>
+            <form onSubmit={join}>
+              <input
+                type="text"
+                value={code}
+                onChange={(e) => setCode(e.target.value)}
+                placeholder="Kvietimo kodas, pvz. ab12-cd34"
+                autoCapitalize="none"
+                autoComplete="off"
+                required
+              />
+              <button type="submit" className="btn btn-outline" disabled={joining || !code.trim()}>
+                {joining ? "Jungiama…" : "Prisijungti"}
+              </button>
+            </form>
+          </div>
         </div>
 
-        <h2>Nariai ({members.length})</h2>
+        <h2>Grupės ({groups.length})</h2>
         {loading ? (
           <p>Kraunama…</p>
-        ) : members.length === 0 ? (
-          <p>Dar nėra narių. Pridėk pirmą viršuje.</p>
+        ) : groups.length === 0 ? (
+          <p>Dar nėra grupių. Sukurk pirmą viršuje arba įvesk kolegos atsiųstą kvietimo kodą.</p>
         ) : (
           <ul className="member-list">
-            {members.map((m) => (
-              <li key={m.memberId} className="member-row">
+            {groups.map((g) => (
+              <li key={g.groupId} className="member-row">
                 <div className="member-main">
-                  <Link to={memberPath(m.memberId)}>{m.firstName}</Link>
-                  <code className="member-id">{m.memberId}</code>
+                  <Link to={groupPath(g.groupId)}>{g.name}</Link>
+                  <span className="member-sub">
+                    {g.tuntas}
+                    {g.role === "lead" && " · kviestas vadovas"}
+                  </span>
                 </div>
                 <div className="member-meta">
                   <span className="member-progress">
-                    {completedLevels(m.progress ?? {})} / {TOTAL_LEVELS} lygmenų
+                    {g.memberCount} {g.memberCount === 1 ? "narys" : "nariai"}
                   </span>
-                  <button className="btn btn-outline btn-sm" onClick={() => copyLink(m.memberId)}>
-                    {copied === m.memberId ? "Nukopijuota ✓" : "Kopijuoti nuorodą"}
-                  </button>
-                  <button className="btn btn-sm member-del" onClick={() => remove(m)}>
-                    Pašalinti
-                  </button>
+                  {g.pendingCount > 0 && (
+                    <span className="pending-pill">{g.pendingCount} laukia patvirtinimo</span>
+                  )}
+                  <Link to={groupPath(g.groupId)} className="btn btn-outline btn-sm">
+                    Atidaryti
+                  </Link>
                 </div>
               </li>
             ))}

@@ -6,7 +6,7 @@ resource "aws_apigatewayv2_api" "http" {
 
   cors_configuration {
     allow_origins = var.cors_allow_origins
-    allow_methods = ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+    allow_methods = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
     allow_headers = ["Content-Type", "Authorization"]
     max_age       = 3600
   }
@@ -33,9 +33,20 @@ resource "aws_apigatewayv2_authorizer" "cognito" {
 locals {
   # route_key => protected by the Cognito authorizer?
   routes = {
-    "POST /members"                    = true
-    "GET /members"                     = true
-    "DELETE /members/{memberId}"       = true
+    # Lead routes (group management + confirming members' progress)
+    "GET /groups"                                       = true
+    "POST /groups"                                      = true
+    "POST /groups/join"                                 = true
+    "GET /groups/{groupId}"                             = true
+    "PATCH /groups/{groupId}"                           = true
+    "DELETE /groups/{groupId}"                          = true
+    "POST /groups/{groupId}/invite"                     = true
+    "DELETE /groups/{groupId}/leads/{leadSub}"          = true
+    "POST /groups/{groupId}/members"                    = true
+    "GET /groups/{groupId}/members/{memberId}"          = true
+    "DELETE /groups/{groupId}/members/{memberId}"       = true
+    "PUT /groups/{groupId}/members/{memberId}/progress" = true
+    # Member routes (open — the unique ID is the credential)
     "GET /members/{memberId}"          = false
     "PUT /members/{memberId}/progress" = false
   }

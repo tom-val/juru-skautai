@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "test:integration": "INTEGRATION=1 node --test src/api.integration.test.ts",
+    "local": "node src/local-server.ts"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.700.0",
