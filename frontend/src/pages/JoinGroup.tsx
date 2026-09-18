@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import ContentPage from "../components/ContentPage";
+import Spinner from "../components/Spinner";
 import { useRequireLead } from "../hooks/useRequireLead";
 import { joinGroup } from "../lib/api";
 import { dashboardPath, groupPath } from "../lib/paths";
@@ -39,7 +40,7 @@ export default function JoinGroup() {
           </p>
         </>
       ) : (
-        <p>Jungiama prie grupės…</p>
+        <Spinner label="Jungiama prie grupės…" />
       )}
     </ContentPage>
   );

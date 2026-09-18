@@ -330,6 +330,12 @@ footer a:hover { color: var(--sun); }
 .auth-error { background: #fff1f0; border: 1px solid #ffd5d0; color: #b42318; border-radius: 12px; padding: 12px 16px; font-size: .92rem; margin-bottom: 16px; }
 .auth-notice { background: #f3fcfa; border: 1px solid #c7efe7; color: #0f766e; border-radius: 12px; padding: 12px 16px; font-size: .92rem; margin-bottom: 16px; }
 
+/* Loading spinner (tracker pages) */
+.spinner { display: flex; align-items: center; gap: 14px; padding: 28px 0; color: #7089a0; font-weight: 600; }
+.spinner-ring { width: 28px; height: 28px; flex: 0 0 28px; border-radius: 50%; border: 3px solid var(--mist-2); border-top-color: var(--azure); animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spinner-ring { animation-duration: 2s; } }
+
 /* Lead dashboard */
 .dash-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
 .dash-tuntas { color: var(--azure-deep); font-weight: 600; margin-top: 2px; }

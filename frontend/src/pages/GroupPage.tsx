@@ -1,5 +1,6 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import Spinner from "../components/Spinner";
 import { useRequireLead } from "../hooks/useRequireLead";
 import {
   getGroup,
@@ -148,7 +149,7 @@ export default function GroupPage() {
     return (
       <section className="page">
         <div className="wrap">
-          <p>Kraunama…</p>
+          <Spinner />
         </div>
       </section>
     );

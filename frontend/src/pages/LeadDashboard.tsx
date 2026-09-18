@@ -1,5 +1,6 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Spinner from "../components/Spinner";
 import { useRequireLead } from "../hooks/useRequireLead";
 import { listGroups, createGroup, joinGroup, type GroupSummary } from "../lib/api";
 import { groupPath } from "../lib/paths";
@@ -73,7 +74,7 @@ export default function LeadDashboard() {
     return (
       <section className="page">
         <div className="wrap">
-          <p>Kraunama…</p>
+          <Spinner />
         </div>
       </section>
     );
@@ -132,7 +133,7 @@ export default function LeadDashboard() {
 
         <h2>Grupės ({groups.length})</h2>
         {loading ? (
-          <p>Kraunama…</p>
+          <Spinner label="Kraunamos grupės…" />
         ) : groups.length === 0 ? (
           <p>Dar nėra grupių. Sukurk pirmą viršuje arba įvesk kolegos atsiųstą kvietimo kodą.</p>
         ) : (

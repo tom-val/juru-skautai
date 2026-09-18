@@ -28,7 +28,7 @@ Run these steps once per AWS account, before the first deploy.
 
 ### 1. Bootstrap AWS resources
 
-[`infra/bootstrap.sh`](infra/bootstrap.sh) creates everything the Terraform backend and
+[`infra/bootstrap-skautai.sh`](infra/bootstrap-skautai.sh) creates everything the Terraform backend and
 CI/CD need: the state S3 bucket, the DynamoDB lock table, the GitHub Actions OIDC provider,
 and the IAM role GitHub Actions assumes to deploy. It is idempotent — safe to re-run.
 
@@ -39,7 +39,7 @@ The easiest way is **AWS CloudShell** (it already has the AWS CLI and admin cred
 2. Upload the script (CloudShell **Actions → Upload file**) or paste its contents, then run:
 
    ```bash
-   bash bootstrap.sh
+   bash bootstrap-skautai.sh
    ```
 
 3. Copy the `AWS_ROLE_ARN` it prints at the end.

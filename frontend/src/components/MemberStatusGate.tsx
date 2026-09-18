@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import ContentPage from "./ContentPage";
+import Spinner from "./Spinner";
 import type { MemberStatus } from "../hooks/useProgress";
 
 interface Props {
@@ -23,7 +24,7 @@ export default function MemberStatusGate({
   if (status === "loading") {
     return (
       <ContentPage title={title}>
-        <p>Kraunama…</p>
+        <Spinner />
       </ContentPage>
     );
   }

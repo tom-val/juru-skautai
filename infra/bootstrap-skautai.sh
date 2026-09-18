@@ -139,12 +139,12 @@ DEPLOY_POLICY=$(cat <<JSON
       "Resource": "*"
     },
     {
-      "Sid": "MembersTable",
+      "Sid": "TrackerTables",
       "Effect": "Allow",
       "Action": "dynamodb:*",
       "Resource": [
-        "arn:aws:dynamodb:${REGION}:${ACCOUNT_ID}:table/${PROJECT}-prod-members",
-        "arn:aws:dynamodb:${REGION}:${ACCOUNT_ID}:table/${PROJECT}-prod-members/index/*"
+        "arn:aws:dynamodb:${REGION}:${ACCOUNT_ID}:table/${PROJECT}-prod-*",
+        "arn:aws:dynamodb:${REGION}:${ACCOUNT_ID}:table/${PROJECT}-prod-*/index/*"
       ]
     },
     {
